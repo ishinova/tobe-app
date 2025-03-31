@@ -30,7 +30,7 @@ dependencies:
   feature_onboarding: any
   feature_quest: any
   feature_settings: any
-  firebase_analytics: 11.3.5
+  firebase_analytics: 11.4.5
   firebase_auth: 5.3.3
   firebase_core: 3.8.0
   firebase_remote_config: 5.1.5
