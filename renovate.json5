@@ -1,0 +1,112 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":automergeMinor",
+  ],
+  "timezone": "Asia/Tokyo",
+  "schedule": [
+    // "every day at 7:00 and 16:00",
+    "* 7,16 * * *",
+  ],
+  "dependencyDashboard": false,
+  "labels": [
+    "dependencies"
+  ],
+  "pruneBranchAfterAutomerge": true,
+  "rangeStrategy": "pin",
+  "packageRules": [
+    {
+      "groupName": "github-actions non-major dependencies",
+      "groupSlug": "github-actions-minor-patch",
+      "addLabels": [
+        "ignore for release",
+      ],
+      "matchManagers": [
+        "github-actions",
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+    },
+    {
+      "groupName": "bun non-major dependencies",
+      "groupSlug": "bun-minor-patch",
+      "matchManagers": [
+        "bun",
+        "npm",
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+    },
+    {
+      "groupName": "pub non-major dependencies",
+      "groupSlug": "pub-minor-patch",
+      "matchManagers": [
+        "pub",
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "excludePackageNames": [
+        "collection",
+        "intl",
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+    },
+    {
+      "groupName": "flutter",
+      "matchPackageNames": [
+        "dart",
+        "flutter",
+      ],
+    },
+    {
+      "groupName": "riverpod",
+      "matchPackageNames": [
+        "flutter_riverpod",
+        "hooks_riverpod",
+        "riverpod",
+      ],
+      "matchPackagePrefixes": [
+        "riverpod_",
+      ]
+    },
+    {
+      "groupName": "isar",
+      "matchPackageNames": [
+        "isar",
+        "isar_flutter_libs",
+      ],
+    },
+    {
+      "groupName": "firebase",
+      "matchPackageNames": [
+        "cloud_firestore",
+      ],
+      "matchPackagePrefixes": [
+        "firebase_",
+      ]
+    },
+    {
+      "groupName": "widgetbook",
+      "matchPackageNames": [
+        "widgetbook",
+        "widgetbook_annotation",
+        "widgetbook_generator",
+      ]
+    }
+  ]
+}
