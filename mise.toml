@@ -1,0 +1,6 @@
+[tools]
+bun = "1.2.11"
+flutter = "3.27.2-stable"
+java = "17.0.2"
+node = "22.15.0"
+ruby = "3.4.3"
