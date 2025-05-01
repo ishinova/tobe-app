@@ -24,7 +24,7 @@ jobs:
       # https://github.com/marketplace/actions/comment-pull-request
       - uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3.0.1
         with:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          github-token: ${{ steps.app-token.outputs.token }}
           message: |
             ## Commands
 
@@ -32,5 +32,5 @@ jobs:
             |----------|----------------------------------------------------|
             | /catalog | この Pull Request の Catalog を Firebase Hosting にデプロイ |
             | /gen     | コード生成コマンドを実行                                       |
-          comment_tag: slash-command
+          comment-tag: slash-command
           mode: upsert

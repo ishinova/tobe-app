@@ -16,8 +16,8 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
-  tatsutakeinjp-bot:
-    if: github.event.pull_request.user.login == 'tatsutakeinjp-bot[bot]'
+  ishinova-actions:
+    if: github.event.pull_request.user.login == 'ishinova-actions[bot]'
     runs-on: ubuntu-24.04
     permissions:
       contents: read

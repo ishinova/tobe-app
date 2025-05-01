@@ -27,9 +27,10 @@ jobs:
       # https://github.com/marketplace/actions/actionlint-with-reviewdog
       - uses: reviewdog/action-actionlint@db58217885f9a6570da9c71be4e40ec33fe44a1f # v1.65.0
         with:
-          fail_on_error: true
+          github_token: ${{ steps.app-token.outputs.token }}
+          fail_level: error
           filter_mode: nofilter
-          level: error
+          level: warning
           reporter: github-pr-review
 
   analyze:
