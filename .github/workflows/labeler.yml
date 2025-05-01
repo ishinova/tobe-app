@@ -10,11 +10,19 @@ jobs:
       contents: read
       pull-requests: write
     steps:
+      # https://github.com/marketplace/actions/create-github-app-token
+      - name: Create GitHub App Token
+        uses: actions/create-github-app-token@0d564482f06ca65fa9e77e2510873638c82206f2 # v1.11.5
+        id: app-token
+        with:
+          app-id: ${{ vars.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       # https://github.com/marketplace/actions/label-manager-for-prs-and-issues-based-on-configurable-conditions
       - name: Label manager for PRs and Issues based on configurable conditions
         uses: srvaroa/labeler@0a20eccb8c94a1ee0bed5f16859aece1c45c3e55 # v1.13.0
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
 
   ishinova-actions:
     if: github.event.pull_request.user.login == 'ishinova-actions[bot]'
