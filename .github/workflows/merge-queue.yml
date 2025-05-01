@@ -12,7 +12,7 @@ jobs:
     uses: ./.github/workflows/wc-changes.yml
 
   action:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     needs: changes
     if: needs.changes.outputs.action == 'true'
     permissions:
@@ -34,7 +34,7 @@ jobs:
           reporter: github-pr-review
 
   analyze:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     needs:
       - changes
     if: needs.changes.outputs.analyze == 'true'
@@ -58,7 +58,7 @@ jobs:
         run: melos analyze
 
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     needs:
       - changes
     if: needs.changes.outputs.test == 'true'
@@ -85,7 +85,7 @@ jobs:
         run: melos run ci:test --no-select
 
   status-check:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     needs:
       - analyze
       - test

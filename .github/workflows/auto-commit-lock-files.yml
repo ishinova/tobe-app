@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   committer:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       renovate: ${{ steps.check.outputs.renovate }}
     steps:
@@ -23,7 +23,7 @@ jobs:
           fi
 
   changes:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       bun: ${{ steps.filter.outputs.bun }}
       pub: ${{ steps.filter.outputs.pub }}

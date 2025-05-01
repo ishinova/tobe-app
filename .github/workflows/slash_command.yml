@@ -12,7 +12,7 @@ concurrency:
 jobs:
   catalog-command:
     name: Catalog
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       continue: ${{ steps.catalog.outputs.continue }}
     steps:
@@ -55,7 +55,7 @@ jobs:
 
   gen-command:
     name: Gen Command
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       continue: ${{ steps.gen-command.outputs.continue }}
     steps:

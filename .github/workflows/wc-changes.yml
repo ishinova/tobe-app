@@ -24,7 +24,7 @@ permissions:
 
 jobs:
   pr_type:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       semantic_pr: ${{ steps.check.outputs.semantic_pr }}
     steps:
@@ -48,7 +48,7 @@ jobs:
             core.setOutput('semantic_pr', isPullRequest && isTargetAction);
 
   changes:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     outputs:
       action: ${{ steps.filter.outputs.action }}
       backend: ${{ steps.filter.outputs.backend }}
@@ -109,7 +109,7 @@ jobs:
             core.setOutput('dependencies', changes.some(value => dependencies.includes(value)));
 
   display_outputs:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     needs:
       - pr_type
       - changes
