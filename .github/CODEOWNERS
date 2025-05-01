@@ -1,4 +1,4 @@
-* @tatsutakein-jp/tobe-app-maintainers
+* @ishinova/tobe-app-maintainers
 
 /.github/ @tatsutakein
-/tool/ @tatsutakein
+/scripts/ @tatsutakein
