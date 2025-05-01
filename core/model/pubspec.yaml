@@ -9,7 +9,7 @@ resolution: workspace
 
 dependencies:
   core_common: any
-  freezed_annotation: 2.4.4
+  freezed_annotation: 3.0.0
   riverpod: 2.6.1
   riverpod_annotation: 2.6.1
 
