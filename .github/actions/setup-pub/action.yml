@@ -5,19 +5,17 @@ runs:
   using: composite
   steps:
     # https://github.com/marketplace/actions/cache
-    - name: cache pub
-      id: cache
+    - name: Cache Pub dependencies
       uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
       env:
         cache-name: pub
       with:
-        # pub-cache files are stored in `~/.pub-cache` on Linux/macOS
-        path: ~/.pub-cache
-        key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/pubspec.lock') }}
+        path: |
+          ~/.pub-cache
+          .dart_tool
+        key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/pubspec.yaml') }}-${{ hashFiles('pubspec.lock') }}
         restore-keys: |
-          ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/pubspec.lock') }}
           ${{ runner.os }}-${{ env.cache-name }}-
-          ${{ runner.os }}-
 
     - name: Path pub-cache
       shell: bash
