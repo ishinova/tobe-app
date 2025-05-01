@@ -18,7 +18,7 @@ jobs:
     steps:
       # https://github.com/marketplace/actions/create-github-app-token
       - name: Create GitHub App Token
-        uses: actions/create-github-app-token@0d564482f06ca65fa9e77e2510873638c82206f2 # v1.11.5
+        uses: actions/create-github-app-token@d72941d797fd3113feb6b93fd0dec494b13a2547 # v1.12.0
         id: app-token
         with:
           app-id: ${{ vars.BOT_APP_ID }}
@@ -27,7 +27,7 @@ jobs:
       # https://github.com/marketplace/actions/command-action
       - name: Catalog Command
         id: catalog
-        uses: github/command@319d5236cc34ed2cb72a47c058a363db0b628ebe # v1.3.0
+        uses: github/command@3f3318d2e0145c6588eaa9c6c93493ca2d7daa97 # v1.5.1
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           command: /catalog
@@ -61,7 +61,7 @@ jobs:
     steps:
       # https://github.com/marketplace/actions/create-github-app-token
       - name: Create GitHub App Token
-        uses: actions/create-github-app-token@0d564482f06ca65fa9e77e2510873638c82206f2 # v1.11.5
+        uses: actions/create-github-app-token@d72941d797fd3113feb6b93fd0dec494b13a2547 # v1.12.0
         id: app-token
         with:
           app-id: ${{ vars.BOT_APP_ID }}
@@ -70,7 +70,7 @@ jobs:
       # https://github.com/marketplace/actions/command-action
       - name: Gen Command
         id: gen-command
-        uses: github/command@319d5236cc34ed2cb72a47c058a363db0b628ebe # v1.3.0
+        uses: github/command@3f3318d2e0145c6588eaa9c6c93493ca2d7daa97 # v1.5.1
         with:
           github_token: ${{ steps.app-token.outputs.token }}
           command: /gen
