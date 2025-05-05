@@ -29,6 +29,6 @@ dev_dependencies:
     sdk: flutter
   freezed: 2.5.7
   riverpod_generator: 2.6.3
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0
 
 flutter:

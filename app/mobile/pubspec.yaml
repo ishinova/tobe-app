@@ -59,7 +59,7 @@ dev_dependencies:
   envied_generator: 1.0.0
   go_router_builder: 2.7.3
   riverpod_generator: 2.6.3
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0
 
 flutter:
   uses-material-design: true
