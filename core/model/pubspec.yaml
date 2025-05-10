@@ -3,7 +3,7 @@ description: This package provides model classes.
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: 3.7.3
 
 resolution: workspace
 
