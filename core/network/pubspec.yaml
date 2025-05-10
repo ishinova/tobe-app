@@ -13,7 +13,7 @@ dependencies:
   core_model: any
   core_network_model: any
   dio: 5.7.0
-  freezed_annotation: 2.4.4
+  freezed_annotation: 3.0.0
   retrofit: 4.4.2
   riverpod: 2.6.1
   riverpod_annotation: 2.6.1
