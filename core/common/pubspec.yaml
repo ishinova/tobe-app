@@ -3,7 +3,7 @@ description: This package provides convenience functions and other functions com
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: 3.7.3
 
 resolution: workspace
 

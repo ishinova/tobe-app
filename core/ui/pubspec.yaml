@@ -3,8 +3,8 @@ description: This package provides a UI that depends on the model class and is u
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
-  flutter: 3.27.2
+  sdk: 3.7.3
+  flutter: 3.29.3
 
 resolution: workspace
 

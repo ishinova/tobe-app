@@ -3,7 +3,7 @@ description: This package provides use cases and domain models.
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: 3.7.3
 
 resolution: workspace
 
