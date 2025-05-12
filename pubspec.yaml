@@ -32,7 +32,7 @@ workspace:
   - feature/settings
 
 dev_dependencies:
-  melos: 6.3.1
+  melos: 6.3.2
   yumemi_lints: 2.2.0
 
 dependency_overrides:
