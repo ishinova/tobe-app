@@ -20,7 +20,7 @@ dependencies:
 
 dev_dependencies:
   build_runner: 2.4.14
-  freezed: 2.5.7
+  freezed: 3.0.6
   retrofit_generator: 9.1.7
   riverpod_generator: 2.6.3
   yumemi_lints: 4.0.0
