@@ -34,10 +34,7 @@ class WidgetbookApp extends StatelessWidget {
           initialLocale: appSupportedLocales.first,
         ),
       ],
-      integrations: [
-        // To make addons & knobs work with Widgetbook Cloud
-        WidgetbookCloudIntegration(),
-      ],
+      integrations: const [],
     );
   }
 }

@@ -40,3 +40,4 @@ coverage/
 
 # Firebase
 .firebase
+**/pubspec_overrides.yaml

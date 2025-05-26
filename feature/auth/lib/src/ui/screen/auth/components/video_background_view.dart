@@ -29,9 +29,9 @@ final class HeroBackground extends HookWidget {
           Future<void>(
             () async {
               await controller.setLooping(true);
-              await controller.initialize().then((_) {
+              await controller.initialize().then((_) async {
                 isInitialized.value = true;
-                controller.play();
+                await controller.play();
               });
             },
           ),
