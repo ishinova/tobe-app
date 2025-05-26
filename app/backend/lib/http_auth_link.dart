@@ -6,13 +6,8 @@ import 'package:gql_exec/gql_exec.dart';
 import 'package:gql_http_link/gql_http_link.dart';
 
 final class HttpAuthLink extends Link {
-  HttpAuthLink({
-    required String url,
-  }) {
-    _link = Link.from([
-      ErrorLink(onException: handleException),
-      HttpLink(url),
-    ]);
+  HttpAuthLink({required String url}) {
+    _link = Link.from([ErrorLink(onException: handleException), HttpLink(url)]);
   }
 
   late final Link _link;

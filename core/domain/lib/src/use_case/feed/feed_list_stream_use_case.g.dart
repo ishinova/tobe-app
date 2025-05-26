@@ -15,14 +15,14 @@ String _$feedListStreamUseCaseHash() =>
 @ProviderFor(feedListStreamUseCase)
 final feedListStreamUseCaseProvider =
     AutoDisposeStreamProvider<List<Feed>>.internal(
-  feedListStreamUseCase,
-  name: r'feedListStreamUseCaseProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$feedListStreamUseCaseHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      feedListStreamUseCase,
+      name: r'feedListStreamUseCaseProvider',
+      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$feedListStreamUseCaseHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element

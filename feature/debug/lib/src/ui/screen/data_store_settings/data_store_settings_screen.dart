@@ -22,9 +22,7 @@ final class DataStoreSettingsScreen extends ConsumerWidget {
     final dataStore = ref.watch(dataStoreProvider);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.dataStoreSettingsTitle),
-      ),
+      appBar: TobeAppBar(title: Text(l10n.dataStoreSettingsTitle)),
       body: ListView(
         primary: true,
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -41,10 +39,7 @@ final class DataStoreSettingsScreen extends ConsumerWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        key,
-                        style: Theme.of(context).textTheme.titleSmall,
-                      ),
+                      Text(key, style: Theme.of(context).textTheme.titleSmall),
                       Text('value: ${dataStore.get(key)}'),
                     ],
                   ),

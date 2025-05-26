@@ -6,9 +6,7 @@ import 'package:isar/isar.dart';
 final class IsarDatabase {
   IsarDatabase._();
 
-  static final _schemas = [
-    QuestSchema,
-  ];
+  static final _schemas = [QuestSchema];
 
   static Future<Isar> openIsarWeb() async {
     await Isar.initialize();
@@ -20,12 +18,7 @@ final class IsarDatabase {
     );
   }
 
-  static Future<Isar> openIsarNonWeb({
-    required String directory,
-  }) async {
-    return Isar.openAsync(
-      schemas: _schemas,
-      directory: directory,
-    );
+  static Future<Isar> openIsarNonWeb({required String directory}) async {
+    return Isar.openAsync(schemas: _schemas, directory: directory);
   }
 }

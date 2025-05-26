@@ -12,7 +12,8 @@ part of 'toast_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ToastData {
@@ -34,12 +35,13 @@ abstract class $ToastDataCopyWith<$Res> {
   factory $ToastDataCopyWith(ToastData value, $Res Function(ToastData) then) =
       _$ToastDataCopyWithImpl<$Res, ToastData>;
   @useResult
-  $Res call(
-      {String id,
-      String message,
-      ToastType type,
-      Duration duration,
-      DateTime createdAt});
+  $Res call({
+    String id,
+    String message,
+    ToastType type,
+    Duration duration,
+    DateTime createdAt,
+  });
 }
 
 /// @nodoc
@@ -63,28 +65,31 @@ class _$ToastDataCopyWithImpl<$Res, $Val extends ToastData>
     Object? duration = null,
     Object? createdAt = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ToastType,
-      duration: null == duration
-          ? _value.duration
-          : duration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id: null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                      as String,
+            message: null == message
+                ? _value.message
+                : message // ignore: cast_nullable_to_non_nullable
+                      as String,
+            type: null == type
+                ? _value.type
+                : type // ignore: cast_nullable_to_non_nullable
+                      as ToastType,
+            duration: null == duration
+                ? _value.duration
+                : duration // ignore: cast_nullable_to_non_nullable
+                      as Duration,
+            createdAt: null == createdAt
+                ? _value.createdAt
+                : createdAt // ignore: cast_nullable_to_non_nullable
+                      as DateTime,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -92,16 +97,18 @@ class _$ToastDataCopyWithImpl<$Res, $Val extends ToastData>
 abstract class _$$ToastDataImplCopyWith<$Res>
     implements $ToastDataCopyWith<$Res> {
   factory _$$ToastDataImplCopyWith(
-          _$ToastDataImpl value, $Res Function(_$ToastDataImpl) then) =
-      __$$ToastDataImplCopyWithImpl<$Res>;
+    _$ToastDataImpl value,
+    $Res Function(_$ToastDataImpl) then,
+  ) = __$$ToastDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      String message,
-      ToastType type,
-      Duration duration,
-      DateTime createdAt});
+  $Res call({
+    String id,
+    String message,
+    ToastType type,
+    Duration duration,
+    DateTime createdAt,
+  });
 }
 
 /// @nodoc
@@ -109,8 +116,9 @@ class __$$ToastDataImplCopyWithImpl<$Res>
     extends _$ToastDataCopyWithImpl<$Res, _$ToastDataImpl>
     implements _$$ToastDataImplCopyWith<$Res> {
   __$$ToastDataImplCopyWithImpl(
-      _$ToastDataImpl _value, $Res Function(_$ToastDataImpl) _then)
-      : super(_value, _then);
+    _$ToastDataImpl _value,
+    $Res Function(_$ToastDataImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ToastData
   /// with the given fields replaced by the non-null parameter values.
@@ -123,40 +131,43 @@ class __$$ToastDataImplCopyWithImpl<$Res>
     Object? duration = null,
     Object? createdAt = null,
   }) {
-    return _then(_$ToastDataImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ToastType,
-      duration: null == duration
-          ? _value.duration
-          : duration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ));
+    return _then(
+      _$ToastDataImpl(
+        id: null == id
+            ? _value.id
+            : id // ignore: cast_nullable_to_non_nullable
+                  as String,
+        message: null == message
+            ? _value.message
+            : message // ignore: cast_nullable_to_non_nullable
+                  as String,
+        type: null == type
+            ? _value.type
+            : type // ignore: cast_nullable_to_non_nullable
+                  as ToastType,
+        duration: null == duration
+            ? _value.duration
+            : duration // ignore: cast_nullable_to_non_nullable
+                  as Duration,
+        createdAt: null == createdAt
+            ? _value.createdAt
+            : createdAt // ignore: cast_nullable_to_non_nullable
+                  as DateTime,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$ToastDataImpl implements _ToastData {
-  const _$ToastDataImpl(
-      {required this.id,
-      required this.message,
-      required this.type,
-      required this.duration,
-      required this.createdAt});
+  const _$ToastDataImpl({
+    required this.id,
+    required this.message,
+    required this.type,
+    required this.duration,
+    required this.createdAt,
+  });
 
   @override
   final String id;
@@ -202,12 +213,13 @@ class _$ToastDataImpl implements _ToastData {
 }
 
 abstract class _ToastData implements ToastData {
-  const factory _ToastData(
-      {required final String id,
-      required final String message,
-      required final ToastType type,
-      required final Duration duration,
-      required final DateTime createdAt}) = _$ToastDataImpl;
+  const factory _ToastData({
+    required final String id,
+    required final String message,
+    required final ToastType type,
+    required final Duration duration,
+    required final DateTime createdAt,
+  }) = _$ToastDataImpl;
 
   @override
   String get id;

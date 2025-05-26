@@ -9,8 +9,8 @@ final class FerryNewsRemoteDataSource {
   FerryNewsRemoteDataSource({
     required Client client,
     required FerryNetworkNewsTransformer transformer,
-  })  : _transformer = transformer,
-        _client = client;
+  }) : _transformer = transformer,
+       _client = client;
 
   final Client _client;
   final FerryNetworkNewsTransformer _transformer;

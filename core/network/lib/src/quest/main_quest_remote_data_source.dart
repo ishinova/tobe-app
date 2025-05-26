@@ -9,9 +9,8 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'main_quest_remote_data_source.g.dart';
 
 @Riverpod(keepAlive: true)
-QuestRemoteDataSource questRemoteDataSource(Ref ref) => QuestRemoteDataSource(
-      ref.watch(dioClientProvider),
-    );
+QuestRemoteDataSource questRemoteDataSource(Ref ref) =>
+    QuestRemoteDataSource(ref.watch(dioClientProvider));
 
 @RestApi()
 abstract class QuestRemoteDataSource {

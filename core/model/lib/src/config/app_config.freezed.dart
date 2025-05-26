@@ -12,7 +12,8 @@ part of 'app_config.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$AppConfig {
@@ -38,16 +39,17 @@ abstract class $AppConfigCopyWith<$Res> {
   factory $AppConfigCopyWith(AppConfig value, $Res Function(AppConfig) then) =
       _$AppConfigCopyWithImpl<$Res, AppConfig>;
   @useResult
-  $Res call(
-      {String appName,
-      String packageName,
-      AppVersion version,
-      String buildNumber,
-      String buildSignature,
-      Flavor flavor,
-      String? installerStore,
-      String backendUrl,
-      String websiteUrl});
+  $Res call({
+    String appName,
+    String packageName,
+    AppVersion version,
+    String buildNumber,
+    String buildSignature,
+    Flavor flavor,
+    String? installerStore,
+    String backendUrl,
+    String websiteUrl,
+  });
 
   $AppVersionCopyWith<$Res> get version;
 }
@@ -77,44 +79,47 @@ class _$AppConfigCopyWithImpl<$Res, $Val extends AppConfig>
     Object? backendUrl = null,
     Object? websiteUrl = null,
   }) {
-    return _then(_value.copyWith(
-      appName: null == appName
-          ? _value.appName
-          : appName // ignore: cast_nullable_to_non_nullable
-              as String,
-      packageName: null == packageName
-          ? _value.packageName
-          : packageName // ignore: cast_nullable_to_non_nullable
-              as String,
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-      buildNumber: null == buildNumber
-          ? _value.buildNumber
-          : buildNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-      buildSignature: null == buildSignature
-          ? _value.buildSignature
-          : buildSignature // ignore: cast_nullable_to_non_nullable
-              as String,
-      flavor: null == flavor
-          ? _value.flavor
-          : flavor // ignore: cast_nullable_to_non_nullable
-              as Flavor,
-      installerStore: freezed == installerStore
-          ? _value.installerStore
-          : installerStore // ignore: cast_nullable_to_non_nullable
-              as String?,
-      backendUrl: null == backendUrl
-          ? _value.backendUrl
-          : backendUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      websiteUrl: null == websiteUrl
-          ? _value.websiteUrl
-          : websiteUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            appName: null == appName
+                ? _value.appName
+                : appName // ignore: cast_nullable_to_non_nullable
+                      as String,
+            packageName: null == packageName
+                ? _value.packageName
+                : packageName // ignore: cast_nullable_to_non_nullable
+                      as String,
+            version: null == version
+                ? _value.version
+                : version // ignore: cast_nullable_to_non_nullable
+                      as AppVersion,
+            buildNumber: null == buildNumber
+                ? _value.buildNumber
+                : buildNumber // ignore: cast_nullable_to_non_nullable
+                      as String,
+            buildSignature: null == buildSignature
+                ? _value.buildSignature
+                : buildSignature // ignore: cast_nullable_to_non_nullable
+                      as String,
+            flavor: null == flavor
+                ? _value.flavor
+                : flavor // ignore: cast_nullable_to_non_nullable
+                      as Flavor,
+            installerStore: freezed == installerStore
+                ? _value.installerStore
+                : installerStore // ignore: cast_nullable_to_non_nullable
+                      as String?,
+            backendUrl: null == backendUrl
+                ? _value.backendUrl
+                : backendUrl // ignore: cast_nullable_to_non_nullable
+                      as String,
+            websiteUrl: null == websiteUrl
+                ? _value.websiteUrl
+                : websiteUrl // ignore: cast_nullable_to_non_nullable
+                      as String,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of AppConfig
@@ -132,20 +137,22 @@ class _$AppConfigCopyWithImpl<$Res, $Val extends AppConfig>
 abstract class _$$AppConfigImplCopyWith<$Res>
     implements $AppConfigCopyWith<$Res> {
   factory _$$AppConfigImplCopyWith(
-          _$AppConfigImpl value, $Res Function(_$AppConfigImpl) then) =
-      __$$AppConfigImplCopyWithImpl<$Res>;
+    _$AppConfigImpl value,
+    $Res Function(_$AppConfigImpl) then,
+  ) = __$$AppConfigImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String appName,
-      String packageName,
-      AppVersion version,
-      String buildNumber,
-      String buildSignature,
-      Flavor flavor,
-      String? installerStore,
-      String backendUrl,
-      String websiteUrl});
+  $Res call({
+    String appName,
+    String packageName,
+    AppVersion version,
+    String buildNumber,
+    String buildSignature,
+    Flavor flavor,
+    String? installerStore,
+    String backendUrl,
+    String websiteUrl,
+  });
 
   @override
   $AppVersionCopyWith<$Res> get version;
@@ -156,8 +163,9 @@ class __$$AppConfigImplCopyWithImpl<$Res>
     extends _$AppConfigCopyWithImpl<$Res, _$AppConfigImpl>
     implements _$$AppConfigImplCopyWith<$Res> {
   __$$AppConfigImplCopyWithImpl(
-      _$AppConfigImpl _value, $Res Function(_$AppConfigImpl) _then)
-      : super(_value, _then);
+    _$AppConfigImpl _value,
+    $Res Function(_$AppConfigImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of AppConfig
   /// with the given fields replaced by the non-null parameter values.
@@ -174,60 +182,63 @@ class __$$AppConfigImplCopyWithImpl<$Res>
     Object? backendUrl = null,
     Object? websiteUrl = null,
   }) {
-    return _then(_$AppConfigImpl(
-      appName: null == appName
-          ? _value.appName
-          : appName // ignore: cast_nullable_to_non_nullable
-              as String,
-      packageName: null == packageName
-          ? _value.packageName
-          : packageName // ignore: cast_nullable_to_non_nullable
-              as String,
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-      buildNumber: null == buildNumber
-          ? _value.buildNumber
-          : buildNumber // ignore: cast_nullable_to_non_nullable
-              as String,
-      buildSignature: null == buildSignature
-          ? _value.buildSignature
-          : buildSignature // ignore: cast_nullable_to_non_nullable
-              as String,
-      flavor: null == flavor
-          ? _value.flavor
-          : flavor // ignore: cast_nullable_to_non_nullable
-              as Flavor,
-      installerStore: freezed == installerStore
-          ? _value.installerStore
-          : installerStore // ignore: cast_nullable_to_non_nullable
-              as String?,
-      backendUrl: null == backendUrl
-          ? _value.backendUrl
-          : backendUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      websiteUrl: null == websiteUrl
-          ? _value.websiteUrl
-          : websiteUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$AppConfigImpl(
+        appName: null == appName
+            ? _value.appName
+            : appName // ignore: cast_nullable_to_non_nullable
+                  as String,
+        packageName: null == packageName
+            ? _value.packageName
+            : packageName // ignore: cast_nullable_to_non_nullable
+                  as String,
+        version: null == version
+            ? _value.version
+            : version // ignore: cast_nullable_to_non_nullable
+                  as AppVersion,
+        buildNumber: null == buildNumber
+            ? _value.buildNumber
+            : buildNumber // ignore: cast_nullable_to_non_nullable
+                  as String,
+        buildSignature: null == buildSignature
+            ? _value.buildSignature
+            : buildSignature // ignore: cast_nullable_to_non_nullable
+                  as String,
+        flavor: null == flavor
+            ? _value.flavor
+            : flavor // ignore: cast_nullable_to_non_nullable
+                  as Flavor,
+        installerStore: freezed == installerStore
+            ? _value.installerStore
+            : installerStore // ignore: cast_nullable_to_non_nullable
+                  as String?,
+        backendUrl: null == backendUrl
+            ? _value.backendUrl
+            : backendUrl // ignore: cast_nullable_to_non_nullable
+                  as String,
+        websiteUrl: null == websiteUrl
+            ? _value.websiteUrl
+            : websiteUrl // ignore: cast_nullable_to_non_nullable
+                  as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$AppConfigImpl implements _AppConfig {
-  const _$AppConfigImpl(
-      {required this.appName,
-      required this.packageName,
-      required this.version,
-      required this.buildNumber,
-      required this.buildSignature,
-      required this.flavor,
-      required this.installerStore,
-      required this.backendUrl,
-      required this.websiteUrl});
+  const _$AppConfigImpl({
+    required this.appName,
+    required this.packageName,
+    required this.version,
+    required this.buildNumber,
+    required this.buildSignature,
+    required this.flavor,
+    required this.installerStore,
+    required this.backendUrl,
+    required this.websiteUrl,
+  });
 
   @override
   final String appName;
@@ -277,16 +288,17 @@ class _$AppConfigImpl implements _AppConfig {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      appName,
-      packageName,
-      version,
-      buildNumber,
-      buildSignature,
-      flavor,
-      installerStore,
-      backendUrl,
-      websiteUrl);
+    runtimeType,
+    appName,
+    packageName,
+    version,
+    buildNumber,
+    buildSignature,
+    flavor,
+    installerStore,
+    backendUrl,
+    websiteUrl,
+  );
 
   /// Create a copy of AppConfig
   /// with the given fields replaced by the non-null parameter values.
@@ -298,16 +310,17 @@ class _$AppConfigImpl implements _AppConfig {
 }
 
 abstract class _AppConfig implements AppConfig {
-  const factory _AppConfig(
-      {required final String appName,
-      required final String packageName,
-      required final AppVersion version,
-      required final String buildNumber,
-      required final String buildSignature,
-      required final Flavor flavor,
-      required final String? installerStore,
-      required final String backendUrl,
-      required final String websiteUrl}) = _$AppConfigImpl;
+  const factory _AppConfig({
+    required final String appName,
+    required final String packageName,
+    required final AppVersion version,
+    required final String buildNumber,
+    required final String buildSignature,
+    required final Flavor flavor,
+    required final String? installerStore,
+    required final String backendUrl,
+    required final String websiteUrl,
+  }) = _$AppConfigImpl;
 
   @override
   String get appName;

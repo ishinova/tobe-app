@@ -12,7 +12,8 @@ part of 'quest_count.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$QuestCount {
@@ -33,16 +34,18 @@ mixin _$QuestCount {
 /// @nodoc
 abstract class $QuestCountCopyWith<$Res> {
   factory $QuestCountCopyWith(
-          QuestCount value, $Res Function(QuestCount) then) =
-      _$QuestCountCopyWithImpl<$Res, QuestCount>;
+    QuestCount value,
+    $Res Function(QuestCount) then,
+  ) = _$QuestCountCopyWithImpl<$Res, QuestCount>;
   @useResult
-  $Res call(
-      {int backlog,
-      int ready,
-      int inProgress,
-      int suspend,
-      int completed,
-      int abort});
+  $Res call({
+    int backlog,
+    int ready,
+    int inProgress,
+    int suspend,
+    int completed,
+    int abort,
+  });
 }
 
 /// @nodoc
@@ -67,32 +70,35 @@ class _$QuestCountCopyWithImpl<$Res, $Val extends QuestCount>
     Object? completed = null,
     Object? abort = null,
   }) {
-    return _then(_value.copyWith(
-      backlog: null == backlog
-          ? _value.backlog
-          : backlog // ignore: cast_nullable_to_non_nullable
-              as int,
-      ready: null == ready
-          ? _value.ready
-          : ready // ignore: cast_nullable_to_non_nullable
-              as int,
-      inProgress: null == inProgress
-          ? _value.inProgress
-          : inProgress // ignore: cast_nullable_to_non_nullable
-              as int,
-      suspend: null == suspend
-          ? _value.suspend
-          : suspend // ignore: cast_nullable_to_non_nullable
-              as int,
-      completed: null == completed
-          ? _value.completed
-          : completed // ignore: cast_nullable_to_non_nullable
-              as int,
-      abort: null == abort
-          ? _value.abort
-          : abort // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            backlog: null == backlog
+                ? _value.backlog
+                : backlog // ignore: cast_nullable_to_non_nullable
+                      as int,
+            ready: null == ready
+                ? _value.ready
+                : ready // ignore: cast_nullable_to_non_nullable
+                      as int,
+            inProgress: null == inProgress
+                ? _value.inProgress
+                : inProgress // ignore: cast_nullable_to_non_nullable
+                      as int,
+            suspend: null == suspend
+                ? _value.suspend
+                : suspend // ignore: cast_nullable_to_non_nullable
+                      as int,
+            completed: null == completed
+                ? _value.completed
+                : completed // ignore: cast_nullable_to_non_nullable
+                      as int,
+            abort: null == abort
+                ? _value.abort
+                : abort // ignore: cast_nullable_to_non_nullable
+                      as int,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -100,17 +106,19 @@ class _$QuestCountCopyWithImpl<$Res, $Val extends QuestCount>
 abstract class _$$QuestCountImplCopyWith<$Res>
     implements $QuestCountCopyWith<$Res> {
   factory _$$QuestCountImplCopyWith(
-          _$QuestCountImpl value, $Res Function(_$QuestCountImpl) then) =
-      __$$QuestCountImplCopyWithImpl<$Res>;
+    _$QuestCountImpl value,
+    $Res Function(_$QuestCountImpl) then,
+  ) = __$$QuestCountImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {int backlog,
-      int ready,
-      int inProgress,
-      int suspend,
-      int completed,
-      int abort});
+  $Res call({
+    int backlog,
+    int ready,
+    int inProgress,
+    int suspend,
+    int completed,
+    int abort,
+  });
 }
 
 /// @nodoc
@@ -118,8 +126,9 @@ class __$$QuestCountImplCopyWithImpl<$Res>
     extends _$QuestCountCopyWithImpl<$Res, _$QuestCountImpl>
     implements _$$QuestCountImplCopyWith<$Res> {
   __$$QuestCountImplCopyWithImpl(
-      _$QuestCountImpl _value, $Res Function(_$QuestCountImpl) _then)
-      : super(_value, _then);
+    _$QuestCountImpl _value,
+    $Res Function(_$QuestCountImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of QuestCount
   /// with the given fields replaced by the non-null parameter values.
@@ -133,46 +142,48 @@ class __$$QuestCountImplCopyWithImpl<$Res>
     Object? completed = null,
     Object? abort = null,
   }) {
-    return _then(_$QuestCountImpl(
-      backlog: null == backlog
-          ? _value.backlog
-          : backlog // ignore: cast_nullable_to_non_nullable
-              as int,
-      ready: null == ready
-          ? _value.ready
-          : ready // ignore: cast_nullable_to_non_nullable
-              as int,
-      inProgress: null == inProgress
-          ? _value.inProgress
-          : inProgress // ignore: cast_nullable_to_non_nullable
-              as int,
-      suspend: null == suspend
-          ? _value.suspend
-          : suspend // ignore: cast_nullable_to_non_nullable
-              as int,
-      completed: null == completed
-          ? _value.completed
-          : completed // ignore: cast_nullable_to_non_nullable
-              as int,
-      abort: null == abort
-          ? _value.abort
-          : abort // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+    return _then(
+      _$QuestCountImpl(
+        backlog: null == backlog
+            ? _value.backlog
+            : backlog // ignore: cast_nullable_to_non_nullable
+                  as int,
+        ready: null == ready
+            ? _value.ready
+            : ready // ignore: cast_nullable_to_non_nullable
+                  as int,
+        inProgress: null == inProgress
+            ? _value.inProgress
+            : inProgress // ignore: cast_nullable_to_non_nullable
+                  as int,
+        suspend: null == suspend
+            ? _value.suspend
+            : suspend // ignore: cast_nullable_to_non_nullable
+                  as int,
+        completed: null == completed
+            ? _value.completed
+            : completed // ignore: cast_nullable_to_non_nullable
+                  as int,
+        abort: null == abort
+            ? _value.abort
+            : abort // ignore: cast_nullable_to_non_nullable
+                  as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$QuestCountImpl extends _QuestCount {
-  const _$QuestCountImpl(
-      {required this.backlog,
-      required this.ready,
-      required this.inProgress,
-      required this.suspend,
-      required this.completed,
-      required this.abort})
-      : super._();
+  const _$QuestCountImpl({
+    required this.backlog,
+    required this.ready,
+    required this.inProgress,
+    required this.suspend,
+    required this.completed,
+    required this.abort,
+  }) : super._();
 
   @override
   final int backlog;
@@ -209,7 +220,14 @@ class _$QuestCountImpl extends _QuestCount {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, backlog, ready, inProgress, suspend, completed, abort);
+    runtimeType,
+    backlog,
+    ready,
+    inProgress,
+    suspend,
+    completed,
+    abort,
+  );
 
   /// Create a copy of QuestCount
   /// with the given fields replaced by the non-null parameter values.
@@ -221,13 +239,14 @@ class _$QuestCountImpl extends _QuestCount {
 }
 
 abstract class _QuestCount extends QuestCount {
-  const factory _QuestCount(
-      {required final int backlog,
-      required final int ready,
-      required final int inProgress,
-      required final int suspend,
-      required final int completed,
-      required final int abort}) = _$QuestCountImpl;
+  const factory _QuestCount({
+    required final int backlog,
+    required final int ready,
+    required final int inProgress,
+    required final int suspend,
+    required final int completed,
+    required final int abort,
+  }) = _$QuestCountImpl;
   const _QuestCount._() : super._();
 
   @override

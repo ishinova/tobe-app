@@ -10,8 +10,8 @@ final class FerryMainQuestRemoteDataSource {
   FerryMainQuestRemoteDataSource({
     required Client client,
     required FerryNetworkMainQuestTransformer transformer,
-  })  : _transformer = transformer,
-        _client = client;
+  }) : _transformer = transformer,
+       _client = client;
 
   final Client _client;
   final FerryNetworkMainQuestTransformer _transformer;
@@ -33,9 +33,7 @@ final class FerryMainQuestRemoteDataSource {
   Future<List<NetworkMainQuest>> getMainQuestList({
     required String userId,
   }) async {
-    final request = GGetQuestsReq(
-      (b) => b.vars.userId = userId,
-    );
+    final request = GGetQuestsReq((b) => b.vars.userId = userId);
     final data = (await _client.request(request).first).data;
     if (data == null) {
       return [];

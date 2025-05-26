@@ -6,10 +6,10 @@ final class SettingsRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => SettingsScreen(
-        onTapThemeSetting: () => const ThemeSettingDialogRoute().go(context),
-        onTapOpenSourceLicense: () => const LicenseRoute().go(context),
-        onSignOutSuccess: () => const AuthRoute().go(context),
-      );
+    onTapThemeSetting: () => const ThemeSettingDialogRoute().go(context),
+    onTapOpenSourceLicense: () => const LicenseRoute().go(context),
+    onSignOutSuccess: () => const AuthRoute().go(context),
+  );
 }
 
 /// テーマ設定ダイアログへのルート

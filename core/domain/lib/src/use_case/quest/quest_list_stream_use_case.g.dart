@@ -15,14 +15,14 @@ String _$questListStreamUseCaseHash() =>
 @ProviderFor(questListStreamUseCase)
 final questListStreamUseCaseProvider =
     AutoDisposeStreamProvider<List<Quest>>.internal(
-  questListStreamUseCase,
-  name: r'questListStreamUseCaseProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$questListStreamUseCaseHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      questListStreamUseCase,
+      name: r'questListStreamUseCaseProvider',
+      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$questListStreamUseCaseHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element

@@ -1,7 +1,8 @@
 part of 'package:app_mobile/router/app_router.dart';
 
-const onboardingRoute =
-    TypedGoRoute<OnboardingRoute>(path: AppPagePath.onboarding);
+const onboardingRoute = TypedGoRoute<OnboardingRoute>(
+  path: AppPagePath.onboarding,
+);
 
 @TypedGoRoute<OnboardingRoute>(path: AppPagePath.onboarding)
 final class OnboardingRoute extends GoRouteData {
@@ -9,7 +10,7 @@ final class OnboardingRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => OnboardingScreen(
-        onPopInvoked: context.pop,
-        onAgreeAndContinue: () => const HomeRoute().go(context),
-      );
+    onPopInvoked: context.pop,
+    onAgreeAndContinue: () => const HomeRoute().go(context),
+  );
 }

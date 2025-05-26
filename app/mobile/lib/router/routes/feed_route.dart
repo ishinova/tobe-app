@@ -8,17 +8,15 @@ final class FeedListRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => FeedListScreen(
-        onTapFeedListItem: (feed) {
-          FeedDetailRoute(feedId: feed.id).go(context);
-        },
-      );
+    onTapFeedListItem: (feed) {
+      FeedDetailRoute(feedId: feed.id).go(context);
+    },
+  );
 }
 
 /// お知らせ詳細画面
 final class FeedDetailRoute extends GoRouteData {
-  const FeedDetailRoute({
-    required this.feedId,
-  });
+  const FeedDetailRoute({required this.feedId});
 
   final FeedId feedId;
 
@@ -26,8 +24,6 @@ final class FeedDetailRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return FeedDetailScreen(
-      id: feedId,
-    );
+    return FeedDetailScreen(id: feedId);
   }
 }

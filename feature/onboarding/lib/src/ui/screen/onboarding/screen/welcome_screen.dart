@@ -27,11 +27,7 @@ final class WelcomeScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Lottie.asset(
-                Assets.lottie.workout,
-                width: 250,
-                height: 250,
-              ),
+              Lottie.asset(Assets.lottie.workout, width: 250, height: 250),
               Text(
                 l10n.welcome,
                 style: const TextStyle(
@@ -39,12 +35,7 @@ final class WelcomeScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            ].expand(
-              (widget) => [
-                widget,
-                const Gap(TobeSpace.m),
-              ],
-            ),
+            ].expand((widget) => [widget, const Gap(TobeSpace.m)]),
           ],
         ),
       ),

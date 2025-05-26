@@ -12,7 +12,8 @@ part of 'remote_config.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$RemoteConfig {
@@ -28,8 +29,9 @@ mixin _$RemoteConfig {
 /// @nodoc
 abstract class $RemoteConfigCopyWith<$Res> {
   factory $RemoteConfigCopyWith(
-          RemoteConfig value, $Res Function(RemoteConfig) then) =
-      _$RemoteConfigCopyWithImpl<$Res, RemoteConfig>;
+    RemoteConfig value,
+    $Res Function(RemoteConfig) then,
+  ) = _$RemoteConfigCopyWithImpl<$Res, RemoteConfig>;
   @useResult
   $Res call({UpdateVersion updateVersion});
 
@@ -50,15 +52,16 @@ class _$RemoteConfigCopyWithImpl<$Res, $Val extends RemoteConfig>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? updateVersion = null,
-  }) {
-    return _then(_value.copyWith(
-      updateVersion: null == updateVersion
-          ? _value.updateVersion
-          : updateVersion // ignore: cast_nullable_to_non_nullable
-              as UpdateVersion,
-    ) as $Val);
+  $Res call({Object? updateVersion = null}) {
+    return _then(
+      _value.copyWith(
+            updateVersion: null == updateVersion
+                ? _value.updateVersion
+                : updateVersion // ignore: cast_nullable_to_non_nullable
+                      as UpdateVersion,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of RemoteConfig
@@ -76,8 +79,9 @@ class _$RemoteConfigCopyWithImpl<$Res, $Val extends RemoteConfig>
 abstract class _$$RemoteConfigImplCopyWith<$Res>
     implements $RemoteConfigCopyWith<$Res> {
   factory _$$RemoteConfigImplCopyWith(
-          _$RemoteConfigImpl value, $Res Function(_$RemoteConfigImpl) then) =
-      __$$RemoteConfigImplCopyWithImpl<$Res>;
+    _$RemoteConfigImpl value,
+    $Res Function(_$RemoteConfigImpl) then,
+  ) = __$$RemoteConfigImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({UpdateVersion updateVersion});
@@ -91,22 +95,23 @@ class __$$RemoteConfigImplCopyWithImpl<$Res>
     extends _$RemoteConfigCopyWithImpl<$Res, _$RemoteConfigImpl>
     implements _$$RemoteConfigImplCopyWith<$Res> {
   __$$RemoteConfigImplCopyWithImpl(
-      _$RemoteConfigImpl _value, $Res Function(_$RemoteConfigImpl) _then)
-      : super(_value, _then);
+    _$RemoteConfigImpl _value,
+    $Res Function(_$RemoteConfigImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of RemoteConfig
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? updateVersion = null,
-  }) {
-    return _then(_$RemoteConfigImpl(
-      updateVersion: null == updateVersion
-          ? _value.updateVersion
-          : updateVersion // ignore: cast_nullable_to_non_nullable
-              as UpdateVersion,
-    ));
+  $Res call({Object? updateVersion = null}) {
+    return _then(
+      _$RemoteConfigImpl(
+        updateVersion: null == updateVersion
+            ? _value.updateVersion
+            : updateVersion // ignore: cast_nullable_to_non_nullable
+                  as UpdateVersion,
+      ),
+    );
   }
 }
 

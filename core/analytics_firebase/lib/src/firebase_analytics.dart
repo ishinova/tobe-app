@@ -14,8 +14,7 @@ FirebaseAnalytics firebaseAnalytics(Ref ref) {
 /// Firebase Analytics
 List<Override> firebaseAnalyticsProviders({
   required FirebaseAnalytics firebaseAnalytics,
-}) =>
-    <Override>[
-      firebaseAnalyticsProvider.overrideWithValue(firebaseAnalytics),
-      firebaseQuestAnalyticsProvider,
-    ];
+}) => <Override>[
+  firebaseAnalyticsProvider.overrideWithValue(firebaseAnalytics),
+  firebaseQuestAnalyticsProvider,
+];

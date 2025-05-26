@@ -7,8 +7,5 @@ part 'quest_stream_by_id_use_case.g.dart';
 
 /// 該当のクエストを取得する ユースケース
 @riverpod
-Stream<Quest?> questStreamByIdUseCase(
-  Ref ref, {
-  required QuestId id,
-}) =>
+Stream<Quest?> questStreamByIdUseCase(Ref ref, {required QuestId id}) =>
     ref.watch(questRepositoryProvider).streamById(id: id);

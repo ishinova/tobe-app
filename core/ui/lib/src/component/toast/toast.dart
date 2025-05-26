@@ -10,10 +10,10 @@ final class Toast extends HookWidget {
     required Duration duration,
     required void Function() onDismissed,
     super.key,
-  })  : _message = message,
-        _type = type,
-        _duration = duration,
-        _onDismissed = onDismissed;
+  }) : _message = message,
+       _type = type,
+       _duration = duration,
+       _onDismissed = onDismissed;
 
   final String _message;
   final ToastType _type;
@@ -22,42 +22,33 @@ final class Toast extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    useEffect(
-      () {
-        Future.delayed(_duration, _onDismissed);
-        return null;
-      },
-      [],
-    );
+    useEffect(() {
+      Future.delayed(_duration, _onDismissed);
+      return null;
+    }, []);
 
     return Material(
       color: Colors.transparent,
-      child: ToastContent(
-        message: _message,
-        type: _type,
-      ),
+      child: ToastContent(message: _message, type: _type),
     );
   }
 }
 
 final class ToastContent extends StatelessWidget {
-  ToastContent({
-    required String message,
-    required ToastType type,
-    super.key,
-  })  : _message = message,
-        _icon = switch (type) {
-          ToastType.info => Icons.info,
-          ToastType.success => Icons.check_circle,
-          ToastType.warning => Icons.warning,
-          ToastType.error => Icons.error,
-        },
-        _color = switch (type) {
-          ToastType.info => Colors.blue,
-          ToastType.success => Colors.green,
-          ToastType.warning => Colors.amber,
-          ToastType.error => Colors.red,
-        };
+  ToastContent({required String message, required ToastType type, super.key})
+    : _message = message,
+      _icon = switch (type) {
+        ToastType.info => Icons.info,
+        ToastType.success => Icons.check_circle,
+        ToastType.warning => Icons.warning,
+        ToastType.error => Icons.error,
+      },
+      _color = switch (type) {
+        ToastType.info => Colors.blue,
+        ToastType.success => Colors.green,
+        ToastType.warning => Colors.amber,
+        ToastType.error => Colors.red,
+      };
 
   final IconData _icon;
   final Color _color;
@@ -86,10 +77,7 @@ final class ToastContent extends StatelessWidget {
           Icon(_icon, color: Colors.white),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(
-              _message,
-              style: const TextStyle(color: Colors.white),
-            ),
+            child: Text(_message, style: const TextStyle(color: Colors.white)),
           ),
         ],
       ),

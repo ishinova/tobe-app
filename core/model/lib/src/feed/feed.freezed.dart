@@ -12,7 +12,8 @@ part of 'feed.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$Feed {
@@ -55,32 +56,36 @@ class _$FeedCopyWithImpl<$Res, $Val extends Feed>
     Object? description = null,
     Object? content = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id: null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                      as String,
+            name: null == name
+                ? _value.name
+                : name // ignore: cast_nullable_to_non_nullable
+                      as String,
+            description: null == description
+                ? _value.description
+                : description // ignore: cast_nullable_to_non_nullable
+                      as String,
+            content: null == content
+                ? _value.content
+                : content // ignore: cast_nullable_to_non_nullable
+                      as String,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$FeedImplCopyWith<$Res> implements $FeedCopyWith<$Res> {
   factory _$$FeedImplCopyWith(
-          _$FeedImpl value, $Res Function(_$FeedImpl) then) =
-      __$$FeedImplCopyWithImpl<$Res>;
+    _$FeedImpl value,
+    $Res Function(_$FeedImpl) then,
+  ) = __$$FeedImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, String name, String description, String content});
@@ -91,7 +96,7 @@ class __$$FeedImplCopyWithImpl<$Res>
     extends _$FeedCopyWithImpl<$Res, _$FeedImpl>
     implements _$$FeedImplCopyWith<$Res> {
   __$$FeedImplCopyWithImpl(_$FeedImpl _value, $Res Function(_$FeedImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of Feed
   /// with the given fields replaced by the non-null parameter values.
@@ -103,35 +108,38 @@ class __$$FeedImplCopyWithImpl<$Res>
     Object? description = null,
     Object? content = null,
   }) {
-    return _then(_$FeedImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$FeedImpl(
+        id: null == id
+            ? _value.id
+            : id // ignore: cast_nullable_to_non_nullable
+                  as String,
+        name: null == name
+            ? _value.name
+            : name // ignore: cast_nullable_to_non_nullable
+                  as String,
+        description: null == description
+            ? _value.description
+            : description // ignore: cast_nullable_to_non_nullable
+                  as String,
+        content: null == content
+            ? _value.content
+            : content // ignore: cast_nullable_to_non_nullable
+                  as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$FeedImpl implements _Feed {
-  const _$FeedImpl(
-      {required this.id,
-      required this.name,
-      required this.description,
-      required this.content});
+  const _$FeedImpl({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.content,
+  });
 
   @override
   final String id;
@@ -172,11 +180,12 @@ class _$FeedImpl implements _Feed {
 }
 
 abstract class _Feed implements Feed {
-  const factory _Feed(
-      {required final String id,
-      required final String name,
-      required final String description,
-      required final String content}) = _$FeedImpl;
+  const factory _Feed({
+    required final String id,
+    required final String name,
+    required final String description,
+    required final String content,
+  }) = _$FeedImpl;
 
   @override
   String get id;

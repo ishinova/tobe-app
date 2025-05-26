@@ -8,16 +8,13 @@ part 'agreed_version_data_store.g.dart';
 
 @riverpod
 AgreedVersionDataStore agreedVersionDataStore(Ref ref) =>
-    AgreedVersionDataStore(
-      dataStore: ref.watch(dataStoreProvider),
-    );
+    AgreedVersionDataStore(dataStore: ref.watch(dataStoreProvider));
 
 const _key = 'agreed_version';
 
 final class AgreedVersionDataStore {
-  AgreedVersionDataStore({
-    required this.dataStore,
-  }) : _streamController = StreamController<int?>() {
+  AgreedVersionDataStore({required this.dataStore})
+    : _streamController = StreamController<int?>() {
     final initAgreedVersion = get();
     _streamController.add(initAgreedVersion);
   }

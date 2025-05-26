@@ -19,13 +19,15 @@ part 'InsertMainQuest.req.gql.g.dart';
 abstract class GInsertMainQuestReq
     implements
         Built<GInsertMainQuestReq, GInsertMainQuestReqBuilder>,
-        _i1
-        .OperationRequest<_i2.GInsertMainQuestData, _i3.GInsertMainQuestVars> {
+        _i1.OperationRequest<
+          _i2.GInsertMainQuestData,
+          _i3.GInsertMainQuestVars
+        > {
   GInsertMainQuestReq._();
 
-  factory GInsertMainQuestReq(
-          [void Function(GInsertMainQuestReqBuilder b) updates]) =
-      _$GInsertMainQuestReq;
+  factory GInsertMainQuestReq([
+    void Function(GInsertMainQuestReqBuilder b) updates,
+  ]) = _$GInsertMainQuestReq;
 
   static void _initializeBuilder(GInsertMainQuestReqBuilder b) => b
     ..operation = _i4.Operation(
@@ -40,10 +42,10 @@ abstract class GInsertMainQuestReq
   _i4.Operation get operation;
   @override
   _i4.Request get execRequest => _i4.Request(
-        operation: operation,
-        variables: vars.toJson(),
-        context: context ?? const _i4.Context(),
-      );
+    operation: operation,
+    variables: vars.toJson(),
+    context: context ?? const _i4.Context(),
+  );
 
   @override
   String? get requestId;
@@ -52,7 +54,8 @@ abstract class GInsertMainQuestReq
   _i2.GInsertMainQuestData? Function(
     _i2.GInsertMainQuestData?,
     _i2.GInsertMainQuestData?,
-  )? get updateResult;
+  )?
+  get updateResult;
   @override
   _i2.GInsertMainQuestData? get optimisticResponse;
   @override
@@ -79,20 +82,16 @@ abstract class GInsertMainQuestReq
 
   @override
   _i1.OperationRequest<_i2.GInsertMainQuestData, _i3.GInsertMainQuestVars>
-      transformOperation(_i4.Operation Function(_i4.Operation) transform) =>
-          this.rebuild((b) => b..operation = transform(operation));
+  transformOperation(_i4.Operation Function(_i4.Operation) transform) =>
+      this.rebuild((b) => b..operation = transform(operation));
 
   static Serializer<GInsertMainQuestReq> get serializer =>
       _$gInsertMainQuestReqSerializer;
 
-  Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
-        GInsertMainQuestReq.serializer,
-        this,
-      ) as Map<String, dynamic>);
+  Map<String, dynamic> toJson() =>
+      (_i6.serializers.serializeWith(GInsertMainQuestReq.serializer, this)
+          as Map<String, dynamic>);
 
   static GInsertMainQuestReq? fromJson(Map<String, dynamic> json) =>
-      _i6.serializers.deserializeWith(
-        GInsertMainQuestReq.serializer,
-        json,
-      );
+      _i6.serializers.deserializeWith(GInsertMainQuestReq.serializer, json);
 }

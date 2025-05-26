@@ -13,8 +13,8 @@ final class OnboardingScreen extends HookWidget {
     required VoidCallback onPopInvoked,
     required VoidCallback onAgreeAndContinue,
     super.key,
-  })  : _onPopInvoked = onPopInvoked,
-        _onAgreeAndContinue = onAgreeAndContinue;
+  }) : _onPopInvoked = onPopInvoked,
+       _onAgreeAndContinue = onAgreeAndContinue;
 
   final VoidCallback _onPopInvoked;
   final VoidCallback _onAgreeAndContinue;
@@ -23,9 +23,7 @@ final class OnboardingScreen extends HookWidget {
   Widget build(BuildContext context) {
     final pages = [
       const WelcomeScreen(),
-      AgreementScreen(
-        onAgreeAndContinue: _onAgreeAndContinue,
-      ),
+      AgreementScreen(onAgreeAndContinue: _onAgreeAndContinue),
     ];
 
     final pageViewController = usePageController();
@@ -67,9 +65,7 @@ final class OnboardingScreen extends HookWidget {
                 tabController.index = currentPageIndex;
                 currentPage.value = currentPageIndex;
               },
-              children: <Widget>[
-                ...pages.map((page) => SafeArea(child: page)),
-              ],
+              children: <Widget>[...pages.map((page) => SafeArea(child: page))],
             ),
             SafeArea(
               top: false,

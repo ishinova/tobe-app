@@ -6,26 +6,22 @@ final class QuestListRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => QuestListScreen(
-        onTapQuestListItem: (quest) {
-          QuestDetailRoute(questId: quest.id).go(context);
-        },
-        onTapQuestAddButton: () => const QuestAddRoute().go(context),
-      );
+    onTapQuestListItem: (quest) {
+      QuestDetailRoute(questId: quest.id).go(context);
+    },
+    onTapQuestAddButton: () => const QuestAddRoute().go(context),
+  );
 }
 
 /// クエスト詳細画面
 final class QuestDetailRoute extends GoRouteData {
-  const QuestDetailRoute({
-    required this.questId,
-  });
+  const QuestDetailRoute({required this.questId});
 
   final QuestId questId;
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return QuestDetailScreen(
-      id: questId,
-    );
+    return QuestDetailScreen(id: questId);
   }
 }
 
@@ -35,9 +31,7 @@ final class QuestAddRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return QuestAddScreen(
-      onAddQuestCompleted: () => context.pop(),
-    );
+    return QuestAddScreen(onAddQuestCompleted: () => context.pop());
   }
 }
 

@@ -6,10 +6,8 @@ import 'package:flutter/material.dart';
 
 /// 認証画面
 final class AuthScreen extends StatelessWidget {
-  const AuthScreen({
-    required VoidCallback onLoginSuccess,
-    super.key,
-  }) : _onLoginSuccess = onLoginSuccess;
+  const AuthScreen({required VoidCallback onLoginSuccess, super.key})
+    : _onLoginSuccess = onLoginSuccess;
 
   final VoidCallback _onLoginSuccess;
 
@@ -41,10 +39,7 @@ final class AuthScreen extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(16),
                     child: BackdropFilter(
-                      filter: ImageFilter.blur(
-                        sigmaY: 5,
-                        sigmaX: 5,
-                      ),
+                      filter: ImageFilter.blur(sigmaY: 5, sigmaX: 5),
                       child: Padding(
                         padding: const EdgeInsets.all(16),
                         child: SignInForm(onLoginSuccess: _onLoginSuccess),

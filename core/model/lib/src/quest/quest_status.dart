@@ -17,5 +17,4 @@ enum QuestStatus {
 
   /// 中止
   abort,
-  ;
 }

@@ -26,14 +26,6 @@ abstract class UpdateVersion implements _$UpdateVersion {
 
 /// FakeUpdateVersion
 const fakeUpdateVersion = UpdateVersion(
-  force: AppVersion(
-    major: 1,
-    minor: 0,
-    patch: 0,
-  ),
-  optional: AppVersion(
-    major: 1,
-    minor: 0,
-    patch: 0,
-  ),
+  force: AppVersion(major: 1, minor: 0, patch: 0),
+  optional: AppVersion(major: 1, minor: 0, patch: 0),
 );

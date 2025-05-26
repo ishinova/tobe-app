@@ -11,20 +11,18 @@ Stream<QuestCount> questCountStreamUseCase(Ref ref) {
   final repository = ref.watch(questRepositoryProvider);
 
   return repository.stream().map(
-        (quests) => QuestCount(
-          backlog: quests.countByStatus(status: QuestStatus.backlog),
-          ready: quests.countByStatus(status: QuestStatus.ready),
-          inProgress: quests.countByStatus(status: QuestStatus.inProgress),
-          suspend: quests.countByStatus(status: QuestStatus.suspend),
-          completed: quests.countByStatus(status: QuestStatus.completed),
-          abort: quests.countByStatus(status: QuestStatus.abort),
-        ),
-      );
+    (quests) => QuestCount(
+      backlog: quests.countByStatus(status: QuestStatus.backlog),
+      ready: quests.countByStatus(status: QuestStatus.ready),
+      inProgress: quests.countByStatus(status: QuestStatus.inProgress),
+      suspend: quests.countByStatus(status: QuestStatus.suspend),
+      completed: quests.countByStatus(status: QuestStatus.completed),
+      abort: quests.countByStatus(status: QuestStatus.abort),
+    ),
+  );
 }
 
 extension on List<Quest> {
-  int countByStatus({
-    required QuestStatus status,
-  }) =>
+  int countByStatus({required QuestStatus status}) =>
       where((quest) => quest.status == status).length;
 }

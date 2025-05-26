@@ -8,16 +8,14 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'theme_data_store.g.dart';
 
 @riverpod
-ThemeDataStore themeDataStore(Ref ref) => ThemeDataStore(
-      dataStore: ref.watch(dataStoreProvider),
-    );
+ThemeDataStore themeDataStore(Ref ref) =>
+    ThemeDataStore(dataStore: ref.watch(dataStoreProvider));
 
 const _key = 'theme';
 
 final class ThemeDataStore {
-  ThemeDataStore({
-    required this.dataStore,
-  }) : _stream = StreamController<Theme>() {
+  ThemeDataStore({required this.dataStore})
+    : _stream = StreamController<Theme>() {
     final initTheme = get();
     _stream.add(initTheme);
   }

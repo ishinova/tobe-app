@@ -15,10 +15,10 @@ final class HomeScreen extends ConsumerWidget {
     required void Function(Quest quest) onTapQuestListItem,
     required VoidCallback onMoreButtonPressed,
     super.key,
-  })  : _onTapNotification = onTapNotification,
-        _onQuickAddButtonPressed = onQuickAddButtonPressed,
-        _onTapQuestListItem = onTapQuestListItem,
-        _onMoreButtonPressed = onMoreButtonPressed;
+  }) : _onTapNotification = onTapNotification,
+       _onQuickAddButtonPressed = onQuickAddButtonPressed,
+       _onTapQuestListItem = onTapQuestListItem,
+       _onMoreButtonPressed = onMoreButtonPressed;
 
   final VoidCallback _onTapNotification;
   final VoidCallback _onQuickAddButtonPressed;
@@ -54,12 +54,7 @@ final class HomeScreen extends ConsumerWidget {
                 onTapQuestListItem: _onTapQuestListItem,
                 onMoreButtonPressed: _onMoreButtonPressed,
               ),
-            ].expand(
-              (widget) => [
-                widget,
-                const SizedBox(height: 16),
-              ],
-            ),
+            ].expand((widget) => [widget, const SizedBox(height: 16)]),
           ],
         ),
       ),

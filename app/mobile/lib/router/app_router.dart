@@ -48,9 +48,7 @@ GoRouter router(Ref ref) {
     debugLogDiagnostics: kDebugMode,
     redirect: (context, state) async {
       // 認証が必要なページではない
-      if (!authorizedPaths.any(
-        (path) => path == state.matchedLocation,
-      )) {
+      if (!authorizedPaths.any((path) => path == state.matchedLocation)) {
         return null;
       }
 

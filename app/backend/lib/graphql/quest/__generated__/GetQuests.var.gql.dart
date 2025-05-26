@@ -19,14 +19,10 @@ abstract class GGetQuestsVars
   static Serializer<GGetQuestsVars> get serializer =>
       _$gGetQuestsVarsSerializer;
 
-  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-        GGetQuestsVars.serializer,
-        this,
-      ) as Map<String, dynamic>);
+  Map<String, dynamic> toJson() =>
+      (_i1.serializers.serializeWith(GGetQuestsVars.serializer, this)
+          as Map<String, dynamic>);
 
   static GGetQuestsVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(
-        GGetQuestsVars.serializer,
-        json,
-      );
+      _i1.serializers.deserializeWith(GGetQuestsVars.serializer, json);
 }

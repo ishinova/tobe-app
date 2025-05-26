@@ -13,9 +13,9 @@ final class SettingsScreen extends ConsumerWidget {
     required VoidCallback onTapOpenSourceLicense,
     required VoidCallback onSignOutSuccess,
     super.key,
-  })  : _onTapThemeSetting = onTapThemeSetting,
-        _onTapOpenSourceLicense = onTapOpenSourceLicense,
-        _onSignOutSuccess = onSignOutSuccess;
+  }) : _onTapThemeSetting = onTapThemeSetting,
+       _onTapOpenSourceLicense = onTapOpenSourceLicense,
+       _onSignOutSuccess = onSignOutSuccess;
 
   final VoidCallback _onTapThemeSetting;
   final VoidCallback _onTapOpenSourceLicense;
@@ -28,26 +28,18 @@ final class SettingsScreen extends ConsumerWidget {
     final l10n = L10n.of(context);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.settingsAppBarTitle),
-      ),
+      appBar: TobeAppBar(title: Text(l10n.settingsAppBarTitle)),
       body: ListView(
         primary: true,
         children: [
-          ThemeListTile(
-            onTap: _onTapThemeSetting,
-          ),
+          ThemeListTile(onTap: _onTapThemeSetting),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 16,
-            ),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16),
             title: Text(l10n.settingsOpenSourceLicenses),
             onTap: _onTapOpenSourceLicense,
           ),
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 16,
-            ),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16),
             title: Text(l10n.settingsSignOut),
             onTap: () async {
               await ref.read(signOutUseCaseProvider);
@@ -55,13 +47,8 @@ final class SettingsScreen extends ConsumerWidget {
             },
           ),
           const ListTile(
-            contentPadding: EdgeInsets.symmetric(
-              vertical: 24,
-              horizontal: 16,
-            ),
-            title: AppConfigTileContent(
-              key: appConfigKey,
-            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+            title: AppConfigTileContent(key: appConfigKey),
           ),
         ],
       ),

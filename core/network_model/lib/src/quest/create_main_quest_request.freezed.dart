@@ -12,10 +12,12 @@ part of 'create_main_quest_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 CreateMainQuestRequest _$CreateMainQuestRequestFromJson(
-    Map<String, dynamic> json) {
+  Map<String, dynamic> json,
+) {
   return _CreateMainQuestRequest.fromJson(json);
 }
 
@@ -38,16 +40,19 @@ mixin _$CreateMainQuestRequest {
 
 /// @nodoc
 abstract class $CreateMainQuestRequestCopyWith<$Res> {
-  factory $CreateMainQuestRequestCopyWith(CreateMainQuestRequest value,
-          $Res Function(CreateMainQuestRequest) then) =
-      _$CreateMainQuestRequestCopyWithImpl<$Res, CreateMainQuestRequest>;
+  factory $CreateMainQuestRequestCopyWith(
+    CreateMainQuestRequest value,
+    $Res Function(CreateMainQuestRequest) then,
+  ) = _$CreateMainQuestRequestCopyWithImpl<$Res, CreateMainQuestRequest>;
   @useResult
   $Res call({String userId, String title, String description, String note});
 }
 
 /// @nodoc
-class _$CreateMainQuestRequestCopyWithImpl<$Res,
-        $Val extends CreateMainQuestRequest>
+class _$CreateMainQuestRequestCopyWithImpl<
+  $Res,
+  $Val extends CreateMainQuestRequest
+>
     implements $CreateMainQuestRequestCopyWith<$Res> {
   _$CreateMainQuestRequestCopyWithImpl(this._value, this._then);
 
@@ -66,24 +71,27 @@ class _$CreateMainQuestRequestCopyWithImpl<$Res,
     Object? description = null,
     Object? note = null,
   }) {
-    return _then(_value.copyWith(
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      note: null == note
-          ? _value.note
-          : note // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            userId: null == userId
+                ? _value.userId
+                : userId // ignore: cast_nullable_to_non_nullable
+                      as String,
+            title: null == title
+                ? _value.title
+                : title // ignore: cast_nullable_to_non_nullable
+                      as String,
+            description: null == description
+                ? _value.description
+                : description // ignore: cast_nullable_to_non_nullable
+                      as String,
+            note: null == note
+                ? _value.note
+                : note // ignore: cast_nullable_to_non_nullable
+                      as String,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -91,9 +99,9 @@ class _$CreateMainQuestRequestCopyWithImpl<$Res,
 abstract class _$$CreateMainQuestRequestImplCopyWith<$Res>
     implements $CreateMainQuestRequestCopyWith<$Res> {
   factory _$$CreateMainQuestRequestImplCopyWith(
-          _$CreateMainQuestRequestImpl value,
-          $Res Function(_$CreateMainQuestRequestImpl) then) =
-      __$$CreateMainQuestRequestImplCopyWithImpl<$Res>;
+    _$CreateMainQuestRequestImpl value,
+    $Res Function(_$CreateMainQuestRequestImpl) then,
+  ) = __$$CreateMainQuestRequestImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String userId, String title, String description, String note});
@@ -101,13 +109,13 @@ abstract class _$$CreateMainQuestRequestImplCopyWith<$Res>
 
 /// @nodoc
 class __$$CreateMainQuestRequestImplCopyWithImpl<$Res>
-    extends _$CreateMainQuestRequestCopyWithImpl<$Res,
-        _$CreateMainQuestRequestImpl>
+    extends
+        _$CreateMainQuestRequestCopyWithImpl<$Res, _$CreateMainQuestRequestImpl>
     implements _$$CreateMainQuestRequestImplCopyWith<$Res> {
   __$$CreateMainQuestRequestImplCopyWithImpl(
-      _$CreateMainQuestRequestImpl _value,
-      $Res Function(_$CreateMainQuestRequestImpl) _then)
-      : super(_value, _then);
+    _$CreateMainQuestRequestImpl _value,
+    $Res Function(_$CreateMainQuestRequestImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CreateMainQuestRequest
   /// with the given fields replaced by the non-null parameter values.
@@ -119,35 +127,38 @@ class __$$CreateMainQuestRequestImplCopyWithImpl<$Res>
     Object? description = null,
     Object? note = null,
   }) {
-    return _then(_$CreateMainQuestRequestImpl(
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      note: null == note
-          ? _value.note
-          : note // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$CreateMainQuestRequestImpl(
+        userId: null == userId
+            ? _value.userId
+            : userId // ignore: cast_nullable_to_non_nullable
+                  as String,
+        title: null == title
+            ? _value.title
+            : title // ignore: cast_nullable_to_non_nullable
+                  as String,
+        description: null == description
+            ? _value.description
+            : description // ignore: cast_nullable_to_non_nullable
+                  as String,
+        note: null == note
+            ? _value.note
+            : note // ignore: cast_nullable_to_non_nullable
+                  as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$CreateMainQuestRequestImpl implements _CreateMainQuestRequest {
-  const _$CreateMainQuestRequestImpl(
-      {required this.userId,
-      required this.title,
-      required this.description,
-      required this.note});
+  const _$CreateMainQuestRequestImpl({
+    required this.userId,
+    required this.title,
+    required this.description,
+    required this.note,
+  });
 
   factory _$CreateMainQuestRequestImpl.fromJson(Map<String, dynamic> json) =>
       _$$CreateMainQuestRequestImplFromJson(json);
@@ -189,23 +200,25 @@ class _$CreateMainQuestRequestImpl implements _CreateMainQuestRequest {
   @override
   @pragma('vm:prefer-inline')
   _$$CreateMainQuestRequestImplCopyWith<_$CreateMainQuestRequestImpl>
-      get copyWith => __$$CreateMainQuestRequestImplCopyWithImpl<
-          _$CreateMainQuestRequestImpl>(this, _$identity);
+  get copyWith =>
+      __$$CreateMainQuestRequestImplCopyWithImpl<_$CreateMainQuestRequestImpl>(
+        this,
+        _$identity,
+      );
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CreateMainQuestRequestImplToJson(
-      this,
-    );
+    return _$$CreateMainQuestRequestImplToJson(this);
   }
 }
 
 abstract class _CreateMainQuestRequest implements CreateMainQuestRequest {
-  const factory _CreateMainQuestRequest(
-      {required final String userId,
-      required final String title,
-      required final String description,
-      required final String note}) = _$CreateMainQuestRequestImpl;
+  const factory _CreateMainQuestRequest({
+    required final String userId,
+    required final String title,
+    required final String description,
+    required final String note,
+  }) = _$CreateMainQuestRequestImpl;
 
   factory _CreateMainQuestRequest.fromJson(Map<String, dynamic> json) =
       _$CreateMainQuestRequestImpl.fromJson;
@@ -224,5 +237,5 @@ abstract class _CreateMainQuestRequest implements CreateMainQuestRequest {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateMainQuestRequestImplCopyWith<_$CreateMainQuestRequestImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }

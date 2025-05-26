@@ -30,14 +30,8 @@ final class FeedList extends HookConsumerWidget {
           ],
         );
       },
-      error: (error, stackTrace) => Center(
-        child: Text(
-          error.toString(),
-        ),
-      ),
-      loading: () => const Center(
-        child: CircularProgressIndicator(),
-      ),
+      error: (error, stackTrace) => Center(child: Text(error.toString())),
+      loading: () => const Center(child: CircularProgressIndicator()),
     );
   }
 }

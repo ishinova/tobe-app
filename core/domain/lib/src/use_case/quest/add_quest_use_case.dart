@@ -20,7 +20,9 @@ Raw<FutureResult<void>> addQuestUseCase(
     return Err(Error('Unauthenticated'));
   }
 
-  await ref.watch(questRepositoryProvider).createMainQuest(
+  await ref
+      .watch(questRepositoryProvider)
+      .createMainQuest(
         userId: currentUserId,
         title: title,
         description: description,

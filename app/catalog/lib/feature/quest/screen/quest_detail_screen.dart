@@ -8,7 +8,5 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
   path: '[Feature]/quest',
 )
 QuestDetailScreen questDetailScreenUseCase(BuildContext context) {
-  return const QuestDetailScreen(
-    id: 'quest_id',
-  );
+  return const QuestDetailScreen(id: 'quest_id');
 }

@@ -7,12 +7,8 @@ const questBranch = TypedStatefulShellBranch<QuestBranch>(
     TypedGoRoute<QuestListRoute>(
       path: AppPagePath.quests,
       routes: [
-        TypedGoRoute<QuestAddRoute>(
-          path: AppPagePath.questAdd,
-        ),
-        TypedGoRoute<QuestDetailRoute>(
-          path: AppPagePath.questDetail,
-        ),
+        TypedGoRoute<QuestAddRoute>(path: AppPagePath.questAdd),
+        TypedGoRoute<QuestDetailRoute>(path: AppPagePath.questDetail),
       ],
     ),
   ],

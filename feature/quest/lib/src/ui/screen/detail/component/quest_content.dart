@@ -7,10 +7,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// クエスト内容
 final class QuestContent extends HookConsumerWidget {
-  const QuestContent({
-    required QuestId questId,
-    super.key,
-  }) : _questId = questId;
+  const QuestContent({required QuestId questId, super.key})
+    : _questId = questId;
 
   final QuestId _questId;
 
@@ -94,24 +92,13 @@ final class QuestContent extends HookConsumerWidget {
                   Text(l10n.questDetailContentNoteLabel),
                   Text(quest.note),
                 ],
-              ].expand(
-                (element) => [
-                  element,
-                  const Gap(8),
-                ],
-              ),
+              ].expand((element) => [element, const Gap(8)]),
             ],
           ),
         );
       },
-      error: (error, stackTrace) => Center(
-        child: Text(
-          error.toString(),
-        ),
-      ),
-      loading: () => const Center(
-        child: CircularProgressIndicator(),
-      ),
+      error: (error, stackTrace) => Center(child: Text(error.toString())),
+      loading: () => const Center(child: CircularProgressIndicator()),
     );
   }
 }

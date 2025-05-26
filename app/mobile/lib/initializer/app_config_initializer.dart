@@ -26,14 +26,14 @@ Future<AppConfig> initializeAppConfig() async {
 
 extension on Flavor {
   String get backendUrl => switch (this) {
-        Flavor.dev => Env.backendUrl,
-        Flavor.stg => 'https://tobe-app-backend-ysop674t6q-an.a.run.app',
-        Flavor.prod => 'https://api.app.tobe.quest',
-      };
+    Flavor.dev => Env.backendUrl,
+    Flavor.stg => 'https://tobe-app-backend-ysop674t6q-an.a.run.app',
+    Flavor.prod => 'https://api.app.tobe.quest',
+  };
 
   String get websiteUrl => switch (this) {
-        Flavor.dev => Env.websiteUrl,
-        Flavor.stg => 'https://staging.tobe.quest',
-        Flavor.prod => 'https://tobe.quest',
-      };
+    Flavor.dev => Env.websiteUrl,
+    Flavor.stg => 'https://staging.tobe.quest',
+    Flavor.prod => 'https://tobe.quest',
+  };
 }

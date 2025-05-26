@@ -7,12 +7,8 @@ const settingsBranch = TypedStatefulShellBranch<SettingsBranch>(
     TypedGoRoute<SettingsRoute>(
       path: AppPagePath.settings,
       routes: [
-        TypedGoRoute<ThemeSettingDialogRoute>(
-          path: AppPagePath.theme,
-        ),
-        TypedGoRoute<LicenseRoute>(
-          path: AppPagePath.license,
-        ),
+        TypedGoRoute<ThemeSettingDialogRoute>(path: AppPagePath.theme),
+        TypedGoRoute<LicenseRoute>(path: AppPagePath.license),
       ],
     ),
   ],

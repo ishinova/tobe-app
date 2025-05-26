@@ -5,10 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// お知らせ内容
 final class FeedContent extends HookConsumerWidget {
-  const FeedContent({
-    required FeedId feedId,
-    super.key,
-  }) : _feedId = feedId;
+  const FeedContent({required FeedId feedId, super.key}) : _feedId = feedId;
 
   final FeedId _feedId;
 
@@ -20,14 +17,8 @@ final class FeedContent extends HookConsumerWidget {
       data: (data) {
         return const SizedBox.shrink();
       },
-      error: (error, stackTrace) => Center(
-        child: Text(
-          error.toString(),
-        ),
-      ),
-      loading: () => const Center(
-        child: CircularProgressIndicator(),
-      ),
+      error: (error, stackTrace) => Center(child: Text(error.toString())),
+      loading: () => const Center(child: CircularProgressIndicator()),
     );
   }
 }

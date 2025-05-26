@@ -12,7 +12,8 @@ part of 'update_version.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$UpdateVersion {
@@ -29,8 +30,9 @@ mixin _$UpdateVersion {
 /// @nodoc
 abstract class $UpdateVersionCopyWith<$Res> {
   factory $UpdateVersionCopyWith(
-          UpdateVersion value, $Res Function(UpdateVersion) then) =
-      _$UpdateVersionCopyWithImpl<$Res, UpdateVersion>;
+    UpdateVersion value,
+    $Res Function(UpdateVersion) then,
+  ) = _$UpdateVersionCopyWithImpl<$Res, UpdateVersion>;
   @useResult
   $Res call({AppVersion force, AppVersion optional});
 
@@ -52,20 +54,20 @@ class _$UpdateVersionCopyWithImpl<$Res, $Val extends UpdateVersion>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? force = null,
-    Object? optional = null,
-  }) {
-    return _then(_value.copyWith(
-      force: null == force
-          ? _value.force
-          : force // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-      optional: null == optional
-          ? _value.optional
-          : optional // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-    ) as $Val);
+  $Res call({Object? force = null, Object? optional = null}) {
+    return _then(
+      _value.copyWith(
+            force: null == force
+                ? _value.force
+                : force // ignore: cast_nullable_to_non_nullable
+                      as AppVersion,
+            optional: null == optional
+                ? _value.optional
+                : optional // ignore: cast_nullable_to_non_nullable
+                      as AppVersion,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of UpdateVersion
@@ -93,8 +95,9 @@ class _$UpdateVersionCopyWithImpl<$Res, $Val extends UpdateVersion>
 abstract class _$$UpdateVersionImplCopyWith<$Res>
     implements $UpdateVersionCopyWith<$Res> {
   factory _$$UpdateVersionImplCopyWith(
-          _$UpdateVersionImpl value, $Res Function(_$UpdateVersionImpl) then) =
-      __$$UpdateVersionImplCopyWithImpl<$Res>;
+    _$UpdateVersionImpl value,
+    $Res Function(_$UpdateVersionImpl) then,
+  ) = __$$UpdateVersionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({AppVersion force, AppVersion optional});
@@ -110,27 +113,27 @@ class __$$UpdateVersionImplCopyWithImpl<$Res>
     extends _$UpdateVersionCopyWithImpl<$Res, _$UpdateVersionImpl>
     implements _$$UpdateVersionImplCopyWith<$Res> {
   __$$UpdateVersionImplCopyWithImpl(
-      _$UpdateVersionImpl _value, $Res Function(_$UpdateVersionImpl) _then)
-      : super(_value, _then);
+    _$UpdateVersionImpl _value,
+    $Res Function(_$UpdateVersionImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of UpdateVersion
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? force = null,
-    Object? optional = null,
-  }) {
-    return _then(_$UpdateVersionImpl(
-      force: null == force
-          ? _value.force
-          : force // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-      optional: null == optional
-          ? _value.optional
-          : optional // ignore: cast_nullable_to_non_nullable
-              as AppVersion,
-    ));
+  $Res call({Object? force = null, Object? optional = null}) {
+    return _then(
+      _$UpdateVersionImpl(
+        force: null == force
+            ? _value.force
+            : force // ignore: cast_nullable_to_non_nullable
+                  as AppVersion,
+        optional: null == optional
+            ? _value.optional
+            : optional // ignore: cast_nullable_to_non_nullable
+                  as AppVersion,
+      ),
+    );
   }
 }
 
@@ -138,7 +141,7 @@ class __$$UpdateVersionImplCopyWithImpl<$Res>
 
 class _$UpdateVersionImpl extends _UpdateVersion {
   const _$UpdateVersionImpl({required this.force, required this.optional})
-      : super._();
+    : super._();
 
   @override
   final AppVersion force;
@@ -173,9 +176,10 @@ class _$UpdateVersionImpl extends _UpdateVersion {
 }
 
 abstract class _UpdateVersion extends UpdateVersion {
-  const factory _UpdateVersion(
-      {required final AppVersion force,
-      required final AppVersion optional}) = _$UpdateVersionImpl;
+  const factory _UpdateVersion({
+    required final AppVersion force,
+    required final AppVersion optional,
+  }) = _$UpdateVersionImpl;
   const _UpdateVersion._() : super._();
 
   @override

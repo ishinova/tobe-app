@@ -9,17 +9,17 @@ part 'quest_repository.g.dart';
 
 @riverpod
 QuestRepository questRepository(Ref ref) => QuestRepository(
-      dao: ref.watch(questDaoProvider),
-      remote: ref.watch(questRemoteDataSourceProvider),
-    );
+  dao: ref.watch(questDaoProvider),
+  remote: ref.watch(questRemoteDataSourceProvider),
+);
 
 /// クエストのリポジトリ
 class QuestRepository {
   QuestRepository({
     required QuestDao dao,
     required QuestRemoteDataSource remote,
-  })  : _dao = dao,
-        _remote = remote;
+  }) : _dao = dao,
+       _remote = remote;
 
   final QuestDao _dao;
   final QuestRemoteDataSource _remote;
@@ -30,14 +30,8 @@ class QuestRepository {
 
   Stream<Quest?> streamById({required QuestId id}) => _dao.streamById(id: id);
 
-  Stream<List<Quest>> stream({
-    int? offset,
-    int? limit,
-  }) =>
-      _dao.stream(
-        offset: offset,
-        limit: limit,
-      );
+  Stream<List<Quest>> stream({int? offset, int? limit}) =>
+      _dao.stream(offset: offset, limit: limit);
 
   Future<void> createMainQuest({
     required String userId,
@@ -56,21 +50,19 @@ class QuestRepository {
       note: note,
       userId: userId,
     );
-    await _dao.merges(
-      [
-        (
-          id: id,
-          title: title,
-          description: description,
-          begunAt: begunAt,
-          endedAt: endedAt,
-          categoryId: categoryId,
-          status: status.name,
-          coverImageUrl: coverImageUrl,
-          note: note,
-        ),
-      ],
-    );
+    await _dao.merges([
+      (
+        id: id,
+        title: title,
+        description: description,
+        begunAt: begunAt,
+        endedAt: endedAt,
+        categoryId: categoryId,
+        status: status.name,
+        coverImageUrl: coverImageUrl,
+        note: note,
+      ),
+    ]);
   }
 
   Future<void> inserts({required List<Quest> quests}) async =>
@@ -89,9 +81,7 @@ class QuestRepository {
 
   Future<int> deleteAll() async => _dao.deleteAll();
 
-  Future<void> sync({
-    required String userId,
-  }) async {
+  Future<void> sync({required String userId}) async {
     final networkQuestList = await _remote.getMainQuestList(userId: userId);
     await _dao.merges(
       networkQuestList

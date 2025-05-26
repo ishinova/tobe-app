@@ -11,8 +11,8 @@ final class ThemeSettingDialogScreen extends HookConsumerWidget {
     required void Function() onTapPositive,
     required void Function() onTapNegative,
     super.key,
-  })  : _onTapPositive = onTapPositive,
-        _onTapNegative = onTapNegative;
+  }) : _onTapPositive = onTapPositive,
+       _onTapNegative = onTapNegative;
 
   final VoidCallback _onTapPositive;
   final VoidCallback _onTapNegative;
@@ -34,13 +34,11 @@ final class ThemeSettingDialogScreen extends HookConsumerWidget {
               onChanged: (newTheme) {
                 selectedTheme.value = newTheme!;
               },
-              title: Text(
-                switch (e) {
-                  Theme.system => l10n.settingsThemeSettingSystem,
-                  Theme.light => l10n.settingsThemeSettingLightMode,
-                  Theme.dark => l10n.settingsThemeSettingDarkMode,
-                },
-              ),
+              title: Text(switch (e) {
+                Theme.system => l10n.settingsThemeSettingSystem,
+                Theme.light => l10n.settingsThemeSettingLightMode,
+                Theme.dark => l10n.settingsThemeSettingDarkMode,
+              }),
             ),
           ),
         ],

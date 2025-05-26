@@ -8,9 +8,8 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'news_remote_data_source.g.dart';
 
 @Riverpod(keepAlive: true)
-NewsRemoteDataSource newsRemoteDataSource(Ref ref) => NewsRemoteDataSource(
-      ref.watch(dioClientProvider),
-    );
+NewsRemoteDataSource newsRemoteDataSource(Ref ref) =>
+    NewsRemoteDataSource(ref.watch(dioClientProvider));
 
 @RestApi()
 abstract class NewsRemoteDataSource {

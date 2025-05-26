@@ -9,15 +9,12 @@ part 'user_settings_repository.g.dart';
 
 @riverpod
 UserSettingsRepository userSettingsRepository(Ref ref) =>
-    UserSettingsRepository(
-      themeDataStore: ref.watch(themeDataStoreProvider),
-    );
+    UserSettingsRepository(themeDataStore: ref.watch(themeDataStoreProvider));
 
 /// ユーザー設定のリポジトリ
 class UserSettingsRepository {
-  UserSettingsRepository({
-    required ThemeDataStore themeDataStore,
-  }) : _themeDataStore = themeDataStore;
+  UserSettingsRepository({required ThemeDataStore themeDataStore})
+    : _themeDataStore = themeDataStore;
 
   final ThemeDataStore _themeDataStore;
 

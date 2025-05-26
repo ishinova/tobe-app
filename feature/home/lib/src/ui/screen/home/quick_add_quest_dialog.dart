@@ -7,10 +7,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// クエストクイック追加ダイアログ
 final class QuickAddQuestDialog extends HookConsumerWidget {
-  const QuickAddQuestDialog({
-    required VoidCallback onClose,
-    super.key,
-  }) : _onClose = onClose;
+  const QuickAddQuestDialog({required VoidCallback onClose, super.key})
+    : _onClose = onClose;
 
   final VoidCallback _onClose;
 
@@ -74,12 +72,7 @@ final class QuickAddQuestDialog extends HookConsumerWidget {
                         labelText: l10n.homeQuickAddQuestDialogNoteLabel,
                       ),
                     ),
-                  ].expand(
-                    (widget) => [
-                      widget,
-                      const Gap(24),
-                    ],
-                  ),
+                  ].expand((widget) => [widget, const Gap(24)]),
                 ],
               ),
             ),

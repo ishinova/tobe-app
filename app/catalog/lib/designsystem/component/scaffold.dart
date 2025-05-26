@@ -20,10 +20,7 @@ Widget tobeScaffoldUseCase(BuildContext context) {
     ),
     body: Center(
       child: Text(
-        context.knobs.string(
-          label: 'Body Text',
-          initialValue: 'TobeScaffold',
-        ),
+        context.knobs.string(label: 'Body Text', initialValue: 'TobeScaffold'),
       ),
     ),
   );

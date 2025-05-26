@@ -53,7 +53,7 @@ final directories = <_i1.WidgetbookNode>[
             ),
           ),
         ],
-      )
+      ),
     ],
   ),
   _i1.WidgetbookCategory(
@@ -68,7 +68,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'AuthScreen',
               builder: _i5.authScreenUseCase,
             ),
-          )
+          ),
         ],
       ),
       _i1.WidgetbookFolder(
@@ -80,7 +80,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'HomeScreen',
               builder: _i6.homeScreenUseCase,
             ),
-          )
+          ),
         ],
       ),
       _i1.WidgetbookFolder(
@@ -92,7 +92,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'SettingsScreen',
               builder: _i7.settingsScreenUseCase,
             ),
-          )
+          ),
         ],
       ),
       _i1.WidgetbookFolder(
@@ -104,7 +104,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'OnboardingScreen',
               builder: _i8.onboardingScreenUseCase,
             ),
-          )
+          ),
         ],
       ),
       _i1.WidgetbookFolder(
@@ -147,9 +147,9 @@ final directories = <_i1.WidgetbookNode>[
               name: 'QuestListTile',
               builder: _i12.tobeScaffoldUseCase,
             ),
-          )
+          ),
         ],
-      )
+      ),
     ],
   ),
 ];

@@ -6,10 +6,7 @@ import 'package:flutter/material.dart';
 
 /// フィード詳細画面
 final class FeedDetailScreen extends StatelessWidget {
-  const FeedDetailScreen({
-    required FeedId id,
-    super.key,
-  }) : _id = id;
+  const FeedDetailScreen({required FeedId id, super.key}) : _id = id;
 
   final FeedId _id;
 
@@ -18,12 +15,8 @@ final class FeedDetailScreen extends StatelessWidget {
     final l10n = L10n.of(context);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.feedDetailAppBarTitle),
-      ),
-      body: FeedContent(
-        feedId: _id,
-      ),
+      appBar: TobeAppBar(title: Text(l10n.feedDetailAppBarTitle)),
+      body: FeedContent(feedId: _id),
     );
   }
 }

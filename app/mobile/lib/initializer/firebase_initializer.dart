@@ -12,12 +12,8 @@ typedef InitializedValues = ({
   FirebaseRemoteConfig firebaseRemoteConfig,
 });
 
-Future<InitializedValues> initializeFirebase({
-  required Flavor flavor,
-}) async {
-  await Firebase.initializeApp(
-    options: flavor.firebaseOptions,
-  );
+Future<InitializedValues> initializeFirebase({required Flavor flavor}) async {
+  await Firebase.initializeApp(options: flavor.firebaseOptions);
 
   final firebaseRemoteConfig = FirebaseRemoteConfig.instance;
   await firebaseRemoteConfig.fetchAndActivate();

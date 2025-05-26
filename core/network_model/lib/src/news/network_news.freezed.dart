@@ -12,7 +12,8 @@ part of 'network_news.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 NetworkNews _$NetworkNewsFromJson(Map<String, dynamic> json) {
   return _NetworkNews.fromJson(json);
@@ -39,15 +40,17 @@ mixin _$NetworkNews {
 /// @nodoc
 abstract class $NetworkNewsCopyWith<$Res> {
   factory $NetworkNewsCopyWith(
-          NetworkNews value, $Res Function(NetworkNews) then) =
-      _$NetworkNewsCopyWithImpl<$Res, NetworkNews>;
+    NetworkNews value,
+    $Res Function(NetworkNews) then,
+  ) = _$NetworkNewsCopyWithImpl<$Res, NetworkNews>;
   @useResult
-  $Res call(
-      {String title,
-      String slug,
-      DateTime publishedAt,
-      String excerpt,
-      String? coverImageUrl});
+  $Res call({
+    String title,
+    String slug,
+    DateTime publishedAt,
+    String excerpt,
+    String? coverImageUrl,
+  });
 }
 
 /// @nodoc
@@ -71,28 +74,31 @@ class _$NetworkNewsCopyWithImpl<$Res, $Val extends NetworkNews>
     Object? excerpt = null,
     Object? coverImageUrl = freezed,
   }) {
-    return _then(_value.copyWith(
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      slug: null == slug
-          ? _value.slug
-          : slug // ignore: cast_nullable_to_non_nullable
-              as String,
-      publishedAt: null == publishedAt
-          ? _value.publishedAt
-          : publishedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      excerpt: null == excerpt
-          ? _value.excerpt
-          : excerpt // ignore: cast_nullable_to_non_nullable
-              as String,
-      coverImageUrl: freezed == coverImageUrl
-          ? _value.coverImageUrl
-          : coverImageUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            title: null == title
+                ? _value.title
+                : title // ignore: cast_nullable_to_non_nullable
+                      as String,
+            slug: null == slug
+                ? _value.slug
+                : slug // ignore: cast_nullable_to_non_nullable
+                      as String,
+            publishedAt: null == publishedAt
+                ? _value.publishedAt
+                : publishedAt // ignore: cast_nullable_to_non_nullable
+                      as DateTime,
+            excerpt: null == excerpt
+                ? _value.excerpt
+                : excerpt // ignore: cast_nullable_to_non_nullable
+                      as String,
+            coverImageUrl: freezed == coverImageUrl
+                ? _value.coverImageUrl
+                : coverImageUrl // ignore: cast_nullable_to_non_nullable
+                      as String?,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -100,16 +106,18 @@ class _$NetworkNewsCopyWithImpl<$Res, $Val extends NetworkNews>
 abstract class _$$NetworkNewsImplCopyWith<$Res>
     implements $NetworkNewsCopyWith<$Res> {
   factory _$$NetworkNewsImplCopyWith(
-          _$NetworkNewsImpl value, $Res Function(_$NetworkNewsImpl) then) =
-      __$$NetworkNewsImplCopyWithImpl<$Res>;
+    _$NetworkNewsImpl value,
+    $Res Function(_$NetworkNewsImpl) then,
+  ) = __$$NetworkNewsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String title,
-      String slug,
-      DateTime publishedAt,
-      String excerpt,
-      String? coverImageUrl});
+  $Res call({
+    String title,
+    String slug,
+    DateTime publishedAt,
+    String excerpt,
+    String? coverImageUrl,
+  });
 }
 
 /// @nodoc
@@ -117,8 +125,9 @@ class __$$NetworkNewsImplCopyWithImpl<$Res>
     extends _$NetworkNewsCopyWithImpl<$Res, _$NetworkNewsImpl>
     implements _$$NetworkNewsImplCopyWith<$Res> {
   __$$NetworkNewsImplCopyWithImpl(
-      _$NetworkNewsImpl _value, $Res Function(_$NetworkNewsImpl) _then)
-      : super(_value, _then);
+    _$NetworkNewsImpl _value,
+    $Res Function(_$NetworkNewsImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of NetworkNews
   /// with the given fields replaced by the non-null parameter values.
@@ -131,40 +140,43 @@ class __$$NetworkNewsImplCopyWithImpl<$Res>
     Object? excerpt = null,
     Object? coverImageUrl = freezed,
   }) {
-    return _then(_$NetworkNewsImpl(
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      slug: null == slug
-          ? _value.slug
-          : slug // ignore: cast_nullable_to_non_nullable
-              as String,
-      publishedAt: null == publishedAt
-          ? _value.publishedAt
-          : publishedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      excerpt: null == excerpt
-          ? _value.excerpt
-          : excerpt // ignore: cast_nullable_to_non_nullable
-              as String,
-      coverImageUrl: freezed == coverImageUrl
-          ? _value.coverImageUrl
-          : coverImageUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$NetworkNewsImpl(
+        title: null == title
+            ? _value.title
+            : title // ignore: cast_nullable_to_non_nullable
+                  as String,
+        slug: null == slug
+            ? _value.slug
+            : slug // ignore: cast_nullable_to_non_nullable
+                  as String,
+        publishedAt: null == publishedAt
+            ? _value.publishedAt
+            : publishedAt // ignore: cast_nullable_to_non_nullable
+                  as DateTime,
+        excerpt: null == excerpt
+            ? _value.excerpt
+            : excerpt // ignore: cast_nullable_to_non_nullable
+                  as String,
+        coverImageUrl: freezed == coverImageUrl
+            ? _value.coverImageUrl
+            : coverImageUrl // ignore: cast_nullable_to_non_nullable
+                  as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NetworkNewsImpl implements _NetworkNews {
-  const _$NetworkNewsImpl(
-      {required this.title,
-      required this.slug,
-      required this.publishedAt,
-      required this.excerpt,
-      required this.coverImageUrl});
+  const _$NetworkNewsImpl({
+    required this.title,
+    required this.slug,
+    required this.publishedAt,
+    required this.excerpt,
+    required this.coverImageUrl,
+  });
 
   factory _$NetworkNewsImpl.fromJson(Map<String, dynamic> json) =>
       _$$NetworkNewsImplFromJson(json);
@@ -202,7 +214,13 @@ class _$NetworkNewsImpl implements _NetworkNews {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-      runtimeType, title, slug, publishedAt, excerpt, coverImageUrl);
+    runtimeType,
+    title,
+    slug,
+    publishedAt,
+    excerpt,
+    coverImageUrl,
+  );
 
   /// Create a copy of NetworkNews
   /// with the given fields replaced by the non-null parameter values.
@@ -214,19 +232,18 @@ class _$NetworkNewsImpl implements _NetworkNews {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NetworkNewsImplToJson(
-      this,
-    );
+    return _$$NetworkNewsImplToJson(this);
   }
 }
 
 abstract class _NetworkNews implements NetworkNews {
-  const factory _NetworkNews(
-      {required final String title,
-      required final String slug,
-      required final DateTime publishedAt,
-      required final String excerpt,
-      required final String? coverImageUrl}) = _$NetworkNewsImpl;
+  const factory _NetworkNews({
+    required final String title,
+    required final String slug,
+    required final DateTime publishedAt,
+    required final String excerpt,
+    required final String? coverImageUrl,
+  }) = _$NetworkNewsImpl;
 
   factory _NetworkNews.fromJson(Map<String, dynamic> json) =
       _$NetworkNewsImpl.fromJson;
