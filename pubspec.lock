@@ -242,10 +242,10 @@ packages:
     dependency: transitive
     description:
       name: conventional_commit
-      sha256: dec15ad1118f029c618651a4359eb9135d8b88f761aa24e4016d061cd45948f2
+      sha256: c40b1b449ce2a63fa2ce852f35e3890b1e182f5951819934c0e4a66254bc0dc3
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.0+1"
+    version: "0.6.1+1"
   convert:
     dependency: transitive
     description:
@@ -974,10 +974,10 @@ packages:
     dependency: "direct dev"
     description:
       name: melos
-      sha256: "4b311fe425a1acf7ae59903a2a71c71307d98b045590ca9221d6fa183565cbda"
+      sha256: "51e7902a164d7563cf1b1de04272eb4348a551c1e7885875353e82e8928c90e0"
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.1"
+    version: "7.0.0-dev.9"
   meta:
     dependency: "direct overridden"
     description:
@@ -1206,10 +1206,10 @@ packages:
     dependency: transitive
     description:
       name: pub_updater
-      sha256: "54e8dc865349059ebe7f163d6acce7c89eb958b8047e6d6e80ce93b13d7c9e60"
+      sha256: "739a0161d73a6974c0675b864fb0cf5147305f7b077b7f03a58fa7a9ab3e7e7d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.0"
+    version: "0.5.0"
   pubspec_parse:
     dependency: transitive
     description:
