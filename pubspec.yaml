@@ -2,7 +2,7 @@
 name: tobe
 
 environment:
-  sdk: 3.6.1
+  sdk: ^3.8.0
 
 workspace:
   - app/backend
@@ -33,12 +33,12 @@ workspace:
 
 dev_dependencies:
   melos: 6.3.1
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0
 
 dependency_overrides:
   collection: 1.19.1
   file: 7.0.0
-  intl: 0.20.1
+  intl: 0.20.2
   meta: 1.15.0
   test_api: 0.7.4
   web: 0.4.2

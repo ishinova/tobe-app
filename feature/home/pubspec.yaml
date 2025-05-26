@@ -3,8 +3,8 @@ description: "This package provides home features."
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
-  flutter: 3.27.2
+  sdk: ^3.8.0
+  flutter: ^3.32.0
 
 resolution: workspace
 
@@ -20,12 +20,12 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   hooks_riverpod: 2.6.1
-  intl: 0.20.1
+  intl: 0.20.2
 
 dev_dependencies:
   core_testing: any
   flutter_test:
     sdk: flutter
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0
 
 flutter:

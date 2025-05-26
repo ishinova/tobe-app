@@ -3,7 +3,7 @@ description: This package provides convenience functions and other functions com
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: ^3.8.0
 
 resolution: workspace
 
@@ -15,4 +15,4 @@ dependencies:
 
 dev_dependencies:
   test: 1.25.14
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0

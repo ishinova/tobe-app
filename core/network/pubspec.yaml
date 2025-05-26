@@ -3,7 +3,7 @@ description: This package provides network operations.
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: ^3.8.0
 
 resolution: workspace
 
@@ -23,4 +23,4 @@ dev_dependencies:
   freezed: 2.5.7
   retrofit_generator: 9.1.7
   riverpod_generator: 2.6.3
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0

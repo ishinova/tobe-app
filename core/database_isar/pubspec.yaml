@@ -3,7 +3,7 @@ description: This package provides local database operations using Isar.
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: ^3.8.0
 
 resolution: workspace
 
@@ -22,4 +22,4 @@ dev_dependencies:
   core_testing: any
   riverpod_generator: 2.6.3
   test: 1.25.14
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0

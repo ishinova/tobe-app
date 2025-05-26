@@ -3,7 +3,7 @@ description: This package provides functions for analysis.
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
+  sdk: ^3.8.0
 
 resolution: workspace
 
@@ -15,4 +15,4 @@ dependencies:
 dev_dependencies:
   build_runner: 2.4.14
   riverpod_generator: 2.6.3
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0

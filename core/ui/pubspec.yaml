@@ -3,8 +3,8 @@ description: This package provides a UI that depends on the model class and is u
 publish_to: "none"
 
 environment:
-  sdk: 3.6.1
-  flutter: 3.27.2
+  sdk: ^3.8.0
+  flutter: ^3.32.0
 
 resolution: workspace
 
@@ -19,7 +19,7 @@ dependencies:
     sdk: flutter
   flutter_riverpod: 2.6.1
   freezed_annotation: 2.4.4
-  intl: 0.20.1
+  intl: 0.20.2
   riverpod: 2.6.1
   riverpod_annotation: 2.6.1
 
@@ -30,6 +30,6 @@ dev_dependencies:
     sdk: flutter
   freezed: 2.5.7
   riverpod_generator: 2.6.3
-  yumemi_lints: 2.2.0
+  yumemi_lints: 4.0.0
 
 flutter:
