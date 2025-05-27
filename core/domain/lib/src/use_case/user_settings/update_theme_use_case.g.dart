@@ -48,21 +48,15 @@ class UpdateThemeUseCaseFamily extends Family<Raw<Future<void>>> {
   /// テーマ設定を更新する ユースケース
   ///
   /// Copied from [updateThemeUseCase].
-  UpdateThemeUseCaseProvider call({
-    required Theme theme,
-  }) {
-    return UpdateThemeUseCaseProvider(
-      theme: theme,
-    );
+  UpdateThemeUseCaseProvider call({required Theme theme}) {
+    return UpdateThemeUseCaseProvider(theme: theme);
   }
 
   @override
   UpdateThemeUseCaseProvider getProviderOverride(
     covariant UpdateThemeUseCaseProvider provider,
   ) {
-    return call(
-      theme: provider.theme,
-    );
+    return call(theme: provider.theme);
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -88,24 +82,19 @@ class UpdateThemeUseCaseProvider
   /// テーマ設定を更新する ユースケース
   ///
   /// Copied from [updateThemeUseCase].
-  UpdateThemeUseCaseProvider({
-    required Theme theme,
-  }) : this._internal(
-          (ref) => updateThemeUseCase(
-            ref as UpdateThemeUseCaseRef,
-            theme: theme,
-          ),
-          from: updateThemeUseCaseProvider,
-          name: r'updateThemeUseCaseProvider',
-          debugGetCreateSourceHash:
-              const bool.fromEnvironment('dart.vm.product')
-                  ? null
-                  : _$updateThemeUseCaseHash,
-          dependencies: UpdateThemeUseCaseFamily._dependencies,
-          allTransitiveDependencies:
-              UpdateThemeUseCaseFamily._allTransitiveDependencies,
-          theme: theme,
-        );
+  UpdateThemeUseCaseProvider({required Theme theme})
+    : this._internal(
+        (ref) => updateThemeUseCase(ref as UpdateThemeUseCaseRef, theme: theme),
+        from: updateThemeUseCaseProvider,
+        name: r'updateThemeUseCaseProvider',
+        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+            ? null
+            : _$updateThemeUseCaseHash,
+        dependencies: UpdateThemeUseCaseFamily._dependencies,
+        allTransitiveDependencies:
+            UpdateThemeUseCaseFamily._allTransitiveDependencies,
+        theme: theme,
+      );
 
   UpdateThemeUseCaseProvider._internal(
     super._createNotifier, {
@@ -171,5 +160,6 @@ class _UpdateThemeUseCaseProviderElement
   @override
   Theme get theme => (origin as UpdateThemeUseCaseProvider).theme;
 }
+
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

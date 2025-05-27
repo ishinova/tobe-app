@@ -40,9 +40,9 @@ final class DriftQuestDao implements QuestDao {
     if (limit != null) {
       query.limit(limit, offset: offset);
     }
-    return query
-        .watch()
-        .map((entities) => entities.map((e) => e.toModel()).toList());
+    return query.watch().map(
+      (entities) => entities.map((e) => e.toModel()).toList(),
+    );
   }
 
   @override
@@ -63,18 +63,19 @@ final class DriftQuestDao implements QuestDao {
   @override
   Future<void> merges(
     List<
-            ({
-              QuestId id,
-              String title,
-              String description,
-              DateTime? begunAt,
-              DateTime? endedAt,
-              String? categoryId,
-              String status,
-              String? coverImageUrl,
-              String note,
-            })>
-        quests,
+      ({
+        QuestId id,
+        String title,
+        String description,
+        DateTime? begunAt,
+        DateTime? endedAt,
+        String? categoryId,
+        String status,
+        String? coverImageUrl,
+        String note,
+      })
+    >
+    quests,
   ) async {
     await _database.batch((batch) {
       batch.insertAllOnConflictUpdate(

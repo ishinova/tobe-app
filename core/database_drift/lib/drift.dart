@@ -5,9 +5,8 @@ import 'package:riverpod/riverpod.dart';
 export 'src/drift_database.dart';
 
 /// Drift Database
-List<Override> driftDatabaseProviders({
-  required AppDatabase database,
-}) => <Override>[
+List<Override> driftDatabaseProviders({required AppDatabase database}) =>
+    <Override>[
       appDatabaseProvider.overrideWithValue(database),
       driftQuestDaoProvider,
     ];
