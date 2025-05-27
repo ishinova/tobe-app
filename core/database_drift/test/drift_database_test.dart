@@ -46,7 +46,7 @@ void main() {
     });
 
     test('should stream quests', () async {
-      final quest = Quest(
+      const quest = Quest(
         id: 'stream-test',
         title: 'Stream Test',
         description: 'Stream Description',
