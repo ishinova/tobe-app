@@ -4,3 +4,39 @@ flutter = "3.32.0-stable"
 java = "17.0.2"
 node = "22.16.0"
 ruby = "3.4.4"
+
+[tasks.clean-setup-mobile-ios]
+description = "app/mobile/ios の環境をクリーンアップして再セットアップする"
+dir = "app/mobile/ios"
+run = [
+    'flutter clean',
+    'flutter pub get',
+    'pod repo update',
+    'pod update',
+    'pod install'
+]
+
+[tasks.clean-setup-catalog-macos]
+description = "app/catalog/macos の環境をクリーンアップして再セットアップする"
+dir = "app/catalog/macos"
+run = [
+    'flutter clean',
+    'flutter pub get',
+    'pod repo update',
+    'pod update',
+    'pod install'
+]
+
+[tasks.clean-setup-ios-macos]
+description = "iOS と macOS の環境を全てクリーンアップして再セットアップする"
+depends = ["clean-setup-mobile-ios", "clean-setup-catalog-macos"]
+
+[tasks.reset-pods]
+description = "Rubyのgem環境を完全にリセットし、CocoaPodsを再インストールする（iOS/macOS開発環境のトラブルシューティング用）"
+confirm = "~/.gem ディレクトリを削除し、gem環境を再構築します。よろしいですか？"
+run = [
+    'rm -rf ~/.gem',
+    'gem update --system',
+    'gem install cocoapods',
+    'gem update'
+]

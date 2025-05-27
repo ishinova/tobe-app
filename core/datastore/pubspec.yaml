@@ -3,7 +3,7 @@ description: This package provides local preferences operations.
 publish_to: "none"
 
 environment:
-  sdk: ^3.8.0
+  sdk: 3.8.0
 
 resolution: workspace
 
