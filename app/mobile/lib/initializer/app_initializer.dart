@@ -7,14 +7,14 @@ import 'package:app_mobile/initializer/database_initializer.dart';
 import 'package:app_mobile/initializer/datastore_initializer.dart';
 import 'package:app_mobile/initializer/firebase_initializer.dart';
 import 'package:app_mobile/initializer/logger_initializer.dart';
+import 'package:core_database_drift/drift.dart';
 import 'package:core_model/config.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
-import 'package:isar/isar.dart';
 
 typedef InitializedValues = ({
   AppConfig appConfig,
-  Isar isar,
+  AppDatabase database,
   PreferencesDataStore dataStore,
   FirebaseAnalytics firebaseAnalytics,
   FirebaseAuthenticator firebaseAuthenticator,
@@ -27,7 +27,7 @@ Future<InitializedValues> initializeApp() async {
   final appConfig = await initializeAppConfig();
 
   final [
-    isar as Isar,
+    database as AppDatabase,
     dataStore as PreferencesDataStore,
     firebase
         as ({
@@ -46,7 +46,7 @@ Future<InitializedValues> initializeApp() async {
 
   return (
     appConfig: appConfig,
-    isar: isar,
+    database: database,
     dataStore: dataStore,
     firebaseAnalytics: firebaseAnalytics,
     firebaseAuthenticator: firebaseAuthenticator,

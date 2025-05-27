@@ -14,7 +14,7 @@ workspace:
   - core/common
   - core/data
   - core/database
-  - core/database_isar
+  - core/database_drift
   - core/datastore
   - core/designsystem
   - core/domain

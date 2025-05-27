@@ -13,7 +13,7 @@ dependencies:
   core_analytics_firebase: any
   core_authenticator: any
   core_common: any
-  core_database_isar: any
+  core_database_drift: any
   core_datastore: any
   core_designsystem: any
   core_domain: any
@@ -42,12 +42,6 @@ dependencies:
   go_router: 14.6.3
   hooks_riverpod: 2.6.1
   intl: 0.20.2
-  isar:
-    hosted: https://pub.isar-community.dev/
-    version: 4.0.3
-  isar_flutter_libs:
-    hosted: https://pub.isar-community.dev/
-    version: 4.0.3
   package_info_plus: 8.1.2
   path_provider: 2.1.5
   riverpod_annotation: 2.6.1
