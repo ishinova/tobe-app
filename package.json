@@ -9,7 +9,8 @@
   },
   "type": "module",
   "scripts": {
-    "clean": "git clean -xdf node_modules"
+    "clean": "git clean -xdf node_modules",
+    "scaffdog": "scaffdog generate"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -21,7 +22,7 @@
     "graphqurl": "2.0.0",
     "js-yaml": "4.1.0",
     "lefthook": "1.11.12",
-    "plop": "4.0.1",
+    "scaffdog": "^4.1.0",
     "typescript": "5.8.3"
   }
 }
