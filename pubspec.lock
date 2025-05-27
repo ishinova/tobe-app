@@ -358,6 +358,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  drift:
+    dependency: transitive
+    description:
+      name: drift
+      sha256: c2d073d35ad441730812f4ea05b5dd031fb81c5f9786a4f5fb77ecd6307b6f74
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.22.1"
+  drift_dev:
+    dependency: transitive
+    description:
+      name: drift_dev
+      sha256: f4ab5d6976b1e31551ceb82ff597a505bda7818ff4f7be08a1da9d55eb6e730c
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.22.1"
   dynamic_color:
     dependency: transitive
     description:
@@ -871,14 +887,6 @@ packages:
     description:
       name: isar
       sha256: e987032e5d007a03ba4415cbf4d47add17b57ac664db8705db90fbfeb6a16737
-      url: "https://pub.isar-community.dev"
-    source: hosted
-    version: "4.0.3"
-  isar_flutter_libs:
-    dependency: transitive
-    description:
-      name: isar_flutter_libs
-      sha256: a6b86d8618fe2d7d0e2ac6aa7a7f21c0c8ae912ccbef94a45d9f6e1e519ef610
       url: "https://pub.isar-community.dev"
     source: hosted
     version: "4.0.3"
@@ -1471,6 +1479,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.0"
+  sqlite3:
+    dependency: transitive
+    description:
+      name: sqlite3
+      sha256: c0503c69b44d5714e6abbf4c1f51a3c3cc42b75ce785f44404765e4635481d38
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.7.6"
+  sqlite3_flutter_libs:
+    dependency: transitive
+    description:
+      name: sqlite3_flutter_libs
+      sha256: "636b0fe8a2de894e5455572f6cbbc458f4ffecfe9f860b79439e27041ea4f0b9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.27"
+  sqlparser:
+    dependency: transitive
+    description:
+      name: sqlparser
+      sha256: "4cad4b2c5f63dc9ea1a8dcffb58cf762322bea5dd8836870164a65e913bdae41"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.40.0"
   stack_trace:
     dependency: transitive
     description:
