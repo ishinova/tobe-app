@@ -15,9 +15,8 @@ String _$dataStoreHash() => r'464523b7a4205b8ddbf6653d4b6392fbfe393463';
 final dataStoreProvider = Provider<DataStore>.internal(
   dataStore,
   name: r'dataStoreProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$dataStoreHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$dataStoreHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

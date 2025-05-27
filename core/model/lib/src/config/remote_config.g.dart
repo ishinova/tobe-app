@@ -13,9 +13,8 @@ String _$remoteConfigHash() => r'ff9193125ebcbb6296a7a1fb948365491e052d6c';
 final remoteConfigProvider = Provider<RemoteConfig>.internal(
   remoteConfig,
   name: r'remoteConfigProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$remoteConfigHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$remoteConfigHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

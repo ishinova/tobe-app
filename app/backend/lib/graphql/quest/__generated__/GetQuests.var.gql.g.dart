@@ -17,17 +17,12 @@ class _$GGetQuestsVarsSerializer
   final String wireName = 'GGetQuestsVars';
 
   @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GGetQuestsVars object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+  Iterable<Object?> serialize(Serializers serializers, GGetQuestsVars object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'userId',
-      serializers.serialize(
-        object.userId,
-        specifiedType: const FullType(String),
-      ),
+      serializers.serialize(object.userId,
+          specifiedType: const FullType(String)),
     ];
 
     return result;
@@ -35,10 +30,8 @@ class _$GGetQuestsVarsSerializer
 
   @override
   GGetQuestsVars deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = new GGetQuestsVarsBuilder();
 
     final iterator = serialized.iterator;
@@ -48,12 +41,8 @@ class _$GGetQuestsVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'userId':
-          result.userId =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )!
-                  as String;
+          result.userId = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
           break;
       }
     }
@@ -97,9 +86,9 @@ class _$GGetQuestsVars extends GGetQuestsVars {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-      r'GGetQuestsVars',
-    )..add('userId', userId)).toString();
+    return (newBuiltValueToStringHelper(r'GGetQuestsVars')
+          ..add('userId', userId))
+        .toString();
   }
 }
 
@@ -137,14 +126,10 @@ class GGetQuestsVarsBuilder
   GGetQuestsVars build() => _build();
 
   _$GGetQuestsVars _build() {
-    final _$result =
-        _$v ??
+    final _$result = _$v ??
         new _$GGetQuestsVars._(
           userId: BuiltValueNullFieldError.checkNotNull(
-            userId,
-            r'GGetQuestsVars',
-            'userId',
-          ),
+              userId, r'GGetQuestsVars', 'userId'),
         );
     replace(_$result);
     return _$result;

@@ -15,9 +15,8 @@ String _$syncUseCaseHash() => r'3c36d8cc455234c7f69400d816fd35e87fc5ed15';
 final syncUseCaseProvider = AutoDisposeFutureProvider<void>.internal(
   syncUseCase,
   name: r'syncUseCaseProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$syncUseCaseHash,
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$syncUseCaseHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

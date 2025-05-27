@@ -8,7 +8,7 @@ part 'create_main_quest_request.g.dart';
 ///
 /// {@category Model}
 @freezed
-class CreateMainQuestRequest with _$CreateMainQuestRequest {
+abstract class CreateMainQuestRequest with _$CreateMainQuestRequest {
   const factory CreateMainQuestRequest({
     required String userId,
     required String title,

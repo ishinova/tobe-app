@@ -8,6 +8,6 @@ typedef UserId = String;
 ///
 /// {@category Model}
 @freezed
-class User with _$User {
+abstract class User with _$User {
   const factory User({required UserId id, required String email}) = _User;
 }

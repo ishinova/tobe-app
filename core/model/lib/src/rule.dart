@@ -9,7 +9,7 @@ extension type RuleVersion(int value) implements int {}
 ///
 /// {@category Model}
 @freezed
-class Rule with _$Rule {
+abstract class Rule with _$Rule {
   const factory Rule({required RuleVersion version, required String content}) =
       _Rule;
 }

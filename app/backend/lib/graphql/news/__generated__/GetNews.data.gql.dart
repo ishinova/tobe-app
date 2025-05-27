@@ -24,21 +24,25 @@ abstract class GGetNewsData
   BuiltList<GGetNewsData_news> get news;
   static Serializer<GGetNewsData> get serializer => _$gGetNewsDataSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GGetNewsData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GGetNewsData.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GGetNewsData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GGetNewsData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GGetNewsData.serializer,
+        json,
+      );
 }
 
 abstract class GGetNewsData_news
     implements Built<GGetNewsData_news, GGetNewsData_newsBuilder> {
   GGetNewsData_news._();
 
-  factory GGetNewsData_news([
-    void Function(GGetNewsData_newsBuilder b) updates,
-  ]) = _$GGetNewsData_news;
+  factory GGetNewsData_news(
+          [void Function(GGetNewsData_newsBuilder b) updates]) =
+      _$GGetNewsData_news;
 
   static void _initializeBuilder(GGetNewsData_newsBuilder b) =>
       b..G__typename = 'News';
@@ -53,10 +57,14 @@ abstract class GGetNewsData_news
   static Serializer<GGetNewsData_news> get serializer =>
       _$gGetNewsDataNewsSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GGetNewsData_news.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GGetNewsData_news.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GGetNewsData_news? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GGetNewsData_news.serializer, json);
+      _i1.serializers.deserializeWith(
+        GGetNewsData_news.serializer,
+        json,
+      );
 }

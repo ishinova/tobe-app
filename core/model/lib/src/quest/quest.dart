@@ -9,7 +9,7 @@ typedef QuestId = String;
 ///
 /// {@category Model}
 @freezed
-class Quest with _$Quest {
+abstract class Quest with _$Quest {
   const factory Quest({
     required QuestId id,
     required String title,

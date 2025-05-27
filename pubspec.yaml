@@ -36,6 +36,7 @@ dev_dependencies:
   yumemi_lints: 4.0.0
 
 dependency_overrides:
+  analyzer: 6.10.0
   collection: 1.19.1
   file: 7.0.0
   intl: 0.20.2

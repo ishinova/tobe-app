@@ -48,15 +48,21 @@ class FeedStreamByIdUseCaseFamily extends Family<AsyncValue<Feed?>> {
   /// 該当のお知らせを取得する ユースケース
   ///
   /// Copied from [feedStreamByIdUseCase].
-  FeedStreamByIdUseCaseProvider call({required String id}) {
-    return FeedStreamByIdUseCaseProvider(id: id);
+  FeedStreamByIdUseCaseProvider call({
+    required String id,
+  }) {
+    return FeedStreamByIdUseCaseProvider(
+      id: id,
+    );
   }
 
   @override
   FeedStreamByIdUseCaseProvider getProviderOverride(
     covariant FeedStreamByIdUseCaseProvider provider,
   ) {
-    return call(id: provider.id);
+    return call(
+      id: provider.id,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -81,19 +87,24 @@ class FeedStreamByIdUseCaseProvider extends AutoDisposeStreamProvider<Feed?> {
   /// 該当のお知らせを取得する ユースケース
   ///
   /// Copied from [feedStreamByIdUseCase].
-  FeedStreamByIdUseCaseProvider({required String id})
-    : this._internal(
-        (ref) => feedStreamByIdUseCase(ref as FeedStreamByIdUseCaseRef, id: id),
-        from: feedStreamByIdUseCaseProvider,
-        name: r'feedStreamByIdUseCaseProvider',
-        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-            ? null
-            : _$feedStreamByIdUseCaseHash,
-        dependencies: FeedStreamByIdUseCaseFamily._dependencies,
-        allTransitiveDependencies:
-            FeedStreamByIdUseCaseFamily._allTransitiveDependencies,
-        id: id,
-      );
+  FeedStreamByIdUseCaseProvider({
+    required String id,
+  }) : this._internal(
+          (ref) => feedStreamByIdUseCase(
+            ref as FeedStreamByIdUseCaseRef,
+            id: id,
+          ),
+          from: feedStreamByIdUseCaseProvider,
+          name: r'feedStreamByIdUseCaseProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$feedStreamByIdUseCaseHash,
+          dependencies: FeedStreamByIdUseCaseFamily._dependencies,
+          allTransitiveDependencies:
+              FeedStreamByIdUseCaseFamily._allTransitiveDependencies,
+          id: id,
+        );
 
   FeedStreamByIdUseCaseProvider._internal(
     super._createNotifier, {
@@ -159,6 +170,5 @@ class _FeedStreamByIdUseCaseProviderElement
   @override
   String get id => (origin as FeedStreamByIdUseCaseProvider).id;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

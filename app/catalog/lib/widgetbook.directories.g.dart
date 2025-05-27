@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_import, prefer_relative_imports, directives_ordering
@@ -53,7 +54,7 @@ final directories = <_i1.WidgetbookNode>[
             ),
           ),
         ],
-      ),
+      )
     ],
   ),
   _i1.WidgetbookCategory(
@@ -68,7 +69,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'AuthScreen',
               builder: _i5.authScreenUseCase,
             ),
-          ),
+          )
         ],
       ),
       _i1.WidgetbookFolder(
@@ -80,7 +81,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'HomeScreen',
               builder: _i6.homeScreenUseCase,
             ),
-          ),
+          )
         ],
       ),
       _i1.WidgetbookFolder(
@@ -92,7 +93,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'SettingsScreen',
               builder: _i7.settingsScreenUseCase,
             ),
-          ),
+          )
         ],
       ),
       _i1.WidgetbookFolder(
@@ -104,7 +105,7 @@ final directories = <_i1.WidgetbookNode>[
               name: 'OnboardingScreen',
               builder: _i8.onboardingScreenUseCase,
             ),
-          ),
+          )
         ],
       ),
       _i1.WidgetbookFolder(
@@ -147,9 +148,9 @@ final directories = <_i1.WidgetbookNode>[
               name: 'QuestListTile',
               builder: _i12.tobeScaffoldUseCase,
             ),
-          ),
+          )
         ],
-      ),
+      )
     ],
   ),
 ];

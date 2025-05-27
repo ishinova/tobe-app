@@ -6,7 +6,7 @@ part 'app_version.freezed.dart';
 ///
 /// {@category Model}
 @freezed
-class AppVersion with _$AppVersion {
+abstract class AppVersion with _$AppVersion {
   const factory AppVersion({
     required int major,
     required int minor,

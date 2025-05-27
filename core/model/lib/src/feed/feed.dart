@@ -8,7 +8,7 @@ typedef FeedId = String;
 ///
 /// {@category Model}
 @freezed
-class Feed with _$Feed {
+abstract class Feed with _$Feed {
   const factory Feed({
     required FeedId id,
     required String name,

@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,57 +10,80 @@ part of 'quest.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
 
 /// @nodoc
 mixin _$Quest {
-  String get id => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  DateTime? get begunAt => throw _privateConstructorUsedError;
-  DateTime? get endedAt => throw _privateConstructorUsedError;
-  String? get categoryId => throw _privateConstructorUsedError;
-  QuestStatus get status => throw _privateConstructorUsedError;
-  String? get coverImageUrl => throw _privateConstructorUsedError;
-  String get note => throw _privateConstructorUsedError;
+  QuestId get id;
+  String get title;
+  String get description;
+  DateTime? get begunAt;
+  DateTime? get endedAt;
+  String? get categoryId;
+  QuestStatus get status;
+  String? get coverImageUrl;
+  String get note;
 
   /// Create a copy of Quest
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $QuestCopyWith<Quest> get copyWith => throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $QuestCopyWith<Quest> get copyWith =>
+      _$QuestCopyWithImpl<Quest>(this as Quest, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is Quest &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.begunAt, begunAt) || other.begunAt == begunAt) &&
+            (identical(other.endedAt, endedAt) || other.endedAt == endedAt) &&
+            (identical(other.categoryId, categoryId) ||
+                other.categoryId == categoryId) &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.coverImageUrl, coverImageUrl) ||
+                other.coverImageUrl == coverImageUrl) &&
+            (identical(other.note, note) || other.note == note));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id, title, description, begunAt,
+      endedAt, categoryId, status, coverImageUrl, note);
+
+  @override
+  String toString() {
+    return 'Quest(id: $id, title: $title, description: $description, begunAt: $begunAt, endedAt: $endedAt, categoryId: $categoryId, status: $status, coverImageUrl: $coverImageUrl, note: $note)';
+  }
 }
 
 /// @nodoc
-abstract class $QuestCopyWith<$Res> {
-  factory $QuestCopyWith(Quest value, $Res Function(Quest) then) =
-      _$QuestCopyWithImpl<$Res, Quest>;
+abstract mixin class $QuestCopyWith<$Res> {
+  factory $QuestCopyWith(Quest value, $Res Function(Quest) _then) =
+      _$QuestCopyWithImpl;
   @useResult
-  $Res call({
-    String id,
-    String title,
-    String description,
-    DateTime? begunAt,
-    DateTime? endedAt,
-    String? categoryId,
-    QuestStatus status,
-    String? coverImageUrl,
-    String note,
-  });
+  $Res call(
+      {QuestId id,
+      String title,
+      String description,
+      DateTime? begunAt,
+      DateTime? endedAt,
+      String? categoryId,
+      QuestStatus status,
+      String? coverImageUrl,
+      String note});
 }
 
 /// @nodoc
-class _$QuestCopyWithImpl<$Res, $Val extends Quest>
-    implements $QuestCopyWith<$Res> {
-  _$QuestCopyWithImpl(this._value, this._then);
+class _$QuestCopyWithImpl<$Res> implements $QuestCopyWith<$Res> {
+  _$QuestCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Quest _self;
+  final $Res Function(Quest) _then;
 
   /// Create a copy of Quest
   /// with the given fields replaced by the non-null parameter values.
@@ -76,155 +100,63 @@ class _$QuestCopyWithImpl<$Res, $Val extends Quest>
     Object? coverImageUrl = freezed,
     Object? note = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id: null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                      as String,
-            title: null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                      as String,
-            description: null == description
-                ? _value.description
-                : description // ignore: cast_nullable_to_non_nullable
-                      as String,
-            begunAt: freezed == begunAt
-                ? _value.begunAt
-                : begunAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime?,
-            endedAt: freezed == endedAt
-                ? _value.endedAt
-                : endedAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime?,
-            categoryId: freezed == categoryId
-                ? _value.categoryId
-                : categoryId // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            status: null == status
-                ? _value.status
-                : status // ignore: cast_nullable_to_non_nullable
-                      as QuestStatus,
-            coverImageUrl: freezed == coverImageUrl
-                ? _value.coverImageUrl
-                : coverImageUrl // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            note: null == note
-                ? _value.note
-                : note // ignore: cast_nullable_to_non_nullable
-                      as String,
-          )
-          as $Val,
-    );
-  }
-}
-
-/// @nodoc
-abstract class _$$QuestImplCopyWith<$Res> implements $QuestCopyWith<$Res> {
-  factory _$$QuestImplCopyWith(
-    _$QuestImpl value,
-    $Res Function(_$QuestImpl) then,
-  ) = __$$QuestImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({
-    String id,
-    String title,
-    String description,
-    DateTime? begunAt,
-    DateTime? endedAt,
-    String? categoryId,
-    QuestStatus status,
-    String? coverImageUrl,
-    String note,
-  });
-}
-
-/// @nodoc
-class __$$QuestImplCopyWithImpl<$Res>
-    extends _$QuestCopyWithImpl<$Res, _$QuestImpl>
-    implements _$$QuestImplCopyWith<$Res> {
-  __$$QuestImplCopyWithImpl(
-    _$QuestImpl _value,
-    $Res Function(_$QuestImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of Quest
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? title = null,
-    Object? description = null,
-    Object? begunAt = freezed,
-    Object? endedAt = freezed,
-    Object? categoryId = freezed,
-    Object? status = null,
-    Object? coverImageUrl = freezed,
-    Object? note = null,
-  }) {
-    return _then(
-      _$QuestImpl(
-        id: null == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                  as String,
-        title: null == title
-            ? _value.title
-            : title // ignore: cast_nullable_to_non_nullable
-                  as String,
-        description: null == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                  as String,
-        begunAt: freezed == begunAt
-            ? _value.begunAt
-            : begunAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime?,
-        endedAt: freezed == endedAt
-            ? _value.endedAt
-            : endedAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime?,
-        categoryId: freezed == categoryId
-            ? _value.categoryId
-            : categoryId // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        status: null == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                  as QuestStatus,
-        coverImageUrl: freezed == coverImageUrl
-            ? _value.coverImageUrl
-            : coverImageUrl // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        note: null == note
-            ? _value.note
-            : note // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
+    return _then(_self.copyWith(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as QuestId,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      begunAt: freezed == begunAt
+          ? _self.begunAt
+          : begunAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      endedAt: freezed == endedAt
+          ? _self.endedAt
+          : endedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      categoryId: freezed == categoryId
+          ? _self.categoryId
+          : categoryId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: null == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as QuestStatus,
+      coverImageUrl: freezed == coverImageUrl
+          ? _self.coverImageUrl
+          : coverImageUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      note: null == note
+          ? _self.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 
-class _$QuestImpl implements _Quest {
-  const _$QuestImpl({
-    required this.id,
-    required this.title,
-    required this.description,
-    required this.begunAt,
-    required this.endedAt,
-    required this.categoryId,
-    required this.status,
-    required this.coverImageUrl,
-    required this.note,
-  });
+class _Quest implements Quest {
+  const _Quest(
+      {required this.id,
+      required this.title,
+      required this.description,
+      required this.begunAt,
+      required this.endedAt,
+      required this.categoryId,
+      required this.status,
+      required this.coverImageUrl,
+      required this.note});
 
   @override
-  final String id;
+  final QuestId id;
   @override
   final String title;
   @override
@@ -242,16 +174,19 @@ class _$QuestImpl implements _Quest {
   @override
   final String note;
 
+  /// Create a copy of Quest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'Quest(id: $id, title: $title, description: $description, begunAt: $begunAt, endedAt: $endedAt, categoryId: $categoryId, status: $status, coverImageUrl: $coverImageUrl, note: $note)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$QuestCopyWith<_Quest> get copyWith =>
+      __$QuestCopyWithImpl<_Quest>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$QuestImpl &&
+            other is _Quest &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -267,64 +202,94 @@ class _$QuestImpl implements _Quest {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    title,
-    description,
-    begunAt,
-    endedAt,
-    categoryId,
-    status,
-    coverImageUrl,
-    note,
-  );
+  int get hashCode => Object.hash(runtimeType, id, title, description, begunAt,
+      endedAt, categoryId, status, coverImageUrl, note);
+
+  @override
+  String toString() {
+    return 'Quest(id: $id, title: $title, description: $description, begunAt: $begunAt, endedAt: $endedAt, categoryId: $categoryId, status: $status, coverImageUrl: $coverImageUrl, note: $note)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$QuestCopyWith<$Res> implements $QuestCopyWith<$Res> {
+  factory _$QuestCopyWith(_Quest value, $Res Function(_Quest) _then) =
+      __$QuestCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {QuestId id,
+      String title,
+      String description,
+      DateTime? begunAt,
+      DateTime? endedAt,
+      String? categoryId,
+      QuestStatus status,
+      String? coverImageUrl,
+      String note});
+}
+
+/// @nodoc
+class __$QuestCopyWithImpl<$Res> implements _$QuestCopyWith<$Res> {
+  __$QuestCopyWithImpl(this._self, this._then);
+
+  final _Quest _self;
+  final $Res Function(_Quest) _then;
 
   /// Create a copy of Quest
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$QuestImplCopyWith<_$QuestImpl> get copyWith =>
-      __$$QuestImplCopyWithImpl<_$QuestImpl>(this, _$identity);
+  $Res call({
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? begunAt = freezed,
+    Object? endedAt = freezed,
+    Object? categoryId = freezed,
+    Object? status = null,
+    Object? coverImageUrl = freezed,
+    Object? note = null,
+  }) {
+    return _then(_Quest(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as QuestId,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      begunAt: freezed == begunAt
+          ? _self.begunAt
+          : begunAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      endedAt: freezed == endedAt
+          ? _self.endedAt
+          : endedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      categoryId: freezed == categoryId
+          ? _self.categoryId
+          : categoryId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: null == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as QuestStatus,
+      coverImageUrl: freezed == coverImageUrl
+          ? _self.coverImageUrl
+          : coverImageUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      note: null == note
+          ? _self.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _Quest implements Quest {
-  const factory _Quest({
-    required final String id,
-    required final String title,
-    required final String description,
-    required final DateTime? begunAt,
-    required final DateTime? endedAt,
-    required final String? categoryId,
-    required final QuestStatus status,
-    required final String? coverImageUrl,
-    required final String note,
-  }) = _$QuestImpl;
-
-  @override
-  String get id;
-  @override
-  String get title;
-  @override
-  String get description;
-  @override
-  DateTime? get begunAt;
-  @override
-  DateTime? get endedAt;
-  @override
-  String? get categoryId;
-  @override
-  QuestStatus get status;
-  @override
-  String? get coverImageUrl;
-  @override
-  String get note;
-
-  /// Create a copy of Quest
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$QuestImplCopyWith<_$QuestImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

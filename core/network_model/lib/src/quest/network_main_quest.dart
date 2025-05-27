@@ -8,7 +8,7 @@ part 'network_main_quest.g.dart';
 ///
 /// {@category Model}
 @freezed
-class NetworkMainQuest with _$NetworkMainQuest {
+abstract class NetworkMainQuest with _$NetworkMainQuest {
   const factory NetworkMainQuest({
     required String id,
     required String title,

@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,120 +10,26 @@ part of 'rule.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
 
 /// @nodoc
 mixin _$Rule {
-  RuleVersion get version => throw _privateConstructorUsedError;
-  String get content => throw _privateConstructorUsedError;
+  RuleVersion get version;
+  String get content;
 
   /// Create a copy of Rule
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $RuleCopyWith<Rule> get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $RuleCopyWith<$Res> {
-  factory $RuleCopyWith(Rule value, $Res Function(Rule) then) =
-      _$RuleCopyWithImpl<$Res, Rule>;
-  @useResult
-  $Res call({RuleVersion version, String content});
-}
-
-/// @nodoc
-class _$RuleCopyWithImpl<$Res, $Val extends Rule>
-    implements $RuleCopyWith<$Res> {
-  _$RuleCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of Rule
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? version = null, Object? content = null}) {
-    return _then(
-      _value.copyWith(
-            version: null == version
-                ? _value.version
-                : version // ignore: cast_nullable_to_non_nullable
-                      as RuleVersion,
-            content: null == content
-                ? _value.content
-                : content // ignore: cast_nullable_to_non_nullable
-                      as String,
-          )
-          as $Val,
-    );
-  }
-}
-
-/// @nodoc
-abstract class _$$RuleImplCopyWith<$Res> implements $RuleCopyWith<$Res> {
-  factory _$$RuleImplCopyWith(
-    _$RuleImpl value,
-    $Res Function(_$RuleImpl) then,
-  ) = __$$RuleImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({RuleVersion version, String content});
-}
-
-/// @nodoc
-class __$$RuleImplCopyWithImpl<$Res>
-    extends _$RuleCopyWithImpl<$Res, _$RuleImpl>
-    implements _$$RuleImplCopyWith<$Res> {
-  __$$RuleImplCopyWithImpl(_$RuleImpl _value, $Res Function(_$RuleImpl) _then)
-    : super(_value, _then);
-
-  /// Create a copy of Rule
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? version = null, Object? content = null}) {
-    return _then(
-      _$RuleImpl(
-        version: null == version
-            ? _value.version
-            : version // ignore: cast_nullable_to_non_nullable
-                  as RuleVersion,
-        content: null == content
-            ? _value.content
-            : content // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
-}
-
-/// @nodoc
-
-class _$RuleImpl implements _Rule {
-  const _$RuleImpl({required this.version, required this.content});
-
-  @override
-  final RuleVersion version;
-  @override
-  final String content;
-
-  @override
-  String toString() {
-    return 'Rule(version: $version, content: $content)';
-  }
+  $RuleCopyWith<Rule> get copyWith =>
+      _$RuleCopyWithImpl<Rule>(this as Rule, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RuleImpl &&
+            other is Rule &&
             (identical(other.version, version) || other.version == version) &&
             (identical(other.content, content) || other.content == content));
   }
@@ -130,30 +37,119 @@ class _$RuleImpl implements _Rule {
   @override
   int get hashCode => Object.hash(runtimeType, version, content);
 
+  @override
+  String toString() {
+    return 'Rule(version: $version, content: $content)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $RuleCopyWith<$Res> {
+  factory $RuleCopyWith(Rule value, $Res Function(Rule) _then) =
+      _$RuleCopyWithImpl;
+  @useResult
+  $Res call({RuleVersion version, String content});
+}
+
+/// @nodoc
+class _$RuleCopyWithImpl<$Res> implements $RuleCopyWith<$Res> {
+  _$RuleCopyWithImpl(this._self, this._then);
+
+  final Rule _self;
+  final $Res Function(Rule) _then;
+
   /// Create a copy of Rule
   /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? version = null,
+    Object? content = null,
+  }) {
+    return _then(_self.copyWith(
+      version: null == version
+          ? _self.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as RuleVersion,
+      content: null == content
+          ? _self.content
+          : content // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _Rule implements Rule {
+  const _Rule({required this.version, required this.content});
+
+  @override
+  final RuleVersion version;
+  @override
+  final String content;
+
+  /// Create a copy of Rule
+  /// with the given fields replaced by the non-null parameter values.
+  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$RuleCopyWith<_Rule> get copyWith =>
+      __$RuleCopyWithImpl<_Rule>(this, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Rule &&
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.content, content) || other.content == content));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, version, content);
+
+  @override
+  String toString() {
+    return 'Rule(version: $version, content: $content)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$RuleCopyWith<$Res> implements $RuleCopyWith<$Res> {
+  factory _$RuleCopyWith(_Rule value, $Res Function(_Rule) _then) =
+      __$RuleCopyWithImpl;
+  @override
+  @useResult
+  $Res call({RuleVersion version, String content});
+}
+
+/// @nodoc
+class __$RuleCopyWithImpl<$Res> implements _$RuleCopyWith<$Res> {
+  __$RuleCopyWithImpl(this._self, this._then);
+
+  final _Rule _self;
+  final $Res Function(_Rule) _then;
+
+  /// Create a copy of Rule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$RuleImplCopyWith<_$RuleImpl> get copyWith =>
-      __$$RuleImplCopyWithImpl<_$RuleImpl>(this, _$identity);
+  $Res call({
+    Object? version = null,
+    Object? content = null,
+  }) {
+    return _then(_Rule(
+      version: null == version
+          ? _self.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as RuleVersion,
+      content: null == content
+          ? _self.content
+          : content // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
-abstract class _Rule implements Rule {
-  const factory _Rule({
-    required final RuleVersion version,
-    required final String content,
-  }) = _$RuleImpl;
-
-  @override
-  RuleVersion get version;
-  @override
-  String get content;
-
-  /// Create a copy of Rule
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$RuleImplCopyWith<_$RuleImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

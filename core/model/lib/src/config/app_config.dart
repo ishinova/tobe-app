@@ -16,7 +16,7 @@ AppConfig appConfig(Ref ref) {
 ///
 /// {@category Model}
 @freezed
-class AppConfig with _$AppConfig {
+abstract class AppConfig with _$AppConfig {
   const factory AppConfig({
     required String appName,
     required String packageName,

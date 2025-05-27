@@ -16,20 +16,15 @@ class _$GGetNewsVarsSerializer implements StructuredSerializer<GGetNewsVars> {
   final String wireName = 'GGetNewsVars';
 
   @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GGetNewsVars object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+  Iterable<Object?> serialize(Serializers serializers, GGetNewsVars object,
+      {FullType specifiedType = FullType.unspecified}) {
     return <Object?>[];
   }
 
   @override
   GGetNewsVars deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
     return new GGetNewsVarsBuilder().build();
   }
 }

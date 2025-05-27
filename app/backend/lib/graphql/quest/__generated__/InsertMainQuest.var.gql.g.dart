@@ -14,60 +14,52 @@ class _$GInsertMainQuestVarsSerializer
   @override
   final Iterable<Type> types = const [
     GInsertMainQuestVars,
-    _$GInsertMainQuestVars,
+    _$GInsertMainQuestVars
   ];
   @override
   final String wireName = 'GInsertMainQuestVars';
 
   @override
   Iterable<Object?> serialize(
-    Serializers serializers,
-    GInsertMainQuestVars object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+      Serializers serializers, GInsertMainQuestVars object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[];
     Object? value;
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     return result;
   }
 
   @override
   GInsertMainQuestVars deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = new GInsertMainQuestVarsBuilder();
 
     final iterator = serialized.iterator;
@@ -77,36 +69,20 @@ class _$GInsertMainQuestVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'userId':
-          result.userId =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.userId = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'title':
-          result.title =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.title = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'description':
-          result.description =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.description = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'note':
-          result.note =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.note = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
       }
     }
@@ -125,21 +101,18 @@ class _$GInsertMainQuestVars extends GInsertMainQuestVars {
   @override
   final String? note;
 
-  factory _$GInsertMainQuestVars([
-    void Function(GInsertMainQuestVarsBuilder)? updates,
-  ]) => (new GInsertMainQuestVarsBuilder()..update(updates))._build();
+  factory _$GInsertMainQuestVars(
+          [void Function(GInsertMainQuestVarsBuilder)? updates]) =>
+      (new GInsertMainQuestVarsBuilder()..update(updates))._build();
 
-  _$GInsertMainQuestVars._({
-    this.userId,
-    this.title,
-    this.description,
-    this.note,
-  }) : super._();
+  _$GInsertMainQuestVars._(
+      {this.userId, this.title, this.description, this.note})
+      : super._();
 
   @override
   GInsertMainQuestVars rebuild(
-    void Function(GInsertMainQuestVarsBuilder) updates,
-  ) => (toBuilder()..update(updates)).build();
+          void Function(GInsertMainQuestVarsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   GInsertMainQuestVarsBuilder toBuilder() =>
@@ -226,8 +199,7 @@ class GInsertMainQuestVarsBuilder
   GInsertMainQuestVars build() => _build();
 
   _$GInsertMainQuestVars _build() {
-    final _$result =
-        _$v ??
+    final _$result = _$v ??
         new _$GInsertMainQuestVars._(
           userId: userId,
           title: title,
