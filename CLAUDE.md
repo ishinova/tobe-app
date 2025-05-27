@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+# Individual Preferences
+- @~/.claude/ishinova-tobe-app-instructions.md
+
 ## Project Overview
 
 This is a Flutter monorepo using Melos for package management. The project follows Clean Architecture with modular feature development.
