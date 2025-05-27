@@ -13,7 +13,7 @@
         "graphqurl": "2.0.0",
         "js-yaml": "4.1.0",
         "lefthook": "1.11.12",
-        "scaffdog": "^4.1.0",
+        "scaffdog": "4.1.0",
         "typescript": "5.8.3",
       },
     },
