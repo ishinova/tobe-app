@@ -882,14 +882,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
-  isar:
-    dependency: transitive
-    description:
-      name: isar
-      sha256: e987032e5d007a03ba4415cbf4d47add17b57ac664db8705db90fbfeb6a16737
-      url: "https://pub.isar-community.dev"
-    source: hosted
-    version: "4.0.3"
   js:
     dependency: transitive
     description:
