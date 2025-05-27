@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,130 +10,26 @@ part of 'remote_config.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
 
 /// @nodoc
 mixin _$RemoteConfig {
-  UpdateVersion get updateVersion => throw _privateConstructorUsedError;
+  UpdateVersion get updateVersion;
 
   /// Create a copy of RemoteConfig
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $RemoteConfigCopyWith<RemoteConfig> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $RemoteConfigCopyWith<$Res> {
-  factory $RemoteConfigCopyWith(
-    RemoteConfig value,
-    $Res Function(RemoteConfig) then,
-  ) = _$RemoteConfigCopyWithImpl<$Res, RemoteConfig>;
-  @useResult
-  $Res call({UpdateVersion updateVersion});
-
-  $UpdateVersionCopyWith<$Res> get updateVersion;
-}
-
-/// @nodoc
-class _$RemoteConfigCopyWithImpl<$Res, $Val extends RemoteConfig>
-    implements $RemoteConfigCopyWith<$Res> {
-  _$RemoteConfigCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of RemoteConfig
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? updateVersion = null}) {
-    return _then(
-      _value.copyWith(
-            updateVersion: null == updateVersion
-                ? _value.updateVersion
-                : updateVersion // ignore: cast_nullable_to_non_nullable
-                      as UpdateVersion,
-          )
-          as $Val,
-    );
-  }
-
-  /// Create a copy of RemoteConfig
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $UpdateVersionCopyWith<$Res> get updateVersion {
-    return $UpdateVersionCopyWith<$Res>(_value.updateVersion, (value) {
-      return _then(_value.copyWith(updateVersion: value) as $Val);
-    });
-  }
-}
-
-/// @nodoc
-abstract class _$$RemoteConfigImplCopyWith<$Res>
-    implements $RemoteConfigCopyWith<$Res> {
-  factory _$$RemoteConfigImplCopyWith(
-    _$RemoteConfigImpl value,
-    $Res Function(_$RemoteConfigImpl) then,
-  ) = __$$RemoteConfigImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({UpdateVersion updateVersion});
-
-  @override
-  $UpdateVersionCopyWith<$Res> get updateVersion;
-}
-
-/// @nodoc
-class __$$RemoteConfigImplCopyWithImpl<$Res>
-    extends _$RemoteConfigCopyWithImpl<$Res, _$RemoteConfigImpl>
-    implements _$$RemoteConfigImplCopyWith<$Res> {
-  __$$RemoteConfigImplCopyWithImpl(
-    _$RemoteConfigImpl _value,
-    $Res Function(_$RemoteConfigImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of RemoteConfig
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({Object? updateVersion = null}) {
-    return _then(
-      _$RemoteConfigImpl(
-        updateVersion: null == updateVersion
-            ? _value.updateVersion
-            : updateVersion // ignore: cast_nullable_to_non_nullable
-                  as UpdateVersion,
-      ),
-    );
-  }
-}
-
-/// @nodoc
-
-class _$RemoteConfigImpl implements _RemoteConfig {
-  const _$RemoteConfigImpl({required this.updateVersion});
-
-  @override
-  final UpdateVersion updateVersion;
-
-  @override
-  String toString() {
-    return 'RemoteConfig(updateVersion: $updateVersion)';
-  }
+      _$RemoteConfigCopyWithImpl<RemoteConfig>(
+          this as RemoteConfig, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RemoteConfigImpl &&
+            other is RemoteConfig &&
             (identical(other.updateVersion, updateVersion) ||
                 other.updateVersion == updateVersion));
   }
@@ -140,26 +37,136 @@ class _$RemoteConfigImpl implements _RemoteConfig {
   @override
   int get hashCode => Object.hash(runtimeType, updateVersion);
 
+  @override
+  String toString() {
+    return 'RemoteConfig(updateVersion: $updateVersion)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $RemoteConfigCopyWith<$Res> {
+  factory $RemoteConfigCopyWith(
+          RemoteConfig value, $Res Function(RemoteConfig) _then) =
+      _$RemoteConfigCopyWithImpl;
+  @useResult
+  $Res call({UpdateVersion updateVersion});
+
+  $UpdateVersionCopyWith<$Res> get updateVersion;
+}
+
+/// @nodoc
+class _$RemoteConfigCopyWithImpl<$Res> implements $RemoteConfigCopyWith<$Res> {
+  _$RemoteConfigCopyWithImpl(this._self, this._then);
+
+  final RemoteConfig _self;
+  final $Res Function(RemoteConfig) _then;
+
   /// Create a copy of RemoteConfig
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? updateVersion = null,
+  }) {
+    return _then(_self.copyWith(
+      updateVersion: null == updateVersion
+          ? _self.updateVersion
+          : updateVersion // ignore: cast_nullable_to_non_nullable
+              as UpdateVersion,
+    ));
+  }
+
+  /// Create a copy of RemoteConfig
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$RemoteConfigImplCopyWith<_$RemoteConfigImpl> get copyWith =>
-      __$$RemoteConfigImplCopyWithImpl<_$RemoteConfigImpl>(this, _$identity);
+  $UpdateVersionCopyWith<$Res> get updateVersion {
+    return $UpdateVersionCopyWith<$Res>(_self.updateVersion, (value) {
+      return _then(_self.copyWith(updateVersion: value));
+    });
+  }
 }
 
-abstract class _RemoteConfig implements RemoteConfig {
-  const factory _RemoteConfig({required final UpdateVersion updateVersion}) =
-      _$RemoteConfigImpl;
+/// @nodoc
+
+class _RemoteConfig implements RemoteConfig {
+  const _RemoteConfig({required this.updateVersion});
 
   @override
-  UpdateVersion get updateVersion;
+  final UpdateVersion updateVersion;
 
   /// Create a copy of RemoteConfig
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$RemoteConfigImplCopyWith<_$RemoteConfigImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  _$RemoteConfigCopyWith<_RemoteConfig> get copyWith =>
+      __$RemoteConfigCopyWithImpl<_RemoteConfig>(this, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _RemoteConfig &&
+            (identical(other.updateVersion, updateVersion) ||
+                other.updateVersion == updateVersion));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, updateVersion);
+
+  @override
+  String toString() {
+    return 'RemoteConfig(updateVersion: $updateVersion)';
+  }
 }
+
+/// @nodoc
+abstract mixin class _$RemoteConfigCopyWith<$Res>
+    implements $RemoteConfigCopyWith<$Res> {
+  factory _$RemoteConfigCopyWith(
+          _RemoteConfig value, $Res Function(_RemoteConfig) _then) =
+      __$RemoteConfigCopyWithImpl;
+  @override
+  @useResult
+  $Res call({UpdateVersion updateVersion});
+
+  @override
+  $UpdateVersionCopyWith<$Res> get updateVersion;
+}
+
+/// @nodoc
+class __$RemoteConfigCopyWithImpl<$Res>
+    implements _$RemoteConfigCopyWith<$Res> {
+  __$RemoteConfigCopyWithImpl(this._self, this._then);
+
+  final _RemoteConfig _self;
+  final $Res Function(_RemoteConfig) _then;
+
+  /// Create a copy of RemoteConfig
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? updateVersion = null,
+  }) {
+    return _then(_RemoteConfig(
+      updateVersion: null == updateVersion
+          ? _self.updateVersion
+          : updateVersion // ignore: cast_nullable_to_non_nullable
+              as UpdateVersion,
+    ));
+  }
+
+  /// Create a copy of RemoteConfig
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $UpdateVersionCopyWith<$Res> get updateVersion {
+    return $UpdateVersionCopyWith<$Res>(_self.updateVersion, (value) {
+      return _then(_self.copyWith(updateVersion: value));
+    });
+  }
+}
+
+// dart format on

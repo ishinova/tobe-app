@@ -6,8 +6,7 @@ part of 'network_news.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$NetworkNewsImpl _$$NetworkNewsImplFromJson(Map<String, dynamic> json) =>
-    _$NetworkNewsImpl(
+_NetworkNews _$NetworkNewsFromJson(Map<String, dynamic> json) => _NetworkNews(
       title: json['title'] as String,
       slug: json['slug'] as String,
       publishedAt: DateTime.parse(json['publishedAt'] as String),
@@ -15,7 +14,7 @@ _$NetworkNewsImpl _$$NetworkNewsImplFromJson(Map<String, dynamic> json) =>
       coverImageUrl: json['coverImageUrl'] as String?,
     );
 
-Map<String, dynamic> _$$NetworkNewsImplToJson(_$NetworkNewsImpl instance) =>
+Map<String, dynamic> _$NetworkNewsToJson(_NetworkNews instance) =>
     <String, dynamic>{
       'title': instance.title,
       'slug': instance.slug,

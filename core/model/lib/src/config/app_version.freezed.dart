@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,149 +10,27 @@ part of 'app_version.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
 
 /// @nodoc
 mixin _$AppVersion {
-  int get major => throw _privateConstructorUsedError;
-  int get minor => throw _privateConstructorUsedError;
-  int get patch => throw _privateConstructorUsedError;
+  int get major;
+  int get minor;
+  int get patch;
 
   /// Create a copy of AppVersion
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $AppVersionCopyWith<AppVersion> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AppVersionCopyWith<$Res> {
-  factory $AppVersionCopyWith(
-    AppVersion value,
-    $Res Function(AppVersion) then,
-  ) = _$AppVersionCopyWithImpl<$Res, AppVersion>;
-  @useResult
-  $Res call({int major, int minor, int patch});
-}
-
-/// @nodoc
-class _$AppVersionCopyWithImpl<$Res, $Val extends AppVersion>
-    implements $AppVersionCopyWith<$Res> {
-  _$AppVersionCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of AppVersion
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? major = null,
-    Object? minor = null,
-    Object? patch = null,
-  }) {
-    return _then(
-      _value.copyWith(
-            major: null == major
-                ? _value.major
-                : major // ignore: cast_nullable_to_non_nullable
-                      as int,
-            minor: null == minor
-                ? _value.minor
-                : minor // ignore: cast_nullable_to_non_nullable
-                      as int,
-            patch: null == patch
-                ? _value.patch
-                : patch // ignore: cast_nullable_to_non_nullable
-                      as int,
-          )
-          as $Val,
-    );
-  }
-}
-
-/// @nodoc
-abstract class _$$AppVersionImplCopyWith<$Res>
-    implements $AppVersionCopyWith<$Res> {
-  factory _$$AppVersionImplCopyWith(
-    _$AppVersionImpl value,
-    $Res Function(_$AppVersionImpl) then,
-  ) = __$$AppVersionImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int major, int minor, int patch});
-}
-
-/// @nodoc
-class __$$AppVersionImplCopyWithImpl<$Res>
-    extends _$AppVersionCopyWithImpl<$Res, _$AppVersionImpl>
-    implements _$$AppVersionImplCopyWith<$Res> {
-  __$$AppVersionImplCopyWithImpl(
-    _$AppVersionImpl _value,
-    $Res Function(_$AppVersionImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of AppVersion
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? major = null,
-    Object? minor = null,
-    Object? patch = null,
-  }) {
-    return _then(
-      _$AppVersionImpl(
-        major: null == major
-            ? _value.major
-            : major // ignore: cast_nullable_to_non_nullable
-                  as int,
-        minor: null == minor
-            ? _value.minor
-            : minor // ignore: cast_nullable_to_non_nullable
-                  as int,
-        patch: null == patch
-            ? _value.patch
-            : patch // ignore: cast_nullable_to_non_nullable
-                  as int,
-      ),
-    );
-  }
-}
-
-/// @nodoc
-
-class _$AppVersionImpl extends _AppVersion {
-  const _$AppVersionImpl({
-    required this.major,
-    required this.minor,
-    required this.patch,
-  }) : super._();
-
-  @override
-  final int major;
-  @override
-  final int minor;
-  @override
-  final int patch;
-
-  @override
-  String toString() {
-    return 'AppVersion(major: $major, minor: $minor, patch: $patch)';
-  }
+      _$AppVersionCopyWithImpl<AppVersion>(this as AppVersion, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AppVersionImpl &&
+            other is AppVersion &&
             (identical(other.major, major) || other.major == major) &&
             (identical(other.minor, minor) || other.minor == minor) &&
             (identical(other.patch, patch) || other.patch == patch));
@@ -160,34 +39,137 @@ class _$AppVersionImpl extends _AppVersion {
   @override
   int get hashCode => Object.hash(runtimeType, major, minor, patch);
 
+  @override
+  String toString() {
+    return 'AppVersion(major: $major, minor: $minor, patch: $patch)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $AppVersionCopyWith<$Res> {
+  factory $AppVersionCopyWith(
+          AppVersion value, $Res Function(AppVersion) _then) =
+      _$AppVersionCopyWithImpl;
+  @useResult
+  $Res call({int major, int minor, int patch});
+}
+
+/// @nodoc
+class _$AppVersionCopyWithImpl<$Res> implements $AppVersionCopyWith<$Res> {
+  _$AppVersionCopyWithImpl(this._self, this._then);
+
+  final AppVersion _self;
+  final $Res Function(AppVersion) _then;
+
   /// Create a copy of AppVersion
   /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? major = null,
+    Object? minor = null,
+    Object? patch = null,
+  }) {
+    return _then(_self.copyWith(
+      major: null == major
+          ? _self.major
+          : major // ignore: cast_nullable_to_non_nullable
+              as int,
+      minor: null == minor
+          ? _self.minor
+          : minor // ignore: cast_nullable_to_non_nullable
+              as int,
+      patch: null == patch
+          ? _self.patch
+          : patch // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _AppVersion extends AppVersion {
+  const _AppVersion(
+      {required this.major, required this.minor, required this.patch})
+      : super._();
+
+  @override
+  final int major;
+  @override
+  final int minor;
+  @override
+  final int patch;
+
+  /// Create a copy of AppVersion
+  /// with the given fields replaced by the non-null parameter values.
+  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$AppVersionCopyWith<_AppVersion> get copyWith =>
+      __$AppVersionCopyWithImpl<_AppVersion>(this, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _AppVersion &&
+            (identical(other.major, major) || other.major == major) &&
+            (identical(other.minor, minor) || other.minor == minor) &&
+            (identical(other.patch, patch) || other.patch == patch));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, major, minor, patch);
+
+  @override
+  String toString() {
+    return 'AppVersion(major: $major, minor: $minor, patch: $patch)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$AppVersionCopyWith<$Res>
+    implements $AppVersionCopyWith<$Res> {
+  factory _$AppVersionCopyWith(
+          _AppVersion value, $Res Function(_AppVersion) _then) =
+      __$AppVersionCopyWithImpl;
+  @override
+  @useResult
+  $Res call({int major, int minor, int patch});
+}
+
+/// @nodoc
+class __$AppVersionCopyWithImpl<$Res> implements _$AppVersionCopyWith<$Res> {
+  __$AppVersionCopyWithImpl(this._self, this._then);
+
+  final _AppVersion _self;
+  final $Res Function(_AppVersion) _then;
+
+  /// Create a copy of AppVersion
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$AppVersionImplCopyWith<_$AppVersionImpl> get copyWith =>
-      __$$AppVersionImplCopyWithImpl<_$AppVersionImpl>(this, _$identity);
+  $Res call({
+    Object? major = null,
+    Object? minor = null,
+    Object? patch = null,
+  }) {
+    return _then(_AppVersion(
+      major: null == major
+          ? _self.major
+          : major // ignore: cast_nullable_to_non_nullable
+              as int,
+      minor: null == minor
+          ? _self.minor
+          : minor // ignore: cast_nullable_to_non_nullable
+              as int,
+      patch: null == patch
+          ? _self.patch
+          : patch // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
 }
 
-abstract class _AppVersion extends AppVersion {
-  const factory _AppVersion({
-    required final int major,
-    required final int minor,
-    required final int patch,
-  }) = _$AppVersionImpl;
-  const _AppVersion._() : super._();
-
-  @override
-  int get major;
-  @override
-  int get minor;
-  @override
-  int get patch;
-
-  /// Create a copy of AppVersion
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AppVersionImplCopyWith<_$AppVersionImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

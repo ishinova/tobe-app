@@ -48,15 +48,21 @@ class QuestStreamByIdUseCaseFamily extends Family<AsyncValue<Quest?>> {
   /// 該当のクエストを取得する ユースケース
   ///
   /// Copied from [questStreamByIdUseCase].
-  QuestStreamByIdUseCaseProvider call({required String id}) {
-    return QuestStreamByIdUseCaseProvider(id: id);
+  QuestStreamByIdUseCaseProvider call({
+    required String id,
+  }) {
+    return QuestStreamByIdUseCaseProvider(
+      id: id,
+    );
   }
 
   @override
   QuestStreamByIdUseCaseProvider getProviderOverride(
     covariant QuestStreamByIdUseCaseProvider provider,
   ) {
-    return call(id: provider.id);
+    return call(
+      id: provider.id,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -81,20 +87,24 @@ class QuestStreamByIdUseCaseProvider extends AutoDisposeStreamProvider<Quest?> {
   /// 該当のクエストを取得する ユースケース
   ///
   /// Copied from [questStreamByIdUseCase].
-  QuestStreamByIdUseCaseProvider({required String id})
-    : this._internal(
-        (ref) =>
-            questStreamByIdUseCase(ref as QuestStreamByIdUseCaseRef, id: id),
-        from: questStreamByIdUseCaseProvider,
-        name: r'questStreamByIdUseCaseProvider',
-        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-            ? null
-            : _$questStreamByIdUseCaseHash,
-        dependencies: QuestStreamByIdUseCaseFamily._dependencies,
-        allTransitiveDependencies:
-            QuestStreamByIdUseCaseFamily._allTransitiveDependencies,
-        id: id,
-      );
+  QuestStreamByIdUseCaseProvider({
+    required String id,
+  }) : this._internal(
+          (ref) => questStreamByIdUseCase(
+            ref as QuestStreamByIdUseCaseRef,
+            id: id,
+          ),
+          from: questStreamByIdUseCaseProvider,
+          name: r'questStreamByIdUseCaseProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$questStreamByIdUseCaseHash,
+          dependencies: QuestStreamByIdUseCaseFamily._dependencies,
+          allTransitiveDependencies:
+              QuestStreamByIdUseCaseFamily._allTransitiveDependencies,
+          id: id,
+        );
 
   QuestStreamByIdUseCaseProvider._internal(
     super._createNotifier, {
@@ -160,6 +170,5 @@ class _QuestStreamByIdUseCaseProviderElement
   @override
   String get id => (origin as QuestStreamByIdUseCaseProvider).id;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

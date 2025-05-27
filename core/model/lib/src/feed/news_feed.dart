@@ -8,7 +8,7 @@ typedef NewsFeedSlug = String;
 ///
 /// {@category Model}
 @freezed
-class NewsFeed with _$NewsFeed {
+abstract class NewsFeed with _$NewsFeed {
   const factory NewsFeed({
     required String title,
     required NewsFeedSlug slug,

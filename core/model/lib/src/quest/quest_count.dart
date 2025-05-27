@@ -6,7 +6,7 @@ part 'quest_count.freezed.dart';
 ///
 /// {@category Model}
 @freezed
-class QuestCount with _$QuestCount {
+abstract class QuestCount with _$QuestCount {
   const factory QuestCount({
     required int backlog,
     required int ready,

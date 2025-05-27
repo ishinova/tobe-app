@@ -27,12 +27,16 @@ abstract class GGetQuestsData
   static Serializer<GGetQuestsData> get serializer =>
       _$gGetQuestsDataSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GGetQuestsData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GGetQuestsData.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GGetQuestsData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GGetQuestsData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GGetQuestsData.serializer,
+        json,
+      );
 }
 
 abstract class GGetQuestsData_mainQuests
@@ -40,9 +44,9 @@ abstract class GGetQuestsData_mainQuests
         Built<GGetQuestsData_mainQuests, GGetQuestsData_mainQuestsBuilder> {
   GGetQuestsData_mainQuests._();
 
-  factory GGetQuestsData_mainQuests([
-    void Function(GGetQuestsData_mainQuestsBuilder b) updates,
-  ]) = _$GGetQuestsData_mainQuests;
+  factory GGetQuestsData_mainQuests(
+          [void Function(GGetQuestsData_mainQuestsBuilder b) updates]) =
+      _$GGetQuestsData_mainQuests;
 
   static void _initializeBuilder(GGetQuestsData_mainQuestsBuilder b) =>
       b..G__typename = 'MainQuests';
@@ -61,11 +65,14 @@ abstract class GGetQuestsData_mainQuests
   static Serializer<GGetQuestsData_mainQuests> get serializer =>
       _$gGetQuestsDataMainQuestsSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GGetQuestsData_mainQuests.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GGetQuestsData_mainQuests.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GGetQuestsData_mainQuests? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GGetQuestsData_mainQuests.serializer, json);
+  static GGetQuestsData_mainQuests? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GGetQuestsData_mainQuests.serializer,
+        json,
+      );
 }

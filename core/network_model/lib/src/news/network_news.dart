@@ -8,7 +8,7 @@ part 'network_news.g.dart';
 ///
 /// {@category Model}
 @freezed
-class NetworkNews with _$NetworkNews {
+abstract class NetworkNews with _$NetworkNews {
   const factory NetworkNews({
     required String title,
     required String slug,

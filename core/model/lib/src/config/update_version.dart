@@ -7,7 +7,7 @@ part 'update_version.freezed.dart';
 ///
 /// {@category Model}
 @freezed
-abstract class UpdateVersion implements _$UpdateVersion {
+abstract class UpdateVersion with _$UpdateVersion {
   const factory UpdateVersion({
     required AppVersion force,
     required AppVersion optional,

@@ -18,7 +18,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_riverpod: 2.6.1
-  freezed_annotation: 2.4.4
+  freezed_annotation: 3.0.0
   intl: 0.20.2
   riverpod: 2.6.1
   riverpod_annotation: 2.6.1
@@ -28,8 +28,8 @@ dev_dependencies:
   core_testing: any
   flutter_test:
     sdk: flutter
-  freezed: 2.5.7
-  riverpod_generator: 2.6.3
+  freezed: 3.0.6
+  riverpod_generator: 2.6.5
   yumemi_lints: 4.0.0
 
 flutter:

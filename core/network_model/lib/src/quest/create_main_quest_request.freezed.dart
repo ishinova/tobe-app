@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,179 +10,32 @@ part of 'create_main_quest_request.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
-
-CreateMainQuestRequest _$CreateMainQuestRequestFromJson(
-  Map<String, dynamic> json,
-) {
-  return _CreateMainQuestRequest.fromJson(json);
-}
 
 /// @nodoc
 mixin _$CreateMainQuestRequest {
-  String get userId => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  String get note => throw _privateConstructorUsedError;
-
-  /// Serializes this CreateMainQuestRequest to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  String get userId;
+  String get title;
+  String get description;
+  String get note;
 
   /// Create a copy of CreateMainQuestRequest
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $CreateMainQuestRequestCopyWith<CreateMainQuestRequest> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+      _$CreateMainQuestRequestCopyWithImpl<CreateMainQuestRequest>(
+          this as CreateMainQuestRequest, _$identity);
 
-/// @nodoc
-abstract class $CreateMainQuestRequestCopyWith<$Res> {
-  factory $CreateMainQuestRequestCopyWith(
-    CreateMainQuestRequest value,
-    $Res Function(CreateMainQuestRequest) then,
-  ) = _$CreateMainQuestRequestCopyWithImpl<$Res, CreateMainQuestRequest>;
-  @useResult
-  $Res call({String userId, String title, String description, String note});
-}
-
-/// @nodoc
-class _$CreateMainQuestRequestCopyWithImpl<
-  $Res,
-  $Val extends CreateMainQuestRequest
->
-    implements $CreateMainQuestRequestCopyWith<$Res> {
-  _$CreateMainQuestRequestCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of CreateMainQuestRequest
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = null,
-    Object? title = null,
-    Object? description = null,
-    Object? note = null,
-  }) {
-    return _then(
-      _value.copyWith(
-            userId: null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                      as String,
-            title: null == title
-                ? _value.title
-                : title // ignore: cast_nullable_to_non_nullable
-                      as String,
-            description: null == description
-                ? _value.description
-                : description // ignore: cast_nullable_to_non_nullable
-                      as String,
-            note: null == note
-                ? _value.note
-                : note // ignore: cast_nullable_to_non_nullable
-                      as String,
-          )
-          as $Val,
-    );
-  }
-}
-
-/// @nodoc
-abstract class _$$CreateMainQuestRequestImplCopyWith<$Res>
-    implements $CreateMainQuestRequestCopyWith<$Res> {
-  factory _$$CreateMainQuestRequestImplCopyWith(
-    _$CreateMainQuestRequestImpl value,
-    $Res Function(_$CreateMainQuestRequestImpl) then,
-  ) = __$$CreateMainQuestRequestImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String userId, String title, String description, String note});
-}
-
-/// @nodoc
-class __$$CreateMainQuestRequestImplCopyWithImpl<$Res>
-    extends
-        _$CreateMainQuestRequestCopyWithImpl<$Res, _$CreateMainQuestRequestImpl>
-    implements _$$CreateMainQuestRequestImplCopyWith<$Res> {
-  __$$CreateMainQuestRequestImplCopyWithImpl(
-    _$CreateMainQuestRequestImpl _value,
-    $Res Function(_$CreateMainQuestRequestImpl) _then,
-  ) : super(_value, _then);
-
-  /// Create a copy of CreateMainQuestRequest
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = null,
-    Object? title = null,
-    Object? description = null,
-    Object? note = null,
-  }) {
-    return _then(
-      _$CreateMainQuestRequestImpl(
-        userId: null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        title: null == title
-            ? _value.title
-            : title // ignore: cast_nullable_to_non_nullable
-                  as String,
-        description: null == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                  as String,
-        note: null == note
-            ? _value.note
-            : note // ignore: cast_nullable_to_non_nullable
-                  as String,
-      ),
-    );
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$CreateMainQuestRequestImpl implements _CreateMainQuestRequest {
-  const _$CreateMainQuestRequestImpl({
-    required this.userId,
-    required this.title,
-    required this.description,
-    required this.note,
-  });
-
-  factory _$CreateMainQuestRequestImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CreateMainQuestRequestImplFromJson(json);
-
-  @override
-  final String userId;
-  @override
-  final String title;
-  @override
-  final String description;
-  @override
-  final String note;
-
-  @override
-  String toString() {
-    return 'CreateMainQuestRequest(userId: $userId, title: $title, description: $description, note: $note)';
-  }
+  /// Serializes this CreateMainQuestRequest to a JSON map.
+  Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreateMainQuestRequestImpl &&
+            other is CreateMainQuestRequest &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -194,48 +48,167 @@ class _$CreateMainQuestRequestImpl implements _CreateMainQuestRequest {
   int get hashCode =>
       Object.hash(runtimeType, userId, title, description, note);
 
-  /// Create a copy of CreateMainQuestRequest
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$CreateMainQuestRequestImplCopyWith<_$CreateMainQuestRequestImpl>
-  get copyWith =>
-      __$$CreateMainQuestRequestImplCopyWithImpl<_$CreateMainQuestRequestImpl>(
-        this,
-        _$identity,
-      );
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CreateMainQuestRequestImplToJson(this);
+  String toString() {
+    return 'CreateMainQuestRequest(userId: $userId, title: $title, description: $description, note: $note)';
   }
 }
 
-abstract class _CreateMainQuestRequest implements CreateMainQuestRequest {
-  const factory _CreateMainQuestRequest({
-    required final String userId,
-    required final String title,
-    required final String description,
-    required final String note,
-  }) = _$CreateMainQuestRequestImpl;
+/// @nodoc
+abstract mixin class $CreateMainQuestRequestCopyWith<$Res> {
+  factory $CreateMainQuestRequestCopyWith(CreateMainQuestRequest value,
+          $Res Function(CreateMainQuestRequest) _then) =
+      _$CreateMainQuestRequestCopyWithImpl;
+  @useResult
+  $Res call({String userId, String title, String description, String note});
+}
 
-  factory _CreateMainQuestRequest.fromJson(Map<String, dynamic> json) =
-      _$CreateMainQuestRequestImpl.fromJson;
+/// @nodoc
+class _$CreateMainQuestRequestCopyWithImpl<$Res>
+    implements $CreateMainQuestRequestCopyWith<$Res> {
+  _$CreateMainQuestRequestCopyWithImpl(this._self, this._then);
+
+  final CreateMainQuestRequest _self;
+  final $Res Function(CreateMainQuestRequest) _then;
+
+  /// Create a copy of CreateMainQuestRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? userId = null,
+    Object? title = null,
+    Object? description = null,
+    Object? note = null,
+  }) {
+    return _then(_self.copyWith(
+      userId: null == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      note: null == note
+          ? _self.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _CreateMainQuestRequest implements CreateMainQuestRequest {
+  const _CreateMainQuestRequest(
+      {required this.userId,
+      required this.title,
+      required this.description,
+      required this.note});
+  factory _CreateMainQuestRequest.fromJson(Map<String, dynamic> json) =>
+      _$CreateMainQuestRequestFromJson(json);
 
   @override
-  String get userId;
+  final String userId;
   @override
-  String get title;
+  final String title;
   @override
-  String get description;
+  final String description;
   @override
-  String get note;
+  final String note;
 
   /// Create a copy of CreateMainQuestRequest
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CreateMainQuestRequestImplCopyWith<_$CreateMainQuestRequestImpl>
-  get copyWith => throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  _$CreateMainQuestRequestCopyWith<_CreateMainQuestRequest> get copyWith =>
+      __$CreateMainQuestRequestCopyWithImpl<_CreateMainQuestRequest>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$CreateMainQuestRequestToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _CreateMainQuestRequest &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.note, note) || other.note == note));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, userId, title, description, note);
+
+  @override
+  String toString() {
+    return 'CreateMainQuestRequest(userId: $userId, title: $title, description: $description, note: $note)';
+  }
 }
+
+/// @nodoc
+abstract mixin class _$CreateMainQuestRequestCopyWith<$Res>
+    implements $CreateMainQuestRequestCopyWith<$Res> {
+  factory _$CreateMainQuestRequestCopyWith(_CreateMainQuestRequest value,
+          $Res Function(_CreateMainQuestRequest) _then) =
+      __$CreateMainQuestRequestCopyWithImpl;
+  @override
+  @useResult
+  $Res call({String userId, String title, String description, String note});
+}
+
+/// @nodoc
+class __$CreateMainQuestRequestCopyWithImpl<$Res>
+    implements _$CreateMainQuestRequestCopyWith<$Res> {
+  __$CreateMainQuestRequestCopyWithImpl(this._self, this._then);
+
+  final _CreateMainQuestRequest _self;
+  final $Res Function(_CreateMainQuestRequest) _then;
+
+  /// Create a copy of CreateMainQuestRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? userId = null,
+    Object? title = null,
+    Object? description = null,
+    Object? note = null,
+  }) {
+    return _then(_CreateMainQuestRequest(
+      userId: null == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      note: null == note
+          ? _self.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+// dart format on

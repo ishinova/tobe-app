@@ -47,15 +47,21 @@ class AgreeUseCaseFamily extends Family<Raw<FutureResult<void>>> {
   /// 同意する
   ///
   /// Copied from [agreeUseCase].
-  AgreeUseCaseProvider call({required RuleVersion agreeRuleVersion}) {
-    return AgreeUseCaseProvider(agreeRuleVersion: agreeRuleVersion);
+  AgreeUseCaseProvider call({
+    required RuleVersion agreeRuleVersion,
+  }) {
+    return AgreeUseCaseProvider(
+      agreeRuleVersion: agreeRuleVersion,
+    );
   }
 
   @override
   AgreeUseCaseProvider getProviderOverride(
     covariant AgreeUseCaseProvider provider,
   ) {
-    return call(agreeRuleVersion: provider.agreeRuleVersion);
+    return call(
+      agreeRuleVersion: provider.agreeRuleVersion,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -81,22 +87,24 @@ class AgreeUseCaseProvider
   /// 同意する
   ///
   /// Copied from [agreeUseCase].
-  AgreeUseCaseProvider({required RuleVersion agreeRuleVersion})
-    : this._internal(
-        (ref) => agreeUseCase(
-          ref as AgreeUseCaseRef,
+  AgreeUseCaseProvider({
+    required RuleVersion agreeRuleVersion,
+  }) : this._internal(
+          (ref) => agreeUseCase(
+            ref as AgreeUseCaseRef,
+            agreeRuleVersion: agreeRuleVersion,
+          ),
+          from: agreeUseCaseProvider,
+          name: r'agreeUseCaseProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$agreeUseCaseHash,
+          dependencies: AgreeUseCaseFamily._dependencies,
+          allTransitiveDependencies:
+              AgreeUseCaseFamily._allTransitiveDependencies,
           agreeRuleVersion: agreeRuleVersion,
-        ),
-        from: agreeUseCaseProvider,
-        name: r'agreeUseCaseProvider',
-        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-            ? null
-            : _$agreeUseCaseHash,
-        dependencies: AgreeUseCaseFamily._dependencies,
-        allTransitiveDependencies:
-            AgreeUseCaseFamily._allTransitiveDependencies,
-        agreeRuleVersion: agreeRuleVersion,
-      );
+        );
 
   AgreeUseCaseProvider._internal(
     super._createNotifier, {
@@ -164,6 +172,5 @@ class _AgreeUseCaseProviderElement
   RuleVersion get agreeRuleVersion =>
       (origin as AgreeUseCaseProvider).agreeRuleVersion;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

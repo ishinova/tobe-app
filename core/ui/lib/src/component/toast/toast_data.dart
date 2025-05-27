@@ -4,7 +4,7 @@ part 'toast_data.freezed.dart';
 
 /// トーストのデータ
 @freezed
-class ToastData with _$ToastData {
+abstract class ToastData with _$ToastData {
   const factory ToastData({
     required String id,
     required String message,

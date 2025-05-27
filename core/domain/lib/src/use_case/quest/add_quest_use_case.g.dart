@@ -98,24 +98,25 @@ class AddQuestUseCaseProvider
     required String description,
     required String note,
   }) : this._internal(
-         (ref) => addQuestUseCase(
-           ref as AddQuestUseCaseRef,
-           title: title,
-           description: description,
-           note: note,
-         ),
-         from: addQuestUseCaseProvider,
-         name: r'addQuestUseCaseProvider',
-         debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-             ? null
-             : _$addQuestUseCaseHash,
-         dependencies: AddQuestUseCaseFamily._dependencies,
-         allTransitiveDependencies:
-             AddQuestUseCaseFamily._allTransitiveDependencies,
-         title: title,
-         description: description,
-         note: note,
-       );
+          (ref) => addQuestUseCase(
+            ref as AddQuestUseCaseRef,
+            title: title,
+            description: description,
+            note: note,
+          ),
+          from: addQuestUseCaseProvider,
+          name: r'addQuestUseCaseProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$addQuestUseCaseHash,
+          dependencies: AddQuestUseCaseFamily._dependencies,
+          allTransitiveDependencies:
+              AddQuestUseCaseFamily._allTransitiveDependencies,
+          title: title,
+          description: description,
+          note: note,
+        );
 
   AddQuestUseCaseProvider._internal(
     super._createNotifier, {
@@ -202,6 +203,5 @@ class _AddQuestUseCaseProviderElement
   @override
   String get note => (origin as AddQuestUseCaseProvider).note;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
