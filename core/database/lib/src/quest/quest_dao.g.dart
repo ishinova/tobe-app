@@ -13,8 +13,9 @@ String _$questDaoHash() => r'9fee4cd06c78399b499d0ff34997e0d8797bae19';
 final questDaoProvider = Provider<QuestDao>.internal(
   questDao,
   name: r'questDaoProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$questDaoHash,
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$questDaoHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

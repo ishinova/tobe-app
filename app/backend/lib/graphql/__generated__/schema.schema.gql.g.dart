@@ -36,12 +36,12 @@ GAchievementsSelectColumn _$gAchievementsSelectColumnValueOf(String name) {
 
 final BuiltSet<GAchievementsSelectColumn> _$gAchievementsSelectColumnValues =
     new BuiltSet<GAchievementsSelectColumn>(const <GAchievementsSelectColumn>[
-  _$gAchievementsSelectColumncreatedAt,
-  _$gAchievementsSelectColumndescription,
-  _$gAchievementsSelectColumnid,
-  _$gAchievementsSelectColumnGname,
-  _$gAchievementsSelectColumnupdatedAt,
-]);
+      _$gAchievementsSelectColumncreatedAt,
+      _$gAchievementsSelectColumndescription,
+      _$gAchievementsSelectColumnid,
+      _$gAchievementsSelectColumnGname,
+      _$gAchievementsSelectColumnupdatedAt,
+    ]);
 
 const GCursorOrdering _$gCursorOrderingASC = const GCursorOrdering._('ASC');
 const GCursorOrdering _$gCursorOrderingDESC = const GCursorOrdering._('DESC');
@@ -59,16 +59,17 @@ GCursorOrdering _$gCursorOrderingValueOf(String name) {
 
 final BuiltSet<GCursorOrdering> _$gCursorOrderingValues =
     new BuiltSet<GCursorOrdering>(const <GCursorOrdering>[
-  _$gCursorOrderingASC,
-  _$gCursorOrderingDESC,
-]);
+      _$gCursorOrderingASC,
+      _$gCursorOrderingDESC,
+    ]);
 
 const GMainQuestRelationsConstraint
-    _$gMainQuestRelationsConstraintmain_quest_relations_pkey =
+_$gMainQuestRelationsConstraintmain_quest_relations_pkey =
     const GMainQuestRelationsConstraint._('main_quest_relations_pkey');
 
 GMainQuestRelationsConstraint _$gMainQuestRelationsConstraintValueOf(
-    String name) {
+  String name,
+) {
   switch (name) {
     case 'main_quest_relations_pkey':
       return _$gMainQuestRelationsConstraintmain_quest_relations_pkey;
@@ -78,20 +79,23 @@ GMainQuestRelationsConstraint _$gMainQuestRelationsConstraintValueOf(
 }
 
 final BuiltSet<GMainQuestRelationsConstraint>
-    _$gMainQuestRelationsConstraintValues = new BuiltSet<
-        GMainQuestRelationsConstraint>(const <GMainQuestRelationsConstraint>[
-  _$gMainQuestRelationsConstraintmain_quest_relations_pkey,
-]);
+_$gMainQuestRelationsConstraintValues =
+    new BuiltSet<GMainQuestRelationsConstraint>(
+      const <GMainQuestRelationsConstraint>[
+        _$gMainQuestRelationsConstraintmain_quest_relations_pkey,
+      ],
+    );
 
 const GMainQuestRelationsSelectColumn
-    _$gMainQuestRelationsSelectColumnchildQuestId =
+_$gMainQuestRelationsSelectColumnchildQuestId =
     const GMainQuestRelationsSelectColumn._('childQuestId');
 const GMainQuestRelationsSelectColumn
-    _$gMainQuestRelationsSelectColumnparentQuestId =
+_$gMainQuestRelationsSelectColumnparentQuestId =
     const GMainQuestRelationsSelectColumn._('parentQuestId');
 
 GMainQuestRelationsSelectColumn _$gMainQuestRelationsSelectColumnValueOf(
-    String name) {
+  String name,
+) {
   switch (name) {
     case 'childQuestId':
       return _$gMainQuestRelationsSelectColumnchildQuestId;
@@ -103,21 +107,24 @@ GMainQuestRelationsSelectColumn _$gMainQuestRelationsSelectColumnValueOf(
 }
 
 final BuiltSet<GMainQuestRelationsSelectColumn>
-    _$gMainQuestRelationsSelectColumnValues = new BuiltSet<
-        GMainQuestRelationsSelectColumn>(const <GMainQuestRelationsSelectColumn>[
-  _$gMainQuestRelationsSelectColumnchildQuestId,
-  _$gMainQuestRelationsSelectColumnparentQuestId,
-]);
+_$gMainQuestRelationsSelectColumnValues =
+    new BuiltSet<GMainQuestRelationsSelectColumn>(
+      const <GMainQuestRelationsSelectColumn>[
+        _$gMainQuestRelationsSelectColumnchildQuestId,
+        _$gMainQuestRelationsSelectColumnparentQuestId,
+      ],
+    );
 
 const GMainQuestRelationsUpdateColumn
-    _$gMainQuestRelationsUpdateColumnchildQuestId =
+_$gMainQuestRelationsUpdateColumnchildQuestId =
     const GMainQuestRelationsUpdateColumn._('childQuestId');
 const GMainQuestRelationsUpdateColumn
-    _$gMainQuestRelationsUpdateColumnparentQuestId =
+_$gMainQuestRelationsUpdateColumnparentQuestId =
     const GMainQuestRelationsUpdateColumn._('parentQuestId');
 
 GMainQuestRelationsUpdateColumn _$gMainQuestRelationsUpdateColumnValueOf(
-    String name) {
+  String name,
+) {
   switch (name) {
     case 'childQuestId':
       return _$gMainQuestRelationsUpdateColumnchildQuestId;
@@ -129,11 +136,13 @@ GMainQuestRelationsUpdateColumn _$gMainQuestRelationsUpdateColumnValueOf(
 }
 
 final BuiltSet<GMainQuestRelationsUpdateColumn>
-    _$gMainQuestRelationsUpdateColumnValues = new BuiltSet<
-        GMainQuestRelationsUpdateColumn>(const <GMainQuestRelationsUpdateColumn>[
-  _$gMainQuestRelationsUpdateColumnchildQuestId,
-  _$gMainQuestRelationsUpdateColumnparentQuestId,
-]);
+_$gMainQuestRelationsUpdateColumnValues =
+    new BuiltSet<GMainQuestRelationsUpdateColumn>(
+      const <GMainQuestRelationsUpdateColumn>[
+        _$gMainQuestRelationsUpdateColumnchildQuestId,
+        _$gMainQuestRelationsUpdateColumnparentQuestId,
+      ],
+    );
 
 const GMainQuestsConstraint _$gMainQuestsConstraintmain_quests_pkey =
     const GMainQuestsConstraint._('main_quests_pkey');
@@ -149,8 +158,8 @@ GMainQuestsConstraint _$gMainQuestsConstraintValueOf(String name) {
 
 final BuiltSet<GMainQuestsConstraint> _$gMainQuestsConstraintValues =
     new BuiltSet<GMainQuestsConstraint>(const <GMainQuestsConstraint>[
-  _$gMainQuestsConstraintmain_quests_pkey,
-]);
+      _$gMainQuestsConstraintmain_quests_pkey,
+    ]);
 
 const GMainQuestsSelectColumn _$gMainQuestsSelectColumnbegunAt =
     const GMainQuestsSelectColumn._('begunAt');
@@ -214,20 +223,20 @@ GMainQuestsSelectColumn _$gMainQuestsSelectColumnValueOf(String name) {
 
 final BuiltSet<GMainQuestsSelectColumn> _$gMainQuestsSelectColumnValues =
     new BuiltSet<GMainQuestsSelectColumn>(const <GMainQuestsSelectColumn>[
-  _$gMainQuestsSelectColumnbegunAt,
-  _$gMainQuestsSelectColumncategoryId,
-  _$gMainQuestsSelectColumncoverImageUrl,
-  _$gMainQuestsSelectColumncreatedAt,
-  _$gMainQuestsSelectColumndeletedAt,
-  _$gMainQuestsSelectColumndescription,
-  _$gMainQuestsSelectColumnendedAt,
-  _$gMainQuestsSelectColumnid,
-  _$gMainQuestsSelectColumnnote,
-  _$gMainQuestsSelectColumnstatus,
-  _$gMainQuestsSelectColumntitle,
-  _$gMainQuestsSelectColumnupdatedAt,
-  _$gMainQuestsSelectColumnuserId,
-]);
+      _$gMainQuestsSelectColumnbegunAt,
+      _$gMainQuestsSelectColumncategoryId,
+      _$gMainQuestsSelectColumncoverImageUrl,
+      _$gMainQuestsSelectColumncreatedAt,
+      _$gMainQuestsSelectColumndeletedAt,
+      _$gMainQuestsSelectColumndescription,
+      _$gMainQuestsSelectColumnendedAt,
+      _$gMainQuestsSelectColumnid,
+      _$gMainQuestsSelectColumnnote,
+      _$gMainQuestsSelectColumnstatus,
+      _$gMainQuestsSelectColumntitle,
+      _$gMainQuestsSelectColumnupdatedAt,
+      _$gMainQuestsSelectColumnuserId,
+    ]);
 
 const GMainQuestsUpdateColumn _$gMainQuestsUpdateColumnbegunAt =
     const GMainQuestsUpdateColumn._('begunAt');
@@ -291,38 +300,43 @@ GMainQuestsUpdateColumn _$gMainQuestsUpdateColumnValueOf(String name) {
 
 final BuiltSet<GMainQuestsUpdateColumn> _$gMainQuestsUpdateColumnValues =
     new BuiltSet<GMainQuestsUpdateColumn>(const <GMainQuestsUpdateColumn>[
-  _$gMainQuestsUpdateColumnbegunAt,
-  _$gMainQuestsUpdateColumncategoryId,
-  _$gMainQuestsUpdateColumncoverImageUrl,
-  _$gMainQuestsUpdateColumncreatedAt,
-  _$gMainQuestsUpdateColumndeletedAt,
-  _$gMainQuestsUpdateColumndescription,
-  _$gMainQuestsUpdateColumnendedAt,
-  _$gMainQuestsUpdateColumnid,
-  _$gMainQuestsUpdateColumnnote,
-  _$gMainQuestsUpdateColumnstatus,
-  _$gMainQuestsUpdateColumntitle,
-  _$gMainQuestsUpdateColumnupdatedAt,
-  _$gMainQuestsUpdateColumnuserId,
-]);
+      _$gMainQuestsUpdateColumnbegunAt,
+      _$gMainQuestsUpdateColumncategoryId,
+      _$gMainQuestsUpdateColumncoverImageUrl,
+      _$gMainQuestsUpdateColumncreatedAt,
+      _$gMainQuestsUpdateColumndeletedAt,
+      _$gMainQuestsUpdateColumndescription,
+      _$gMainQuestsUpdateColumnendedAt,
+      _$gMainQuestsUpdateColumnid,
+      _$gMainQuestsUpdateColumnnote,
+      _$gMainQuestsUpdateColumnstatus,
+      _$gMainQuestsUpdateColumntitle,
+      _$gMainQuestsUpdateColumnupdatedAt,
+      _$gMainQuestsUpdateColumnuserId,
+    ]);
 
-const GNewsSelectColumn _$gNewsSelectColumncontent =
-    const GNewsSelectColumn._('content');
+const GNewsSelectColumn _$gNewsSelectColumncontent = const GNewsSelectColumn._(
+  'content',
+);
 const GNewsSelectColumn _$gNewsSelectColumncoverImageUrl =
     const GNewsSelectColumn._('coverImageUrl');
 const GNewsSelectColumn _$gNewsSelectColumncreatedAt =
     const GNewsSelectColumn._('createdAt');
-const GNewsSelectColumn _$gNewsSelectColumnexcerpt =
-    const GNewsSelectColumn._('excerpt');
+const GNewsSelectColumn _$gNewsSelectColumnexcerpt = const GNewsSelectColumn._(
+  'excerpt',
+);
 const GNewsSelectColumn _$gNewsSelectColumnid = const GNewsSelectColumn._('id');
 const GNewsSelectColumn _$gNewsSelectColumnpublishedAt =
     const GNewsSelectColumn._('publishedAt');
-const GNewsSelectColumn _$gNewsSelectColumnseoId =
-    const GNewsSelectColumn._('seoId');
-const GNewsSelectColumn _$gNewsSelectColumnslug =
-    const GNewsSelectColumn._('slug');
-const GNewsSelectColumn _$gNewsSelectColumntitle =
-    const GNewsSelectColumn._('title');
+const GNewsSelectColumn _$gNewsSelectColumnseoId = const GNewsSelectColumn._(
+  'seoId',
+);
+const GNewsSelectColumn _$gNewsSelectColumnslug = const GNewsSelectColumn._(
+  'slug',
+);
+const GNewsSelectColumn _$gNewsSelectColumntitle = const GNewsSelectColumn._(
+  'title',
+);
 const GNewsSelectColumn _$gNewsSelectColumnupdatedAt =
     const GNewsSelectColumn._('updatedAt');
 
@@ -355,17 +369,17 @@ GNewsSelectColumn _$gNewsSelectColumnValueOf(String name) {
 
 final BuiltSet<GNewsSelectColumn> _$gNewsSelectColumnValues =
     new BuiltSet<GNewsSelectColumn>(const <GNewsSelectColumn>[
-  _$gNewsSelectColumncontent,
-  _$gNewsSelectColumncoverImageUrl,
-  _$gNewsSelectColumncreatedAt,
-  _$gNewsSelectColumnexcerpt,
-  _$gNewsSelectColumnid,
-  _$gNewsSelectColumnpublishedAt,
-  _$gNewsSelectColumnseoId,
-  _$gNewsSelectColumnslug,
-  _$gNewsSelectColumntitle,
-  _$gNewsSelectColumnupdatedAt,
-]);
+      _$gNewsSelectColumncontent,
+      _$gNewsSelectColumncoverImageUrl,
+      _$gNewsSelectColumncreatedAt,
+      _$gNewsSelectColumnexcerpt,
+      _$gNewsSelectColumnid,
+      _$gNewsSelectColumnpublishedAt,
+      _$gNewsSelectColumnseoId,
+      _$gNewsSelectColumnslug,
+      _$gNewsSelectColumntitle,
+      _$gNewsSelectColumnupdatedAt,
+    ]);
 
 const GNotificationsSelectColumn _$gNotificationsSelectColumncontent =
     const GNotificationsSelectColumn._('content');
@@ -417,24 +431,25 @@ GNotificationsSelectColumn _$gNotificationsSelectColumnValueOf(String name) {
 
 final BuiltSet<GNotificationsSelectColumn> _$gNotificationsSelectColumnValues =
     new BuiltSet<GNotificationsSelectColumn>(const <GNotificationsSelectColumn>[
-  _$gNotificationsSelectColumncontent,
-  _$gNotificationsSelectColumncoverImageUrl,
-  _$gNotificationsSelectColumncreatedAt,
-  _$gNotificationsSelectColumnexcerpt,
-  _$gNotificationsSelectColumnfirstOpenedAt,
-  _$gNotificationsSelectColumnid,
-  _$gNotificationsSelectColumnpublishedAt,
-  _$gNotificationsSelectColumntitle,
-  _$gNotificationsSelectColumnupdatedAt,
-  _$gNotificationsSelectColumnuserId,
-]);
+      _$gNotificationsSelectColumncontent,
+      _$gNotificationsSelectColumncoverImageUrl,
+      _$gNotificationsSelectColumncreatedAt,
+      _$gNotificationsSelectColumnexcerpt,
+      _$gNotificationsSelectColumnfirstOpenedAt,
+      _$gNotificationsSelectColumnid,
+      _$gNotificationsSelectColumnpublishedAt,
+      _$gNotificationsSelectColumntitle,
+      _$gNotificationsSelectColumnupdatedAt,
+      _$gNotificationsSelectColumnuserId,
+    ]);
 
 const GOrderBy _$gOrderByASC = const GOrderBy._('ASC');
 const GOrderBy _$gOrderByASC_NULLS_FIRST = const GOrderBy._('ASC_NULLS_FIRST');
 const GOrderBy _$gOrderByASC_NULLS_LAST = const GOrderBy._('ASC_NULLS_LAST');
 const GOrderBy _$gOrderByDESC = const GOrderBy._('DESC');
-const GOrderBy _$gOrderByDESC_NULLS_FIRST =
-    const GOrderBy._('DESC_NULLS_FIRST');
+const GOrderBy _$gOrderByDESC_NULLS_FIRST = const GOrderBy._(
+  'DESC_NULLS_FIRST',
+);
 const GOrderBy _$gOrderByDESC_NULLS_LAST = const GOrderBy._('DESC_NULLS_LAST');
 
 GOrderBy _$gOrderByValueOf(String name) {
@@ -458,13 +473,13 @@ GOrderBy _$gOrderByValueOf(String name) {
 
 final BuiltSet<GOrderBy> _$gOrderByValues =
     new BuiltSet<GOrderBy>(const <GOrderBy>[
-  _$gOrderByASC,
-  _$gOrderByASC_NULLS_FIRST,
-  _$gOrderByASC_NULLS_LAST,
-  _$gOrderByDESC,
-  _$gOrderByDESC_NULLS_FIRST,
-  _$gOrderByDESC_NULLS_LAST,
-]);
+      _$gOrderByASC,
+      _$gOrderByASC_NULLS_FIRST,
+      _$gOrderByASC_NULLS_LAST,
+      _$gOrderByDESC,
+      _$gOrderByDESC_NULLS_FIRST,
+      _$gOrderByDESC_NULLS_LAST,
+    ]);
 
 const GQuestCategoriesSelectColumn _$gQuestCategoriesSelectColumncreatedAt =
     const GQuestCategoriesSelectColumn._('createdAt');
@@ -480,7 +495,8 @@ const GQuestCategoriesSelectColumn _$gQuestCategoriesSelectColumnupdatedAt =
     const GQuestCategoriesSelectColumn._('updatedAt');
 
 GQuestCategoriesSelectColumn _$gQuestCategoriesSelectColumnValueOf(
-    String name) {
+  String name,
+) {
   switch (name) {
     case 'createdAt':
       return _$gQuestCategoriesSelectColumncreatedAt;
@@ -500,28 +516,36 @@ GQuestCategoriesSelectColumn _$gQuestCategoriesSelectColumnValueOf(
 }
 
 final BuiltSet<GQuestCategoriesSelectColumn>
-    _$gQuestCategoriesSelectColumnValues = new BuiltSet<
-        GQuestCategoriesSelectColumn>(const <GQuestCategoriesSelectColumn>[
-  _$gQuestCategoriesSelectColumncreatedAt,
-  _$gQuestCategoriesSelectColumndescription,
-  _$gQuestCategoriesSelectColumnid,
-  _$gQuestCategoriesSelectColumnGname,
-  _$gQuestCategoriesSelectColumnsortNumber,
-  _$gQuestCategoriesSelectColumnupdatedAt,
-]);
+_$gQuestCategoriesSelectColumnValues =
+    new BuiltSet<GQuestCategoriesSelectColumn>(
+      const <GQuestCategoriesSelectColumn>[
+        _$gQuestCategoriesSelectColumncreatedAt,
+        _$gQuestCategoriesSelectColumndescription,
+        _$gQuestCategoriesSelectColumnid,
+        _$gQuestCategoriesSelectColumnGname,
+        _$gQuestCategoriesSelectColumnsortNumber,
+        _$gQuestCategoriesSelectColumnupdatedAt,
+      ],
+    );
 
-const GQuestStatusEnum _$gQuestStatusEnumABORT =
-    const GQuestStatusEnum._('ABORT');
-const GQuestStatusEnum _$gQuestStatusEnumBACKLOG =
-    const GQuestStatusEnum._('BACKLOG');
-const GQuestStatusEnum _$gQuestStatusEnumCOMPLETED =
-    const GQuestStatusEnum._('COMPLETED');
-const GQuestStatusEnum _$gQuestStatusEnumIN_PROGRESS =
-    const GQuestStatusEnum._('IN_PROGRESS');
-const GQuestStatusEnum _$gQuestStatusEnumREADY =
-    const GQuestStatusEnum._('READY');
-const GQuestStatusEnum _$gQuestStatusEnumSUSPEND =
-    const GQuestStatusEnum._('SUSPEND');
+const GQuestStatusEnum _$gQuestStatusEnumABORT = const GQuestStatusEnum._(
+  'ABORT',
+);
+const GQuestStatusEnum _$gQuestStatusEnumBACKLOG = const GQuestStatusEnum._(
+  'BACKLOG',
+);
+const GQuestStatusEnum _$gQuestStatusEnumCOMPLETED = const GQuestStatusEnum._(
+  'COMPLETED',
+);
+const GQuestStatusEnum _$gQuestStatusEnumIN_PROGRESS = const GQuestStatusEnum._(
+  'IN_PROGRESS',
+);
+const GQuestStatusEnum _$gQuestStatusEnumREADY = const GQuestStatusEnum._(
+  'READY',
+);
+const GQuestStatusEnum _$gQuestStatusEnumSUSPEND = const GQuestStatusEnum._(
+  'SUSPEND',
+);
 
 GQuestStatusEnum _$gQuestStatusEnumValueOf(String name) {
   switch (name) {
@@ -544,13 +568,13 @@ GQuestStatusEnum _$gQuestStatusEnumValueOf(String name) {
 
 final BuiltSet<GQuestStatusEnum> _$gQuestStatusEnumValues =
     new BuiltSet<GQuestStatusEnum>(const <GQuestStatusEnum>[
-  _$gQuestStatusEnumABORT,
-  _$gQuestStatusEnumBACKLOG,
-  _$gQuestStatusEnumCOMPLETED,
-  _$gQuestStatusEnumIN_PROGRESS,
-  _$gQuestStatusEnumREADY,
-  _$gQuestStatusEnumSUSPEND,
-]);
+      _$gQuestStatusEnumABORT,
+      _$gQuestStatusEnumBACKLOG,
+      _$gQuestStatusEnumCOMPLETED,
+      _$gQuestStatusEnumIN_PROGRESS,
+      _$gQuestStatusEnumREADY,
+      _$gQuestStatusEnumSUSPEND,
+    ]);
 
 const GQuestStatusSelectColumn _$gQuestStatusSelectColumnvalue =
     const GQuestStatusSelectColumn._('value');
@@ -566,8 +590,8 @@ GQuestStatusSelectColumn _$gQuestStatusSelectColumnValueOf(String name) {
 
 final BuiltSet<GQuestStatusSelectColumn> _$gQuestStatusSelectColumnValues =
     new BuiltSet<GQuestStatusSelectColumn>(const <GQuestStatusSelectColumn>[
-  _$gQuestStatusSelectColumnvalue,
-]);
+      _$gQuestStatusSelectColumnvalue,
+    ]);
 
 const GSeosSelectColumn _$gSeosSelectColumncreatedAt =
     const GSeosSelectColumn._('createdAt');
@@ -576,8 +600,9 @@ const GSeosSelectColumn _$gSeosSelectColumndescription =
 const GSeosSelectColumn _$gSeosSelectColumnid = const GSeosSelectColumn._('id');
 const GSeosSelectColumn _$gSeosSelectColumnogImageUrl =
     const GSeosSelectColumn._('ogImageUrl');
-const GSeosSelectColumn _$gSeosSelectColumntitle =
-    const GSeosSelectColumn._('title');
+const GSeosSelectColumn _$gSeosSelectColumntitle = const GSeosSelectColumn._(
+  'title',
+);
 const GSeosSelectColumn _$gSeosSelectColumnupdatedAt =
     const GSeosSelectColumn._('updatedAt');
 
@@ -602,21 +627,22 @@ GSeosSelectColumn _$gSeosSelectColumnValueOf(String name) {
 
 final BuiltSet<GSeosSelectColumn> _$gSeosSelectColumnValues =
     new BuiltSet<GSeosSelectColumn>(const <GSeosSelectColumn>[
-  _$gSeosSelectColumncreatedAt,
-  _$gSeosSelectColumndescription,
-  _$gSeosSelectColumnid,
-  _$gSeosSelectColumnogImageUrl,
-  _$gSeosSelectColumntitle,
-  _$gSeosSelectColumnupdatedAt,
-]);
+      _$gSeosSelectColumncreatedAt,
+      _$gSeosSelectColumndescription,
+      _$gSeosSelectColumnid,
+      _$gSeosSelectColumnogImageUrl,
+      _$gSeosSelectColumntitle,
+      _$gSeosSelectColumnupdatedAt,
+    ]);
 
 const GTagsSelectColumn _$gTagsSelectColumncreatedAt =
     const GTagsSelectColumn._('createdAt');
 const GTagsSelectColumn _$gTagsSelectColumndescription =
     const GTagsSelectColumn._('description');
 const GTagsSelectColumn _$gTagsSelectColumnid = const GTagsSelectColumn._('id');
-const GTagsSelectColumn _$gTagsSelectColumntag =
-    const GTagsSelectColumn._('tag');
+const GTagsSelectColumn _$gTagsSelectColumntag = const GTagsSelectColumn._(
+  'tag',
+);
 const GTagsSelectColumn _$gTagsSelectColumnupdatedAt =
     const GTagsSelectColumn._('updatedAt');
 
@@ -639,21 +665,22 @@ GTagsSelectColumn _$gTagsSelectColumnValueOf(String name) {
 
 final BuiltSet<GTagsSelectColumn> _$gTagsSelectColumnValues =
     new BuiltSet<GTagsSelectColumn>(const <GTagsSelectColumn>[
-  _$gTagsSelectColumncreatedAt,
-  _$gTagsSelectColumndescription,
-  _$gTagsSelectColumnid,
-  _$gTagsSelectColumntag,
-  _$gTagsSelectColumnupdatedAt,
-]);
+      _$gTagsSelectColumncreatedAt,
+      _$gTagsSelectColumndescription,
+      _$gTagsSelectColumnid,
+      _$gTagsSelectColumntag,
+      _$gTagsSelectColumnupdatedAt,
+    ]);
 
 const GUserAchievementsSelectColumn
-    _$gUserAchievementsSelectColumnachievementId =
+_$gUserAchievementsSelectColumnachievementId =
     const GUserAchievementsSelectColumn._('achievementId');
 const GUserAchievementsSelectColumn _$gUserAchievementsSelectColumnuserId =
     const GUserAchievementsSelectColumn._('userId');
 
 GUserAchievementsSelectColumn _$gUserAchievementsSelectColumnValueOf(
-    String name) {
+  String name,
+) {
   switch (name) {
     case 'achievementId':
       return _$gUserAchievementsSelectColumnachievementId;
@@ -665,18 +692,22 @@ GUserAchievementsSelectColumn _$gUserAchievementsSelectColumnValueOf(
 }
 
 final BuiltSet<GUserAchievementsSelectColumn>
-    _$gUserAchievementsSelectColumnValues = new BuiltSet<
-        GUserAchievementsSelectColumn>(const <GUserAchievementsSelectColumn>[
-  _$gUserAchievementsSelectColumnachievementId,
-  _$gUserAchievementsSelectColumnuserId,
-]);
+_$gUserAchievementsSelectColumnValues =
+    new BuiltSet<GUserAchievementsSelectColumn>(
+      const <GUserAchievementsSelectColumn>[
+        _$gUserAchievementsSelectColumnachievementId,
+        _$gUserAchievementsSelectColumnuserId,
+      ],
+    );
 
 const GUsersSelectColumn _$gUsersSelectColumncreatedAt =
     const GUsersSelectColumn._('createdAt');
-const GUsersSelectColumn _$gUsersSelectColumnemail =
-    const GUsersSelectColumn._('email');
-const GUsersSelectColumn _$gUsersSelectColumnid =
-    const GUsersSelectColumn._('id');
+const GUsersSelectColumn _$gUsersSelectColumnemail = const GUsersSelectColumn._(
+  'email',
+);
+const GUsersSelectColumn _$gUsersSelectColumnid = const GUsersSelectColumn._(
+  'id',
+);
 const GUsersSelectColumn _$gUsersSelectColumnlastSeen =
     const GUsersSelectColumn._('lastSeen');
 const GUsersSelectColumn _$gUsersSelectColumnnickname =
@@ -717,16 +748,16 @@ GUsersSelectColumn _$gUsersSelectColumnValueOf(String name) {
 
 final BuiltSet<GUsersSelectColumn> _$gUsersSelectColumnValues =
     new BuiltSet<GUsersSelectColumn>(const <GUsersSelectColumn>[
-  _$gUsersSelectColumncreatedAt,
-  _$gUsersSelectColumnemail,
-  _$gUsersSelectColumnid,
-  _$gUsersSelectColumnlastSeen,
-  _$gUsersSelectColumnnickname,
-  _$gUsersSelectColumnpicture,
-  _$gUsersSelectColumnupdatedAt,
-  _$gUsersSelectColumnusername,
-  _$gUsersSelectColumnwebsite,
-]);
+      _$gUsersSelectColumncreatedAt,
+      _$gUsersSelectColumnemail,
+      _$gUsersSelectColumnid,
+      _$gUsersSelectColumnlastSeen,
+      _$gUsersSelectColumnnickname,
+      _$gUsersSelectColumnpicture,
+      _$gUsersSelectColumnupdatedAt,
+      _$gUsersSelectColumnusername,
+      _$gUsersSelectColumnwebsite,
+    ]);
 
 Serializer<GAchievementsBoolExp> _$gAchievementsBoolExpSerializer =
     new _$GAchievementsBoolExpSerializer();
@@ -735,10 +766,10 @@ Serializer<GAchievementsOrderBy> _$gAchievementsOrderBySerializer =
 Serializer<GAchievementsSelectColumn> _$gAchievementsSelectColumnSerializer =
     new _$GAchievementsSelectColumnSerializer();
 Serializer<GAchievementsStreamCursorInput>
-    _$gAchievementsStreamCursorInputSerializer =
+_$gAchievementsStreamCursorInputSerializer =
     new _$GAchievementsStreamCursorInputSerializer();
 Serializer<GAchievementsStreamCursorValueInput>
-    _$gAchievementsStreamCursorValueInputSerializer =
+_$gAchievementsStreamCursorValueInputSerializer =
     new _$GAchievementsStreamCursorValueInputSerializer();
 Serializer<GCursorOrdering> _$gCursorOrderingSerializer =
     new _$GCursorOrderingSerializer();
@@ -747,33 +778,33 @@ Serializer<GIntComparisonExp> _$gIntComparisonExpSerializer =
 Serializer<GMainQuestRelationsBoolExp> _$gMainQuestRelationsBoolExpSerializer =
     new _$GMainQuestRelationsBoolExpSerializer();
 Serializer<GMainQuestRelationsConstraint>
-    _$gMainQuestRelationsConstraintSerializer =
+_$gMainQuestRelationsConstraintSerializer =
     new _$GMainQuestRelationsConstraintSerializer();
 Serializer<GMainQuestRelationsInsertInput>
-    _$gMainQuestRelationsInsertInputSerializer =
+_$gMainQuestRelationsInsertInputSerializer =
     new _$GMainQuestRelationsInsertInputSerializer();
 Serializer<GMainQuestRelationsOnConflict>
-    _$gMainQuestRelationsOnConflictSerializer =
+_$gMainQuestRelationsOnConflictSerializer =
     new _$GMainQuestRelationsOnConflictSerializer();
 Serializer<GMainQuestRelationsOrderBy> _$gMainQuestRelationsOrderBySerializer =
     new _$GMainQuestRelationsOrderBySerializer();
 Serializer<GMainQuestRelationsPkColumnsInput>
-    _$gMainQuestRelationsPkColumnsInputSerializer =
+_$gMainQuestRelationsPkColumnsInputSerializer =
     new _$GMainQuestRelationsPkColumnsInputSerializer();
 Serializer<GMainQuestRelationsSelectColumn>
-    _$gMainQuestRelationsSelectColumnSerializer =
+_$gMainQuestRelationsSelectColumnSerializer =
     new _$GMainQuestRelationsSelectColumnSerializer();
 Serializer<GMainQuestRelationsSetInput>
-    _$gMainQuestRelationsSetInputSerializer =
+_$gMainQuestRelationsSetInputSerializer =
     new _$GMainQuestRelationsSetInputSerializer();
 Serializer<GMainQuestRelationsStreamCursorInput>
-    _$gMainQuestRelationsStreamCursorInputSerializer =
+_$gMainQuestRelationsStreamCursorInputSerializer =
     new _$GMainQuestRelationsStreamCursorInputSerializer();
 Serializer<GMainQuestRelationsStreamCursorValueInput>
-    _$gMainQuestRelationsStreamCursorValueInputSerializer =
+_$gMainQuestRelationsStreamCursorValueInputSerializer =
     new _$GMainQuestRelationsStreamCursorValueInputSerializer();
 Serializer<GMainQuestRelationsUpdateColumn>
-    _$gMainQuestRelationsUpdateColumnSerializer =
+_$gMainQuestRelationsUpdateColumnSerializer =
     new _$GMainQuestRelationsUpdateColumnSerializer();
 Serializer<GMainQuestRelationsUpdates> _$gMainQuestRelationsUpdatesSerializer =
     new _$GMainQuestRelationsUpdatesSerializer();
@@ -794,10 +825,10 @@ Serializer<GMainQuestsSelectColumn> _$gMainQuestsSelectColumnSerializer =
 Serializer<GMainQuestsSetInput> _$gMainQuestsSetInputSerializer =
     new _$GMainQuestsSetInputSerializer();
 Serializer<GMainQuestsStreamCursorInput>
-    _$gMainQuestsStreamCursorInputSerializer =
+_$gMainQuestsStreamCursorInputSerializer =
     new _$GMainQuestsStreamCursorInputSerializer();
 Serializer<GMainQuestsStreamCursorValueInput>
-    _$gMainQuestsStreamCursorValueInputSerializer =
+_$gMainQuestsStreamCursorValueInputSerializer =
     new _$GMainQuestsStreamCursorValueInputSerializer();
 Serializer<GMainQuestsUpdateColumn> _$gMainQuestsUpdateColumnSerializer =
     new _$GMainQuestsUpdateColumnSerializer();
@@ -812,7 +843,7 @@ Serializer<GNewsSelectColumn> _$gNewsSelectColumnSerializer =
 Serializer<GNewsStreamCursorInput> _$gNewsStreamCursorInputSerializer =
     new _$GNewsStreamCursorInputSerializer();
 Serializer<GNewsStreamCursorValueInput>
-    _$gNewsStreamCursorValueInputSerializer =
+_$gNewsStreamCursorValueInputSerializer =
     new _$GNewsStreamCursorValueInputSerializer();
 Serializer<GNotificationsBoolExp> _$gNotificationsBoolExpSerializer =
     new _$GNotificationsBoolExpSerializer();
@@ -821,10 +852,10 @@ Serializer<GNotificationsOrderBy> _$gNotificationsOrderBySerializer =
 Serializer<GNotificationsSelectColumn> _$gNotificationsSelectColumnSerializer =
     new _$GNotificationsSelectColumnSerializer();
 Serializer<GNotificationsStreamCursorInput>
-    _$gNotificationsStreamCursorInputSerializer =
+_$gNotificationsStreamCursorInputSerializer =
     new _$GNotificationsStreamCursorInputSerializer();
 Serializer<GNotificationsStreamCursorValueInput>
-    _$gNotificationsStreamCursorValueInputSerializer =
+_$gNotificationsStreamCursorValueInputSerializer =
     new _$GNotificationsStreamCursorValueInputSerializer();
 Serializer<GOrderBy> _$gOrderBySerializer = new _$GOrderBySerializer();
 Serializer<GQuestCategoriesBoolExp> _$gQuestCategoriesBoolExpSerializer =
@@ -832,30 +863,30 @@ Serializer<GQuestCategoriesBoolExp> _$gQuestCategoriesBoolExpSerializer =
 Serializer<GQuestCategoriesOrderBy> _$gQuestCategoriesOrderBySerializer =
     new _$GQuestCategoriesOrderBySerializer();
 Serializer<GQuestCategoriesSelectColumn>
-    _$gQuestCategoriesSelectColumnSerializer =
+_$gQuestCategoriesSelectColumnSerializer =
     new _$GQuestCategoriesSelectColumnSerializer();
 Serializer<GQuestCategoriesStreamCursorInput>
-    _$gQuestCategoriesStreamCursorInputSerializer =
+_$gQuestCategoriesStreamCursorInputSerializer =
     new _$GQuestCategoriesStreamCursorInputSerializer();
 Serializer<GQuestCategoriesStreamCursorValueInput>
-    _$gQuestCategoriesStreamCursorValueInputSerializer =
+_$gQuestCategoriesStreamCursorValueInputSerializer =
     new _$GQuestCategoriesStreamCursorValueInputSerializer();
 Serializer<GQuestStatusBoolExp> _$gQuestStatusBoolExpSerializer =
     new _$GQuestStatusBoolExpSerializer();
 Serializer<GQuestStatusEnum> _$gQuestStatusEnumSerializer =
     new _$GQuestStatusEnumSerializer();
 Serializer<GQuestStatusEnumComparisonExp>
-    _$gQuestStatusEnumComparisonExpSerializer =
+_$gQuestStatusEnumComparisonExpSerializer =
     new _$GQuestStatusEnumComparisonExpSerializer();
 Serializer<GQuestStatusOrderBy> _$gQuestStatusOrderBySerializer =
     new _$GQuestStatusOrderBySerializer();
 Serializer<GQuestStatusSelectColumn> _$gQuestStatusSelectColumnSerializer =
     new _$GQuestStatusSelectColumnSerializer();
 Serializer<GQuestStatusStreamCursorInput>
-    _$gQuestStatusStreamCursorInputSerializer =
+_$gQuestStatusStreamCursorInputSerializer =
     new _$GQuestStatusStreamCursorInputSerializer();
 Serializer<GQuestStatusStreamCursorValueInput>
-    _$gQuestStatusStreamCursorValueInputSerializer =
+_$gQuestStatusStreamCursorValueInputSerializer =
     new _$GQuestStatusStreamCursorValueInputSerializer();
 Serializer<GSeosBoolExp> _$gSeosBoolExpSerializer =
     new _$GSeosBoolExpSerializer();
@@ -866,7 +897,7 @@ Serializer<GSeosSelectColumn> _$gSeosSelectColumnSerializer =
 Serializer<GSeosStreamCursorInput> _$gSeosStreamCursorInputSerializer =
     new _$GSeosStreamCursorInputSerializer();
 Serializer<GSeosStreamCursorValueInput>
-    _$gSeosStreamCursorValueInputSerializer =
+_$gSeosStreamCursorValueInputSerializer =
     new _$GSeosStreamCursorValueInputSerializer();
 Serializer<GStringComparisonExp> _$gStringComparisonExpSerializer =
     new _$GStringComparisonExpSerializer();
@@ -879,7 +910,7 @@ Serializer<GTagsSelectColumn> _$gTagsSelectColumnSerializer =
 Serializer<GTagsStreamCursorInput> _$gTagsStreamCursorInputSerializer =
     new _$GTagsStreamCursorInputSerializer();
 Serializer<GTagsStreamCursorValueInput>
-    _$gTagsStreamCursorValueInputSerializer =
+_$gTagsStreamCursorValueInputSerializer =
     new _$GTagsStreamCursorValueInputSerializer();
 Serializer<GTimestamptzComparisonExp> _$gTimestamptzComparisonExpSerializer =
     new _$GTimestamptzComparisonExpSerializer();
@@ -888,13 +919,13 @@ Serializer<GUserAchievementsBoolExp> _$gUserAchievementsBoolExpSerializer =
 Serializer<GUserAchievementsOrderBy> _$gUserAchievementsOrderBySerializer =
     new _$GUserAchievementsOrderBySerializer();
 Serializer<GUserAchievementsSelectColumn>
-    _$gUserAchievementsSelectColumnSerializer =
+_$gUserAchievementsSelectColumnSerializer =
     new _$GUserAchievementsSelectColumnSerializer();
 Serializer<GUserAchievementsStreamCursorInput>
-    _$gUserAchievementsStreamCursorInputSerializer =
+_$gUserAchievementsStreamCursorInputSerializer =
     new _$GUserAchievementsStreamCursorInputSerializer();
 Serializer<GUserAchievementsStreamCursorValueInput>
-    _$gUserAchievementsStreamCursorValueInputSerializer =
+_$gUserAchievementsStreamCursorValueInputSerializer =
     new _$GUserAchievementsStreamCursorValueInputSerializer();
 Serializer<GUsersBoolExp> _$gUsersBoolExpSerializer =
     new _$GUsersBoolExpSerializer();
@@ -905,7 +936,7 @@ Serializer<GUsersSelectColumn> _$gUsersSelectColumnSerializer =
 Serializer<GUsersStreamCursorInput> _$gUsersStreamCursorInputSerializer =
     new _$GUsersStreamCursorInputSerializer();
 Serializer<GUsersStreamCursorValueInput>
-    _$gUsersStreamCursorValueInputSerializer =
+_$gUsersStreamCursorValueInputSerializer =
     new _$GUsersStreamCursorValueInputSerializer();
 Serializer<GUuidComparisonExp> _$gUuidComparisonExpSerializer =
     new _$GUuidComparisonExpSerializer();
@@ -915,82 +946,120 @@ class _$GAchievementsBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GAchievementsBoolExp,
-    _$GAchievementsBoolExp
+    _$GAchievementsBoolExp,
   ];
   @override
   final String wireName = 'GAchievementsBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAchievementsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAchievementsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GAchievementsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GAchievementsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GAchievementsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GAchievementsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GAchievementsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GAchievementsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAchievementsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GAchievementsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -1000,46 +1069,80 @@ class _$GAchievementsBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GAchievementsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GAchievementsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GAchievementsBoolExp))!
-              as GAchievementsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GAchievementsBoolExp),
+                )!
+                as GAchievementsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GAchievementsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GAchievementsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'description':
-          result.description.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'name':
-          result.name.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.name.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
       }
     }
@@ -1053,59 +1156,68 @@ class _$GAchievementsOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GAchievementsOrderBy,
-    _$GAchievementsOrderBy
+    _$GAchievementsOrderBy,
   ];
   @override
   final String wireName = 'GAchievementsOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAchievementsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAchievementsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GAchievementsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GAchievementsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -1115,24 +1227,44 @@ class _$GAchievementsOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -1156,16 +1288,20 @@ class _$GAchievementsSelectColumnSerializer
   final String wireName = 'GAchievementsSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GAchievementsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      _toWire[object.name] ?? object.name;
+  Object serialize(
+    Serializers serializers,
+    GAchievementsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => _toWire[object.name] ?? object.name;
 
   @override
   GAchievementsSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GAchievementsSelectColumn.valueOf(
-          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GAchievementsSelectColumn.valueOf(
+    _fromWire[serialized] ?? (serialized is String ? serialized : ''),
+  );
 }
 
 class _$GAchievementsStreamCursorInputSerializer
@@ -1173,35 +1309,45 @@ class _$GAchievementsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GAchievementsStreamCursorInput,
-    _$GAchievementsStreamCursorInput
+    _$GAchievementsStreamCursorInput,
   ];
   @override
   final String wireName = 'GAchievementsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAchievementsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAchievementsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GAchievementsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GAchievementsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAchievementsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GAchievementsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1211,15 +1357,23 @@ class _$GAchievementsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GAchievementsStreamCursorValueInput))!
-              as GAchievementsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GAchievementsStreamCursorValueInput,
+                  ),
+                )!
+                as GAchievementsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -1233,59 +1387,68 @@ class _$GAchievementsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GAchievementsStreamCursorValueInput,
-    _$GAchievementsStreamCursorValueInput
+    _$GAchievementsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GAchievementsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAchievementsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAchievementsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     return result;
   }
 
   @override
   GAchievementsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GAchievementsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1295,24 +1458,44 @@ class _$GAchievementsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
       }
     }
@@ -1329,14 +1512,18 @@ class _$GCursorOrderingSerializer
   final String wireName = 'GCursorOrdering';
 
   @override
-  Object serialize(Serializers serializers, GCursorOrdering object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GCursorOrdering object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GCursorOrdering deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GCursorOrdering.valueOf(serialized as String);
+  GCursorOrdering deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GCursorOrdering.valueOf(serialized as String);
 }
 
 class _$GIntComparisonExpSerializer
@@ -1347,8 +1534,11 @@ class _$GIntComparisonExpSerializer
   final String wireName = 'GIntComparisonExp';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GIntComparisonExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GIntComparisonExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_eq;
@@ -1373,16 +1563,22 @@ class _$GIntComparisonExpSerializer
     if (value != null) {
       result
         ..add('_in')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(int)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(int),
+            ]),
+          ),
+        );
     }
     value = object.G_isNull;
     if (value != null) {
       result
         ..add('_isNull')
         ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
     }
     value = object.G_lt;
     if (value != null) {
@@ -1406,17 +1602,24 @@ class _$GIntComparisonExpSerializer
     if (value != null) {
       result
         ..add('_nin')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(int)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(int),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GIntComparisonExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GIntComparisonExpBuilder();
 
     final iterator = serialized.iterator;
@@ -1426,44 +1629,64 @@ class _$GIntComparisonExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_eq':
-          result.G_eq = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_eq =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_gt':
-          result.G_gt = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_gt =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_gte':
-          result.G_gte = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_gte =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_in':
-          result.G_in.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(BuiltList, const [const FullType(int)]))!
-              as BuiltList<Object?>);
+          result.G_in.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(int),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_isNull':
-          result.G_isNull = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
+          result.G_isNull =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
           break;
         case '_lt':
-          result.G_lt = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_lt =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_lte':
-          result.G_lte = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_lte =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_neq':
-          result.G_neq = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.G_neq =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case '_nin':
-          result.G_nin.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(BuiltList, const [const FullType(int)]))!
-              as BuiltList<Object?>);
+          result.G_nin.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(int),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -1477,61 +1700,87 @@ class _$GMainQuestRelationsBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsBoolExp,
-    _$GMainQuestRelationsBoolExp
+    _$GMainQuestRelationsBoolExp,
   ];
   @override
   final String wireName = 'GMainQuestRelationsBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(BuiltList,
-                const [const FullType(GMainQuestRelationsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GMainQuestRelationsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestRelationsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestRelationsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(BuiltList,
-                const [const FullType(GMainQuestRelationsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GMainQuestRelationsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.childQuestId;
     if (value != null) {
       result
         ..add('childQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.parentQuestId;
     if (value != null) {
       result
         ..add('parentQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -1541,31 +1790,53 @@ class _$GMainQuestRelationsBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GMainQuestRelationsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestRelationsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestRelationsBoolExp))!
-              as GMainQuestRelationsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestRelationsBoolExp),
+                )!
+                as GMainQuestRelationsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GMainQuestRelationsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestRelationsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'childQuestId':
-          result.childQuestId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.childQuestId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'parentQuestId':
-          result.parentQuestId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.parentQuestId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
       }
     }
@@ -1583,15 +1854,17 @@ class _$GMainQuestRelationsConstraintSerializer
 
   @override
   Object serialize(
-          Serializers serializers, GMainQuestRelationsConstraint object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+    Serializers serializers,
+    GMainQuestRelationsConstraint object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GMainQuestRelationsConstraint deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestRelationsConstraint.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestRelationsConstraint.valueOf(serialized as String);
 }
 
 class _$GMainQuestRelationsInsertInputSerializer
@@ -1599,38 +1872,44 @@ class _$GMainQuestRelationsInsertInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsInsertInput,
-    _$GMainQuestRelationsInsertInput
+    _$GMainQuestRelationsInsertInput,
   ];
   @override
   final String wireName = 'GMainQuestRelationsInsertInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsInsertInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsInsertInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.childQuestId;
     if (value != null) {
       result
         ..add('childQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.parentQuestId;
     if (value != null) {
       result
         ..add('parentQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsInsertInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsInsertInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1640,12 +1919,20 @@ class _$GMainQuestRelationsInsertInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'childQuestId':
-          result.childQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.childQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'parentQuestId':
-          result.parentQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.parentQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -1659,39 +1946,52 @@ class _$GMainQuestRelationsOnConflictSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsOnConflict,
-    _$GMainQuestRelationsOnConflict
+    _$GMainQuestRelationsOnConflict,
   ];
   @override
   final String wireName = 'GMainQuestRelationsOnConflict';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsOnConflict object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsOnConflict object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'constraint',
-      serializers.serialize(object.constraint,
-          specifiedType: const FullType(GMainQuestRelationsConstraint)),
+      serializers.serialize(
+        object.constraint,
+        specifiedType: const FullType(GMainQuestRelationsConstraint),
+      ),
       'updateColumns',
-      serializers.serialize(object.updateColumns,
-          specifiedType: const FullType(BuiltList,
-              const [const FullType(GMainQuestRelationsUpdateColumn)])),
+      serializers.serialize(
+        object.updateColumns,
+        specifiedType: const FullType(BuiltList, const [
+          const FullType(GMainQuestRelationsUpdateColumn),
+        ]),
+      ),
     ];
     Object? value;
     value = object.where;
     if (value != null) {
       result
         ..add('where')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestRelationsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestRelationsBoolExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsOnConflict deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsOnConflictBuilder();
 
     final iterator = serialized.iterator;
@@ -1701,20 +2001,34 @@ class _$GMainQuestRelationsOnConflictSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'constraint':
-          result.constraint = serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestRelationsConstraint))!
-              as GMainQuestRelationsConstraint;
+          result.constraint =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(
+                      GMainQuestRelationsConstraint,
+                    ),
+                  )!
+                  as GMainQuestRelationsConstraint;
           break;
         case 'updateColumns':
-          result.updateColumns.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GMainQuestRelationsUpdateColumn)
-              ]))! as BuiltList<Object?>);
+          result.updateColumns.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestRelationsUpdateColumn),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'where':
-          result.where.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestRelationsBoolExp))!
-              as GMainQuestRelationsBoolExp);
+          result.where.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestRelationsBoolExp),
+                )!
+                as GMainQuestRelationsBoolExp,
+          );
           break;
       }
     }
@@ -1728,38 +2042,44 @@ class _$GMainQuestRelationsOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsOrderBy,
-    _$GMainQuestRelationsOrderBy
+    _$GMainQuestRelationsOrderBy,
   ];
   @override
   final String wireName = 'GMainQuestRelationsOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.childQuestId;
     if (value != null) {
       result
         ..add('childQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.parentQuestId;
     if (value != null) {
       result
         ..add('parentQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -1769,12 +2089,20 @@ class _$GMainQuestRelationsOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'childQuestId':
-          result.childQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.childQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'parentQuestId':
-          result.parentQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.parentQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -1788,22 +2116,28 @@ class _$GMainQuestRelationsPkColumnsInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsPkColumnsInput,
-    _$GMainQuestRelationsPkColumnsInput
+    _$GMainQuestRelationsPkColumnsInput,
   ];
   @override
   final String wireName = 'GMainQuestRelationsPkColumnsInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsPkColumnsInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsPkColumnsInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'childQuestId',
-      serializers.serialize(object.childQuestId,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.childQuestId,
+        specifiedType: const FullType(String),
+      ),
       'parentQuestId',
-      serializers.serialize(object.parentQuestId,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.parentQuestId,
+        specifiedType: const FullType(String),
+      ),
     ];
 
     return result;
@@ -1811,8 +2145,10 @@ class _$GMainQuestRelationsPkColumnsInputSerializer
 
   @override
   GMainQuestRelationsPkColumnsInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsPkColumnsInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1822,12 +2158,20 @@ class _$GMainQuestRelationsPkColumnsInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'childQuestId':
-          result.childQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.childQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'parentQuestId':
-          result.parentQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.parentQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -1845,15 +2189,17 @@ class _$GMainQuestRelationsSelectColumnSerializer
 
   @override
   Object serialize(
-          Serializers serializers, GMainQuestRelationsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+    Serializers serializers,
+    GMainQuestRelationsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GMainQuestRelationsSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestRelationsSelectColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestRelationsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GMainQuestRelationsSetInputSerializer
@@ -1861,38 +2207,44 @@ class _$GMainQuestRelationsSetInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsSetInput,
-    _$GMainQuestRelationsSetInput
+    _$GMainQuestRelationsSetInput,
   ];
   @override
   final String wireName = 'GMainQuestRelationsSetInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsSetInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsSetInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.childQuestId;
     if (value != null) {
       result
         ..add('childQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.parentQuestId;
     if (value != null) {
       result
         ..add('parentQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsSetInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsSetInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1902,12 +2254,20 @@ class _$GMainQuestRelationsSetInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'childQuestId':
-          result.childQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.childQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'parentQuestId':
-          result.parentQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.parentQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -1921,36 +2281,47 @@ class _$GMainQuestRelationsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsStreamCursorInput,
-    _$GMainQuestRelationsStreamCursorInput
+    _$GMainQuestRelationsStreamCursorInput,
   ];
   @override
   final String wireName = 'GMainQuestRelationsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType:
-              const FullType(GMainQuestRelationsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(
+          GMainQuestRelationsStreamCursorValueInput,
+        ),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -1960,15 +2331,23 @@ class _$GMainQuestRelationsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GMainQuestRelationsStreamCursorValueInput))!
-              as GMainQuestRelationsStreamCursorValueInput);
+                    GMainQuestRelationsStreamCursorValueInput,
+                  ),
+                )!
+                as GMainQuestRelationsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -1982,38 +2361,44 @@ class _$GMainQuestRelationsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsStreamCursorValueInput,
-    _$GMainQuestRelationsStreamCursorValueInput
+    _$GMainQuestRelationsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GMainQuestRelationsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.childQuestId;
     if (value != null) {
       result
         ..add('childQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.parentQuestId;
     if (value != null) {
       result
         ..add('parentQuestId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -2023,12 +2408,20 @@ class _$GMainQuestRelationsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'childQuestId':
-          result.childQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.childQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'parentQuestId':
-          result.parentQuestId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.parentQuestId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -2046,15 +2439,17 @@ class _$GMainQuestRelationsUpdateColumnSerializer
 
   @override
   Object serialize(
-          Serializers serializers, GMainQuestRelationsUpdateColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+    Serializers serializers,
+    GMainQuestRelationsUpdateColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GMainQuestRelationsUpdateColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestRelationsUpdateColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestRelationsUpdateColumn.valueOf(serialized as String);
 }
 
 class _$GMainQuestRelationsUpdatesSerializer
@@ -2062,35 +2457,45 @@ class _$GMainQuestRelationsUpdatesSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestRelationsUpdates,
-    _$GMainQuestRelationsUpdates
+    _$GMainQuestRelationsUpdates,
   ];
   @override
   final String wireName = 'GMainQuestRelationsUpdates';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestRelationsUpdates object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestRelationsUpdates object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'where',
-      serializers.serialize(object.where,
-          specifiedType: const FullType(GMainQuestRelationsBoolExp)),
+      serializers.serialize(
+        object.where,
+        specifiedType: const FullType(GMainQuestRelationsBoolExp),
+      ),
     ];
     Object? value;
     value = object.G_set;
     if (value != null) {
       result
         ..add('_set')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestRelationsSetInput)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestRelationsSetInput),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestRelationsUpdates deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestRelationsUpdatesBuilder();
 
     final iterator = serialized.iterator;
@@ -2100,14 +2505,22 @@ class _$GMainQuestRelationsUpdatesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_set':
-          result.G_set.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestRelationsSetInput))!
-              as GMainQuestRelationsSetInput);
+          result.G_set.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestRelationsSetInput),
+                )!
+                as GMainQuestRelationsSetInput,
+          );
           break;
         case 'where':
-          result.where.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestRelationsBoolExp))!
-              as GMainQuestRelationsBoolExp);
+          result.where.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestRelationsBoolExp),
+                )!
+                as GMainQuestRelationsBoolExp,
+          );
           break;
       }
     }
@@ -2125,131 +2538,201 @@ class _$GMainQuestsBoolExpSerializer
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GMainQuestsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GMainQuestsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GMainQuestsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GMainQuestsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.begunAt;
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.deletedAt;
     if (value != null) {
       result
         ..add('deletedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.status;
     if (value != null) {
       result
         ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnumComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnumComparisonExp),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -2259,86 +2742,152 @@ class _$GMainQuestsBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GMainQuestsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestsBoolExp))!
-              as GMainQuestsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestsBoolExp),
+                )!
+                as GMainQuestsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GMainQuestsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'begunAt':
-          result.begunAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.begunAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'categoryId':
-          result.categoryId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.categoryId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'coverImageUrl':
-          result.coverImageUrl.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.coverImageUrl.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'deletedAt':
-          result.deletedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.deletedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'description':
-          result.description.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'endedAt':
-          result.endedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.endedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'note':
-          result.note.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.note.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'status':
-          result.status.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnumComparisonExp))!
-              as GQuestStatusEnumComparisonExp);
+          result.status.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GQuestStatusEnumComparisonExp),
+                )!
+                as GQuestStatusEnumComparisonExp,
+          );
           break;
         case 'title':
-          result.title.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.title.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'userId':
-          result.userId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.userId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
       }
     }
@@ -2355,14 +2904,18 @@ class _$GMainQuestsConstraintSerializer
   final String wireName = 'GMainQuestsConstraint';
 
   @override
-  Object serialize(Serializers serializers, GMainQuestsConstraint object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GMainQuestsConstraint object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GMainQuestsConstraint deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestsConstraint.valueOf(serialized as String);
+  GMainQuestsConstraint deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestsConstraint.valueOf(serialized as String);
 }
 
 class _$GMainQuestsInsertInputSerializer
@@ -2370,115 +2923,135 @@ class _$GMainQuestsInsertInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsInsertInput,
-    _$GMainQuestsInsertInput
+    _$GMainQuestsInsertInput,
   ];
   @override
   final String wireName = 'GMainQuestsInsertInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsInsertInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsInsertInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.begunAt;
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.deletedAt;
     if (value != null) {
       result
         ..add('deletedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.status;
     if (value != null) {
       result
         ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnum)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnum),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsInsertInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsInsertInputBuilder();
 
     final iterator = serialized.iterator;
@@ -2488,57 +3061,108 @@ class _$GMainQuestsInsertInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'deletedAt':
-          result.deletedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.deletedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnum))
-              as GQuestStatusEnum?;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GQuestStatusEnum),
+                  )
+                  as GQuestStatusEnum?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -2552,39 +3176,52 @@ class _$GMainQuestsOnConflictSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsOnConflict,
-    _$GMainQuestsOnConflict
+    _$GMainQuestsOnConflict,
   ];
   @override
   final String wireName = 'GMainQuestsOnConflict';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsOnConflict object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsOnConflict object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'constraint',
-      serializers.serialize(object.constraint,
-          specifiedType: const FullType(GMainQuestsConstraint)),
+      serializers.serialize(
+        object.constraint,
+        specifiedType: const FullType(GMainQuestsConstraint),
+      ),
       'updateColumns',
-      serializers.serialize(object.updateColumns,
-          specifiedType: const FullType(
-              BuiltList, const [const FullType(GMainQuestsUpdateColumn)])),
+      serializers.serialize(
+        object.updateColumns,
+        specifiedType: const FullType(BuiltList, const [
+          const FullType(GMainQuestsUpdateColumn),
+        ]),
+      ),
     ];
     Object? value;
     value = object.where;
     if (value != null) {
       result
         ..add('where')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestsBoolExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsOnConflict deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsOnConflictBuilder();
 
     final iterator = serialized.iterator;
@@ -2594,20 +3231,32 @@ class _$GMainQuestsOnConflictSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'constraint':
-          result.constraint = serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestsConstraint))!
-              as GMainQuestsConstraint;
+          result.constraint =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GMainQuestsConstraint),
+                  )!
+                  as GMainQuestsConstraint;
           break;
         case 'updateColumns':
-          result.updateColumns.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GMainQuestsUpdateColumn)
-              ]))! as BuiltList<Object?>);
+          result.updateColumns.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GMainQuestsUpdateColumn),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'where':
-          result.where.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestsBoolExp))!
-              as GMainQuestsBoolExp);
+          result.where.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestsBoolExp),
+                )!
+                as GMainQuestsBoolExp,
+          );
           break;
       }
     }
@@ -2625,108 +3274,125 @@ class _$GMainQuestsOrderBySerializer
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.begunAt;
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.deletedAt;
     if (value != null) {
       result
         ..add('deletedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.status;
     if (value != null) {
       result
         ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -2736,56 +3402,108 @@ class _$GMainQuestsOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'deletedAt':
-          result.deletedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.deletedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -2799,15 +3517,17 @@ class _$GMainQuestsPkColumnsInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsPkColumnsInput,
-    _$GMainQuestsPkColumnsInput
+    _$GMainQuestsPkColumnsInput,
   ];
   @override
   final String wireName = 'GMainQuestsPkColumnsInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsPkColumnsInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsPkColumnsInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'id',
       serializers.serialize(object.id, specifiedType: const FullType(String)),
@@ -2818,8 +3538,10 @@ class _$GMainQuestsPkColumnsInputSerializer
 
   @override
   GMainQuestsPkColumnsInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsPkColumnsInputBuilder();
 
     final iterator = serialized.iterator;
@@ -2829,8 +3551,12 @@ class _$GMainQuestsPkColumnsInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -2847,15 +3573,18 @@ class _$GMainQuestsSelectColumnSerializer
   final String wireName = 'GMainQuestsSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GMainQuestsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GMainQuestsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GMainQuestsSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestsSelectColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GMainQuestsSetInputSerializer
@@ -2863,115 +3592,135 @@ class _$GMainQuestsSetInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsSetInput,
-    _$GMainQuestsSetInput
+    _$GMainQuestsSetInput,
   ];
   @override
   final String wireName = 'GMainQuestsSetInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsSetInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsSetInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.begunAt;
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.deletedAt;
     if (value != null) {
       result
         ..add('deletedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.status;
     if (value != null) {
       result
         ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnum)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnum),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsSetInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsSetInputBuilder();
 
     final iterator = serialized.iterator;
@@ -2981,57 +3730,108 @@ class _$GMainQuestsSetInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'deletedAt':
-          result.deletedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.deletedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnum))
-              as GQuestStatusEnum?;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GQuestStatusEnum),
+                  )
+                  as GQuestStatusEnum?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -3045,35 +3845,45 @@ class _$GMainQuestsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsStreamCursorInput,
-    _$GMainQuestsStreamCursorInput
+    _$GMainQuestsStreamCursorInput,
   ];
   @override
   final String wireName = 'GMainQuestsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GMainQuestsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GMainQuestsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -3083,15 +3893,23 @@ class _$GMainQuestsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GMainQuestsStreamCursorValueInput))!
-              as GMainQuestsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GMainQuestsStreamCursorValueInput,
+                  ),
+                )!
+                as GMainQuestsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -3105,115 +3923,135 @@ class _$GMainQuestsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GMainQuestsStreamCursorValueInput,
-    _$GMainQuestsStreamCursorValueInput
+    _$GMainQuestsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GMainQuestsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.begunAt;
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.deletedAt;
     if (value != null) {
       result
         ..add('deletedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.note;
     if (value != null) {
       result
         ..add('note')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.status;
     if (value != null) {
       result
         ..add('status')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnum)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnum),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -3223,57 +4061,108 @@ class _$GMainQuestsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'deletedAt':
-          result.deletedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.deletedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnum))
-              as GQuestStatusEnum?;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GQuestStatusEnum),
+                  )
+                  as GQuestStatusEnum?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -3290,15 +4179,18 @@ class _$GMainQuestsUpdateColumnSerializer
   final String wireName = 'GMainQuestsUpdateColumn';
 
   @override
-  Object serialize(Serializers serializers, GMainQuestsUpdateColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GMainQuestsUpdateColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GMainQuestsUpdateColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GMainQuestsUpdateColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GMainQuestsUpdateColumn.valueOf(serialized as String);
 }
 
 class _$GMainQuestsUpdatesSerializer
@@ -3310,28 +4202,38 @@ class _$GMainQuestsUpdatesSerializer
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GMainQuestsUpdates object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GMainQuestsUpdates object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'where',
-      serializers.serialize(object.where,
-          specifiedType: const FullType(GMainQuestsBoolExp)),
+      serializers.serialize(
+        object.where,
+        specifiedType: const FullType(GMainQuestsBoolExp),
+      ),
     ];
     Object? value;
     value = object.G_set;
     if (value != null) {
       result
         ..add('_set')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GMainQuestsSetInput)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GMainQuestsSetInput),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GMainQuestsUpdates deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GMainQuestsUpdatesBuilder();
 
     final iterator = serialized.iterator;
@@ -3341,14 +4243,22 @@ class _$GMainQuestsUpdatesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_set':
-          result.G_set.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestsSetInput))!
-              as GMainQuestsSetInput);
+          result.G_set.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestsSetInput),
+                )!
+                as GMainQuestsSetInput,
+          );
           break;
         case 'where':
-          result.where.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GMainQuestsBoolExp))!
-              as GMainQuestsBoolExp);
+          result.where.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GMainQuestsBoolExp),
+                )!
+                as GMainQuestsBoolExp,
+          );
           break;
       }
     }
@@ -3364,117 +4274,180 @@ class _$GNewsBoolExpSerializer implements StructuredSerializer<GNewsBoolExp> {
   final String wireName = 'GNewsBoolExp';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GNewsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GNewsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GNewsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GNewsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GNewsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GNewsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GNewsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GNewsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.seo;
     if (value != null) {
       result
         ..add('seo')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GSeosBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GSeosBoolExp),
+          ),
+        );
     }
     value = object.seoId;
     if (value != null) {
       result
         ..add('seoId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.slug;
     if (value != null) {
       result
         ..add('slug')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GNewsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNewsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -3484,74 +4457,134 @@ class _$GNewsBoolExpSerializer implements StructuredSerializer<GNewsBoolExp> {
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GNewsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GNewsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GNewsBoolExp))! as GNewsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GNewsBoolExp),
+                )!
+                as GNewsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GNewsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GNewsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'content':
-          result.content.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.content.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'coverImageUrl':
-          result.coverImageUrl.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.coverImageUrl.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'excerpt':
-          result.excerpt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.excerpt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'publishedAt':
-          result.publishedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'seo':
-          result.seo.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GSeosBoolExp))! as GSeosBoolExp);
+          result.seo.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GSeosBoolExp),
+                )!
+                as GSeosBoolExp,
+          );
           break;
         case 'seoId':
-          result.seoId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.seoId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'slug':
-          result.slug.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.slug.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'title':
-          result.title.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.title.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
       }
     }
@@ -3567,94 +4600,113 @@ class _$GNewsOrderBySerializer implements StructuredSerializer<GNewsOrderBy> {
   final String wireName = 'GNewsOrderBy';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GNewsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GNewsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.seo;
     if (value != null) {
       result
         ..add('seo')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GSeosOrderBy)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GSeosOrderBy),
+          ),
+        );
     }
     value = object.seoId;
     if (value != null) {
       result
         ..add('seoId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.slug;
     if (value != null) {
       result
         ..add('slug')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GNewsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNewsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -3664,48 +4716,93 @@ class _$GNewsOrderBySerializer implements StructuredSerializer<GNewsOrderBy> {
       final Object? value = iterator.current;
       switch (key) {
         case 'content':
-          result.content = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.content =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'excerpt':
-          result.excerpt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.excerpt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'publishedAt':
-          result.publishedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.publishedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'seo':
-          result.seo.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GSeosOrderBy))! as GSeosOrderBy);
+          result.seo.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GSeosOrderBy),
+                )!
+                as GSeosOrderBy,
+          );
           break;
         case 'seoId':
-          result.seoId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.seoId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'slug':
-          result.slug = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.slug =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -3722,14 +4819,18 @@ class _$GNewsSelectColumnSerializer
   final String wireName = 'GNewsSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GNewsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GNewsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GNewsSelectColumn deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GNewsSelectColumn.valueOf(serialized as String);
+  GNewsSelectColumn deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GNewsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GNewsStreamCursorInputSerializer
@@ -3737,35 +4838,45 @@ class _$GNewsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GNewsStreamCursorInput,
-    _$GNewsStreamCursorInput
+    _$GNewsStreamCursorInput,
   ];
   @override
   final String wireName = 'GNewsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNewsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNewsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GNewsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GNewsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GNewsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNewsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -3775,14 +4886,21 @@ class _$GNewsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GNewsStreamCursorValueInput))!
-              as GNewsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GNewsStreamCursorValueInput),
+                )!
+                as GNewsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -3796,94 +4914,108 @@ class _$GNewsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GNewsStreamCursorValueInput,
-    _$GNewsStreamCursorValueInput
+    _$GNewsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GNewsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNewsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNewsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.seoId;
     if (value != null) {
       result
         ..add('seoId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.slug;
     if (value != null) {
       result
         ..add('slug')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     return result;
   }
 
   @override
   GNewsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNewsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -3893,44 +5025,84 @@ class _$GNewsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'content':
-          result.content = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.content =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'excerpt':
-          result.excerpt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.excerpt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'publishedAt':
-          result.publishedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.publishedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'seoId':
-          result.seoId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.seoId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'slug':
-          result.slug = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.slug =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
       }
     }
@@ -3944,117 +5116,175 @@ class _$GNotificationsBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GNotificationsBoolExp,
-    _$GNotificationsBoolExp
+    _$GNotificationsBoolExp,
   ];
   @override
   final String wireName = 'GNotificationsBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNotificationsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNotificationsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GNotificationsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GNotificationsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GNotificationsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GNotificationsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GNotificationsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GNotificationsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.firstOpenedAt;
     if (value != null) {
       result
         ..add('firstOpenedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GNotificationsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNotificationsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -4064,71 +5294,125 @@ class _$GNotificationsBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GNotificationsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GNotificationsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GNotificationsBoolExp))!
-              as GNotificationsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GNotificationsBoolExp),
+                )!
+                as GNotificationsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GNotificationsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GNotificationsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'content':
-          result.content.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.content.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'coverImageUrl':
-          result.coverImageUrl.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.coverImageUrl.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'excerpt':
-          result.excerpt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.excerpt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'firstOpenedAt':
-          result.firstOpenedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.firstOpenedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'publishedAt':
-          result.publishedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'title':
-          result.title.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.title.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'userId':
-          result.userId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.userId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
       }
     }
@@ -4142,94 +5426,108 @@ class _$GNotificationsOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GNotificationsOrderBy,
-    _$GNotificationsOrderBy
+    _$GNotificationsOrderBy,
   ];
   @override
   final String wireName = 'GNotificationsOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNotificationsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNotificationsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.firstOpenedAt;
     if (value != null) {
       result
         ..add('firstOpenedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GNotificationsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNotificationsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -4239,44 +5537,84 @@ class _$GNotificationsOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'content':
-          result.content = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.content =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'excerpt':
-          result.excerpt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.excerpt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'firstOpenedAt':
-          result.firstOpenedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.firstOpenedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'publishedAt':
-          result.publishedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.publishedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -4293,15 +5631,18 @@ class _$GNotificationsSelectColumnSerializer
   final String wireName = 'GNotificationsSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GNotificationsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GNotificationsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GNotificationsSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GNotificationsSelectColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GNotificationsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GNotificationsStreamCursorInputSerializer
@@ -4309,35 +5650,45 @@ class _$GNotificationsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GNotificationsStreamCursorInput,
-    _$GNotificationsStreamCursorInput
+    _$GNotificationsStreamCursorInput,
   ];
   @override
   final String wireName = 'GNotificationsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNotificationsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNotificationsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GNotificationsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GNotificationsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GNotificationsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNotificationsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -4347,15 +5698,23 @@ class _$GNotificationsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GNotificationsStreamCursorValueInput))!
-              as GNotificationsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GNotificationsStreamCursorValueInput,
+                  ),
+                )!
+                as GNotificationsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -4369,94 +5728,108 @@ class _$GNotificationsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GNotificationsStreamCursorValueInput,
-    _$GNotificationsStreamCursorValueInput
+    _$GNotificationsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GNotificationsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GNotificationsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GNotificationsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.content;
     if (value != null) {
       result
         ..add('content')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.excerpt;
     if (value != null) {
       result
         ..add('excerpt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.firstOpenedAt;
     if (value != null) {
       result
         ..add('firstOpenedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GNotificationsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GNotificationsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -4466,44 +5839,84 @@ class _$GNotificationsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'content':
-          result.content = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.content =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'excerpt':
-          result.excerpt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.excerpt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'firstOpenedAt':
-          result.firstOpenedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.firstOpenedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'publishedAt':
-          result.publishedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.publishedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -4519,14 +5932,18 @@ class _$GOrderBySerializer implements PrimitiveSerializer<GOrderBy> {
   final String wireName = 'GOrderBy';
 
   @override
-  Object serialize(Serializers serializers, GOrderBy object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GOrderBy deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GOrderBy.valueOf(serialized as String);
+  GOrderBy deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GOrderBy.valueOf(serialized as String);
 }
 
 class _$GQuestCategoriesBoolExpSerializer
@@ -4534,89 +5951,131 @@ class _$GQuestCategoriesBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GQuestCategoriesBoolExp,
-    _$GQuestCategoriesBoolExp
+    _$GQuestCategoriesBoolExp,
   ];
   @override
   final String wireName = 'GQuestCategoriesBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestCategoriesBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestCategoriesBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestCategoriesBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestCategoriesBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestCategoriesBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestCategoriesBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestCategoriesBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestCategoriesBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.sortNumber;
     if (value != null) {
       result
         ..add('sortNumber')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GIntComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GIntComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GQuestCategoriesBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestCategoriesBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -4626,51 +6085,89 @@ class _$GQuestCategoriesBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GQuestCategoriesBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestCategoriesBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestCategoriesBoolExp))!
-              as GQuestCategoriesBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GQuestCategoriesBoolExp),
+                )!
+                as GQuestCategoriesBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GQuestCategoriesBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestCategoriesBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'description':
-          result.description.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'name':
-          result.name.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.name.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'sortNumber':
-          result.sortNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GIntComparisonExp))!
-              as GIntComparisonExp);
+          result.sortNumber.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GIntComparisonExp),
+                )!
+                as GIntComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
       }
     }
@@ -4684,66 +6181,76 @@ class _$GQuestCategoriesOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GQuestCategoriesOrderBy,
-    _$GQuestCategoriesOrderBy
+    _$GQuestCategoriesOrderBy,
   ];
   @override
   final String wireName = 'GQuestCategoriesOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestCategoriesOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestCategoriesOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.sortNumber;
     if (value != null) {
       result
         ..add('sortNumber')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GQuestCategoriesOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestCategoriesOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -4753,28 +6260,52 @@ class _$GQuestCategoriesOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'sortNumber':
-          result.sortNumber = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.sortNumber =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -4798,16 +6329,20 @@ class _$GQuestCategoriesSelectColumnSerializer
   final String wireName = 'GQuestCategoriesSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GQuestCategoriesSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      _toWire[object.name] ?? object.name;
+  Object serialize(
+    Serializers serializers,
+    GQuestCategoriesSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => _toWire[object.name] ?? object.name;
 
   @override
   GQuestCategoriesSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GQuestCategoriesSelectColumn.valueOf(
-          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GQuestCategoriesSelectColumn.valueOf(
+    _fromWire[serialized] ?? (serialized is String ? serialized : ''),
+  );
 }
 
 class _$GQuestCategoriesStreamCursorInputSerializer
@@ -4815,36 +6350,45 @@ class _$GQuestCategoriesStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GQuestCategoriesStreamCursorInput,
-    _$GQuestCategoriesStreamCursorInput
+    _$GQuestCategoriesStreamCursorInput,
   ];
   @override
   final String wireName = 'GQuestCategoriesStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestCategoriesStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestCategoriesStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType:
-              const FullType(GQuestCategoriesStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GQuestCategoriesStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GQuestCategoriesStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestCategoriesStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -4854,15 +6398,23 @@ class _$GQuestCategoriesStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GQuestCategoriesStreamCursorValueInput))!
-              as GQuestCategoriesStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GQuestCategoriesStreamCursorValueInput,
+                  ),
+                )!
+                as GQuestCategoriesStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -4876,44 +6428,50 @@ class _$GQuestCategoriesStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GQuestCategoriesStreamCursorValueInput,
-    _$GQuestCategoriesStreamCursorValueInput
+    _$GQuestCategoriesStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GQuestCategoriesStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestCategoriesStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestCategoriesStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.sortNumber;
     if (value != null) {
@@ -4925,16 +6483,19 @@ class _$GQuestCategoriesStreamCursorValueInputSerializer
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     return result;
   }
 
   @override
   GQuestCategoriesStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestCategoriesStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -4944,28 +6505,49 @@ class _$GQuestCategoriesStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'sortNumber':
-          result.sortNumber = serializers.deserialize(value,
-              specifiedType: const FullType(int)) as int?;
+          result.sortNumber =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
       }
     }
@@ -4979,54 +6561,76 @@ class _$GQuestStatusBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GQuestStatusBoolExp,
-    _$GQuestStatusBoolExp
+    _$GQuestStatusBoolExp,
   ];
   @override
   final String wireName = 'GQuestStatusBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestStatusBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestStatusBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestStatusBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestStatusBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestStatusBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestStatusBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.value;
     if (value != null) {
       result
         ..add('value')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GQuestStatusBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestStatusBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -5036,26 +6640,44 @@ class _$GQuestStatusBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GQuestStatusBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestStatusBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusBoolExp))!
-              as GQuestStatusBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GQuestStatusBoolExp),
+                )!
+                as GQuestStatusBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GQuestStatusBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestStatusBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'value':
-          result.value.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.value.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
       }
     }
@@ -5072,14 +6694,18 @@ class _$GQuestStatusEnumSerializer
   final String wireName = 'GQuestStatusEnum';
 
   @override
-  Object serialize(Serializers serializers, GQuestStatusEnum object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GQuestStatusEnum object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GQuestStatusEnum deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GQuestStatusEnum.valueOf(serialized as String);
+  GQuestStatusEnum deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GQuestStatusEnum.valueOf(serialized as String);
 }
 
 class _$GQuestStatusEnumComparisonExpSerializer
@@ -5087,61 +6713,84 @@ class _$GQuestStatusEnumComparisonExpSerializer
   @override
   final Iterable<Type> types = const [
     GQuestStatusEnumComparisonExp,
-    _$GQuestStatusEnumComparisonExp
+    _$GQuestStatusEnumComparisonExp,
   ];
   @override
   final String wireName = 'GQuestStatusEnumComparisonExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestStatusEnumComparisonExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestStatusEnumComparisonExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_eq;
     if (value != null) {
       result
         ..add('_eq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnum)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnum),
+          ),
+        );
     }
     value = object.G_in;
     if (value != null) {
       result
         ..add('_in')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestStatusEnum)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestStatusEnum),
+            ]),
+          ),
+        );
     }
     value = object.G_isNull;
     if (value != null) {
       result
         ..add('_isNull')
         ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
     }
     value = object.G_neq;
     if (value != null) {
       result
         ..add('_neq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GQuestStatusEnum)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GQuestStatusEnum),
+          ),
+        );
     }
     value = object.G_nin;
     if (value != null) {
       result
         ..add('_nin')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GQuestStatusEnum)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GQuestStatusEnum),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GQuestStatusEnumComparisonExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestStatusEnumComparisonExpBuilder();
 
     final iterator = serialized.iterator;
@@ -5151,30 +6800,50 @@ class _$GQuestStatusEnumComparisonExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_eq':
-          result.G_eq = serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnum))
-              as GQuestStatusEnum?;
+          result.G_eq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GQuestStatusEnum),
+                  )
+                  as GQuestStatusEnum?;
           break;
         case '_in':
-          result.G_in.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GQuestStatusEnum)]))!
-              as BuiltList<Object?>);
+          result.G_in.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestStatusEnum),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_isNull':
-          result.G_isNull = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
+          result.G_isNull =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
           break;
         case '_neq':
-          result.G_neq = serializers.deserialize(value,
-                  specifiedType: const FullType(GQuestStatusEnum))
-              as GQuestStatusEnum?;
+          result.G_neq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GQuestStatusEnum),
+                  )
+                  as GQuestStatusEnum?;
           break;
         case '_nin':
-          result.G_nin.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GQuestStatusEnum)]))!
-              as BuiltList<Object?>);
+          result.G_nin.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GQuestStatusEnum),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -5188,31 +6857,36 @@ class _$GQuestStatusOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GQuestStatusOrderBy,
-    _$GQuestStatusOrderBy
+    _$GQuestStatusOrderBy,
   ];
   @override
   final String wireName = 'GQuestStatusOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestStatusOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestStatusOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.value;
     if (value != null) {
       result
         ..add('value')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GQuestStatusOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestStatusOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -5222,8 +6896,12 @@ class _$GQuestStatusOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'value':
-          result.value = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.value =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -5240,15 +6918,18 @@ class _$GQuestStatusSelectColumnSerializer
   final String wireName = 'GQuestStatusSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GQuestStatusSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GQuestStatusSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GQuestStatusSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GQuestStatusSelectColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GQuestStatusSelectColumn.valueOf(serialized as String);
 }
 
 class _$GQuestStatusStreamCursorInputSerializer
@@ -5256,35 +6937,45 @@ class _$GQuestStatusStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GQuestStatusStreamCursorInput,
-    _$GQuestStatusStreamCursorInput
+    _$GQuestStatusStreamCursorInput,
   ];
   @override
   final String wireName = 'GQuestStatusStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestStatusStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestStatusStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GQuestStatusStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GQuestStatusStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GQuestStatusStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestStatusStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -5294,15 +6985,23 @@ class _$GQuestStatusStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GQuestStatusStreamCursorValueInput))!
-              as GQuestStatusStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GQuestStatusStreamCursorValueInput,
+                  ),
+                )!
+                as GQuestStatusStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -5316,31 +7015,36 @@ class _$GQuestStatusStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GQuestStatusStreamCursorValueInput,
-    _$GQuestStatusStreamCursorValueInput
+    _$GQuestStatusStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GQuestStatusStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GQuestStatusStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GQuestStatusStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.value;
     if (value != null) {
       result
         ..add('value')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GQuestStatusStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GQuestStatusStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -5350,8 +7054,12 @@ class _$GQuestStatusStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'value':
-          result.value = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.value =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -5367,82 +7075,125 @@ class _$GSeosBoolExpSerializer implements StructuredSerializer<GSeosBoolExp> {
   final String wireName = 'GSeosBoolExp';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GSeosBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GSeosBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GSeosBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GSeosBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GSeosBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GSeosBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GSeosBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GSeosBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.ogImageUrl;
     if (value != null) {
       result
         ..add('ogImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GSeosBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GSeosBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -5452,50 +7203,89 @@ class _$GSeosBoolExpSerializer implements StructuredSerializer<GSeosBoolExp> {
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GSeosBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GSeosBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GSeosBoolExp))! as GSeosBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GSeosBoolExp),
+                )!
+                as GSeosBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GSeosBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GSeosBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'description':
-          result.description.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'ogImageUrl':
-          result.ogImageUrl.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.ogImageUrl.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'title':
-          result.title.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.title.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
       }
     }
@@ -5511,59 +7301,70 @@ class _$GSeosOrderBySerializer implements StructuredSerializer<GSeosOrderBy> {
   final String wireName = 'GSeosOrderBy';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GSeosOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GSeosOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.ogImageUrl;
     if (value != null) {
       result
         ..add('ogImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GSeosOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GSeosOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -5573,28 +7374,52 @@ class _$GSeosOrderBySerializer implements StructuredSerializer<GSeosOrderBy> {
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'ogImageUrl':
-          result.ogImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.ogImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -5611,14 +7436,18 @@ class _$GSeosSelectColumnSerializer
   final String wireName = 'GSeosSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GSeosSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GSeosSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GSeosSelectColumn deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GSeosSelectColumn.valueOf(serialized as String);
+  GSeosSelectColumn deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GSeosSelectColumn.valueOf(serialized as String);
 }
 
 class _$GSeosStreamCursorInputSerializer
@@ -5626,35 +7455,45 @@ class _$GSeosStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GSeosStreamCursorInput,
-    _$GSeosStreamCursorInput
+    _$GSeosStreamCursorInput,
   ];
   @override
   final String wireName = 'GSeosStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GSeosStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GSeosStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GSeosStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GSeosStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GSeosStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GSeosStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -5664,14 +7503,21 @@ class _$GSeosStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GSeosStreamCursorValueInput))!
-              as GSeosStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GSeosStreamCursorValueInput),
+                )!
+                as GSeosStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -5685,66 +7531,76 @@ class _$GSeosStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GSeosStreamCursorValueInput,
-    _$GSeosStreamCursorValueInput
+    _$GSeosStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GSeosStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GSeosStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GSeosStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.ogImageUrl;
     if (value != null) {
       result
         ..add('ogImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.title;
     if (value != null) {
       result
         ..add('title')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     return result;
   }
 
   @override
   GSeosStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GSeosStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -5754,28 +7610,52 @@ class _$GSeosStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'ogImageUrl':
-          result.ogImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.ogImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
       }
     }
@@ -5789,159 +7669,190 @@ class _$GStringComparisonExpSerializer
   @override
   final Iterable<Type> types = const [
     GStringComparisonExp,
-    _$GStringComparisonExp
+    _$GStringComparisonExp,
   ];
   @override
   final String wireName = 'GStringComparisonExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GStringComparisonExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GStringComparisonExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_eq;
     if (value != null) {
       result
         ..add('_eq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_gt;
     if (value != null) {
       result
         ..add('_gt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_gte;
     if (value != null) {
       result
         ..add('_gte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_ilike;
     if (value != null) {
       result
         ..add('_ilike')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_in;
     if (value != null) {
       result
         ..add('_in')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(String)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(String),
+            ]),
+          ),
+        );
     }
     value = object.G_iregex;
     if (value != null) {
       result
         ..add('_iregex')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_isNull;
     if (value != null) {
       result
         ..add('_isNull')
         ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
     }
     value = object.G_like;
     if (value != null) {
       result
         ..add('_like')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_lt;
     if (value != null) {
       result
         ..add('_lt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_lte;
     if (value != null) {
       result
         ..add('_lte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_neq;
     if (value != null) {
       result
         ..add('_neq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nilike;
     if (value != null) {
       result
         ..add('_nilike')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nin;
     if (value != null) {
       result
         ..add('_nin')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(String)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(String),
+            ]),
+          ),
+        );
     }
     value = object.G_niregex;
     if (value != null) {
       result
         ..add('_niregex')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nlike;
     if (value != null) {
       result
         ..add('_nlike')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nregex;
     if (value != null) {
       result
         ..add('_nregex')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nsimilar;
     if (value != null) {
       result
         ..add('_nsimilar')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_regex;
     if (value != null) {
       result
         ..add('_regex')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_similar;
     if (value != null) {
       result
         ..add('_similar')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GStringComparisonExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GStringComparisonExpBuilder();
 
     final iterator = serialized.iterator;
@@ -5951,84 +7862,162 @@ class _$GStringComparisonExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_eq':
-          result.G_eq = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_eq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_gt':
-          result.G_gt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_gt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_gte':
-          result.G_gte = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_gte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_ilike':
-          result.G_ilike = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_ilike =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_in':
-          result.G_in.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
-              as BuiltList<Object?>);
+          result.G_in.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_iregex':
-          result.G_iregex = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_iregex =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_isNull':
-          result.G_isNull = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
+          result.G_isNull =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
           break;
         case '_like':
-          result.G_like = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_like =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_lt':
-          result.G_lt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_lt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_lte':
-          result.G_lte = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_lte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_neq':
-          result.G_neq = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_neq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nilike':
-          result.G_nilike = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_nilike =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nin':
-          result.G_nin.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
-              as BuiltList<Object?>);
+          result.G_nin.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_niregex':
-          result.G_niregex = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_niregex =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nlike':
-          result.G_nlike = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_nlike =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nregex':
-          result.G_nregex = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_nregex =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nsimilar':
-          result.G_nsimilar = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_nsimilar =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_regex':
-          result.G_regex = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_regex =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_similar':
-          result.G_similar = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_similar =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -6044,75 +8033,114 @@ class _$GTagsBoolExpSerializer implements StructuredSerializer<GTagsBoolExp> {
   final String wireName = 'GTagsBoolExp';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GTagsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GTagsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GTagsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GTagsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTagsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTagsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GTagsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GTagsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.tag;
     if (value != null) {
       result
         ..add('tag')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GTagsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GTagsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -6122,45 +8150,80 @@ class _$GTagsBoolExpSerializer implements StructuredSerializer<GTagsBoolExp> {
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GTagsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GTagsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GTagsBoolExp))! as GTagsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTagsBoolExp),
+                )!
+                as GTagsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GTagsBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GTagsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'description':
-          result.description.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'tag':
-          result.tag.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.tag.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
       }
     }
@@ -6176,52 +8239,62 @@ class _$GTagsOrderBySerializer implements StructuredSerializer<GTagsOrderBy> {
   final String wireName = 'GTagsOrderBy';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GTagsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GTagsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.tag;
     if (value != null) {
       result
         ..add('tag')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GTagsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GTagsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -6231,24 +8304,44 @@ class _$GTagsOrderBySerializer implements StructuredSerializer<GTagsOrderBy> {
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'tag':
-          result.tag = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.tag =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -6265,14 +8358,18 @@ class _$GTagsSelectColumnSerializer
   final String wireName = 'GTagsSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GTagsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GTagsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GTagsSelectColumn deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GTagsSelectColumn.valueOf(serialized as String);
+  GTagsSelectColumn deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GTagsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GTagsStreamCursorInputSerializer
@@ -6280,35 +8377,45 @@ class _$GTagsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GTagsStreamCursorInput,
-    _$GTagsStreamCursorInput
+    _$GTagsStreamCursorInput,
   ];
   @override
   final String wireName = 'GTagsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GTagsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GTagsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GTagsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GTagsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GTagsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GTagsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -6318,14 +8425,21 @@ class _$GTagsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTagsStreamCursorValueInput))!
-              as GTagsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTagsStreamCursorValueInput),
+                )!
+                as GTagsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -6339,59 +8453,68 @@ class _$GTagsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GTagsStreamCursorValueInput,
-    _$GTagsStreamCursorValueInput
+    _$GTagsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GTagsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GTagsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GTagsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.tag;
     if (value != null) {
       result
         ..add('tag')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     return result;
   }
 
   @override
   GTagsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GTagsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -6401,24 +8524,44 @@ class _$GTagsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'tag':
-          result.tag = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.tag =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
       }
     }
@@ -6432,89 +8575,110 @@ class _$GTimestamptzComparisonExpSerializer
   @override
   final Iterable<Type> types = const [
     GTimestamptzComparisonExp,
-    _$GTimestamptzComparisonExp
+    _$GTimestamptzComparisonExp,
   ];
   @override
   final String wireName = 'GTimestamptzComparisonExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GTimestamptzComparisonExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GTimestamptzComparisonExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_eq;
     if (value != null) {
       result
         ..add('_eq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_gt;
     if (value != null) {
       result
         ..add('_gt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_gte;
     if (value != null) {
       result
         ..add('_gte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_in;
     if (value != null) {
       result
         ..add('_in')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(DateTime)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(DateTime),
+            ]),
+          ),
+        );
     }
     value = object.G_isNull;
     if (value != null) {
       result
         ..add('_isNull')
         ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
     }
     value = object.G_lt;
     if (value != null) {
       result
         ..add('_lt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_lte;
     if (value != null) {
       result
         ..add('_lte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_neq;
     if (value != null) {
       result
         ..add('_neq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.G_nin;
     if (value != null) {
       result
         ..add('_nin')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(DateTime)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(DateTime),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GTimestamptzComparisonExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GTimestamptzComparisonExpBuilder();
 
     final iterator = serialized.iterator;
@@ -6524,44 +8688,82 @@ class _$GTimestamptzComparisonExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_eq':
-          result.G_eq = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_eq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_gt':
-          result.G_gt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_gt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_gte':
-          result.G_gte = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_gte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_in':
-          result.G_in.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(DateTime)]))!
-              as BuiltList<Object?>);
+          result.G_in.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(DateTime),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_isNull':
-          result.G_isNull = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
+          result.G_isNull =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
           break;
         case '_lt':
-          result.G_lt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_lt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_lte':
-          result.G_lte = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_lte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_neq':
-          result.G_neq = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.G_neq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case '_nin':
-          result.G_nin.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(DateTime)]))!
-              as BuiltList<Object?>);
+          result.G_nin.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(DateTime),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -6575,61 +8777,87 @@ class _$GUserAchievementsBoolExpSerializer
   @override
   final Iterable<Type> types = const [
     GUserAchievementsBoolExp,
-    _$GUserAchievementsBoolExp
+    _$GUserAchievementsBoolExp,
   ];
   @override
   final String wireName = 'GUserAchievementsBoolExp';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserAchievementsBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUserAchievementsBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GUserAchievementsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GUserAchievementsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUserAchievementsBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUserAchievementsBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GUserAchievementsBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GUserAchievementsBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.achievementId;
     if (value != null) {
       result
         ..add('achievementId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUuidComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUuidComparisonExp),
+          ),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GUserAchievementsBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUserAchievementsBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -6639,31 +8867,53 @@ class _$GUserAchievementsBoolExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GUserAchievementsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GUserAchievementsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUserAchievementsBoolExp))!
-              as GUserAchievementsBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUserAchievementsBoolExp),
+                )!
+                as GUserAchievementsBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GUserAchievementsBoolExp)
-              ]))! as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GUserAchievementsBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'achievementId':
-          result.achievementId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUuidComparisonExp))!
-              as GUuidComparisonExp);
+          result.achievementId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUuidComparisonExp),
+                )!
+                as GUuidComparisonExp,
+          );
           break;
         case 'userId':
-          result.userId.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.userId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
       }
     }
@@ -6677,38 +8927,44 @@ class _$GUserAchievementsOrderBySerializer
   @override
   final Iterable<Type> types = const [
     GUserAchievementsOrderBy,
-    _$GUserAchievementsOrderBy
+    _$GUserAchievementsOrderBy,
   ];
   @override
   final String wireName = 'GUserAchievementsOrderBy';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserAchievementsOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUserAchievementsOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.achievementId;
     if (value != null) {
       result
         ..add('achievementId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GUserAchievementsOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUserAchievementsOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -6718,12 +8974,20 @@ class _$GUserAchievementsOrderBySerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'achievementId':
-          result.achievementId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.achievementId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -6741,15 +9005,17 @@ class _$GUserAchievementsSelectColumnSerializer
 
   @override
   Object serialize(
-          Serializers serializers, GUserAchievementsSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+    Serializers serializers,
+    GUserAchievementsSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
   GUserAchievementsSelectColumn deserialize(
-          Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GUserAchievementsSelectColumn.valueOf(serialized as String);
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GUserAchievementsSelectColumn.valueOf(serialized as String);
 }
 
 class _$GUserAchievementsStreamCursorInputSerializer
@@ -6757,36 +9023,45 @@ class _$GUserAchievementsStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GUserAchievementsStreamCursorInput,
-    _$GUserAchievementsStreamCursorInput
+    _$GUserAchievementsStreamCursorInput,
   ];
   @override
   final String wireName = 'GUserAchievementsStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserAchievementsStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUserAchievementsStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType:
-              const FullType(GUserAchievementsStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GUserAchievementsStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GUserAchievementsStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUserAchievementsStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -6796,15 +9071,23 @@ class _$GUserAchievementsStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GUserAchievementsStreamCursorValueInput))!
-              as GUserAchievementsStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GUserAchievementsStreamCursorValueInput,
+                  ),
+                )!
+                as GUserAchievementsStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -6818,38 +9101,44 @@ class _$GUserAchievementsStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GUserAchievementsStreamCursorValueInput,
-    _$GUserAchievementsStreamCursorValueInput
+    _$GUserAchievementsStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GUserAchievementsStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUserAchievementsStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUserAchievementsStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.achievementId;
     if (value != null) {
       result
         ..add('achievementId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.userId;
     if (value != null) {
       result
         ..add('userId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GUserAchievementsStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUserAchievementsStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -6859,12 +9148,20 @@ class _$GUserAchievementsStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'achievementId':
-          result.achievementId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.achievementId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'userId':
-          result.userId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.userId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -6880,103 +9177,158 @@ class _$GUsersBoolExpSerializer implements StructuredSerializer<GUsersBoolExp> {
   final String wireName = 'GUsersBoolExp';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GUsersBoolExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GUsersBoolExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_and;
     if (value != null) {
       result
         ..add('_and')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GUsersBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GUsersBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.G_not;
     if (value != null) {
       result
         ..add('_not')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GUsersBoolExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GUsersBoolExp),
+          ),
+        );
     }
     value = object.G_or;
     if (value != null) {
       result
         ..add('_or')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(
-                BuiltList, const [const FullType(GUsersBoolExp)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(GUsersBoolExp),
+            ]),
+          ),
+        );
     }
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.email;
     if (value != null) {
       result
         ..add('email')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.lastSeen;
     if (value != null) {
       result
         ..add('lastSeen')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.nickname;
     if (value != null) {
       result
         ..add('nickname')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.picture;
     if (value != null) {
       result
         ..add('picture')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GTimestamptzComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GTimestamptzComparisonExp),
+          ),
+        );
     }
     value = object.username;
     if (value != null) {
       result
         ..add('username')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     value = object.website;
     if (value != null) {
       result
         ..add('website')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GStringComparisonExp)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringComparisonExp),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GUsersBoolExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUsersBoolExpBuilder();
 
     final iterator = serialized.iterator;
@@ -6986,65 +9338,116 @@ class _$GUsersBoolExpSerializer implements StructuredSerializer<GUsersBoolExp> {
       final Object? value = iterator.current;
       switch (key) {
         case '_and':
-          result.G_and.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GUsersBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GUsersBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_not':
-          result.G_not.replace(serializers.deserialize(value,
-              specifiedType: const FullType(GUsersBoolExp))! as GUsersBoolExp);
+          result.G_not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUsersBoolExp),
+                )!
+                as GUsersBoolExp,
+          );
           break;
         case '_or':
-          result.G_or.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GUsersBoolExp)]))!
-              as BuiltList<Object?>);
+          result.G_or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GUsersBoolExp),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case 'createdAt':
-          result.createdAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'email':
-          result.email.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.email.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'id':
-          result.id.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.id.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'lastSeen':
-          result.lastSeen.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.lastSeen.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'nickname':
-          result.nickname.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.nickname.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'picture':
-          result.picture.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.picture.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GTimestamptzComparisonExp))!
-              as GTimestamptzComparisonExp);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GTimestamptzComparisonExp),
+                )!
+                as GTimestamptzComparisonExp,
+          );
           break;
         case 'username':
-          result.username.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.username.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
         case 'website':
-          result.website.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GStringComparisonExp))!
-              as GStringComparisonExp);
+          result.website.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringComparisonExp),
+                )!
+                as GStringComparisonExp,
+          );
           break;
       }
     }
@@ -7060,80 +9463,94 @@ class _$GUsersOrderBySerializer implements StructuredSerializer<GUsersOrderBy> {
   final String wireName = 'GUsersOrderBy';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GUsersOrderBy object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GUsersOrderBy object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.email;
     if (value != null) {
       result
         ..add('email')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.lastSeen;
     if (value != null) {
       result
         ..add('lastSeen')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.nickname;
     if (value != null) {
       result
         ..add('nickname')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.picture;
     if (value != null) {
       result
         ..add('picture')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.username;
     if (value != null) {
       result
         ..add('username')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     value = object.website;
     if (value != null) {
       result
         ..add('website')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GOrderBy)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(GOrderBy)),
+        );
     }
     return result;
   }
 
   @override
   GUsersOrderBy deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUsersOrderByBuilder();
 
     final iterator = serialized.iterator;
@@ -7143,40 +9560,76 @@ class _$GUsersOrderBySerializer implements StructuredSerializer<GUsersOrderBy> {
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'email':
-          result.email = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.email =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'lastSeen':
-          result.lastSeen = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.lastSeen =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'nickname':
-          result.nickname = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.nickname =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'picture':
-          result.picture = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.picture =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'username':
-          result.username = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.username =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
         case 'website':
-          result.website = serializers.deserialize(value,
-              specifiedType: const FullType(GOrderBy)) as GOrderBy?;
+          result.website =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GOrderBy),
+                  )
+                  as GOrderBy?;
           break;
       }
     }
@@ -7193,14 +9646,18 @@ class _$GUsersSelectColumnSerializer
   final String wireName = 'GUsersSelectColumn';
 
   @override
-  Object serialize(Serializers serializers, GUsersSelectColumn object,
-          {FullType specifiedType = FullType.unspecified}) =>
-      object.name;
+  Object serialize(
+    Serializers serializers,
+    GUsersSelectColumn object, {
+    FullType specifiedType = FullType.unspecified,
+  }) => object.name;
 
   @override
-  GUsersSelectColumn deserialize(Serializers serializers, Object serialized,
-          {FullType specifiedType = FullType.unspecified}) =>
-      GUsersSelectColumn.valueOf(serialized as String);
+  GUsersSelectColumn deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) => GUsersSelectColumn.valueOf(serialized as String);
 }
 
 class _$GUsersStreamCursorInputSerializer
@@ -7208,35 +9665,45 @@ class _$GUsersStreamCursorInputSerializer
   @override
   final Iterable<Type> types = const [
     GUsersStreamCursorInput,
-    _$GUsersStreamCursorInput
+    _$GUsersStreamCursorInput,
   ];
   @override
   final String wireName = 'GUsersStreamCursorInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUsersStreamCursorInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUsersStreamCursorInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'initialValue',
-      serializers.serialize(object.initialValue,
-          specifiedType: const FullType(GUsersStreamCursorValueInput)),
+      serializers.serialize(
+        object.initialValue,
+        specifiedType: const FullType(GUsersStreamCursorValueInput),
+      ),
     ];
     Object? value;
     value = object.ordering;
     if (value != null) {
       result
         ..add('ordering')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GCursorOrdering)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GCursorOrdering),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GUsersStreamCursorInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUsersStreamCursorInputBuilder();
 
     final iterator = serialized.iterator;
@@ -7246,14 +9713,21 @@ class _$GUsersStreamCursorInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'initialValue':
-          result.initialValue.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GUsersStreamCursorValueInput))!
-              as GUsersStreamCursorValueInput);
+          result.initialValue.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GUsersStreamCursorValueInput),
+                )!
+                as GUsersStreamCursorValueInput,
+          );
           break;
         case 'ordering':
-          result.ordering = serializers.deserialize(value,
-                  specifiedType: const FullType(GCursorOrdering))
-              as GCursorOrdering?;
+          result.ordering =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(GCursorOrdering),
+                  )
+                  as GCursorOrdering?;
           break;
       }
     }
@@ -7267,87 +9741,100 @@ class _$GUsersStreamCursorValueInputSerializer
   @override
   final Iterable<Type> types = const [
     GUsersStreamCursorValueInput,
-    _$GUsersStreamCursorValueInput
+    _$GUsersStreamCursorValueInput,
   ];
   @override
   final String wireName = 'GUsersStreamCursorValueInput';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUsersStreamCursorValueInput object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUsersStreamCursorValueInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.createdAt;
     if (value != null) {
       result
         ..add('createdAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.email;
     if (value != null) {
       result
         ..add('email')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.id;
     if (value != null) {
       result
         ..add('id')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.lastSeen;
     if (value != null) {
       result
         ..add('lastSeen')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.nickname;
     if (value != null) {
       result
         ..add('nickname')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.picture;
     if (value != null) {
       result
         ..add('picture')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.updatedAt;
     if (value != null) {
       result
         ..add('updatedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.username;
     if (value != null) {
       result
         ..add('username')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.website;
     if (value != null) {
       result
         ..add('website')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GUsersStreamCursorValueInput deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUsersStreamCursorValueInputBuilder();
 
     final iterator = serialized.iterator;
@@ -7357,40 +9844,76 @@ class _$GUsersStreamCursorValueInputSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'createdAt':
-          result.createdAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.createdAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'email':
-          result.email = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.email =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'lastSeen':
-          result.lastSeen = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.lastSeen =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'nickname':
-          result.nickname = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.nickname =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'picture':
-          result.picture = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.picture =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'updatedAt':
-          result.updatedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.updatedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'username':
-          result.username = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.username =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'website':
-          result.website = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.website =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -7408,82 +9931,103 @@ class _$GUuidComparisonExpSerializer
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GUuidComparisonExp object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GUuidComparisonExp object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[];
     Object? value;
     value = object.G_eq;
     if (value != null) {
       result
         ..add('_eq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_gt;
     if (value != null) {
       result
         ..add('_gt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_gte;
     if (value != null) {
       result
         ..add('_gte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_in;
     if (value != null) {
       result
         ..add('_in')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(String)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(String),
+            ]),
+          ),
+        );
     }
     value = object.G_isNull;
     if (value != null) {
       result
         ..add('_isNull')
         ..add(
-            serializers.serialize(value, specifiedType: const FullType(bool)));
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
     }
     value = object.G_lt;
     if (value != null) {
       result
         ..add('_lt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_lte;
     if (value != null) {
       result
         ..add('_lte')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_neq;
     if (value != null) {
       result
         ..add('_neq')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.G_nin;
     if (value != null) {
       result
         ..add('_nin')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(BuiltList, const [const FullType(String)])));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType(String),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GUuidComparisonExp deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GUuidComparisonExpBuilder();
 
     final iterator = serialized.iterator;
@@ -7493,44 +10037,82 @@ class _$GUuidComparisonExpSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '_eq':
-          result.G_eq = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_eq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_gt':
-          result.G_gt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_gt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_gte':
-          result.G_gte = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_gte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_in':
-          result.G_in.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
-              as BuiltList<Object?>);
+          result.G_in.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
         case '_isNull':
-          result.G_isNull = serializers.deserialize(value,
-              specifiedType: const FullType(bool)) as bool?;
+          result.G_isNull =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
           break;
         case '_lt':
-          result.G_lt = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_lt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_lte':
-          result.G_lte = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_lte =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_neq':
-          result.G_neq = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.G_neq =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case '_nin':
-          result.G_nin.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(String)]))!
-              as BuiltList<Object?>);
+          result.G_nin.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -7557,25 +10139,25 @@ class _$GAchievementsBoolExp extends GAchievementsBoolExp {
   @override
   final GTimestamptzComparisonExp? updatedAt;
 
-  factory _$GAchievementsBoolExp(
-          [void Function(GAchievementsBoolExpBuilder)? updates]) =>
-      (new GAchievementsBoolExpBuilder()..update(updates))._build();
+  factory _$GAchievementsBoolExp([
+    void Function(GAchievementsBoolExpBuilder)? updates,
+  ]) => (new GAchievementsBoolExpBuilder()..update(updates))._build();
 
-  _$GAchievementsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.createdAt,
-      this.description,
-      this.id,
-      this.name,
-      this.updatedAt})
-      : super._();
+  _$GAchievementsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GAchievementsBoolExp rebuild(
-          void Function(GAchievementsBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAchievementsBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAchievementsBoolExpBuilder toBuilder() =>
@@ -7707,7 +10289,8 @@ class GAchievementsBoolExpBuilder
   _$GAchievementsBoolExp _build() {
     _$GAchievementsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GAchievementsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -7739,7 +10322,10 @@ class GAchievementsBoolExpBuilder
         _updatedAt?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GAchievementsBoolExp', _$failedField, e.toString());
+          r'GAchievementsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -7760,18 +10346,22 @@ class _$GAchievementsOrderBy extends GAchievementsOrderBy {
   @override
   final GOrderBy? updatedAt;
 
-  factory _$GAchievementsOrderBy(
-          [void Function(GAchievementsOrderByBuilder)? updates]) =>
-      (new GAchievementsOrderByBuilder()..update(updates))._build();
+  factory _$GAchievementsOrderBy([
+    void Function(GAchievementsOrderByBuilder)? updates,
+  ]) => (new GAchievementsOrderByBuilder()..update(updates))._build();
 
-  _$GAchievementsOrderBy._(
-      {this.createdAt, this.description, this.id, this.name, this.updatedAt})
-      : super._();
+  _$GAchievementsOrderBy._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GAchievementsOrderBy rebuild(
-          void Function(GAchievementsOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAchievementsOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAchievementsOrderByBuilder toBuilder() =>
@@ -7866,7 +10456,8 @@ class GAchievementsOrderByBuilder
   GAchievementsOrderBy build() => _build();
 
   _$GAchievementsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GAchievementsOrderBy._(
           createdAt: createdAt,
           description: description,
@@ -7885,21 +10476,25 @@ class _$GAchievementsStreamCursorInput extends GAchievementsStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GAchievementsStreamCursorInput(
-          [void Function(GAchievementsStreamCursorInputBuilder)? updates]) =>
-      (new GAchievementsStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GAchievementsStreamCursorInput([
+    void Function(GAchievementsStreamCursorInputBuilder)? updates,
+  ]) => (new GAchievementsStreamCursorInputBuilder()..update(updates))._build();
 
-  _$GAchievementsStreamCursorInput._(
-      {required this.initialValue, this.ordering})
-      : super._() {
+  _$GAchievementsStreamCursorInput._({
+    required this.initialValue,
+    this.ordering,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GAchievementsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GAchievementsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GAchievementsStreamCursorInput rebuild(
-          void Function(GAchievementsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAchievementsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAchievementsStreamCursorInputBuilder toBuilder() =>
@@ -7933,8 +10528,10 @@ class _$GAchievementsStreamCursorInput extends GAchievementsStreamCursorInput {
 
 class GAchievementsStreamCursorInputBuilder
     implements
-        Builder<GAchievementsStreamCursorInput,
-            GAchievementsStreamCursorInputBuilder> {
+        Builder<
+          GAchievementsStreamCursorInput,
+          GAchievementsStreamCursorInputBuilder
+        > {
   _$GAchievementsStreamCursorInput? _$v;
 
   GAchievementsStreamCursorValueInputBuilder? _initialValue;
@@ -7976,7 +10573,8 @@ class GAchievementsStreamCursorInputBuilder
   _$GAchievementsStreamCursorInput _build() {
     _$GAchievementsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GAchievementsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -7988,7 +10586,10 @@ class GAchievementsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GAchievementsStreamCursorInput', _$failedField, e.toString());
+          r'GAchievementsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -8010,20 +10611,23 @@ class _$GAchievementsStreamCursorValueInput
   @override
   final DateTime? updatedAt;
 
-  factory _$GAchievementsStreamCursorValueInput(
-          [void Function(GAchievementsStreamCursorValueInputBuilder)?
-              updates]) =>
-      (new GAchievementsStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GAchievementsStreamCursorValueInput([
+    void Function(GAchievementsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GAchievementsStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
-  _$GAchievementsStreamCursorValueInput._(
-      {this.createdAt, this.description, this.id, this.name, this.updatedAt})
-      : super._();
+  _$GAchievementsStreamCursorValueInput._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GAchievementsStreamCursorValueInput rebuild(
-          void Function(GAchievementsStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAchievementsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAchievementsStreamCursorValueInputBuilder toBuilder() =>
@@ -8066,8 +10670,10 @@ class _$GAchievementsStreamCursorValueInput
 
 class GAchievementsStreamCursorValueInputBuilder
     implements
-        Builder<GAchievementsStreamCursorValueInput,
-            GAchievementsStreamCursorValueInputBuilder> {
+        Builder<
+          GAchievementsStreamCursorValueInput,
+          GAchievementsStreamCursorValueInputBuilder
+        > {
   _$GAchievementsStreamCursorValueInput? _$v;
 
   DateTime? _createdAt;
@@ -8113,7 +10719,8 @@ class GAchievementsStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GAchievementsStreamCursorValueInputBuilder)? updates) {
+    void Function(GAchievementsStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -8121,7 +10728,8 @@ class GAchievementsStreamCursorValueInputBuilder
   GAchievementsStreamCursorValueInput build() => _build();
 
   _$GAchievementsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GAchievementsStreamCursorValueInput._(
           createdAt: createdAt,
           description: description,
@@ -8154,21 +10762,21 @@ class _$GIntComparisonExp extends GIntComparisonExp {
   @override
   final BuiltList<int>? G_nin;
 
-  factory _$GIntComparisonExp(
-          [void Function(GIntComparisonExpBuilder)? updates]) =>
-      (new GIntComparisonExpBuilder()..update(updates))._build();
+  factory _$GIntComparisonExp([
+    void Function(GIntComparisonExpBuilder)? updates,
+  ]) => (new GIntComparisonExpBuilder()..update(updates))._build();
 
-  _$GIntComparisonExp._(
-      {this.G_eq,
-      this.G_gt,
-      this.G_gte,
-      this.G_in,
-      this.G_isNull,
-      this.G_lt,
-      this.G_lte,
-      this.G_neq,
-      this.G_nin})
-      : super._();
+  _$GIntComparisonExp._({
+    this.G_eq,
+    this.G_gt,
+    this.G_gte,
+    this.G_in,
+    this.G_isNull,
+    this.G_lt,
+    this.G_lte,
+    this.G_neq,
+    this.G_nin,
+  }) : super._();
 
   @override
   GIntComparisonExp rebuild(void Function(GIntComparisonExpBuilder) updates) =>
@@ -8301,7 +10909,8 @@ class GIntComparisonExpBuilder
   _$GIntComparisonExp _build() {
     _$GIntComparisonExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GIntComparisonExp._(
             G_eq: G_eq,
             G_gt: G_gt,
@@ -8323,7 +10932,10 @@ class GIntComparisonExpBuilder
         _G_nin?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GIntComparisonExp', _$failedField, e.toString());
+          r'GIntComparisonExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -8344,22 +10956,22 @@ class _$GMainQuestRelationsBoolExp extends GMainQuestRelationsBoolExp {
   @override
   final GUuidComparisonExp? parentQuestId;
 
-  factory _$GMainQuestRelationsBoolExp(
-          [void Function(GMainQuestRelationsBoolExpBuilder)? updates]) =>
-      (new GMainQuestRelationsBoolExpBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsBoolExp([
+    void Function(GMainQuestRelationsBoolExpBuilder)? updates,
+  ]) => (new GMainQuestRelationsBoolExpBuilder()..update(updates))._build();
 
-  _$GMainQuestRelationsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.childQuestId,
-      this.parentQuestId})
-      : super._();
+  _$GMainQuestRelationsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.childQuestId,
+    this.parentQuestId,
+  }) : super._();
 
   @override
   GMainQuestRelationsBoolExp rebuild(
-          void Function(GMainQuestRelationsBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsBoolExpBuilder toBuilder() =>
@@ -8466,7 +11078,8 @@ class GMainQuestRelationsBoolExpBuilder
   _$GMainQuestRelationsBoolExp _build() {
     _$GMainQuestRelationsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestRelationsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -8489,7 +11102,10 @@ class GMainQuestRelationsBoolExpBuilder
         _parentQuestId?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestRelationsBoolExp', _$failedField, e.toString());
+          r'GMainQuestRelationsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -8504,17 +11120,17 @@ class _$GMainQuestRelationsInsertInput extends GMainQuestRelationsInsertInput {
   @override
   final String? parentQuestId;
 
-  factory _$GMainQuestRelationsInsertInput(
-          [void Function(GMainQuestRelationsInsertInputBuilder)? updates]) =>
-      (new GMainQuestRelationsInsertInputBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsInsertInput([
+    void Function(GMainQuestRelationsInsertInputBuilder)? updates,
+  ]) => (new GMainQuestRelationsInsertInputBuilder()..update(updates))._build();
 
   _$GMainQuestRelationsInsertInput._({this.childQuestId, this.parentQuestId})
-      : super._();
+    : super._();
 
   @override
   GMainQuestRelationsInsertInput rebuild(
-          void Function(GMainQuestRelationsInsertInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsInsertInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsInsertInputBuilder toBuilder() =>
@@ -8548,8 +11164,10 @@ class _$GMainQuestRelationsInsertInput extends GMainQuestRelationsInsertInput {
 
 class GMainQuestRelationsInsertInputBuilder
     implements
-        Builder<GMainQuestRelationsInsertInput,
-            GMainQuestRelationsInsertInputBuilder> {
+        Builder<
+          GMainQuestRelationsInsertInput,
+          GMainQuestRelationsInsertInputBuilder
+        > {
   _$GMainQuestRelationsInsertInput? _$v;
 
   String? _childQuestId;
@@ -8588,7 +11206,8 @@ class GMainQuestRelationsInsertInputBuilder
   GMainQuestRelationsInsertInput build() => _build();
 
   _$GMainQuestRelationsInsertInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestRelationsInsertInput._(
           childQuestId: childQuestId,
           parentQuestId: parentQuestId,
@@ -8606,23 +11225,31 @@ class _$GMainQuestRelationsOnConflict extends GMainQuestRelationsOnConflict {
   @override
   final GMainQuestRelationsBoolExp? where;
 
-  factory _$GMainQuestRelationsOnConflict(
-          [void Function(GMainQuestRelationsOnConflictBuilder)? updates]) =>
-      (new GMainQuestRelationsOnConflictBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsOnConflict([
+    void Function(GMainQuestRelationsOnConflictBuilder)? updates,
+  ]) => (new GMainQuestRelationsOnConflictBuilder()..update(updates))._build();
 
-  _$GMainQuestRelationsOnConflict._(
-      {required this.constraint, required this.updateColumns, this.where})
-      : super._() {
+  _$GMainQuestRelationsOnConflict._({
+    required this.constraint,
+    required this.updateColumns,
+    this.where,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        constraint, r'GMainQuestRelationsOnConflict', 'constraint');
+      constraint,
+      r'GMainQuestRelationsOnConflict',
+      'constraint',
+    );
     BuiltValueNullFieldError.checkNotNull(
-        updateColumns, r'GMainQuestRelationsOnConflict', 'updateColumns');
+      updateColumns,
+      r'GMainQuestRelationsOnConflict',
+      'updateColumns',
+    );
   }
 
   @override
   GMainQuestRelationsOnConflict rebuild(
-          void Function(GMainQuestRelationsOnConflictBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsOnConflictBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsOnConflictBuilder toBuilder() =>
@@ -8659,8 +11286,10 @@ class _$GMainQuestRelationsOnConflict extends GMainQuestRelationsOnConflict {
 
 class GMainQuestRelationsOnConflictBuilder
     implements
-        Builder<GMainQuestRelationsOnConflict,
-            GMainQuestRelationsOnConflictBuilder> {
+        Builder<
+          GMainQuestRelationsOnConflict,
+          GMainQuestRelationsOnConflictBuilder
+        > {
   _$GMainQuestRelationsOnConflict? _$v;
 
   GMainQuestRelationsConstraint? _constraint;
@@ -8673,8 +11302,8 @@ class GMainQuestRelationsOnConflictBuilder
       _$this._updateColumns ??=
           new ListBuilder<GMainQuestRelationsUpdateColumn>();
   set updateColumns(
-          ListBuilder<GMainQuestRelationsUpdateColumn>? updateColumns) =>
-      _$this._updateColumns = updateColumns;
+    ListBuilder<GMainQuestRelationsUpdateColumn>? updateColumns,
+  ) => _$this._updateColumns = updateColumns;
 
   GMainQuestRelationsBoolExpBuilder? _where;
   GMainQuestRelationsBoolExpBuilder get where =>
@@ -8711,10 +11340,14 @@ class GMainQuestRelationsOnConflictBuilder
   _$GMainQuestRelationsOnConflict _build() {
     _$GMainQuestRelationsOnConflict _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestRelationsOnConflict._(
             constraint: BuiltValueNullFieldError.checkNotNull(
-                constraint, r'GMainQuestRelationsOnConflict', 'constraint'),
+              constraint,
+              r'GMainQuestRelationsOnConflict',
+              'constraint',
+            ),
             updateColumns: updateColumns.build(),
             where: _where?.build(),
           );
@@ -8727,7 +11360,10 @@ class GMainQuestRelationsOnConflictBuilder
         _where?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestRelationsOnConflict', _$failedField, e.toString());
+          r'GMainQuestRelationsOnConflict',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -8742,17 +11378,17 @@ class _$GMainQuestRelationsOrderBy extends GMainQuestRelationsOrderBy {
   @override
   final GOrderBy? parentQuestId;
 
-  factory _$GMainQuestRelationsOrderBy(
-          [void Function(GMainQuestRelationsOrderByBuilder)? updates]) =>
-      (new GMainQuestRelationsOrderByBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsOrderBy([
+    void Function(GMainQuestRelationsOrderByBuilder)? updates,
+  ]) => (new GMainQuestRelationsOrderByBuilder()..update(updates))._build();
 
   _$GMainQuestRelationsOrderBy._({this.childQuestId, this.parentQuestId})
-      : super._();
+    : super._();
 
   @override
   GMainQuestRelationsOrderBy rebuild(
-          void Function(GMainQuestRelationsOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsOrderByBuilder toBuilder() =>
@@ -8826,7 +11462,8 @@ class GMainQuestRelationsOrderByBuilder
   GMainQuestRelationsOrderBy build() => _build();
 
   _$GMainQuestRelationsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestRelationsOrderBy._(
           childQuestId: childQuestId,
           parentQuestId: parentQuestId,
@@ -8843,24 +11480,31 @@ class _$GMainQuestRelationsPkColumnsInput
   @override
   final String parentQuestId;
 
-  factory _$GMainQuestRelationsPkColumnsInput(
-          [void Function(GMainQuestRelationsPkColumnsInputBuilder)? updates]) =>
-      (new GMainQuestRelationsPkColumnsInputBuilder()..update(updates))
-          ._build();
+  factory _$GMainQuestRelationsPkColumnsInput([
+    void Function(GMainQuestRelationsPkColumnsInputBuilder)? updates,
+  ]) => (new GMainQuestRelationsPkColumnsInputBuilder()..update(updates))
+      ._build();
 
-  _$GMainQuestRelationsPkColumnsInput._(
-      {required this.childQuestId, required this.parentQuestId})
-      : super._() {
+  _$GMainQuestRelationsPkColumnsInput._({
+    required this.childQuestId,
+    required this.parentQuestId,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        childQuestId, r'GMainQuestRelationsPkColumnsInput', 'childQuestId');
+      childQuestId,
+      r'GMainQuestRelationsPkColumnsInput',
+      'childQuestId',
+    );
     BuiltValueNullFieldError.checkNotNull(
-        parentQuestId, r'GMainQuestRelationsPkColumnsInput', 'parentQuestId');
+      parentQuestId,
+      r'GMainQuestRelationsPkColumnsInput',
+      'parentQuestId',
+    );
   }
 
   @override
   GMainQuestRelationsPkColumnsInput rebuild(
-          void Function(GMainQuestRelationsPkColumnsInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsPkColumnsInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsPkColumnsInputBuilder toBuilder() =>
@@ -8894,8 +11538,10 @@ class _$GMainQuestRelationsPkColumnsInput
 
 class GMainQuestRelationsPkColumnsInputBuilder
     implements
-        Builder<GMainQuestRelationsPkColumnsInput,
-            GMainQuestRelationsPkColumnsInputBuilder> {
+        Builder<
+          GMainQuestRelationsPkColumnsInput,
+          GMainQuestRelationsPkColumnsInputBuilder
+        > {
   _$GMainQuestRelationsPkColumnsInput? _$v;
 
   String? _childQuestId;
@@ -8927,7 +11573,8 @@ class GMainQuestRelationsPkColumnsInputBuilder
 
   @override
   void update(
-      void Function(GMainQuestRelationsPkColumnsInputBuilder)? updates) {
+    void Function(GMainQuestRelationsPkColumnsInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -8935,12 +11582,19 @@ class GMainQuestRelationsPkColumnsInputBuilder
   GMainQuestRelationsPkColumnsInput build() => _build();
 
   _$GMainQuestRelationsPkColumnsInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestRelationsPkColumnsInput._(
-          childQuestId: BuiltValueNullFieldError.checkNotNull(childQuestId,
-              r'GMainQuestRelationsPkColumnsInput', 'childQuestId'),
-          parentQuestId: BuiltValueNullFieldError.checkNotNull(parentQuestId,
-              r'GMainQuestRelationsPkColumnsInput', 'parentQuestId'),
+          childQuestId: BuiltValueNullFieldError.checkNotNull(
+            childQuestId,
+            r'GMainQuestRelationsPkColumnsInput',
+            'childQuestId',
+          ),
+          parentQuestId: BuiltValueNullFieldError.checkNotNull(
+            parentQuestId,
+            r'GMainQuestRelationsPkColumnsInput',
+            'parentQuestId',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -8953,17 +11607,17 @@ class _$GMainQuestRelationsSetInput extends GMainQuestRelationsSetInput {
   @override
   final String? parentQuestId;
 
-  factory _$GMainQuestRelationsSetInput(
-          [void Function(GMainQuestRelationsSetInputBuilder)? updates]) =>
-      (new GMainQuestRelationsSetInputBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsSetInput([
+    void Function(GMainQuestRelationsSetInputBuilder)? updates,
+  ]) => (new GMainQuestRelationsSetInputBuilder()..update(updates))._build();
 
   _$GMainQuestRelationsSetInput._({this.childQuestId, this.parentQuestId})
-      : super._();
+    : super._();
 
   @override
   GMainQuestRelationsSetInput rebuild(
-          void Function(GMainQuestRelationsSetInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsSetInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsSetInputBuilder toBuilder() =>
@@ -8997,8 +11651,10 @@ class _$GMainQuestRelationsSetInput extends GMainQuestRelationsSetInput {
 
 class GMainQuestRelationsSetInputBuilder
     implements
-        Builder<GMainQuestRelationsSetInput,
-            GMainQuestRelationsSetInputBuilder> {
+        Builder<
+          GMainQuestRelationsSetInput,
+          GMainQuestRelationsSetInputBuilder
+        > {
   _$GMainQuestRelationsSetInput? _$v;
 
   String? _childQuestId;
@@ -9037,7 +11693,8 @@ class GMainQuestRelationsSetInputBuilder
   GMainQuestRelationsSetInput build() => _build();
 
   _$GMainQuestRelationsSetInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestRelationsSetInput._(
           childQuestId: childQuestId,
           parentQuestId: parentQuestId,
@@ -9054,23 +11711,26 @@ class _$GMainQuestRelationsStreamCursorInput
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GMainQuestRelationsStreamCursorInput(
-          [void Function(GMainQuestRelationsStreamCursorInputBuilder)?
-              updates]) =>
-      (new GMainQuestRelationsStreamCursorInputBuilder()..update(updates))
-          ._build();
+  factory _$GMainQuestRelationsStreamCursorInput([
+    void Function(GMainQuestRelationsStreamCursorInputBuilder)? updates,
+  ]) => (new GMainQuestRelationsStreamCursorInputBuilder()..update(updates))
+      ._build();
 
-  _$GMainQuestRelationsStreamCursorInput._(
-      {required this.initialValue, this.ordering})
-      : super._() {
+  _$GMainQuestRelationsStreamCursorInput._({
+    required this.initialValue,
+    this.ordering,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GMainQuestRelationsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GMainQuestRelationsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GMainQuestRelationsStreamCursorInput rebuild(
-          void Function(GMainQuestRelationsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsStreamCursorInputBuilder toBuilder() =>
@@ -9104,8 +11764,10 @@ class _$GMainQuestRelationsStreamCursorInput
 
 class GMainQuestRelationsStreamCursorInputBuilder
     implements
-        Builder<GMainQuestRelationsStreamCursorInput,
-            GMainQuestRelationsStreamCursorInputBuilder> {
+        Builder<
+          GMainQuestRelationsStreamCursorInput,
+          GMainQuestRelationsStreamCursorInputBuilder
+        > {
   _$GMainQuestRelationsStreamCursorInput? _$v;
 
   GMainQuestRelationsStreamCursorValueInputBuilder? _initialValue;
@@ -9113,8 +11775,8 @@ class GMainQuestRelationsStreamCursorInputBuilder
       _$this._initialValue ??=
           new GMainQuestRelationsStreamCursorValueInputBuilder();
   set initialValue(
-          GMainQuestRelationsStreamCursorValueInputBuilder? initialValue) =>
-      _$this._initialValue = initialValue;
+    GMainQuestRelationsStreamCursorValueInputBuilder? initialValue,
+  ) => _$this._initialValue = initialValue;
 
   GCursorOrdering? _ordering;
   GCursorOrdering? get ordering => _$this._ordering;
@@ -9140,7 +11802,8 @@ class GMainQuestRelationsStreamCursorInputBuilder
 
   @override
   void update(
-      void Function(GMainQuestRelationsStreamCursorInputBuilder)? updates) {
+    void Function(GMainQuestRelationsStreamCursorInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -9150,7 +11813,8 @@ class GMainQuestRelationsStreamCursorInputBuilder
   _$GMainQuestRelationsStreamCursorInput _build() {
     _$GMainQuestRelationsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestRelationsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -9162,9 +11826,10 @@ class GMainQuestRelationsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestRelationsStreamCursorInput',
-            _$failedField,
-            e.toString());
+          r'GMainQuestRelationsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -9180,21 +11845,21 @@ class _$GMainQuestRelationsStreamCursorValueInput
   @override
   final String? parentQuestId;
 
-  factory _$GMainQuestRelationsStreamCursorValueInput(
-          [void Function(GMainQuestRelationsStreamCursorValueInputBuilder)?
-              updates]) =>
+  factory _$GMainQuestRelationsStreamCursorValueInput([
+    void Function(GMainQuestRelationsStreamCursorValueInputBuilder)? updates,
+  ]) =>
       (new GMainQuestRelationsStreamCursorValueInputBuilder()..update(updates))
           ._build();
 
-  _$GMainQuestRelationsStreamCursorValueInput._(
-      {this.childQuestId, this.parentQuestId})
-      : super._();
+  _$GMainQuestRelationsStreamCursorValueInput._({
+    this.childQuestId,
+    this.parentQuestId,
+  }) : super._();
 
   @override
   GMainQuestRelationsStreamCursorValueInput rebuild(
-          void Function(GMainQuestRelationsStreamCursorValueInputBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsStreamCursorValueInputBuilder toBuilder() =>
@@ -9220,7 +11885,8 @@ class _$GMainQuestRelationsStreamCursorValueInput
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GMainQuestRelationsStreamCursorValueInput')
+            r'GMainQuestRelationsStreamCursorValueInput',
+          )
           ..add('childQuestId', childQuestId)
           ..add('parentQuestId', parentQuestId))
         .toString();
@@ -9229,8 +11895,10 @@ class _$GMainQuestRelationsStreamCursorValueInput
 
 class GMainQuestRelationsStreamCursorValueInputBuilder
     implements
-        Builder<GMainQuestRelationsStreamCursorValueInput,
-            GMainQuestRelationsStreamCursorValueInputBuilder> {
+        Builder<
+          GMainQuestRelationsStreamCursorValueInput,
+          GMainQuestRelationsStreamCursorValueInputBuilder
+        > {
   _$GMainQuestRelationsStreamCursorValueInput? _$v;
 
   String? _childQuestId;
@@ -9262,8 +11930,8 @@ class GMainQuestRelationsStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GMainQuestRelationsStreamCursorValueInputBuilder)?
-          updates) {
+    void Function(GMainQuestRelationsStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -9271,7 +11939,8 @@ class GMainQuestRelationsStreamCursorValueInputBuilder
   GMainQuestRelationsStreamCursorValueInput build() => _build();
 
   _$GMainQuestRelationsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestRelationsStreamCursorValueInput._(
           childQuestId: childQuestId,
           parentQuestId: parentQuestId,
@@ -9287,20 +11956,23 @@ class _$GMainQuestRelationsUpdates extends GMainQuestRelationsUpdates {
   @override
   final GMainQuestRelationsBoolExp where;
 
-  factory _$GMainQuestRelationsUpdates(
-          [void Function(GMainQuestRelationsUpdatesBuilder)? updates]) =>
-      (new GMainQuestRelationsUpdatesBuilder()..update(updates))._build();
+  factory _$GMainQuestRelationsUpdates([
+    void Function(GMainQuestRelationsUpdatesBuilder)? updates,
+  ]) => (new GMainQuestRelationsUpdatesBuilder()..update(updates))._build();
 
   _$GMainQuestRelationsUpdates._({this.G_set, required this.where})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        where, r'GMainQuestRelationsUpdates', 'where');
+      where,
+      r'GMainQuestRelationsUpdates',
+      'where',
+    );
   }
 
   @override
   GMainQuestRelationsUpdates rebuild(
-          void Function(GMainQuestRelationsUpdatesBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestRelationsUpdatesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestRelationsUpdatesBuilder toBuilder() =>
@@ -9376,7 +12048,8 @@ class GMainQuestRelationsUpdatesBuilder
   _$GMainQuestRelationsUpdates _build() {
     _$GMainQuestRelationsUpdates _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestRelationsUpdates._(
             G_set: _G_set?.build(),
             where: where.build(),
@@ -9390,7 +12063,10 @@ class GMainQuestRelationsUpdatesBuilder
         where.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestRelationsUpdates', _$failedField, e.toString());
+          r'GMainQuestRelationsUpdates',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -9433,33 +12109,33 @@ class _$GMainQuestsBoolExp extends GMainQuestsBoolExp {
   @override
   final GStringComparisonExp? userId;
 
-  factory _$GMainQuestsBoolExp(
-          [void Function(GMainQuestsBoolExpBuilder)? updates]) =>
-      (new GMainQuestsBoolExpBuilder()..update(updates))._build();
+  factory _$GMainQuestsBoolExp([
+    void Function(GMainQuestsBoolExpBuilder)? updates,
+  ]) => (new GMainQuestsBoolExpBuilder()..update(updates))._build();
 
-  _$GMainQuestsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.begunAt,
-      this.categoryId,
-      this.coverImageUrl,
-      this.createdAt,
-      this.deletedAt,
-      this.description,
-      this.endedAt,
-      this.id,
-      this.note,
-      this.status,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GMainQuestsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.begunAt,
+    this.categoryId,
+    this.coverImageUrl,
+    this.createdAt,
+    this.deletedAt,
+    this.description,
+    this.endedAt,
+    this.id,
+    this.note,
+    this.status,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GMainQuestsBoolExp rebuild(
-          void Function(GMainQuestsBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsBoolExpBuilder toBuilder() =>
@@ -9669,7 +12345,8 @@ class GMainQuestsBoolExpBuilder
   _$GMainQuestsBoolExp _build() {
     _$GMainQuestsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -9725,7 +12402,10 @@ class GMainQuestsBoolExpBuilder
         _userId?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestsBoolExp', _$failedField, e.toString());
+          r'GMainQuestsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -9762,30 +12442,30 @@ class _$GMainQuestsInsertInput extends GMainQuestsInsertInput {
   @override
   final String? userId;
 
-  factory _$GMainQuestsInsertInput(
-          [void Function(GMainQuestsInsertInputBuilder)? updates]) =>
-      (new GMainQuestsInsertInputBuilder()..update(updates))._build();
+  factory _$GMainQuestsInsertInput([
+    void Function(GMainQuestsInsertInputBuilder)? updates,
+  ]) => (new GMainQuestsInsertInputBuilder()..update(updates))._build();
 
-  _$GMainQuestsInsertInput._(
-      {this.begunAt,
-      this.categoryId,
-      this.coverImageUrl,
-      this.createdAt,
-      this.deletedAt,
-      this.description,
-      this.endedAt,
-      this.id,
-      this.note,
-      this.status,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GMainQuestsInsertInput._({
+    this.begunAt,
+    this.categoryId,
+    this.coverImageUrl,
+    this.createdAt,
+    this.deletedAt,
+    this.description,
+    this.endedAt,
+    this.id,
+    this.note,
+    this.status,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GMainQuestsInsertInput rebuild(
-          void Function(GMainQuestsInsertInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsInsertInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsInsertInputBuilder toBuilder() =>
@@ -9945,7 +12625,8 @@ class GMainQuestsInsertInputBuilder
   GMainQuestsInsertInput build() => _build();
 
   _$GMainQuestsInsertInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestsInsertInput._(
           begunAt: begunAt,
           categoryId: categoryId,
@@ -9974,23 +12655,31 @@ class _$GMainQuestsOnConflict extends GMainQuestsOnConflict {
   @override
   final GMainQuestsBoolExp? where;
 
-  factory _$GMainQuestsOnConflict(
-          [void Function(GMainQuestsOnConflictBuilder)? updates]) =>
-      (new GMainQuestsOnConflictBuilder()..update(updates))._build();
+  factory _$GMainQuestsOnConflict([
+    void Function(GMainQuestsOnConflictBuilder)? updates,
+  ]) => (new GMainQuestsOnConflictBuilder()..update(updates))._build();
 
-  _$GMainQuestsOnConflict._(
-      {required this.constraint, required this.updateColumns, this.where})
-      : super._() {
+  _$GMainQuestsOnConflict._({
+    required this.constraint,
+    required this.updateColumns,
+    this.where,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        constraint, r'GMainQuestsOnConflict', 'constraint');
+      constraint,
+      r'GMainQuestsOnConflict',
+      'constraint',
+    );
     BuiltValueNullFieldError.checkNotNull(
-        updateColumns, r'GMainQuestsOnConflict', 'updateColumns');
+      updateColumns,
+      r'GMainQuestsOnConflict',
+      'updateColumns',
+    );
   }
 
   @override
   GMainQuestsOnConflict rebuild(
-          void Function(GMainQuestsOnConflictBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsOnConflictBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsOnConflictBuilder toBuilder() =>
@@ -10075,10 +12764,14 @@ class GMainQuestsOnConflictBuilder
   _$GMainQuestsOnConflict _build() {
     _$GMainQuestsOnConflict _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestsOnConflict._(
             constraint: BuiltValueNullFieldError.checkNotNull(
-                constraint, r'GMainQuestsOnConflict', 'constraint'),
+              constraint,
+              r'GMainQuestsOnConflict',
+              'constraint',
+            ),
             updateColumns: updateColumns.build(),
             where: _where?.build(),
           );
@@ -10091,7 +12784,10 @@ class GMainQuestsOnConflictBuilder
         _where?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestsOnConflict', _$failedField, e.toString());
+          r'GMainQuestsOnConflict',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -10128,30 +12824,30 @@ class _$GMainQuestsOrderBy extends GMainQuestsOrderBy {
   @override
   final GOrderBy? userId;
 
-  factory _$GMainQuestsOrderBy(
-          [void Function(GMainQuestsOrderByBuilder)? updates]) =>
-      (new GMainQuestsOrderByBuilder()..update(updates))._build();
+  factory _$GMainQuestsOrderBy([
+    void Function(GMainQuestsOrderByBuilder)? updates,
+  ]) => (new GMainQuestsOrderByBuilder()..update(updates))._build();
 
-  _$GMainQuestsOrderBy._(
-      {this.begunAt,
-      this.categoryId,
-      this.coverImageUrl,
-      this.createdAt,
-      this.deletedAt,
-      this.description,
-      this.endedAt,
-      this.id,
-      this.note,
-      this.status,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GMainQuestsOrderBy._({
+    this.begunAt,
+    this.categoryId,
+    this.coverImageUrl,
+    this.createdAt,
+    this.deletedAt,
+    this.description,
+    this.endedAt,
+    this.id,
+    this.note,
+    this.status,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GMainQuestsOrderBy rebuild(
-          void Function(GMainQuestsOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsOrderByBuilder toBuilder() =>
@@ -10311,7 +13007,8 @@ class GMainQuestsOrderByBuilder
   GMainQuestsOrderBy build() => _build();
 
   _$GMainQuestsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestsOrderBy._(
           begunAt: begunAt,
           categoryId: categoryId,
@@ -10336,19 +13033,22 @@ class _$GMainQuestsPkColumnsInput extends GMainQuestsPkColumnsInput {
   @override
   final String id;
 
-  factory _$GMainQuestsPkColumnsInput(
-          [void Function(GMainQuestsPkColumnsInputBuilder)? updates]) =>
-      (new GMainQuestsPkColumnsInputBuilder()..update(updates))._build();
+  factory _$GMainQuestsPkColumnsInput([
+    void Function(GMainQuestsPkColumnsInputBuilder)? updates,
+  ]) => (new GMainQuestsPkColumnsInputBuilder()..update(updates))._build();
 
   _$GMainQuestsPkColumnsInput._({required this.id}) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        id, r'GMainQuestsPkColumnsInput', 'id');
+      id,
+      r'GMainQuestsPkColumnsInput',
+      'id',
+    );
   }
 
   @override
   GMainQuestsPkColumnsInput rebuild(
-          void Function(GMainQuestsPkColumnsInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsPkColumnsInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsPkColumnsInputBuilder toBuilder() =>
@@ -10370,9 +13070,9 @@ class _$GMainQuestsPkColumnsInput extends GMainQuestsPkColumnsInput {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GMainQuestsPkColumnsInput')
-          ..add('id', id))
-        .toString();
+    return (newBuiltValueToStringHelper(
+      r'GMainQuestsPkColumnsInput',
+    )..add('id', id)).toString();
   }
 }
 
@@ -10411,10 +13111,14 @@ class GMainQuestsPkColumnsInputBuilder
   GMainQuestsPkColumnsInput build() => _build();
 
   _$GMainQuestsPkColumnsInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestsPkColumnsInput._(
           id: BuiltValueNullFieldError.checkNotNull(
-              id, r'GMainQuestsPkColumnsInput', 'id'),
+            id,
+            r'GMainQuestsPkColumnsInput',
+            'id',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -10449,30 +13153,30 @@ class _$GMainQuestsSetInput extends GMainQuestsSetInput {
   @override
   final String? userId;
 
-  factory _$GMainQuestsSetInput(
-          [void Function(GMainQuestsSetInputBuilder)? updates]) =>
-      (new GMainQuestsSetInputBuilder()..update(updates))._build();
+  factory _$GMainQuestsSetInput([
+    void Function(GMainQuestsSetInputBuilder)? updates,
+  ]) => (new GMainQuestsSetInputBuilder()..update(updates))._build();
 
-  _$GMainQuestsSetInput._(
-      {this.begunAt,
-      this.categoryId,
-      this.coverImageUrl,
-      this.createdAt,
-      this.deletedAt,
-      this.description,
-      this.endedAt,
-      this.id,
-      this.note,
-      this.status,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GMainQuestsSetInput._({
+    this.begunAt,
+    this.categoryId,
+    this.coverImageUrl,
+    this.createdAt,
+    this.deletedAt,
+    this.description,
+    this.endedAt,
+    this.id,
+    this.note,
+    this.status,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GMainQuestsSetInput rebuild(
-          void Function(GMainQuestsSetInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsSetInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsSetInputBuilder toBuilder() =>
@@ -10632,7 +13336,8 @@ class GMainQuestsSetInputBuilder
   GMainQuestsSetInput build() => _build();
 
   _$GMainQuestsSetInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestsSetInput._(
           begunAt: begunAt,
           categoryId: categoryId,
@@ -10659,20 +13364,23 @@ class _$GMainQuestsStreamCursorInput extends GMainQuestsStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GMainQuestsStreamCursorInput(
-          [void Function(GMainQuestsStreamCursorInputBuilder)? updates]) =>
-      (new GMainQuestsStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GMainQuestsStreamCursorInput([
+    void Function(GMainQuestsStreamCursorInputBuilder)? updates,
+  ]) => (new GMainQuestsStreamCursorInputBuilder()..update(updates))._build();
 
   _$GMainQuestsStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GMainQuestsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GMainQuestsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GMainQuestsStreamCursorInput rebuild(
-          void Function(GMainQuestsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsStreamCursorInputBuilder toBuilder() =>
@@ -10706,8 +13414,10 @@ class _$GMainQuestsStreamCursorInput extends GMainQuestsStreamCursorInput {
 
 class GMainQuestsStreamCursorInputBuilder
     implements
-        Builder<GMainQuestsStreamCursorInput,
-            GMainQuestsStreamCursorInputBuilder> {
+        Builder<
+          GMainQuestsStreamCursorInput,
+          GMainQuestsStreamCursorInputBuilder
+        > {
   _$GMainQuestsStreamCursorInput? _$v;
 
   GMainQuestsStreamCursorValueInputBuilder? _initialValue;
@@ -10749,7 +13459,8 @@ class GMainQuestsStreamCursorInputBuilder
   _$GMainQuestsStreamCursorInput _build() {
     _$GMainQuestsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -10761,7 +13472,10 @@ class GMainQuestsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestsStreamCursorInput', _$failedField, e.toString());
+          r'GMainQuestsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -10799,31 +13513,31 @@ class _$GMainQuestsStreamCursorValueInput
   @override
   final String? userId;
 
-  factory _$GMainQuestsStreamCursorValueInput(
-          [void Function(GMainQuestsStreamCursorValueInputBuilder)? updates]) =>
-      (new GMainQuestsStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GMainQuestsStreamCursorValueInput([
+    void Function(GMainQuestsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GMainQuestsStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
-  _$GMainQuestsStreamCursorValueInput._(
-      {this.begunAt,
-      this.categoryId,
-      this.coverImageUrl,
-      this.createdAt,
-      this.deletedAt,
-      this.description,
-      this.endedAt,
-      this.id,
-      this.note,
-      this.status,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GMainQuestsStreamCursorValueInput._({
+    this.begunAt,
+    this.categoryId,
+    this.coverImageUrl,
+    this.createdAt,
+    this.deletedAt,
+    this.description,
+    this.endedAt,
+    this.id,
+    this.note,
+    this.status,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GMainQuestsStreamCursorValueInput rebuild(
-          void Function(GMainQuestsStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsStreamCursorValueInputBuilder toBuilder() =>
@@ -10890,8 +13604,10 @@ class _$GMainQuestsStreamCursorValueInput
 
 class GMainQuestsStreamCursorValueInputBuilder
     implements
-        Builder<GMainQuestsStreamCursorValueInput,
-            GMainQuestsStreamCursorValueInputBuilder> {
+        Builder<
+          GMainQuestsStreamCursorValueInput,
+          GMainQuestsStreamCursorValueInputBuilder
+        > {
   _$GMainQuestsStreamCursorValueInput? _$v;
 
   DateTime? _begunAt;
@@ -10978,7 +13694,8 @@ class GMainQuestsStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GMainQuestsStreamCursorValueInputBuilder)? updates) {
+    void Function(GMainQuestsStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -10986,7 +13703,8 @@ class GMainQuestsStreamCursorValueInputBuilder
   GMainQuestsStreamCursorValueInput build() => _build();
 
   _$GMainQuestsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GMainQuestsStreamCursorValueInput._(
           begunAt: begunAt,
           categoryId: categoryId,
@@ -11013,19 +13731,22 @@ class _$GMainQuestsUpdates extends GMainQuestsUpdates {
   @override
   final GMainQuestsBoolExp where;
 
-  factory _$GMainQuestsUpdates(
-          [void Function(GMainQuestsUpdatesBuilder)? updates]) =>
-      (new GMainQuestsUpdatesBuilder()..update(updates))._build();
+  factory _$GMainQuestsUpdates([
+    void Function(GMainQuestsUpdatesBuilder)? updates,
+  ]) => (new GMainQuestsUpdatesBuilder()..update(updates))._build();
 
   _$GMainQuestsUpdates._({this.G_set, required this.where}) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        where, r'GMainQuestsUpdates', 'where');
+      where,
+      r'GMainQuestsUpdates',
+      'where',
+    );
   }
 
   @override
   GMainQuestsUpdates rebuild(
-          void Function(GMainQuestsUpdatesBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GMainQuestsUpdatesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GMainQuestsUpdatesBuilder toBuilder() =>
@@ -11100,7 +13821,8 @@ class GMainQuestsUpdatesBuilder
   _$GMainQuestsUpdates _build() {
     _$GMainQuestsUpdates _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GMainQuestsUpdates._(
             G_set: _G_set?.build(),
             where: where.build(),
@@ -11114,7 +13836,10 @@ class GMainQuestsUpdatesBuilder
         where.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GMainQuestsUpdates', _$failedField, e.toString());
+          r'GMainQuestsUpdates',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -11156,22 +13881,22 @@ class _$GNewsBoolExp extends GNewsBoolExp {
   factory _$GNewsBoolExp([void Function(GNewsBoolExpBuilder)? updates]) =>
       (new GNewsBoolExpBuilder()..update(updates))._build();
 
-  _$GNewsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.id,
-      this.publishedAt,
-      this.seo,
-      this.seoId,
-      this.slug,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GNewsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.id,
+    this.publishedAt,
+    this.seo,
+    this.seoId,
+    this.slug,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GNewsBoolExp rebuild(void Function(GNewsBoolExpBuilder) updates) =>
@@ -11361,7 +14086,8 @@ class GNewsBoolExpBuilder
   _$GNewsBoolExp _build() {
     _$GNewsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GNewsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -11411,7 +14137,10 @@ class GNewsBoolExpBuilder
         _updatedAt?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GNewsBoolExp', _$failedField, e.toString());
+          r'GNewsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -11447,19 +14176,19 @@ class _$GNewsOrderBy extends GNewsOrderBy {
   factory _$GNewsOrderBy([void Function(GNewsOrderByBuilder)? updates]) =>
       (new GNewsOrderByBuilder()..update(updates))._build();
 
-  _$GNewsOrderBy._(
-      {this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.id,
-      this.publishedAt,
-      this.seo,
-      this.seoId,
-      this.slug,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GNewsOrderBy._({
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.id,
+    this.publishedAt,
+    this.seo,
+    this.seoId,
+    this.slug,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GNewsOrderBy rebuild(void Function(GNewsOrderByBuilder) updates) =>
@@ -11608,7 +14337,8 @@ class GNewsOrderByBuilder
   _$GNewsOrderBy _build() {
     _$GNewsOrderBy _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GNewsOrderBy._(
             content: content,
             coverImageUrl: coverImageUrl,
@@ -11629,7 +14359,10 @@ class GNewsOrderByBuilder
         _seo?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GNewsOrderBy', _$failedField, e.toString());
+          r'GNewsOrderBy',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -11644,20 +14377,23 @@ class _$GNewsStreamCursorInput extends GNewsStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GNewsStreamCursorInput(
-          [void Function(GNewsStreamCursorInputBuilder)? updates]) =>
-      (new GNewsStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GNewsStreamCursorInput([
+    void Function(GNewsStreamCursorInputBuilder)? updates,
+  ]) => (new GNewsStreamCursorInputBuilder()..update(updates))._build();
 
   _$GNewsStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GNewsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GNewsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GNewsStreamCursorInput rebuild(
-          void Function(GNewsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNewsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNewsStreamCursorInputBuilder toBuilder() =>
@@ -11732,7 +14468,8 @@ class GNewsStreamCursorInputBuilder
   _$GNewsStreamCursorInput _build() {
     _$GNewsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GNewsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -11744,7 +14481,10 @@ class GNewsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GNewsStreamCursorInput', _$failedField, e.toString());
+          r'GNewsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -11775,27 +14515,27 @@ class _$GNewsStreamCursorValueInput extends GNewsStreamCursorValueInput {
   @override
   final DateTime? updatedAt;
 
-  factory _$GNewsStreamCursorValueInput(
-          [void Function(GNewsStreamCursorValueInputBuilder)? updates]) =>
-      (new GNewsStreamCursorValueInputBuilder()..update(updates))._build();
+  factory _$GNewsStreamCursorValueInput([
+    void Function(GNewsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GNewsStreamCursorValueInputBuilder()..update(updates))._build();
 
-  _$GNewsStreamCursorValueInput._(
-      {this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.id,
-      this.publishedAt,
-      this.seoId,
-      this.slug,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GNewsStreamCursorValueInput._({
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.id,
+    this.publishedAt,
+    this.seoId,
+    this.slug,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GNewsStreamCursorValueInput rebuild(
-          void Function(GNewsStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNewsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNewsStreamCursorValueInputBuilder toBuilder() =>
@@ -11853,8 +14593,10 @@ class _$GNewsStreamCursorValueInput extends GNewsStreamCursorValueInput {
 
 class GNewsStreamCursorValueInputBuilder
     implements
-        Builder<GNewsStreamCursorValueInput,
-            GNewsStreamCursorValueInputBuilder> {
+        Builder<
+          GNewsStreamCursorValueInput,
+          GNewsStreamCursorValueInputBuilder
+        > {
   _$GNewsStreamCursorValueInput? _$v;
 
   String? _content;
@@ -11933,7 +14675,8 @@ class GNewsStreamCursorValueInputBuilder
   GNewsStreamCursorValueInput build() => _build();
 
   _$GNewsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GNewsStreamCursorValueInput._(
           content: content,
           coverImageUrl: coverImageUrl,
@@ -11979,30 +14722,30 @@ class _$GNotificationsBoolExp extends GNotificationsBoolExp {
   @override
   final GStringComparisonExp? userId;
 
-  factory _$GNotificationsBoolExp(
-          [void Function(GNotificationsBoolExpBuilder)? updates]) =>
-      (new GNotificationsBoolExpBuilder()..update(updates))._build();
+  factory _$GNotificationsBoolExp([
+    void Function(GNotificationsBoolExpBuilder)? updates,
+  ]) => (new GNotificationsBoolExpBuilder()..update(updates))._build();
 
-  _$GNotificationsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.firstOpenedAt,
-      this.id,
-      this.publishedAt,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GNotificationsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.firstOpenedAt,
+    this.id,
+    this.publishedAt,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GNotificationsBoolExp rebuild(
-          void Function(GNotificationsBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNotificationsBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNotificationsBoolExpBuilder toBuilder() =>
@@ -12183,7 +14926,8 @@ class GNotificationsBoolExpBuilder
   _$GNotificationsBoolExp _build() {
     _$GNotificationsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GNotificationsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -12230,7 +14974,10 @@ class GNotificationsBoolExpBuilder
         _userId?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GNotificationsBoolExp', _$failedField, e.toString());
+          r'GNotificationsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -12261,27 +15008,27 @@ class _$GNotificationsOrderBy extends GNotificationsOrderBy {
   @override
   final GOrderBy? userId;
 
-  factory _$GNotificationsOrderBy(
-          [void Function(GNotificationsOrderByBuilder)? updates]) =>
-      (new GNotificationsOrderByBuilder()..update(updates))._build();
+  factory _$GNotificationsOrderBy([
+    void Function(GNotificationsOrderByBuilder)? updates,
+  ]) => (new GNotificationsOrderByBuilder()..update(updates))._build();
 
-  _$GNotificationsOrderBy._(
-      {this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.firstOpenedAt,
-      this.id,
-      this.publishedAt,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GNotificationsOrderBy._({
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.firstOpenedAt,
+    this.id,
+    this.publishedAt,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GNotificationsOrderBy rebuild(
-          void Function(GNotificationsOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNotificationsOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNotificationsOrderByBuilder toBuilder() =>
@@ -12418,7 +15165,8 @@ class GNotificationsOrderByBuilder
   GNotificationsOrderBy build() => _build();
 
   _$GNotificationsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GNotificationsOrderBy._(
           content: content,
           coverImageUrl: coverImageUrl,
@@ -12443,21 +15191,26 @@ class _$GNotificationsStreamCursorInput
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GNotificationsStreamCursorInput(
-          [void Function(GNotificationsStreamCursorInputBuilder)? updates]) =>
+  factory _$GNotificationsStreamCursorInput([
+    void Function(GNotificationsStreamCursorInputBuilder)? updates,
+  ]) =>
       (new GNotificationsStreamCursorInputBuilder()..update(updates))._build();
 
-  _$GNotificationsStreamCursorInput._(
-      {required this.initialValue, this.ordering})
-      : super._() {
+  _$GNotificationsStreamCursorInput._({
+    required this.initialValue,
+    this.ordering,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GNotificationsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GNotificationsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GNotificationsStreamCursorInput rebuild(
-          void Function(GNotificationsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNotificationsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNotificationsStreamCursorInputBuilder toBuilder() =>
@@ -12491,8 +15244,10 @@ class _$GNotificationsStreamCursorInput
 
 class GNotificationsStreamCursorInputBuilder
     implements
-        Builder<GNotificationsStreamCursorInput,
-            GNotificationsStreamCursorInputBuilder> {
+        Builder<
+          GNotificationsStreamCursorInput,
+          GNotificationsStreamCursorInputBuilder
+        > {
   _$GNotificationsStreamCursorInput? _$v;
 
   GNotificationsStreamCursorValueInputBuilder? _initialValue;
@@ -12535,7 +15290,8 @@ class GNotificationsStreamCursorInputBuilder
   _$GNotificationsStreamCursorInput _build() {
     _$GNotificationsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GNotificationsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -12547,7 +15303,10 @@ class GNotificationsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GNotificationsStreamCursorInput', _$failedField, e.toString());
+          r'GNotificationsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -12579,29 +15338,28 @@ class _$GNotificationsStreamCursorValueInput
   @override
   final String? userId;
 
-  factory _$GNotificationsStreamCursorValueInput(
-          [void Function(GNotificationsStreamCursorValueInputBuilder)?
-              updates]) =>
-      (new GNotificationsStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GNotificationsStreamCursorValueInput([
+    void Function(GNotificationsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GNotificationsStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
-  _$GNotificationsStreamCursorValueInput._(
-      {this.content,
-      this.coverImageUrl,
-      this.createdAt,
-      this.excerpt,
-      this.firstOpenedAt,
-      this.id,
-      this.publishedAt,
-      this.title,
-      this.updatedAt,
-      this.userId})
-      : super._();
+  _$GNotificationsStreamCursorValueInput._({
+    this.content,
+    this.coverImageUrl,
+    this.createdAt,
+    this.excerpt,
+    this.firstOpenedAt,
+    this.id,
+    this.publishedAt,
+    this.title,
+    this.updatedAt,
+    this.userId,
+  }) : super._();
 
   @override
   GNotificationsStreamCursorValueInput rebuild(
-          void Function(GNotificationsStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GNotificationsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GNotificationsStreamCursorValueInputBuilder toBuilder() =>
@@ -12659,8 +15417,10 @@ class _$GNotificationsStreamCursorValueInput
 
 class GNotificationsStreamCursorValueInputBuilder
     implements
-        Builder<GNotificationsStreamCursorValueInput,
-            GNotificationsStreamCursorValueInputBuilder> {
+        Builder<
+          GNotificationsStreamCursorValueInput,
+          GNotificationsStreamCursorValueInputBuilder
+        > {
   _$GNotificationsStreamCursorValueInput? _$v;
 
   String? _content;
@@ -12733,7 +15493,8 @@ class GNotificationsStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GNotificationsStreamCursorValueInputBuilder)? updates) {
+    void Function(GNotificationsStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -12741,7 +15502,8 @@ class GNotificationsStreamCursorValueInputBuilder
   GNotificationsStreamCursorValueInput build() => _build();
 
   _$GNotificationsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GNotificationsStreamCursorValueInput._(
           content: content,
           coverImageUrl: coverImageUrl,
@@ -12779,26 +15541,26 @@ class _$GQuestCategoriesBoolExp extends GQuestCategoriesBoolExp {
   @override
   final GTimestamptzComparisonExp? updatedAt;
 
-  factory _$GQuestCategoriesBoolExp(
-          [void Function(GQuestCategoriesBoolExpBuilder)? updates]) =>
-      (new GQuestCategoriesBoolExpBuilder()..update(updates))._build();
+  factory _$GQuestCategoriesBoolExp([
+    void Function(GQuestCategoriesBoolExpBuilder)? updates,
+  ]) => (new GQuestCategoriesBoolExpBuilder()..update(updates))._build();
 
-  _$GQuestCategoriesBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.createdAt,
-      this.description,
-      this.id,
-      this.name,
-      this.sortNumber,
-      this.updatedAt})
-      : super._();
+  _$GQuestCategoriesBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.sortNumber,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GQuestCategoriesBoolExp rebuild(
-          void Function(GQuestCategoriesBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestCategoriesBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestCategoriesBoolExpBuilder toBuilder() =>
@@ -12942,7 +15704,8 @@ class GQuestCategoriesBoolExpBuilder
   _$GQuestCategoriesBoolExp _build() {
     _$GQuestCategoriesBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GQuestCategoriesBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -12977,7 +15740,10 @@ class GQuestCategoriesBoolExpBuilder
         _updatedAt?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GQuestCategoriesBoolExp', _$failedField, e.toString());
+          r'GQuestCategoriesBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -13000,23 +15766,23 @@ class _$GQuestCategoriesOrderBy extends GQuestCategoriesOrderBy {
   @override
   final GOrderBy? updatedAt;
 
-  factory _$GQuestCategoriesOrderBy(
-          [void Function(GQuestCategoriesOrderByBuilder)? updates]) =>
-      (new GQuestCategoriesOrderByBuilder()..update(updates))._build();
+  factory _$GQuestCategoriesOrderBy([
+    void Function(GQuestCategoriesOrderByBuilder)? updates,
+  ]) => (new GQuestCategoriesOrderByBuilder()..update(updates))._build();
 
-  _$GQuestCategoriesOrderBy._(
-      {this.createdAt,
-      this.description,
-      this.id,
-      this.name,
-      this.sortNumber,
-      this.updatedAt})
-      : super._();
+  _$GQuestCategoriesOrderBy._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.sortNumber,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GQuestCategoriesOrderBy rebuild(
-          void Function(GQuestCategoriesOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestCategoriesOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestCategoriesOrderByBuilder toBuilder() =>
@@ -13120,7 +15886,8 @@ class GQuestCategoriesOrderByBuilder
   GQuestCategoriesOrderBy build() => _build();
 
   _$GQuestCategoriesOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GQuestCategoriesOrderBy._(
           createdAt: createdAt,
           description: description,
@@ -13141,22 +15908,26 @@ class _$GQuestCategoriesStreamCursorInput
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GQuestCategoriesStreamCursorInput(
-          [void Function(GQuestCategoriesStreamCursorInputBuilder)? updates]) =>
-      (new GQuestCategoriesStreamCursorInputBuilder()..update(updates))
-          ._build();
+  factory _$GQuestCategoriesStreamCursorInput([
+    void Function(GQuestCategoriesStreamCursorInputBuilder)? updates,
+  ]) => (new GQuestCategoriesStreamCursorInputBuilder()..update(updates))
+      ._build();
 
-  _$GQuestCategoriesStreamCursorInput._(
-      {required this.initialValue, this.ordering})
-      : super._() {
+  _$GQuestCategoriesStreamCursorInput._({
+    required this.initialValue,
+    this.ordering,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GQuestCategoriesStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GQuestCategoriesStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GQuestCategoriesStreamCursorInput rebuild(
-          void Function(GQuestCategoriesStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestCategoriesStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestCategoriesStreamCursorInputBuilder toBuilder() =>
@@ -13190,8 +15961,10 @@ class _$GQuestCategoriesStreamCursorInput
 
 class GQuestCategoriesStreamCursorInputBuilder
     implements
-        Builder<GQuestCategoriesStreamCursorInput,
-            GQuestCategoriesStreamCursorInputBuilder> {
+        Builder<
+          GQuestCategoriesStreamCursorInput,
+          GQuestCategoriesStreamCursorInputBuilder
+        > {
   _$GQuestCategoriesStreamCursorInput? _$v;
 
   GQuestCategoriesStreamCursorValueInputBuilder? _initialValue;
@@ -13199,8 +15972,8 @@ class GQuestCategoriesStreamCursorInputBuilder
       _$this._initialValue ??=
           new GQuestCategoriesStreamCursorValueInputBuilder();
   set initialValue(
-          GQuestCategoriesStreamCursorValueInputBuilder? initialValue) =>
-      _$this._initialValue = initialValue;
+    GQuestCategoriesStreamCursorValueInputBuilder? initialValue,
+  ) => _$this._initialValue = initialValue;
 
   GCursorOrdering? _ordering;
   GCursorOrdering? get ordering => _$this._ordering;
@@ -13226,7 +15999,8 @@ class GQuestCategoriesStreamCursorInputBuilder
 
   @override
   void update(
-      void Function(GQuestCategoriesStreamCursorInputBuilder)? updates) {
+    void Function(GQuestCategoriesStreamCursorInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -13236,7 +16010,8 @@ class GQuestCategoriesStreamCursorInputBuilder
   _$GQuestCategoriesStreamCursorInput _build() {
     _$GQuestCategoriesStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GQuestCategoriesStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -13248,7 +16023,10 @@ class GQuestCategoriesStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GQuestCategoriesStreamCursorInput', _$failedField, e.toString());
+          r'GQuestCategoriesStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -13272,26 +16050,24 @@ class _$GQuestCategoriesStreamCursorValueInput
   @override
   final DateTime? updatedAt;
 
-  factory _$GQuestCategoriesStreamCursorValueInput(
-          [void Function(GQuestCategoriesStreamCursorValueInputBuilder)?
-              updates]) =>
-      (new GQuestCategoriesStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GQuestCategoriesStreamCursorValueInput([
+    void Function(GQuestCategoriesStreamCursorValueInputBuilder)? updates,
+  ]) => (new GQuestCategoriesStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
-  _$GQuestCategoriesStreamCursorValueInput._(
-      {this.createdAt,
-      this.description,
-      this.id,
-      this.name,
-      this.sortNumber,
-      this.updatedAt})
-      : super._();
+  _$GQuestCategoriesStreamCursorValueInput._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.name,
+    this.sortNumber,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GQuestCategoriesStreamCursorValueInput rebuild(
-          void Function(GQuestCategoriesStreamCursorValueInputBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestCategoriesStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestCategoriesStreamCursorValueInputBuilder toBuilder() =>
@@ -13325,7 +16101,8 @@ class _$GQuestCategoriesStreamCursorValueInput
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GQuestCategoriesStreamCursorValueInput')
+            r'GQuestCategoriesStreamCursorValueInput',
+          )
           ..add('createdAt', createdAt)
           ..add('description', description)
           ..add('id', id)
@@ -13338,8 +16115,10 @@ class _$GQuestCategoriesStreamCursorValueInput
 
 class GQuestCategoriesStreamCursorValueInputBuilder
     implements
-        Builder<GQuestCategoriesStreamCursorValueInput,
-            GQuestCategoriesStreamCursorValueInputBuilder> {
+        Builder<
+          GQuestCategoriesStreamCursorValueInput,
+          GQuestCategoriesStreamCursorValueInputBuilder
+        > {
   _$GQuestCategoriesStreamCursorValueInput? _$v;
 
   DateTime? _createdAt;
@@ -13390,7 +16169,8 @@ class GQuestCategoriesStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GQuestCategoriesStreamCursorValueInputBuilder)? updates) {
+    void Function(GQuestCategoriesStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -13398,7 +16178,8 @@ class GQuestCategoriesStreamCursorValueInputBuilder
   GQuestCategoriesStreamCursorValueInput build() => _build();
 
   _$GQuestCategoriesStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GQuestCategoriesStreamCursorValueInput._(
           createdAt: createdAt,
           description: description,
@@ -13422,17 +16203,17 @@ class _$GQuestStatusBoolExp extends GQuestStatusBoolExp {
   @override
   final GStringComparisonExp? value;
 
-  factory _$GQuestStatusBoolExp(
-          [void Function(GQuestStatusBoolExpBuilder)? updates]) =>
-      (new GQuestStatusBoolExpBuilder()..update(updates))._build();
+  factory _$GQuestStatusBoolExp([
+    void Function(GQuestStatusBoolExpBuilder)? updates,
+  ]) => (new GQuestStatusBoolExpBuilder()..update(updates))._build();
 
   _$GQuestStatusBoolExp._({this.G_and, this.G_not, this.G_or, this.value})
-      : super._();
+    : super._();
 
   @override
   GQuestStatusBoolExp rebuild(
-          void Function(GQuestStatusBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestStatusBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestStatusBoolExpBuilder toBuilder() =>
@@ -13525,7 +16306,8 @@ class GQuestStatusBoolExpBuilder
   _$GQuestStatusBoolExp _build() {
     _$GQuestStatusBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GQuestStatusBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -13545,7 +16327,10 @@ class GQuestStatusBoolExpBuilder
         _value?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GQuestStatusBoolExp', _$failedField, e.toString());
+          r'GQuestStatusBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -13566,18 +16351,22 @@ class _$GQuestStatusEnumComparisonExp extends GQuestStatusEnumComparisonExp {
   @override
   final BuiltList<GQuestStatusEnum>? G_nin;
 
-  factory _$GQuestStatusEnumComparisonExp(
-          [void Function(GQuestStatusEnumComparisonExpBuilder)? updates]) =>
-      (new GQuestStatusEnumComparisonExpBuilder()..update(updates))._build();
+  factory _$GQuestStatusEnumComparisonExp([
+    void Function(GQuestStatusEnumComparisonExpBuilder)? updates,
+  ]) => (new GQuestStatusEnumComparisonExpBuilder()..update(updates))._build();
 
-  _$GQuestStatusEnumComparisonExp._(
-      {this.G_eq, this.G_in, this.G_isNull, this.G_neq, this.G_nin})
-      : super._();
+  _$GQuestStatusEnumComparisonExp._({
+    this.G_eq,
+    this.G_in,
+    this.G_isNull,
+    this.G_neq,
+    this.G_nin,
+  }) : super._();
 
   @override
   GQuestStatusEnumComparisonExp rebuild(
-          void Function(GQuestStatusEnumComparisonExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestStatusEnumComparisonExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestStatusEnumComparisonExpBuilder toBuilder() =>
@@ -13620,8 +16409,10 @@ class _$GQuestStatusEnumComparisonExp extends GQuestStatusEnumComparisonExp {
 
 class GQuestStatusEnumComparisonExpBuilder
     implements
-        Builder<GQuestStatusEnumComparisonExp,
-            GQuestStatusEnumComparisonExpBuilder> {
+        Builder<
+          GQuestStatusEnumComparisonExp,
+          GQuestStatusEnumComparisonExpBuilder
+        > {
   _$GQuestStatusEnumComparisonExp? _$v;
 
   GQuestStatusEnum? _G_eq;
@@ -13678,7 +16469,8 @@ class GQuestStatusEnumComparisonExpBuilder
   _$GQuestStatusEnumComparisonExp _build() {
     _$GQuestStatusEnumComparisonExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GQuestStatusEnumComparisonExp._(
             G_eq: G_eq,
             G_in: _G_in?.build(),
@@ -13696,7 +16488,10 @@ class GQuestStatusEnumComparisonExpBuilder
         _G_nin?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GQuestStatusEnumComparisonExp', _$failedField, e.toString());
+          r'GQuestStatusEnumComparisonExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -13709,16 +16504,16 @@ class _$GQuestStatusOrderBy extends GQuestStatusOrderBy {
   @override
   final GOrderBy? value;
 
-  factory _$GQuestStatusOrderBy(
-          [void Function(GQuestStatusOrderByBuilder)? updates]) =>
-      (new GQuestStatusOrderByBuilder()..update(updates))._build();
+  factory _$GQuestStatusOrderBy([
+    void Function(GQuestStatusOrderByBuilder)? updates,
+  ]) => (new GQuestStatusOrderByBuilder()..update(updates))._build();
 
   _$GQuestStatusOrderBy._({this.value}) : super._();
 
   @override
   GQuestStatusOrderBy rebuild(
-          void Function(GQuestStatusOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestStatusOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestStatusOrderByBuilder toBuilder() =>
@@ -13740,9 +16535,9 @@ class _$GQuestStatusOrderBy extends GQuestStatusOrderBy {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GQuestStatusOrderBy')
-          ..add('value', value))
-        .toString();
+    return (newBuiltValueToStringHelper(
+      r'GQuestStatusOrderBy',
+    )..add('value', value)).toString();
   }
 }
 
@@ -13780,10 +16575,7 @@ class GQuestStatusOrderByBuilder
   GQuestStatusOrderBy build() => _build();
 
   _$GQuestStatusOrderBy _build() {
-    final _$result = _$v ??
-        new _$GQuestStatusOrderBy._(
-          value: value,
-        );
+    final _$result = _$v ?? new _$GQuestStatusOrderBy._(value: value);
     replace(_$result);
     return _$result;
   }
@@ -13795,20 +16587,23 @@ class _$GQuestStatusStreamCursorInput extends GQuestStatusStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GQuestStatusStreamCursorInput(
-          [void Function(GQuestStatusStreamCursorInputBuilder)? updates]) =>
-      (new GQuestStatusStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GQuestStatusStreamCursorInput([
+    void Function(GQuestStatusStreamCursorInputBuilder)? updates,
+  ]) => (new GQuestStatusStreamCursorInputBuilder()..update(updates))._build();
 
   _$GQuestStatusStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GQuestStatusStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GQuestStatusStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GQuestStatusStreamCursorInput rebuild(
-          void Function(GQuestStatusStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestStatusStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestStatusStreamCursorInputBuilder toBuilder() =>
@@ -13842,8 +16637,10 @@ class _$GQuestStatusStreamCursorInput extends GQuestStatusStreamCursorInput {
 
 class GQuestStatusStreamCursorInputBuilder
     implements
-        Builder<GQuestStatusStreamCursorInput,
-            GQuestStatusStreamCursorInputBuilder> {
+        Builder<
+          GQuestStatusStreamCursorInput,
+          GQuestStatusStreamCursorInputBuilder
+        > {
   _$GQuestStatusStreamCursorInput? _$v;
 
   GQuestStatusStreamCursorValueInputBuilder? _initialValue;
@@ -13885,7 +16682,8 @@ class GQuestStatusStreamCursorInputBuilder
   _$GQuestStatusStreamCursorInput _build() {
     _$GQuestStatusStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GQuestStatusStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -13897,7 +16695,10 @@ class GQuestStatusStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GQuestStatusStreamCursorInput', _$failedField, e.toString());
+          r'GQuestStatusStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -13911,18 +16712,17 @@ class _$GQuestStatusStreamCursorValueInput
   @override
   final String? value;
 
-  factory _$GQuestStatusStreamCursorValueInput(
-          [void Function(GQuestStatusStreamCursorValueInputBuilder)?
-              updates]) =>
-      (new GQuestStatusStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GQuestStatusStreamCursorValueInput([
+    void Function(GQuestStatusStreamCursorValueInputBuilder)? updates,
+  ]) => (new GQuestStatusStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
   _$GQuestStatusStreamCursorValueInput._({this.value}) : super._();
 
   @override
   GQuestStatusStreamCursorValueInput rebuild(
-          void Function(GQuestStatusStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GQuestStatusStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GQuestStatusStreamCursorValueInputBuilder toBuilder() =>
@@ -13944,16 +16744,18 @@ class _$GQuestStatusStreamCursorValueInput
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GQuestStatusStreamCursorValueInput')
-          ..add('value', value))
-        .toString();
+    return (newBuiltValueToStringHelper(
+      r'GQuestStatusStreamCursorValueInput',
+    )..add('value', value)).toString();
   }
 }
 
 class GQuestStatusStreamCursorValueInputBuilder
     implements
-        Builder<GQuestStatusStreamCursorValueInput,
-            GQuestStatusStreamCursorValueInputBuilder> {
+        Builder<
+          GQuestStatusStreamCursorValueInput,
+          GQuestStatusStreamCursorValueInputBuilder
+        > {
   _$GQuestStatusStreamCursorValueInput? _$v;
 
   String? _value;
@@ -13979,7 +16781,8 @@ class GQuestStatusStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GQuestStatusStreamCursorValueInputBuilder)? updates) {
+    void Function(GQuestStatusStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -13987,10 +16790,8 @@ class GQuestStatusStreamCursorValueInputBuilder
   GQuestStatusStreamCursorValueInput build() => _build();
 
   _$GQuestStatusStreamCursorValueInput _build() {
-    final _$result = _$v ??
-        new _$GQuestStatusStreamCursorValueInput._(
-          value: value,
-        );
+    final _$result =
+        _$v ?? new _$GQuestStatusStreamCursorValueInput._(value: value);
     replace(_$result);
     return _$result;
   }
@@ -14019,17 +16820,17 @@ class _$GSeosBoolExp extends GSeosBoolExp {
   factory _$GSeosBoolExp([void Function(GSeosBoolExpBuilder)? updates]) =>
       (new GSeosBoolExpBuilder()..update(updates))._build();
 
-  _$GSeosBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.createdAt,
-      this.description,
-      this.id,
-      this.ogImageUrl,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GSeosBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.createdAt,
+    this.description,
+    this.id,
+    this.ogImageUrl,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GSeosBoolExp rebuild(void Function(GSeosBoolExpBuilder) updates) =>
@@ -14173,7 +16974,8 @@ class GSeosBoolExpBuilder
   _$GSeosBoolExp _build() {
     _$GSeosBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GSeosBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -14208,7 +17010,10 @@ class GSeosBoolExpBuilder
         _updatedAt?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GSeosBoolExp', _$failedField, e.toString());
+          r'GSeosBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -14234,14 +17039,14 @@ class _$GSeosOrderBy extends GSeosOrderBy {
   factory _$GSeosOrderBy([void Function(GSeosOrderByBuilder)? updates]) =>
       (new GSeosOrderByBuilder()..update(updates))._build();
 
-  _$GSeosOrderBy._(
-      {this.createdAt,
-      this.description,
-      this.id,
-      this.ogImageUrl,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GSeosOrderBy._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.ogImageUrl,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GSeosOrderBy rebuild(void Function(GSeosOrderByBuilder) updates) =>
@@ -14347,7 +17152,8 @@ class GSeosOrderByBuilder
   GSeosOrderBy build() => _build();
 
   _$GSeosOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GSeosOrderBy._(
           createdAt: createdAt,
           description: description,
@@ -14367,20 +17173,23 @@ class _$GSeosStreamCursorInput extends GSeosStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GSeosStreamCursorInput(
-          [void Function(GSeosStreamCursorInputBuilder)? updates]) =>
-      (new GSeosStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GSeosStreamCursorInput([
+    void Function(GSeosStreamCursorInputBuilder)? updates,
+  ]) => (new GSeosStreamCursorInputBuilder()..update(updates))._build();
 
   _$GSeosStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GSeosStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GSeosStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GSeosStreamCursorInput rebuild(
-          void Function(GSeosStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GSeosStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GSeosStreamCursorInputBuilder toBuilder() =>
@@ -14455,7 +17264,8 @@ class GSeosStreamCursorInputBuilder
   _$GSeosStreamCursorInput _build() {
     _$GSeosStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GSeosStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -14467,7 +17277,10 @@ class GSeosStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GSeosStreamCursorInput', _$failedField, e.toString());
+          r'GSeosStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -14490,23 +17303,23 @@ class _$GSeosStreamCursorValueInput extends GSeosStreamCursorValueInput {
   @override
   final DateTime? updatedAt;
 
-  factory _$GSeosStreamCursorValueInput(
-          [void Function(GSeosStreamCursorValueInputBuilder)? updates]) =>
-      (new GSeosStreamCursorValueInputBuilder()..update(updates))._build();
+  factory _$GSeosStreamCursorValueInput([
+    void Function(GSeosStreamCursorValueInputBuilder)? updates,
+  ]) => (new GSeosStreamCursorValueInputBuilder()..update(updates))._build();
 
-  _$GSeosStreamCursorValueInput._(
-      {this.createdAt,
-      this.description,
-      this.id,
-      this.ogImageUrl,
-      this.title,
-      this.updatedAt})
-      : super._();
+  _$GSeosStreamCursorValueInput._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.ogImageUrl,
+    this.title,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GSeosStreamCursorValueInput rebuild(
-          void Function(GSeosStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GSeosStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GSeosStreamCursorValueInputBuilder toBuilder() =>
@@ -14552,8 +17365,10 @@ class _$GSeosStreamCursorValueInput extends GSeosStreamCursorValueInput {
 
 class GSeosStreamCursorValueInputBuilder
     implements
-        Builder<GSeosStreamCursorValueInput,
-            GSeosStreamCursorValueInputBuilder> {
+        Builder<
+          GSeosStreamCursorValueInput,
+          GSeosStreamCursorValueInputBuilder
+        > {
   _$GSeosStreamCursorValueInput? _$v;
 
   DateTime? _createdAt;
@@ -14611,7 +17426,8 @@ class GSeosStreamCursorValueInputBuilder
   GSeosStreamCursorValueInput build() => _build();
 
   _$GSeosStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GSeosStreamCursorValueInput._(
           createdAt: createdAt,
           description: description,
@@ -14665,36 +17481,36 @@ class _$GStringComparisonExp extends GStringComparisonExp {
   @override
   final String? G_similar;
 
-  factory _$GStringComparisonExp(
-          [void Function(GStringComparisonExpBuilder)? updates]) =>
-      (new GStringComparisonExpBuilder()..update(updates))._build();
+  factory _$GStringComparisonExp([
+    void Function(GStringComparisonExpBuilder)? updates,
+  ]) => (new GStringComparisonExpBuilder()..update(updates))._build();
 
-  _$GStringComparisonExp._(
-      {this.G_eq,
-      this.G_gt,
-      this.G_gte,
-      this.G_ilike,
-      this.G_in,
-      this.G_iregex,
-      this.G_isNull,
-      this.G_like,
-      this.G_lt,
-      this.G_lte,
-      this.G_neq,
-      this.G_nilike,
-      this.G_nin,
-      this.G_niregex,
-      this.G_nlike,
-      this.G_nregex,
-      this.G_nsimilar,
-      this.G_regex,
-      this.G_similar})
-      : super._();
+  _$GStringComparisonExp._({
+    this.G_eq,
+    this.G_gt,
+    this.G_gte,
+    this.G_ilike,
+    this.G_in,
+    this.G_iregex,
+    this.G_isNull,
+    this.G_like,
+    this.G_lt,
+    this.G_lte,
+    this.G_neq,
+    this.G_nilike,
+    this.G_nin,
+    this.G_niregex,
+    this.G_nlike,
+    this.G_nregex,
+    this.G_nsimilar,
+    this.G_regex,
+    this.G_similar,
+  }) : super._();
 
   @override
   GStringComparisonExp rebuild(
-          void Function(GStringComparisonExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GStringComparisonExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GStringComparisonExpBuilder toBuilder() =>
@@ -14903,7 +17719,8 @@ class GStringComparisonExpBuilder
   _$GStringComparisonExp _build() {
     _$GStringComparisonExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GStringComparisonExp._(
             G_eq: G_eq,
             G_gt: G_gt,
@@ -14935,7 +17752,10 @@ class GStringComparisonExpBuilder
         _G_nin?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GStringComparisonExp', _$failedField, e.toString());
+          r'GStringComparisonExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -14965,16 +17785,16 @@ class _$GTagsBoolExp extends GTagsBoolExp {
   factory _$GTagsBoolExp([void Function(GTagsBoolExpBuilder)? updates]) =>
       (new GTagsBoolExpBuilder()..update(updates))._build();
 
-  _$GTagsBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.createdAt,
-      this.description,
-      this.id,
-      this.tag,
-      this.updatedAt})
-      : super._();
+  _$GTagsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.createdAt,
+    this.description,
+    this.id,
+    this.tag,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GTagsBoolExp rebuild(void Function(GTagsBoolExpBuilder) updates) =>
@@ -15108,7 +17928,8 @@ class GTagsBoolExpBuilder
   _$GTagsBoolExp _build() {
     _$GTagsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GTagsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -15140,7 +17961,10 @@ class GTagsBoolExpBuilder
         _updatedAt?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GTagsBoolExp', _$failedField, e.toString());
+          r'GTagsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -15164,9 +17988,13 @@ class _$GTagsOrderBy extends GTagsOrderBy {
   factory _$GTagsOrderBy([void Function(GTagsOrderByBuilder)? updates]) =>
       (new GTagsOrderByBuilder()..update(updates))._build();
 
-  _$GTagsOrderBy._(
-      {this.createdAt, this.description, this.id, this.tag, this.updatedAt})
-      : super._();
+  _$GTagsOrderBy._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.tag,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GTagsOrderBy rebuild(void Function(GTagsOrderByBuilder) updates) =>
@@ -15264,7 +18092,8 @@ class GTagsOrderByBuilder
   GTagsOrderBy build() => _build();
 
   _$GTagsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GTagsOrderBy._(
           createdAt: createdAt,
           description: description,
@@ -15283,20 +18112,23 @@ class _$GTagsStreamCursorInput extends GTagsStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GTagsStreamCursorInput(
-          [void Function(GTagsStreamCursorInputBuilder)? updates]) =>
-      (new GTagsStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GTagsStreamCursorInput([
+    void Function(GTagsStreamCursorInputBuilder)? updates,
+  ]) => (new GTagsStreamCursorInputBuilder()..update(updates))._build();
 
   _$GTagsStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GTagsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GTagsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GTagsStreamCursorInput rebuild(
-          void Function(GTagsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GTagsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GTagsStreamCursorInputBuilder toBuilder() =>
@@ -15371,7 +18203,8 @@ class GTagsStreamCursorInputBuilder
   _$GTagsStreamCursorInput _build() {
     _$GTagsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GTagsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -15383,7 +18216,10 @@ class GTagsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GTagsStreamCursorInput', _$failedField, e.toString());
+          r'GTagsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -15404,18 +18240,22 @@ class _$GTagsStreamCursorValueInput extends GTagsStreamCursorValueInput {
   @override
   final DateTime? updatedAt;
 
-  factory _$GTagsStreamCursorValueInput(
-          [void Function(GTagsStreamCursorValueInputBuilder)? updates]) =>
-      (new GTagsStreamCursorValueInputBuilder()..update(updates))._build();
+  factory _$GTagsStreamCursorValueInput([
+    void Function(GTagsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GTagsStreamCursorValueInputBuilder()..update(updates))._build();
 
-  _$GTagsStreamCursorValueInput._(
-      {this.createdAt, this.description, this.id, this.tag, this.updatedAt})
-      : super._();
+  _$GTagsStreamCursorValueInput._({
+    this.createdAt,
+    this.description,
+    this.id,
+    this.tag,
+    this.updatedAt,
+  }) : super._();
 
   @override
   GTagsStreamCursorValueInput rebuild(
-          void Function(GTagsStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GTagsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GTagsStreamCursorValueInputBuilder toBuilder() =>
@@ -15458,8 +18298,10 @@ class _$GTagsStreamCursorValueInput extends GTagsStreamCursorValueInput {
 
 class GTagsStreamCursorValueInputBuilder
     implements
-        Builder<GTagsStreamCursorValueInput,
-            GTagsStreamCursorValueInputBuilder> {
+        Builder<
+          GTagsStreamCursorValueInput,
+          GTagsStreamCursorValueInputBuilder
+        > {
   _$GTagsStreamCursorValueInput? _$v;
 
   DateTime? _createdAt;
@@ -15512,7 +18354,8 @@ class GTagsStreamCursorValueInputBuilder
   GTagsStreamCursorValueInput build() => _build();
 
   _$GTagsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GTagsStreamCursorValueInput._(
           createdAt: createdAt,
           description: description,
@@ -15545,26 +18388,26 @@ class _$GTimestamptzComparisonExp extends GTimestamptzComparisonExp {
   @override
   final BuiltList<DateTime>? G_nin;
 
-  factory _$GTimestamptzComparisonExp(
-          [void Function(GTimestamptzComparisonExpBuilder)? updates]) =>
-      (new GTimestamptzComparisonExpBuilder()..update(updates))._build();
+  factory _$GTimestamptzComparisonExp([
+    void Function(GTimestamptzComparisonExpBuilder)? updates,
+  ]) => (new GTimestamptzComparisonExpBuilder()..update(updates))._build();
 
-  _$GTimestamptzComparisonExp._(
-      {this.G_eq,
-      this.G_gt,
-      this.G_gte,
-      this.G_in,
-      this.G_isNull,
-      this.G_lt,
-      this.G_lte,
-      this.G_neq,
-      this.G_nin})
-      : super._();
+  _$GTimestamptzComparisonExp._({
+    this.G_eq,
+    this.G_gt,
+    this.G_gte,
+    this.G_in,
+    this.G_isNull,
+    this.G_lt,
+    this.G_lte,
+    this.G_neq,
+    this.G_nin,
+  }) : super._();
 
   @override
   GTimestamptzComparisonExp rebuild(
-          void Function(GTimestamptzComparisonExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GTimestamptzComparisonExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GTimestamptzComparisonExpBuilder toBuilder() =>
@@ -15696,7 +18539,8 @@ class GTimestamptzComparisonExpBuilder
   _$GTimestamptzComparisonExp _build() {
     _$GTimestamptzComparisonExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GTimestamptzComparisonExp._(
             G_eq: G_eq,
             G_gt: G_gt,
@@ -15718,7 +18562,10 @@ class GTimestamptzComparisonExpBuilder
         _G_nin?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GTimestamptzComparisonExp', _$failedField, e.toString());
+          r'GTimestamptzComparisonExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -15739,18 +18586,22 @@ class _$GUserAchievementsBoolExp extends GUserAchievementsBoolExp {
   @override
   final GStringComparisonExp? userId;
 
-  factory _$GUserAchievementsBoolExp(
-          [void Function(GUserAchievementsBoolExpBuilder)? updates]) =>
-      (new GUserAchievementsBoolExpBuilder()..update(updates))._build();
+  factory _$GUserAchievementsBoolExp([
+    void Function(GUserAchievementsBoolExpBuilder)? updates,
+  ]) => (new GUserAchievementsBoolExpBuilder()..update(updates))._build();
 
-  _$GUserAchievementsBoolExp._(
-      {this.G_and, this.G_not, this.G_or, this.achievementId, this.userId})
-      : super._();
+  _$GUserAchievementsBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.achievementId,
+    this.userId,
+  }) : super._();
 
   @override
   GUserAchievementsBoolExp rebuild(
-          void Function(GUserAchievementsBoolExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUserAchievementsBoolExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUserAchievementsBoolExpBuilder toBuilder() =>
@@ -15855,7 +18706,8 @@ class GUserAchievementsBoolExpBuilder
   _$GUserAchievementsBoolExp _build() {
     _$GUserAchievementsBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GUserAchievementsBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -15878,7 +18730,10 @@ class GUserAchievementsBoolExpBuilder
         _userId?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserAchievementsBoolExp', _$failedField, e.toString());
+          r'GUserAchievementsBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -15893,16 +18748,16 @@ class _$GUserAchievementsOrderBy extends GUserAchievementsOrderBy {
   @override
   final GOrderBy? userId;
 
-  factory _$GUserAchievementsOrderBy(
-          [void Function(GUserAchievementsOrderByBuilder)? updates]) =>
-      (new GUserAchievementsOrderByBuilder()..update(updates))._build();
+  factory _$GUserAchievementsOrderBy([
+    void Function(GUserAchievementsOrderByBuilder)? updates,
+  ]) => (new GUserAchievementsOrderByBuilder()..update(updates))._build();
 
   _$GUserAchievementsOrderBy._({this.achievementId, this.userId}) : super._();
 
   @override
   GUserAchievementsOrderBy rebuild(
-          void Function(GUserAchievementsOrderByBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUserAchievementsOrderByBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUserAchievementsOrderByBuilder toBuilder() =>
@@ -15975,7 +18830,8 @@ class GUserAchievementsOrderByBuilder
   GUserAchievementsOrderBy build() => _build();
 
   _$GUserAchievementsOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GUserAchievementsOrderBy._(
           achievementId: achievementId,
           userId: userId,
@@ -15992,23 +18848,26 @@ class _$GUserAchievementsStreamCursorInput
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GUserAchievementsStreamCursorInput(
-          [void Function(GUserAchievementsStreamCursorInputBuilder)?
-              updates]) =>
-      (new GUserAchievementsStreamCursorInputBuilder()..update(updates))
-          ._build();
+  factory _$GUserAchievementsStreamCursorInput([
+    void Function(GUserAchievementsStreamCursorInputBuilder)? updates,
+  ]) => (new GUserAchievementsStreamCursorInputBuilder()..update(updates))
+      ._build();
 
-  _$GUserAchievementsStreamCursorInput._(
-      {required this.initialValue, this.ordering})
-      : super._() {
+  _$GUserAchievementsStreamCursorInput._({
+    required this.initialValue,
+    this.ordering,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GUserAchievementsStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GUserAchievementsStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GUserAchievementsStreamCursorInput rebuild(
-          void Function(GUserAchievementsStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUserAchievementsStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUserAchievementsStreamCursorInputBuilder toBuilder() =>
@@ -16042,8 +18901,10 @@ class _$GUserAchievementsStreamCursorInput
 
 class GUserAchievementsStreamCursorInputBuilder
     implements
-        Builder<GUserAchievementsStreamCursorInput,
-            GUserAchievementsStreamCursorInputBuilder> {
+        Builder<
+          GUserAchievementsStreamCursorInput,
+          GUserAchievementsStreamCursorInputBuilder
+        > {
   _$GUserAchievementsStreamCursorInput? _$v;
 
   GUserAchievementsStreamCursorValueInputBuilder? _initialValue;
@@ -16051,8 +18912,8 @@ class GUserAchievementsStreamCursorInputBuilder
       _$this._initialValue ??=
           new GUserAchievementsStreamCursorValueInputBuilder();
   set initialValue(
-          GUserAchievementsStreamCursorValueInputBuilder? initialValue) =>
-      _$this._initialValue = initialValue;
+    GUserAchievementsStreamCursorValueInputBuilder? initialValue,
+  ) => _$this._initialValue = initialValue;
 
   GCursorOrdering? _ordering;
   GCursorOrdering? get ordering => _$this._ordering;
@@ -16078,7 +18939,8 @@ class GUserAchievementsStreamCursorInputBuilder
 
   @override
   void update(
-      void Function(GUserAchievementsStreamCursorInputBuilder)? updates) {
+    void Function(GUserAchievementsStreamCursorInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -16088,7 +18950,8 @@ class GUserAchievementsStreamCursorInputBuilder
   _$GUserAchievementsStreamCursorInput _build() {
     _$GUserAchievementsStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GUserAchievementsStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -16100,7 +18963,10 @@ class GUserAchievementsStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUserAchievementsStreamCursorInput', _$failedField, e.toString());
+          r'GUserAchievementsStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -16116,20 +18982,18 @@ class _$GUserAchievementsStreamCursorValueInput
   @override
   final String? userId;
 
-  factory _$GUserAchievementsStreamCursorValueInput(
-          [void Function(GUserAchievementsStreamCursorValueInputBuilder)?
-              updates]) =>
-      (new GUserAchievementsStreamCursorValueInputBuilder()..update(updates))
-          ._build();
+  factory _$GUserAchievementsStreamCursorValueInput([
+    void Function(GUserAchievementsStreamCursorValueInputBuilder)? updates,
+  ]) => (new GUserAchievementsStreamCursorValueInputBuilder()..update(updates))
+      ._build();
 
   _$GUserAchievementsStreamCursorValueInput._({this.achievementId, this.userId})
-      : super._();
+    : super._();
 
   @override
   GUserAchievementsStreamCursorValueInput rebuild(
-          void Function(GUserAchievementsStreamCursorValueInputBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUserAchievementsStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUserAchievementsStreamCursorValueInputBuilder toBuilder() =>
@@ -16155,7 +19019,8 @@ class _$GUserAchievementsStreamCursorValueInput
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GUserAchievementsStreamCursorValueInput')
+            r'GUserAchievementsStreamCursorValueInput',
+          )
           ..add('achievementId', achievementId)
           ..add('userId', userId))
         .toString();
@@ -16164,8 +19029,10 @@ class _$GUserAchievementsStreamCursorValueInput
 
 class GUserAchievementsStreamCursorValueInputBuilder
     implements
-        Builder<GUserAchievementsStreamCursorValueInput,
-            GUserAchievementsStreamCursorValueInputBuilder> {
+        Builder<
+          GUserAchievementsStreamCursorValueInput,
+          GUserAchievementsStreamCursorValueInputBuilder
+        > {
   _$GUserAchievementsStreamCursorValueInput? _$v;
 
   String? _achievementId;
@@ -16197,7 +19064,8 @@ class GUserAchievementsStreamCursorValueInputBuilder
 
   @override
   void update(
-      void Function(GUserAchievementsStreamCursorValueInputBuilder)? updates) {
+    void Function(GUserAchievementsStreamCursorValueInputBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -16205,7 +19073,8 @@ class GUserAchievementsStreamCursorValueInputBuilder
   GUserAchievementsStreamCursorValueInput build() => _build();
 
   _$GUserAchievementsStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GUserAchievementsStreamCursorValueInput._(
           achievementId: achievementId,
           userId: userId,
@@ -16244,20 +19113,20 @@ class _$GUsersBoolExp extends GUsersBoolExp {
   factory _$GUsersBoolExp([void Function(GUsersBoolExpBuilder)? updates]) =>
       (new GUsersBoolExpBuilder()..update(updates))._build();
 
-  _$GUsersBoolExp._(
-      {this.G_and,
-      this.G_not,
-      this.G_or,
-      this.createdAt,
-      this.email,
-      this.id,
-      this.lastSeen,
-      this.nickname,
-      this.picture,
-      this.updatedAt,
-      this.username,
-      this.website})
-      : super._();
+  _$GUsersBoolExp._({
+    this.G_and,
+    this.G_not,
+    this.G_or,
+    this.createdAt,
+    this.email,
+    this.id,
+    this.lastSeen,
+    this.nickname,
+    this.picture,
+    this.updatedAt,
+    this.username,
+    this.website,
+  }) : super._();
 
   @override
   GUsersBoolExp rebuild(void Function(GUsersBoolExpBuilder) updates) =>
@@ -16432,7 +19301,8 @@ class GUsersBoolExpBuilder
   _$GUsersBoolExp _build() {
     _$GUsersBoolExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GUsersBoolExp._(
             G_and: _G_and?.build(),
             G_not: _G_not?.build(),
@@ -16476,7 +19346,10 @@ class GUsersBoolExpBuilder
         _website?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUsersBoolExp', _$failedField, e.toString());
+          r'GUsersBoolExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -16508,17 +19381,17 @@ class _$GUsersOrderBy extends GUsersOrderBy {
   factory _$GUsersOrderBy([void Function(GUsersOrderByBuilder)? updates]) =>
       (new GUsersOrderByBuilder()..update(updates))._build();
 
-  _$GUsersOrderBy._(
-      {this.createdAt,
-      this.email,
-      this.id,
-      this.lastSeen,
-      this.nickname,
-      this.picture,
-      this.updatedAt,
-      this.username,
-      this.website})
-      : super._();
+  _$GUsersOrderBy._({
+    this.createdAt,
+    this.email,
+    this.id,
+    this.lastSeen,
+    this.nickname,
+    this.picture,
+    this.updatedAt,
+    this.username,
+    this.website,
+  }) : super._();
 
   @override
   GUsersOrderBy rebuild(void Function(GUsersOrderByBuilder) updates) =>
@@ -16648,7 +19521,8 @@ class GUsersOrderByBuilder
   GUsersOrderBy build() => _build();
 
   _$GUsersOrderBy _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GUsersOrderBy._(
           createdAt: createdAt,
           email: email,
@@ -16671,20 +19545,23 @@ class _$GUsersStreamCursorInput extends GUsersStreamCursorInput {
   @override
   final GCursorOrdering? ordering;
 
-  factory _$GUsersStreamCursorInput(
-          [void Function(GUsersStreamCursorInputBuilder)? updates]) =>
-      (new GUsersStreamCursorInputBuilder()..update(updates))._build();
+  factory _$GUsersStreamCursorInput([
+    void Function(GUsersStreamCursorInputBuilder)? updates,
+  ]) => (new GUsersStreamCursorInputBuilder()..update(updates))._build();
 
   _$GUsersStreamCursorInput._({required this.initialValue, this.ordering})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        initialValue, r'GUsersStreamCursorInput', 'initialValue');
+      initialValue,
+      r'GUsersStreamCursorInput',
+      'initialValue',
+    );
   }
 
   @override
   GUsersStreamCursorInput rebuild(
-          void Function(GUsersStreamCursorInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUsersStreamCursorInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUsersStreamCursorInputBuilder toBuilder() =>
@@ -16760,7 +19637,8 @@ class GUsersStreamCursorInputBuilder
   _$GUsersStreamCursorInput _build() {
     _$GUsersStreamCursorInput _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GUsersStreamCursorInput._(
             initialValue: initialValue.build(),
             ordering: ordering,
@@ -16772,7 +19650,10 @@ class GUsersStreamCursorInputBuilder
         initialValue.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUsersStreamCursorInput', _$failedField, e.toString());
+          r'GUsersStreamCursorInput',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -16801,26 +19682,26 @@ class _$GUsersStreamCursorValueInput extends GUsersStreamCursorValueInput {
   @override
   final String? website;
 
-  factory _$GUsersStreamCursorValueInput(
-          [void Function(GUsersStreamCursorValueInputBuilder)? updates]) =>
-      (new GUsersStreamCursorValueInputBuilder()..update(updates))._build();
+  factory _$GUsersStreamCursorValueInput([
+    void Function(GUsersStreamCursorValueInputBuilder)? updates,
+  ]) => (new GUsersStreamCursorValueInputBuilder()..update(updates))._build();
 
-  _$GUsersStreamCursorValueInput._(
-      {this.createdAt,
-      this.email,
-      this.id,
-      this.lastSeen,
-      this.nickname,
-      this.picture,
-      this.updatedAt,
-      this.username,
-      this.website})
-      : super._();
+  _$GUsersStreamCursorValueInput._({
+    this.createdAt,
+    this.email,
+    this.id,
+    this.lastSeen,
+    this.nickname,
+    this.picture,
+    this.updatedAt,
+    this.username,
+    this.website,
+  }) : super._();
 
   @override
   GUsersStreamCursorValueInput rebuild(
-          void Function(GUsersStreamCursorValueInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUsersStreamCursorValueInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUsersStreamCursorValueInputBuilder toBuilder() =>
@@ -16875,8 +19756,10 @@ class _$GUsersStreamCursorValueInput extends GUsersStreamCursorValueInput {
 
 class GUsersStreamCursorValueInputBuilder
     implements
-        Builder<GUsersStreamCursorValueInput,
-            GUsersStreamCursorValueInputBuilder> {
+        Builder<
+          GUsersStreamCursorValueInput,
+          GUsersStreamCursorValueInputBuilder
+        > {
   _$GUsersStreamCursorValueInput? _$v;
 
   DateTime? _createdAt;
@@ -16949,7 +19832,8 @@ class GUsersStreamCursorValueInputBuilder
   GUsersStreamCursorValueInput build() => _build();
 
   _$GUsersStreamCursorValueInput _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GUsersStreamCursorValueInput._(
           createdAt: createdAt,
           email: email,
@@ -16986,26 +19870,26 @@ class _$GUuidComparisonExp extends GUuidComparisonExp {
   @override
   final BuiltList<String>? G_nin;
 
-  factory _$GUuidComparisonExp(
-          [void Function(GUuidComparisonExpBuilder)? updates]) =>
-      (new GUuidComparisonExpBuilder()..update(updates))._build();
+  factory _$GUuidComparisonExp([
+    void Function(GUuidComparisonExpBuilder)? updates,
+  ]) => (new GUuidComparisonExpBuilder()..update(updates))._build();
 
-  _$GUuidComparisonExp._(
-      {this.G_eq,
-      this.G_gt,
-      this.G_gte,
-      this.G_in,
-      this.G_isNull,
-      this.G_lt,
-      this.G_lte,
-      this.G_neq,
-      this.G_nin})
-      : super._();
+  _$GUuidComparisonExp._({
+    this.G_eq,
+    this.G_gt,
+    this.G_gte,
+    this.G_in,
+    this.G_isNull,
+    this.G_lt,
+    this.G_lte,
+    this.G_neq,
+    this.G_nin,
+  }) : super._();
 
   @override
   GUuidComparisonExp rebuild(
-          void Function(GUuidComparisonExpBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GUuidComparisonExpBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GUuidComparisonExpBuilder toBuilder() =>
@@ -17134,7 +20018,8 @@ class GUuidComparisonExpBuilder
   _$GUuidComparisonExp _build() {
     _$GUuidComparisonExp _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GUuidComparisonExp._(
             G_eq: G_eq,
             G_gt: G_gt,
@@ -17156,7 +20041,10 @@ class GUuidComparisonExpBuilder
         _G_nin?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GUuidComparisonExp', _$failedField, e.toString());
+          r'GUuidComparisonExp',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }

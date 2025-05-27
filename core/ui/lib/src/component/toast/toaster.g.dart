@@ -13,8 +13,9 @@ String _$toastListKeyHash() => r'2b32578c742f2546637c9d8c7e2000ff45151ee3';
 final toastListKeyProvider = Provider<GlobalKey<AnimatedListState>>.internal(
   toastListKey,
   name: r'toastListKeyProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$toastListKeyHash,
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$toastListKeyHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
@@ -28,13 +29,14 @@ String _$toasterHash() => r'246e5af54027bdba0015ad996bc4c5da55e32d6a';
 @ProviderFor(Toaster)
 final toasterProvider =
     AutoDisposeNotifierProvider<Toaster, List<ToastData>>.internal(
-  Toaster.new,
-  name: r'toasterProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$toasterHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      Toaster.new,
+      name: r'toasterProvider',
+      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$toasterHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 typedef _$Toaster = AutoDisposeNotifier<List<ToastData>>;
 // ignore_for_file: type=lint

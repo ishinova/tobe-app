@@ -60,20 +60,14 @@ void main() {
 
       // Stream should emit empty list initially
       final stream = database.select(database.quests).watch();
-      
-      await expectLater(
-        stream.first,
-        completion(isEmpty),
-      );
+
+      await expectLater(stream.first, completion(isEmpty));
 
       // Insert quest
       await database.into(database.quests).insert(quest.toCompanion());
 
       // Stream should emit the quest
-      await expectLater(
-        stream.first,
-        completion(hasLength(1)),
-      );
+      await expectLater(stream.first, completion(hasLength(1)));
     });
   });
 }
