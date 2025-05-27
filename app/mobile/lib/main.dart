@@ -4,7 +4,7 @@ import 'package:app_mobile/initializer/app_initializer.dart';
 import 'package:app_mobile/ui/toast.dart';
 import 'package:core_analytics_firebase/analytics_firebase.dart';
 import 'package:core_authenticator/authenticator.dart';
-import 'package:core_database_isar/isar.dart';
+import 'package:core_database_drift/drift.dart';
 import 'package:core_datastore/datastore.dart';
 import 'package:core_model/config.dart';
 import 'package:core_ui/toast.dart';
@@ -17,7 +17,7 @@ void main() async {
 
   final (
     :appConfig,
-    :isar,
+    :database,
     :dataStore,
     :firebaseAnalytics,
     :firebaseAuthenticator,
@@ -29,7 +29,7 @@ void main() async {
       overrides: [
         appConfigProvider.overrideWithValue(appConfig),
         firebaseRemoteConfigProvider,
-        ...isarDatabaseProviders(isar: isar),
+        ...driftDatabaseProviders(database: database),
         ...firebaseAnalyticsProviders(firebaseAnalytics: firebaseAnalytics),
         dataStoreProvider.overrideWithValue(dataStore),
         authenticatorProvider.overrideWithValue(firebaseAuthenticator),
