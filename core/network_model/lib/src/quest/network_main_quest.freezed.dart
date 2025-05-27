@@ -12,7 +12,8 @@ part of 'network_main_quest.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 NetworkMainQuest _$NetworkMainQuestFromJson(Map<String, dynamic> json) {
   return _NetworkMainQuest.fromJson(json);
@@ -43,19 +44,21 @@ mixin _$NetworkMainQuest {
 /// @nodoc
 abstract class $NetworkMainQuestCopyWith<$Res> {
   factory $NetworkMainQuestCopyWith(
-          NetworkMainQuest value, $Res Function(NetworkMainQuest) then) =
-      _$NetworkMainQuestCopyWithImpl<$Res, NetworkMainQuest>;
+    NetworkMainQuest value,
+    $Res Function(NetworkMainQuest) then,
+  ) = _$NetworkMainQuestCopyWithImpl<$Res, NetworkMainQuest>;
   @useResult
-  $Res call(
-      {String id,
-      String title,
-      String description,
-      DateTime? begunAt,
-      DateTime? endedAt,
-      String? categoryId,
-      String status,
-      String? coverImageUrl,
-      String note});
+  $Res call({
+    String id,
+    String title,
+    String description,
+    DateTime? begunAt,
+    DateTime? endedAt,
+    String? categoryId,
+    String status,
+    String? coverImageUrl,
+    String note,
+  });
 }
 
 /// @nodoc
@@ -83,74 +86,80 @@ class _$NetworkMainQuestCopyWithImpl<$Res, $Val extends NetworkMainQuest>
     Object? coverImageUrl = freezed,
     Object? note = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      begunAt: freezed == begunAt
-          ? _value.begunAt
-          : begunAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      endedAt: freezed == endedAt
-          ? _value.endedAt
-          : endedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      categoryId: freezed == categoryId
-          ? _value.categoryId
-          : categoryId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      coverImageUrl: freezed == coverImageUrl
-          ? _value.coverImageUrl
-          : coverImageUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      note: null == note
-          ? _value.note
-          : note // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id: null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                      as String,
+            title: null == title
+                ? _value.title
+                : title // ignore: cast_nullable_to_non_nullable
+                      as String,
+            description: null == description
+                ? _value.description
+                : description // ignore: cast_nullable_to_non_nullable
+                      as String,
+            begunAt: freezed == begunAt
+                ? _value.begunAt
+                : begunAt // ignore: cast_nullable_to_non_nullable
+                      as DateTime?,
+            endedAt: freezed == endedAt
+                ? _value.endedAt
+                : endedAt // ignore: cast_nullable_to_non_nullable
+                      as DateTime?,
+            categoryId: freezed == categoryId
+                ? _value.categoryId
+                : categoryId // ignore: cast_nullable_to_non_nullable
+                      as String?,
+            status: null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                      as String,
+            coverImageUrl: freezed == coverImageUrl
+                ? _value.coverImageUrl
+                : coverImageUrl // ignore: cast_nullable_to_non_nullable
+                      as String?,
+            note: null == note
+                ? _value.note
+                : note // ignore: cast_nullable_to_non_nullable
+                      as String,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$NetworkMainQuestImplCopyWith<$Res>
     implements $NetworkMainQuestCopyWith<$Res> {
-  factory _$$NetworkMainQuestImplCopyWith(_$NetworkMainQuestImpl value,
-          $Res Function(_$NetworkMainQuestImpl) then) =
-      __$$NetworkMainQuestImplCopyWithImpl<$Res>;
+  factory _$$NetworkMainQuestImplCopyWith(
+    _$NetworkMainQuestImpl value,
+    $Res Function(_$NetworkMainQuestImpl) then,
+  ) = __$$NetworkMainQuestImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      String title,
-      String description,
-      DateTime? begunAt,
-      DateTime? endedAt,
-      String? categoryId,
-      String status,
-      String? coverImageUrl,
-      String note});
+  $Res call({
+    String id,
+    String title,
+    String description,
+    DateTime? begunAt,
+    DateTime? endedAt,
+    String? categoryId,
+    String status,
+    String? coverImageUrl,
+    String note,
+  });
 }
 
 /// @nodoc
 class __$$NetworkMainQuestImplCopyWithImpl<$Res>
     extends _$NetworkMainQuestCopyWithImpl<$Res, _$NetworkMainQuestImpl>
     implements _$$NetworkMainQuestImplCopyWith<$Res> {
-  __$$NetworkMainQuestImplCopyWithImpl(_$NetworkMainQuestImpl _value,
-      $Res Function(_$NetworkMainQuestImpl) _then)
-      : super(_value, _then);
+  __$$NetworkMainQuestImplCopyWithImpl(
+    _$NetworkMainQuestImpl _value,
+    $Res Function(_$NetworkMainQuestImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of NetworkMainQuest
   /// with the given fields replaced by the non-null parameter values.
@@ -167,60 +176,63 @@ class __$$NetworkMainQuestImplCopyWithImpl<$Res>
     Object? coverImageUrl = freezed,
     Object? note = null,
   }) {
-    return _then(_$NetworkMainQuestImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      begunAt: freezed == begunAt
-          ? _value.begunAt
-          : begunAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      endedAt: freezed == endedAt
-          ? _value.endedAt
-          : endedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      categoryId: freezed == categoryId
-          ? _value.categoryId
-          : categoryId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      coverImageUrl: freezed == coverImageUrl
-          ? _value.coverImageUrl
-          : coverImageUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      note: null == note
-          ? _value.note
-          : note // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$NetworkMainQuestImpl(
+        id: null == id
+            ? _value.id
+            : id // ignore: cast_nullable_to_non_nullable
+                  as String,
+        title: null == title
+            ? _value.title
+            : title // ignore: cast_nullable_to_non_nullable
+                  as String,
+        description: null == description
+            ? _value.description
+            : description // ignore: cast_nullable_to_non_nullable
+                  as String,
+        begunAt: freezed == begunAt
+            ? _value.begunAt
+            : begunAt // ignore: cast_nullable_to_non_nullable
+                  as DateTime?,
+        endedAt: freezed == endedAt
+            ? _value.endedAt
+            : endedAt // ignore: cast_nullable_to_non_nullable
+                  as DateTime?,
+        categoryId: freezed == categoryId
+            ? _value.categoryId
+            : categoryId // ignore: cast_nullable_to_non_nullable
+                  as String?,
+        status: null == status
+            ? _value.status
+            : status // ignore: cast_nullable_to_non_nullable
+                  as String,
+        coverImageUrl: freezed == coverImageUrl
+            ? _value.coverImageUrl
+            : coverImageUrl // ignore: cast_nullable_to_non_nullable
+                  as String?,
+        note: null == note
+            ? _value.note
+            : note // ignore: cast_nullable_to_non_nullable
+                  as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$NetworkMainQuestImpl implements _NetworkMainQuest {
-  const _$NetworkMainQuestImpl(
-      {required this.id,
-      required this.title,
-      required this.description,
-      required this.begunAt,
-      required this.endedAt,
-      required this.categoryId,
-      required this.status,
-      required this.coverImageUrl,
-      required this.note});
+  const _$NetworkMainQuestImpl({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.begunAt,
+    required this.endedAt,
+    required this.categoryId,
+    required this.status,
+    required this.coverImageUrl,
+    required this.note,
+  });
 
   factory _$NetworkMainQuestImpl.fromJson(Map<String, dynamic> json) =>
       _$$NetworkMainQuestImplFromJson(json);
@@ -270,8 +282,18 @@ class _$NetworkMainQuestImpl implements _NetworkMainQuest {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, title, description, begunAt,
-      endedAt, categoryId, status, coverImageUrl, note);
+  int get hashCode => Object.hash(
+    runtimeType,
+    id,
+    title,
+    description,
+    begunAt,
+    endedAt,
+    categoryId,
+    status,
+    coverImageUrl,
+    note,
+  );
 
   /// Create a copy of NetworkMainQuest
   /// with the given fields replaced by the non-null parameter values.
@@ -280,27 +302,28 @@ class _$NetworkMainQuestImpl implements _NetworkMainQuest {
   @pragma('vm:prefer-inline')
   _$$NetworkMainQuestImplCopyWith<_$NetworkMainQuestImpl> get copyWith =>
       __$$NetworkMainQuestImplCopyWithImpl<_$NetworkMainQuestImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$NetworkMainQuestImplToJson(
-      this,
-    );
+    return _$$NetworkMainQuestImplToJson(this);
   }
 }
 
 abstract class _NetworkMainQuest implements NetworkMainQuest {
-  const factory _NetworkMainQuest(
-      {required final String id,
-      required final String title,
-      required final String description,
-      required final DateTime? begunAt,
-      required final DateTime? endedAt,
-      required final String? categoryId,
-      required final String status,
-      required final String? coverImageUrl,
-      required final String note}) = _$NetworkMainQuestImpl;
+  const factory _NetworkMainQuest({
+    required final String id,
+    required final String title,
+    required final String description,
+    required final DateTime? begunAt,
+    required final DateTime? endedAt,
+    required final String? categoryId,
+    required final String status,
+    required final String? coverImageUrl,
+    required final String note,
+  }) = _$NetworkMainQuestImpl;
 
   factory _NetworkMainQuest.fromJson(Map<String, dynamic> json) =
       _$NetworkMainQuestImpl.fromJson;

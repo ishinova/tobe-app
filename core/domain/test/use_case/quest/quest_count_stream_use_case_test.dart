@@ -14,9 +14,7 @@ void main() {
     setUp(() {
       mockRepository = MockQuestRepository();
       container = ProviderContainer(
-        overrides: [
-          questRepositoryProvider.overrideWithValue(mockRepository),
-        ],
+        overrides: [questRepositoryProvider.overrideWithValue(mockRepository)],
       );
       addTearDown(container.dispose);
     });
@@ -104,12 +102,11 @@ void main() {
 
       when(
         () => mockRepository.stream(),
-      ).thenAnswer(
-        (_) => Stream.value(quests),
-      );
+      ).thenAnswer((_) => Stream.value(quests));
 
-      final result =
-          await container.read(questCountStreamUseCaseProvider.future);
+      final result = await container.read(
+        questCountStreamUseCaseProvider.future,
+      );
 
       // 結果を検証
       expect(result.backlog, equals(1));
@@ -125,14 +122,11 @@ void main() {
     });
 
     test('空のクエストリストの場合、全てのカウントが 0 になる', () async {
-      when(
-        () => mockRepository.stream(),
-      ).thenAnswer(
-        (_) => Stream.value([]),
-      );
+      when(() => mockRepository.stream()).thenAnswer((_) => Stream.value([]));
 
-      final result =
-          await container.read(questCountStreamUseCaseProvider.future);
+      final result = await container.read(
+        questCountStreamUseCaseProvider.future,
+      );
 
       // 結果を検証
       expect(result.backlog, equals(0));

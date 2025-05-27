@@ -4,15 +4,15 @@ import 'package:dart_frog/dart_frog.dart';
 
 Handler middleware(Handler handler) {
   return (context) async {
-    return await handler.use(
-      provider<FerryNewsRemoteDataSource>(
-        (context) {
-          return FerryNewsRemoteDataSource(
-            client: context.read(),
-            transformer: FerryNetworkNewsTransformer(),
-          );
-        },
-      ),
-    ).call(context);
+    return await handler
+        .use(
+          provider<FerryNewsRemoteDataSource>((context) {
+            return FerryNewsRemoteDataSource(
+              client: context.read(),
+              transformer: FerryNetworkNewsTransformer(),
+            );
+          }),
+        )
+        .call(context);
   };
 }

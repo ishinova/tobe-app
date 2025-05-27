@@ -21,8 +21,7 @@ final class TimestamptzSerializer implements PrimitiveSerializer<DateTime> {
     Serializers serializers,
     DateTime date, {
     FullType specifiedType = FullType.unspecified,
-  }) =>
-      date.toString();
+  }) => date.toString();
 
   @override
   Iterable<Type> get types => [DateTime];

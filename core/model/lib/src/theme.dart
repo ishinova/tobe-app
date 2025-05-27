@@ -1,6 +1,1 @@
-enum Theme {
-  system,
-  light,
-  dark,
-  ;
-}
+enum Theme { system, light, dark }

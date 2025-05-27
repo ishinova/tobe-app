@@ -51,20 +51,14 @@ class SignInUseCaseFamily extends Family<Raw<Future<void>>> {
     required String email,
     required String password,
   }) {
-    return SignInUseCaseProvider(
-      email: email,
-      password: password,
-    );
+    return SignInUseCaseProvider(email: email, password: password);
   }
 
   @override
   SignInUseCaseProvider getProviderOverride(
     covariant SignInUseCaseProvider provider,
   ) {
-    return call(
-      email: provider.email,
-      password: provider.password,
-    );
+    return call(email: provider.email, password: provider.password);
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -89,27 +83,24 @@ class SignInUseCaseProvider extends AutoDisposeProvider<Raw<Future<void>>> {
   /// サインインする ユースケース
   ///
   /// Copied from [signInUseCase].
-  SignInUseCaseProvider({
-    required String email,
-    required String password,
-  }) : this._internal(
-          (ref) => signInUseCase(
-            ref as SignInUseCaseRef,
-            email: email,
-            password: password,
-          ),
-          from: signInUseCaseProvider,
-          name: r'signInUseCaseProvider',
-          debugGetCreateSourceHash:
-              const bool.fromEnvironment('dart.vm.product')
-                  ? null
-                  : _$signInUseCaseHash,
-          dependencies: SignInUseCaseFamily._dependencies,
-          allTransitiveDependencies:
-              SignInUseCaseFamily._allTransitiveDependencies,
+  SignInUseCaseProvider({required String email, required String password})
+    : this._internal(
+        (ref) => signInUseCase(
+          ref as SignInUseCaseRef,
           email: email,
           password: password,
-        );
+        ),
+        from: signInUseCaseProvider,
+        name: r'signInUseCaseProvider',
+        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+            ? null
+            : _$signInUseCaseHash,
+        dependencies: SignInUseCaseFamily._dependencies,
+        allTransitiveDependencies:
+            SignInUseCaseFamily._allTransitiveDependencies,
+        email: email,
+        password: password,
+      );
 
   SignInUseCaseProvider._internal(
     super._createNotifier, {
@@ -186,5 +177,6 @@ class _SignInUseCaseProviderElement
   @override
   String get password => (origin as SignInUseCaseProvider).password;
 }
+
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

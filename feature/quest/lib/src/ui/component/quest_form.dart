@@ -4,11 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-typedef SubmitCallback = void Function(
-  String title,
-  String description,
-  String note,
-);
+typedef SubmitCallback =
+    void Function(String title, String description, String note);
 
 final class QuestForm extends HookConsumerWidget {
   const QuestForm({
@@ -17,10 +14,10 @@ final class QuestForm extends HookConsumerWidget {
     String? description,
     String? note,
     super.key,
-  })  : _title = title,
-        _description = description,
-        _note = note,
-        _onSubmit = onSubmit;
+  }) : _title = title,
+       _description = description,
+       _note = note,
+       _onSubmit = onSubmit;
 
   final String? _title;
   final String? _description;
@@ -106,12 +103,7 @@ final class QuestForm extends HookConsumerWidget {
                       child: Text(l10n.questAddFormSubmit),
                     ),
                   ),
-                ].expand(
-                  (widget) => [
-                    widget,
-                    const Gap(24),
-                  ],
-                ),
+                ].expand((widget) => [widget, const Gap(24)]),
               ],
             ),
           ),

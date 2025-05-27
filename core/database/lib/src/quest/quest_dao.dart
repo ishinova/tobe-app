@@ -14,10 +14,7 @@ abstract interface class QuestDao {
 
   Stream<Quest?> streamById({required QuestId id});
 
-  Stream<List<Quest>> stream({
-    int? offset,
-    int? limit,
-  });
+  Stream<List<Quest>> stream({int? offset, int? limit});
 
   Future<void> insert({required Quest quest});
 
@@ -25,18 +22,19 @@ abstract interface class QuestDao {
 
   Future<void> merges(
     List<
-            ({
-              QuestId id,
-              String title,
-              String description,
-              DateTime? begunAt,
-              DateTime? endedAt,
-              String? categoryId,
-              String status,
-              String? coverImageUrl,
-              String note,
-            })>
-        quests,
+      ({
+        QuestId id,
+        String title,
+        String description,
+        DateTime? begunAt,
+        DateTime? endedAt,
+        String? categoryId,
+        String status,
+        String? coverImageUrl,
+        String note,
+      })
+    >
+    quests,
   );
 
   Future<bool> update({required Quest quest});

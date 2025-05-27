@@ -21,21 +21,14 @@ Dio dioClient(Ref ref) {
   final authInterceptor = AuthInterceptor(dio, authenticator);
   dio.interceptors
     ..add(authInterceptor)
-    ..add(
-      LogInterceptor(
-        responseBody: true,
-      ),
-    );
+    ..add(LogInterceptor(responseBody: true));
 
   return dio;
 }
 
 /// 認証用のInterceptor
 class AuthInterceptor extends QueuedInterceptor {
-  AuthInterceptor(
-    this.dio,
-    this.authenticator,
-  );
+  AuthInterceptor(this.dio, this.authenticator);
 
   final Dio dio;
   final Authenticator authenticator;

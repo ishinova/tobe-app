@@ -3,9 +3,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 /// [SharedPreferences] を利用したデータストア
 final class PreferencesDataStore implements DataStore {
-  PreferencesDataStore({
-    required SharedPreferences preferences,
-  }) : _preferences = preferences;
+  PreferencesDataStore({required SharedPreferences preferences})
+    : _preferences = preferences;
 
   final SharedPreferences _preferences;
 

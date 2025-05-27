@@ -29,22 +29,20 @@ Future<InitializedValues> initializeApp() async {
   final [
     isar as Isar,
     dataStore as PreferencesDataStore,
-    firebase as ({
-      FirebaseAnalytics firebaseAnalytics,
-      FirebaseAuthenticator firebaseAuthenticator,
-      FirebaseRemoteConfig firebaseRemoteConfig,
-    }),
+    firebase
+        as ({
+          FirebaseAnalytics firebaseAnalytics,
+          FirebaseAuthenticator firebaseAuthenticator,
+          FirebaseRemoteConfig firebaseRemoteConfig,
+        }),
   ] = await Future.wait([
     initializeDatabase(),
     initializeDataStore(),
     initializeFirebase(flavor: appConfig.flavor),
   ]);
 
-  final (
-    :firebaseAnalytics,
-    :firebaseAuthenticator,
-    :firebaseRemoteConfig,
-  ) = firebase;
+  final (:firebaseAnalytics, :firebaseAuthenticator, :firebaseRemoteConfig) =
+      firebase;
 
   return (
     appConfig: appConfig,

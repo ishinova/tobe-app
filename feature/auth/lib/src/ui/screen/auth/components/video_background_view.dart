@@ -17,30 +17,25 @@ final class HeroBackground extends HookWidget {
     );
     final isInitialized = useState(false);
 
-    useEffect(
-      () {
-        controller.addListener(() {
-          if (controller.value.isInitialized) {
+    useEffect(() {
+      controller.addListener(() {
+        if (controller.value.isInitialized) {
+          isInitialized.value = true;
+        }
+      });
+
+      unawaited(
+        Future<void>(() async {
+          await controller.setLooping(true);
+          await controller.initialize().then((_) async {
             isInitialized.value = true;
-          }
-        });
+            await controller.play();
+          });
+        }),
+      );
 
-        unawaited(
-          Future<void>(
-            () async {
-              await controller.setLooping(true);
-              await controller.initialize().then((_) async {
-                isInitialized.value = true;
-                await controller.play();
-              });
-            },
-          ),
-        );
-
-        return controller.dispose;
-      },
-      const [],
-    );
+      return controller.dispose;
+    }, const []);
 
     return SizedBox.expand(
       child: FittedBox(

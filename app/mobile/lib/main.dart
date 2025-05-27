@@ -37,16 +37,13 @@ void main() async {
       ],
       child: HookConsumer(
         builder: (context, ref, child) {
-          useEffect(
-            () {
-              firebaseRemoteConfig.onConfigUpdated.listen((event) async {
-                await firebaseRemoteConfig.activate();
-                ref.invalidate(remoteConfigProvider);
-              });
-              return null;
-            },
-            [],
-          );
+          useEffect(() {
+            firebaseRemoteConfig.onConfigUpdated.listen((event) async {
+              await firebaseRemoteConfig.activate();
+              ref.invalidate(remoteConfigProvider);
+            });
+            return null;
+          }, []);
 
           return const TobeApp();
         },

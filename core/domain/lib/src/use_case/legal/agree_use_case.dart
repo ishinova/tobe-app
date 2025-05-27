@@ -12,9 +12,9 @@ Raw<FutureResult<void>> agreeUseCase(
   Ref ref, {
   required RuleVersion agreeRuleVersion,
 }) async {
-  return await ref.watch(legalRepositoryProvider).setAgreeVersion(
-            version: agreeRuleVersion,
-          )
+  return await ref
+          .watch(legalRepositoryProvider)
+          .setAgreeVersion(version: agreeRuleVersion)
       ? const Ok(null)
       : Exception('Failed to agree.').toErr();
 }

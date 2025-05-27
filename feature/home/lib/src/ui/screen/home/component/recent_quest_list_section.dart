@@ -11,8 +11,8 @@ final class RecentQuestListSection extends HookConsumerWidget {
     required void Function(Quest quest) onTapQuestListItem,
     required void Function() onMoreButtonPressed,
     super.key,
-  })  : _onTapQuestListItem = onTapQuestListItem,
-        _onMoreButtonPressed = onMoreButtonPressed;
+  }) : _onTapQuestListItem = onTapQuestListItem,
+       _onMoreButtonPressed = onMoreButtonPressed;
 
   final void Function(Quest quest) _onTapQuestListItem;
   final VoidCallback _onMoreButtonPressed;
@@ -30,10 +30,7 @@ final class RecentQuestListSection extends HookConsumerWidget {
             width: double.infinity,
             child: Text(
               l10n.homeRecentQuestListSectionYourQuestList,
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
           const Gap(16),
@@ -68,9 +65,7 @@ final class RecentQuestListSection extends HookConsumerWidget {
                                   const Gap(8),
                                   Text(
                                     quest.description,
-                                    style: const TextStyle(
-                                      fontSize: 12,
-                                    ),
+                                    style: const TextStyle(fontSize: 12),
                                   ),
                                 ],
                               ),
@@ -78,24 +73,13 @@ final class RecentQuestListSection extends HookConsumerWidget {
                           ),
                         ),
                       )
-                      .expand(
-                        (widget) => [
-                          widget,
-                          const Gap(16),
-                        ],
-                      )
+                      .expand((widget) => [widget, const Gap(16)])
                       .toList(),
                 ),
               );
             },
-            error: (error, stackTrace) => Center(
-              child: Text(
-                error.toString(),
-              ),
-            ),
-            loading: () => const Center(
-              child: CircularProgressIndicator(),
-            ),
+            error: (error, stackTrace) => Center(child: Text(error.toString())),
+            loading: () => const Center(child: CircularProgressIndicator()),
           ),
           Align(
             alignment: Alignment.centerRight,

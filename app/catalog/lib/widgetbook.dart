@@ -18,14 +18,8 @@ class WidgetbookApp extends StatelessWidget {
       addons: <WidgetbookAddon>[
         MaterialThemeAddon(
           themes: <WidgetbookTheme<ThemeData>>[
-            WidgetbookTheme<ThemeData>(
-              name: 'Light',
-              data: lightTheme(null),
-            ),
-            WidgetbookTheme<ThemeData>(
-              name: 'Dark',
-              data: darkTheme(null),
-            ),
+            WidgetbookTheme<ThemeData>(name: 'Light', data: lightTheme(null)),
+            WidgetbookTheme<ThemeData>(name: 'Dark', data: darkTheme(null)),
           ],
         ),
         LocalizationAddon(

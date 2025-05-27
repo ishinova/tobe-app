@@ -18,16 +18,10 @@ final class FeedListScreen extends StatelessWidget {
     final l10n = L10n.of(context);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.feedListAppBarTitle),
-      ),
+      appBar: TobeAppBar(title: Text(l10n.feedListAppBarTitle)),
       body: SingleChildScrollView(
         child: Column(
-          children: [
-            FeedList(
-              onTapFeedListItem: _onTapFeedListItem,
-            ),
-          ],
+          children: [FeedList(onTapFeedListItem: _onTapFeedListItem)],
         ),
       ),
     );

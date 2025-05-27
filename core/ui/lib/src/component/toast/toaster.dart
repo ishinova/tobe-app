@@ -37,9 +37,9 @@ class Toaster extends _$Toaster {
     final index = state.indexWhere((toast) => toast.id == id);
 
     state = state.where((toast) => toast.id != id).toList();
-    ref.read(toastListKeyProvider).currentState?.removeItem(
-          index,
-          (context, animation) => const SizedBox.shrink(),
-        );
+    ref
+        .read(toastListKeyProvider)
+        .currentState
+        ?.removeItem(index, (context, animation) => const SizedBox.shrink());
   }
 }

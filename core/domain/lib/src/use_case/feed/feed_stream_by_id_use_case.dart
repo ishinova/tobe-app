@@ -6,10 +6,7 @@ part 'feed_stream_by_id_use_case.g.dart';
 
 /// 該当のお知らせを取得する ユースケース
 @riverpod
-Stream<Feed?> feedStreamByIdUseCase(
-  Ref ref, {
-  required FeedId id,
-}) =>
+Stream<Feed?> feedStreamByIdUseCase(Ref ref, {required FeedId id}) =>
     Stream.value(
       const Feed(
         id: 'id1',

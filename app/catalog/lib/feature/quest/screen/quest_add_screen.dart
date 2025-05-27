@@ -8,7 +8,5 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
   path: '[Feature]/quest',
 )
 QuestAddScreen questAddScreenUseCase(BuildContext context) {
-  return QuestAddScreen(
-    onAddQuestCompleted: () {},
-  );
+  return QuestAddScreen(onAddQuestCompleted: () {});
 }

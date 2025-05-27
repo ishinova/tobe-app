@@ -32,28 +32,28 @@ final class Quest {
 
 extension QuestExtension on Quest {
   model.Quest asModel() => model.Quest(
-        id: this.id,
-        title: title,
-        description: description,
-        begunAt: begunAt,
-        endedAt: endedAt,
-        categoryId: categoryId,
-        status: QuestStatus.values.byName(status),
-        coverImageUrl: coverImageUrl,
-        note: note,
-      );
+    id: this.id,
+    title: title,
+    description: description,
+    begunAt: begunAt,
+    endedAt: endedAt,
+    categoryId: categoryId,
+    status: QuestStatus.values.byName(status),
+    coverImageUrl: coverImageUrl,
+    note: note,
+  );
 }
 
 extension QuestModelExtension on model.Quest {
   Quest asDbModel() => Quest(
-        id: this.id,
-        title: title,
-        description: description,
-        begunAt: begunAt,
-        endedAt: endedAt,
-        categoryId: categoryId,
-        status: status.toString(),
-        coverImageUrl: coverImageUrl,
-        note: note,
-      );
+    id: this.id,
+    title: title,
+    description: description,
+    begunAt: begunAt,
+    endedAt: endedAt,
+    categoryId: categoryId,
+    status: status.toString(),
+    coverImageUrl: coverImageUrl,
+    note: note,
+  );
 }

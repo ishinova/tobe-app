@@ -9,10 +9,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// クエスト追加画面
 final class QuestAddScreen extends HookConsumerWidget {
-  const QuestAddScreen({
-    required VoidCallback onAddQuestCompleted,
-    super.key,
-  }) : _onAddQuestCompleted = onAddQuestCompleted;
+  const QuestAddScreen({required VoidCallback onAddQuestCompleted, super.key})
+    : _onAddQuestCompleted = onAddQuestCompleted;
 
   final VoidCallback _onAddQuestCompleted;
 
@@ -22,9 +20,7 @@ final class QuestAddScreen extends HookConsumerWidget {
     final isSubmitting = useState(false);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.questAddAppBarTitle),
-      ),
+      appBar: TobeAppBar(title: Text(l10n.questAddAppBarTitle)),
       body: SafeArea(
         child: Stack(
           children: [
@@ -43,10 +39,7 @@ final class QuestAddScreen extends HookConsumerWidget {
                 final toaster = ref.read(toasterProvider.notifier);
                 result.match(
                   ok: (_) {
-                    toaster.showToast(
-                      'クエストを追加しました',
-                      type: ToastType.success,
-                    );
+                    toaster.showToast('クエストを追加しました', type: ToastType.success);
                     _onAddQuestCompleted();
                   },
                   err: (error) => toaster.showToast(

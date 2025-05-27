@@ -10,40 +10,34 @@ Handler middleware(Handler handler) {
   return (context) async {
     final env = context.read<Environment>();
 
-    return await handler.use(
-      provider<Client>(
-        (context) {
-          return Client(
-            link: Link.from(
-              [
+    return await handler
+        .use(
+          provider<Client>((context) {
+            return Client(
+              link: Link.from([
                 TransformLink(
                   requestTransformer: (request) =>
-                      request.updateContextEntry<HttpLinkHeaders>(
-                    (headers) {
-                      final authHeader =
-                          context.request.headers['Authorization'];
+                      request.updateContextEntry<HttpLinkHeaders>((headers) {
+                        final authHeader =
+                            context.request.headers['Authorization'];
 
-                      return HttpLinkHeaders(
-                        headers: <String, String>{
-                          ...headers?.headers ?? <String, String>{},
-                          if (authHeader != null) 'Authorization': authHeader,
-                        },
-                      );
-                    },
-                  ),
+                        return HttpLinkHeaders(
+                          headers: <String, String>{
+                            ...headers?.headers ?? <String, String>{},
+                            if (authHeader != null) 'Authorization': authHeader,
+                          },
+                        );
+                      }),
                 ),
-                HttpAuthLink(
-                  url: env.backendUrl,
-                ),
-              ],
-            ),
-            cache: Cache(),
-            defaultFetchPolicies: {
-              OperationType.query: FetchPolicy.NetworkOnly,
-            },
-          );
-        },
-      ),
-    ).call(context);
+                HttpAuthLink(url: env.backendUrl),
+              ]),
+              cache: Cache(),
+              defaultFetchPolicies: {
+                OperationType.query: FetchPolicy.NetworkOnly,
+              },
+            );
+          }),
+        )
+        .call(context);
   };
 }

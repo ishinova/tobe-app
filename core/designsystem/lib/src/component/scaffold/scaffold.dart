@@ -7,10 +7,10 @@ final class TobeScaffold extends StatelessWidget {
     Widget? body,
     Widget? floatingActionButton,
     FloatingActionButtonLocation? floatingActionButtonLocation,
-  })  : _appBar = appBar,
-        _body = body,
-        _floatingActionButtonLocation = floatingActionButtonLocation,
-        _floatingActionButton = floatingActionButton;
+  }) : _appBar = appBar,
+       _body = body,
+       _floatingActionButtonLocation = floatingActionButtonLocation,
+       _floatingActionButton = floatingActionButton;
 
   final PreferredSizeWidget? _appBar;
   final Widget? _body;
@@ -20,9 +20,9 @@ final class TobeScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: _appBar,
-        body: _body,
-        floatingActionButton: _floatingActionButton,
-        floatingActionButtonLocation: _floatingActionButtonLocation,
-      );
+    appBar: _appBar,
+    body: _body,
+    floatingActionButton: _floatingActionButton,
+    floatingActionButtonLocation: _floatingActionButtonLocation,
+  );
 }

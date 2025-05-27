@@ -17,22 +17,13 @@ final class AppForceUpdatable extends HookConsumerWidget {
     );
     final showUpdate = useState(false);
 
-    useEffect(
-      () {
-        showUpdate.value = updateVersion.forceUpdatable(currentVersion);
-        return null;
-      },
-      [currentVersion, updateVersion],
-    );
+    useEffect(() {
+      showUpdate.value = updateVersion.forceUpdatable(currentVersion);
+      return null;
+    }, [currentVersion, updateVersion]);
 
     return showUpdate.value
-        ? Center(
-            child: Container(
-              color: Colors.red,
-              width: 300,
-              height: 300,
-            ),
-          )
+        ? Center(child: Container(color: Colors.red, width: 300, height: 300))
         : const SizedBox.shrink();
   }
 }

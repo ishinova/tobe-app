@@ -18,8 +18,6 @@ final class AppShellRouteData extends StatefulShellRouteData {
     GoRouterState state,
     StatefulNavigationShell navigationShell,
   ) {
-    return AppNavigationBar(
-      navigationShell: navigationShell,
-    );
+    return AppNavigationBar(navigationShell: navigationShell);
   }
 }

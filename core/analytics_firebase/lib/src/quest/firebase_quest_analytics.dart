@@ -3,15 +3,13 @@ import 'package:core_analytics_firebase/src/firebase_analytics.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 
 final firebaseQuestAnalyticsProvider = questAnalyticsProvider.overrideWith(
-  (ref) => FirebaseQuestAnalytics(
-    analytics: ref.watch(firebaseAnalyticsProvider),
-  ),
+  (ref) =>
+      FirebaseQuestAnalytics(analytics: ref.watch(firebaseAnalyticsProvider)),
 );
 
 final class FirebaseQuestAnalytics implements QuestAnalytics {
-  const FirebaseQuestAnalytics({
-    required FirebaseAnalytics analytics,
-  }) : _analytics = analytics;
+  const FirebaseQuestAnalytics({required FirebaseAnalytics analytics})
+    : _analytics = analytics;
 
   final FirebaseAnalytics _analytics;
 

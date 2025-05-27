@@ -15,10 +15,9 @@ final class DebugScreenRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => DebugScreen(
-        onTapOpenSourceLicense: () => unawaited(
-          const DataStoreSettingsScreenRoute().push(context),
-        ),
-      );
+    onTapOpenSourceLicense: () =>
+        unawaited(const DataStoreSettingsScreenRoute().push(context)),
+  );
 }
 
 /// データストア設定画面へのルート

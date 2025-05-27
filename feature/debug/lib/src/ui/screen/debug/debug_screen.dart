@@ -5,10 +5,8 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// デバッグ画面
 final class DebugScreen extends ConsumerWidget {
-  const DebugScreen({
-    required VoidCallback onTapOpenSourceLicense,
-    super.key,
-  }) : _onTapDataStoreSettings = onTapOpenSourceLicense;
+  const DebugScreen({required VoidCallback onTapOpenSourceLicense, super.key})
+    : _onTapDataStoreSettings = onTapOpenSourceLicense;
 
   final VoidCallback _onTapDataStoreSettings;
 
@@ -17,16 +15,12 @@ final class DebugScreen extends ConsumerWidget {
     final l10n = L10n.of(context);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.debugAppBarTitle),
-      ),
+      appBar: TobeAppBar(title: Text(l10n.debugAppBarTitle)),
       body: ListView(
         primary: true,
         children: [
           ListTile(
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 16,
-            ),
+            contentPadding: const EdgeInsets.symmetric(horizontal: 16),
             title: Text(l10n.dataStoreSettingsTitle),
             subtitle: Text(l10n.dataStoreSettingsDescription),
             onTap: _onTapDataStoreSettings,

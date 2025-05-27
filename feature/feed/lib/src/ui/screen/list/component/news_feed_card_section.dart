@@ -9,8 +9,8 @@ final class NewsFeedCardSection extends ConsumerWidget {
     required void Function(NewsFeed newsFeed) onTapNewsFeedCardItem,
     required void Function() onTapMoreNewsFeed,
     super.key,
-  })  : _onTapNewsFeedCardItem = onTapNewsFeedCardItem,
-        _onTapMoreNewsFeed = onTapMoreNewsFeed;
+  }) : _onTapNewsFeedCardItem = onTapNewsFeedCardItem,
+       _onTapMoreNewsFeed = onTapMoreNewsFeed;
 
   final void Function(NewsFeed newsFeed) _onTapNewsFeedCardItem;
   final void Function() _onTapMoreNewsFeed;
@@ -18,7 +18,9 @@ final class NewsFeedCardSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ref.watch(newsFeedListStreamUseCaseProvider).when(
+    return ref
+        .watch(newsFeedListStreamUseCaseProvider)
+        .when(
           data: (data) {
             return SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -76,9 +78,9 @@ final class NewsFeedCardSection extends ConsumerWidget {
                                           flex: 4,
                                           child: Text(
                                             news.title,
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .titleMedium,
+                                            style: Theme.of(
+                                              context,
+                                            ).textTheme.titleMedium,
                                             overflow: TextOverflow.ellipsis,
                                           ),
                                         ),
@@ -90,9 +92,9 @@ final class NewsFeedCardSection extends ConsumerWidget {
                                     flex: 4,
                                     child: Text(
                                       news.excerpt,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium,
+                                      style: Theme.of(
+                                        context,
+                                      ).textTheme.bodyMedium,
                                       maxLines: 2,
                                       overflow: TextOverflow.ellipsis,
                                     ),
@@ -103,21 +105,14 @@ final class NewsFeedCardSection extends ConsumerWidget {
                           ),
                         ),
                       )
-                      .expand(
-                        (widget) => [
-                          widget,
-                          const Gap(16),
-                        ],
-                      ),
+                      .expand((widget) => [widget, const Gap(16)]),
                   Visibility(
                     visible: data.length > _displayDataCounts,
                     child: IconButton(
                       icon: const Icon(Icons.arrow_forward_ios),
                       style: ElevatedButton.styleFrom(
                         shape: CircleBorder(
-                          side: BorderSide(
-                            color: Colors.grey.shade200,
-                          ),
+                          side: BorderSide(color: Colors.grey.shade200),
                         ),
                       ),
                       onPressed: _onTapMoreNewsFeed,
@@ -128,15 +123,9 @@ final class NewsFeedCardSection extends ConsumerWidget {
             );
           },
           // MEMO: 一旦、書いただけ
-          error: (error, stackTrace) => Center(
-            child: Text(
-              error.toString(),
-            ),
-          ),
+          error: (error, stackTrace) => Center(child: Text(error.toString())),
           // MEMO: 一旦、書いただけ
-          loading: () => const Center(
-            child: CircularProgressIndicator(),
-          ),
+          loading: () => const Center(child: CircularProgressIndicator()),
         );
   }
 }

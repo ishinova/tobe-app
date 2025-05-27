@@ -7,9 +7,7 @@ part 'news_feed_list_stream_use_case.g.dart';
 
 /// サービスのお知らせ一覧を取得する ユースケース
 @riverpod
-Stream<List<NewsFeed>> newsFeedListStreamUseCase(
-  Ref ref,
-) async* {
+Stream<List<NewsFeed>> newsFeedListStreamUseCase(Ref ref) async* {
   final repository = ref.watch(newsRepositoryProvider);
   yield* repository.getAll().asStream();
 }

@@ -11,10 +11,7 @@ import 'package:go_router/go_router.dart';
 ///
 /// home, quest, settingsの3つの画面を保有している
 class AppNavigationBar extends HookWidget {
-  const AppNavigationBar({
-    required this.navigationShell,
-    super.key,
-  });
+  const AppNavigationBar({required this.navigationShell, super.key});
 
   final StatefulNavigationShell navigationShell;
 

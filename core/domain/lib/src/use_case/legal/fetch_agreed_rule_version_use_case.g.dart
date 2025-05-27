@@ -15,14 +15,14 @@ String _$fetchAgreedRuleVersionUseCaseHash() =>
 @ProviderFor(fetchAgreedRuleVersionUseCase)
 final fetchAgreedRuleVersionUseCaseProvider =
     AutoDisposeProvider<RuleVersion?>.internal(
-  fetchAgreedRuleVersionUseCase,
-  name: r'fetchAgreedRuleVersionUseCaseProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$fetchAgreedRuleVersionUseCaseHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+      fetchAgreedRuleVersionUseCase,
+      name: r'fetchAgreedRuleVersionUseCaseProvider',
+      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$fetchAgreedRuleVersionUseCaseHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element

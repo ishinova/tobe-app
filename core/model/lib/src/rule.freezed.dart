@@ -12,7 +12,8 @@ part of 'rule.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$Rule {
@@ -47,28 +48,29 @@ class _$RuleCopyWithImpl<$Res, $Val extends Rule>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? version = null,
-    Object? content = null,
-  }) {
-    return _then(_value.copyWith(
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as RuleVersion,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+  $Res call({Object? version = null, Object? content = null}) {
+    return _then(
+      _value.copyWith(
+            version: null == version
+                ? _value.version
+                : version // ignore: cast_nullable_to_non_nullable
+                      as RuleVersion,
+            content: null == content
+                ? _value.content
+                : content // ignore: cast_nullable_to_non_nullable
+                      as String,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$RuleImplCopyWith<$Res> implements $RuleCopyWith<$Res> {
   factory _$$RuleImplCopyWith(
-          _$RuleImpl value, $Res Function(_$RuleImpl) then) =
-      __$$RuleImplCopyWithImpl<$Res>;
+    _$RuleImpl value,
+    $Res Function(_$RuleImpl) then,
+  ) = __$$RuleImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({RuleVersion version, String content});
@@ -79,26 +81,25 @@ class __$$RuleImplCopyWithImpl<$Res>
     extends _$RuleCopyWithImpl<$Res, _$RuleImpl>
     implements _$$RuleImplCopyWith<$Res> {
   __$$RuleImplCopyWithImpl(_$RuleImpl _value, $Res Function(_$RuleImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of Rule
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? version = null,
-    Object? content = null,
-  }) {
-    return _then(_$RuleImpl(
-      version: null == version
-          ? _value.version
-          : version // ignore: cast_nullable_to_non_nullable
-              as RuleVersion,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  $Res call({Object? version = null, Object? content = null}) {
+    return _then(
+      _$RuleImpl(
+        version: null == version
+            ? _value.version
+            : version // ignore: cast_nullable_to_non_nullable
+                  as RuleVersion,
+        content: null == content
+            ? _value.content
+            : content // ignore: cast_nullable_to_non_nullable
+                  as String,
+      ),
+    );
   }
 }
 
@@ -139,9 +140,10 @@ class _$RuleImpl implements _Rule {
 }
 
 abstract class _Rule implements Rule {
-  const factory _Rule(
-      {required final RuleVersion version,
-      required final String content}) = _$RuleImpl;
+  const factory _Rule({
+    required final RuleVersion version,
+    required final String content,
+  }) = _$RuleImpl;
 
   @override
   RuleVersion get version;

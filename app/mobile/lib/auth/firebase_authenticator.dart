@@ -5,9 +5,8 @@ import 'package:core_model/auth.dart' as model;
 import 'package:firebase_auth/firebase_auth.dart';
 
 final class FirebaseAuthenticator implements Authenticator {
-  const FirebaseAuthenticator({
-    required FirebaseAuth firebaseAuth,
-  }) : _firebaseAuth = firebaseAuth;
+  const FirebaseAuthenticator({required FirebaseAuth firebaseAuth})
+    : _firebaseAuth = firebaseAuth;
 
   final FirebaseAuth _firebaseAuth;
 
@@ -27,11 +26,10 @@ final class FirebaseAuthenticator implements Authenticator {
   Future<void> signInWithEmailAndPassword({
     required String email,
     required String password,
-  }) async =>
-      _firebaseAuth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+  }) async => _firebaseAuth.signInWithEmailAndPassword(
+    email: email,
+    password: password,
+  );
 
   @override
   Future<void> signOut() async => _firebaseAuth.signOut();
@@ -47,9 +45,6 @@ extension FirebaseAuthX on FirebaseAuth {
 
 extension UserX on User {
   model.User asModel() {
-    return model.User(
-      id: uid,
-      email: email!,
-    );
+    return model.User(id: uid, email: email!);
   }
 }

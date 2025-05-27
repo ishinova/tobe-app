@@ -6,15 +6,12 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'news_repository.g.dart';
 
 @riverpod
-NewsRepository newsRepository(Ref ref) => NewsRepository(
-      remote: ref.watch(newsRemoteDataSourceProvider),
-    );
+NewsRepository newsRepository(Ref ref) =>
+    NewsRepository(remote: ref.watch(newsRemoteDataSourceProvider));
 
 /// ニュースのリポジトリ
 class NewsRepository {
-  NewsRepository({
-    required NewsRemoteDataSource remote,
-  }) : _remote = remote;
+  NewsRepository({required NewsRemoteDataSource remote}) : _remote = remote;
 
   final NewsRemoteDataSource _remote;
 
@@ -24,10 +21,10 @@ class NewsRepository {
 
 extension on NetworkNews {
   NewsFeed toNewsFeed() => NewsFeed(
-        slug: slug,
-        title: title,
-        publishedAt: publishedAt,
-        excerpt: excerpt,
-        coverImageUrl: coverImageUrl,
-      );
+    slug: slug,
+    title: title,
+    publishedAt: publishedAt,
+    excerpt: excerpt,
+    coverImageUrl: coverImageUrl,
+  );
 }

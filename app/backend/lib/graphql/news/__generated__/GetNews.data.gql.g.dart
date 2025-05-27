@@ -18,16 +18,24 @@ class _$GGetNewsDataSerializer implements StructuredSerializer<GGetNewsData> {
   final String wireName = 'GGetNewsData';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GGetNewsData object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GGetNewsData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'news',
-      serializers.serialize(object.news,
-          specifiedType: const FullType(
-              BuiltList, const [const FullType(GGetNewsData_news)])),
+      serializers.serialize(
+        object.news,
+        specifiedType: const FullType(BuiltList, const [
+          const FullType(GGetNewsData_news),
+        ]),
+      ),
     ];
 
     return result;
@@ -35,8 +43,10 @@ class _$GGetNewsDataSerializer implements StructuredSerializer<GGetNewsData> {
 
   @override
   GGetNewsData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GGetNewsDataBuilder();
 
     final iterator = serialized.iterator;
@@ -46,14 +56,23 @@ class _$GGetNewsDataSerializer implements StructuredSerializer<GGetNewsData> {
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'news':
-          result.news.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(
-                      BuiltList, const [const FullType(GGetNewsData_news)]))!
-              as BuiltList<Object?>);
+          result.news.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GGetNewsData_news),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -70,43 +89,56 @@ class _$GGetNewsData_newsSerializer
   final String wireName = 'GGetNewsData_news';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GGetNewsData_news object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GGetNewsData_news object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.title,
+        specifiedType: const FullType(String),
+      ),
       'slug',
       serializers.serialize(object.slug, specifiedType: const FullType(String)),
       'excerpt',
-      serializers.serialize(object.excerpt,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.excerpt,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.publishedAt;
     if (value != null) {
       result
         ..add('publishedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GGetNewsData_news deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = new GGetNewsData_newsBuilder();
 
     final iterator = serialized.iterator;
@@ -116,28 +148,52 @@ class _$GGetNewsData_newsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'slug':
-          result.slug = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.slug =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'publishedAt':
-          result.publishedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.publishedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'excerpt':
-          result.excerpt = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.excerpt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -156,9 +212,12 @@ class _$GGetNewsData extends GGetNewsData {
       (new GGetNewsDataBuilder()..update(updates))._build();
 
   _$GGetNewsData._({required this.G__typename, required this.news})
-      : super._() {
+    : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GGetNewsData', 'G__typename');
+      G__typename,
+      r'GGetNewsData',
+      'G__typename',
+    );
     BuiltValueNullFieldError.checkNotNull(news, r'GGetNewsData', 'news');
   }
 
@@ -239,10 +298,14 @@ class GGetNewsDataBuilder
   _$GGetNewsData _build() {
     _$GGetNewsData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           new _$GGetNewsData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GGetNewsData', 'G__typename'),
+              G__typename,
+              r'GGetNewsData',
+              'G__typename',
+            ),
             news: news.build(),
           );
     } catch (_) {
@@ -252,7 +315,10 @@ class GGetNewsDataBuilder
         news.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
-            r'GGetNewsData', _$failedField, e.toString());
+          r'GGetNewsData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -275,24 +341,30 @@ class _$GGetNewsData_news extends GGetNewsData_news {
   @override
   final String? coverImageUrl;
 
-  factory _$GGetNewsData_news(
-          [void Function(GGetNewsData_newsBuilder)? updates]) =>
-      (new GGetNewsData_newsBuilder()..update(updates))._build();
+  factory _$GGetNewsData_news([
+    void Function(GGetNewsData_newsBuilder)? updates,
+  ]) => (new GGetNewsData_newsBuilder()..update(updates))._build();
 
-  _$GGetNewsData_news._(
-      {required this.G__typename,
-      required this.title,
-      required this.slug,
-      this.publishedAt,
-      required this.excerpt,
-      this.coverImageUrl})
-      : super._() {
+  _$GGetNewsData_news._({
+    required this.G__typename,
+    required this.title,
+    required this.slug,
+    this.publishedAt,
+    required this.excerpt,
+    this.coverImageUrl,
+  }) : super._() {
     BuiltValueNullFieldError.checkNotNull(
-        G__typename, r'GGetNewsData_news', 'G__typename');
+      G__typename,
+      r'GGetNewsData_news',
+      'G__typename',
+    );
     BuiltValueNullFieldError.checkNotNull(title, r'GGetNewsData_news', 'title');
     BuiltValueNullFieldError.checkNotNull(slug, r'GGetNewsData_news', 'slug');
     BuiltValueNullFieldError.checkNotNull(
-        excerpt, r'GGetNewsData_news', 'excerpt');
+      excerpt,
+      r'GGetNewsData_news',
+      'excerpt',
+    );
   }
 
   @override
@@ -403,17 +475,30 @@ class GGetNewsData_newsBuilder
   GGetNewsData_news build() => _build();
 
   _$GGetNewsData_news _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         new _$GGetNewsData_news._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename, r'GGetNewsData_news', 'G__typename'),
+            G__typename,
+            r'GGetNewsData_news',
+            'G__typename',
+          ),
           title: BuiltValueNullFieldError.checkNotNull(
-              title, r'GGetNewsData_news', 'title'),
+            title,
+            r'GGetNewsData_news',
+            'title',
+          ),
           slug: BuiltValueNullFieldError.checkNotNull(
-              slug, r'GGetNewsData_news', 'slug'),
+            slug,
+            r'GGetNewsData_news',
+            'slug',
+          ),
           publishedAt: publishedAt,
           excerpt: BuiltValueNullFieldError.checkNotNull(
-              excerpt, r'GGetNewsData_news', 'excerpt'),
+            excerpt,
+            r'GGetNewsData_news',
+            'excerpt',
+          ),
           coverImageUrl: coverImageUrl,
         );
     replace(_$result);

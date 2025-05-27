@@ -9,15 +9,9 @@ const homeBranch = TypedStatefulShellBranch<HomeBranch>(
       routes: [
         TypedGoRoute<FeedListRoute>(
           path: 'feeds',
-          routes: [
-            TypedGoRoute<FeedDetailRoute>(
-              path: ':feedId',
-            ),
-          ],
+          routes: [TypedGoRoute<FeedDetailRoute>(path: ':feedId')],
         ),
-        TypedGoRoute<QuickAddQuestDialogRoute>(
-          path: 'quickAddQuest',
-        ),
+        TypedGoRoute<QuickAddQuestDialogRoute>(path: 'quickAddQuest'),
       ],
     ),
   ],

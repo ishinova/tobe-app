@@ -10,8 +10,6 @@ Raw<Future<void>> signInUseCase(
   Ref ref, {
   required String email,
   required String password,
-}) async =>
-    ref.watch(authenticatorProvider).signInWithEmailAndPassword(
-          email: email,
-          password: password,
-        );
+}) async => ref
+    .watch(authenticatorProvider)
+    .signInWithEmailAndPassword(email: email, password: password);

@@ -66,14 +66,8 @@ final class QuestOverviewSection extends HookConsumerWidget {
                 ],
               );
             },
-            error: (error, stackTrace) => Center(
-              child: Text(
-                error.toString(),
-              ),
-            ),
-            loading: () => const Center(
-              child: CircularProgressIndicator(),
-            ),
+            error: (error, stackTrace) => Center(child: Text(error.toString())),
+            loading: () => const Center(child: CircularProgressIndicator()),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16),
@@ -92,10 +86,7 @@ final class QuestOverviewSection extends HookConsumerWidget {
 }
 
 final class _StatCard extends StatelessWidget {
-  const _StatCard({
-    required this.title,
-    required this.count,
-  });
+  const _StatCard({required this.title, required this.count});
 
   final String title;
   final String count;
@@ -113,19 +104,10 @@ final class _StatCard extends StatelessWidget {
         children: <Widget>[
           Text(
             count,
-            style: const TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
-          Text(
-            title,
-            style: const TextStyle(
-              fontSize: 16,
-              color: Colors.grey,
-            ),
-          ),
+          Text(title, style: const TextStyle(fontSize: 16, color: Colors.grey)),
         ],
       ),
     );

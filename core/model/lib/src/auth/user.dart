@@ -9,8 +9,5 @@ typedef UserId = String;
 /// {@category Model}
 @freezed
 class User with _$User {
-  const factory User({
-    required UserId id,
-    required String email,
-  }) = _User;
+  const factory User({required UserId id, required String email}) = _User;
 }

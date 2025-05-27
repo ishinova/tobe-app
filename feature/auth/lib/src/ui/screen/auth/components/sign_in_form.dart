@@ -6,10 +6,8 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final class SignInForm extends HookConsumerWidget {
-  const SignInForm({
-    required VoidCallback onLoginSuccess,
-    super.key,
-  }) : _onLoginSuccess = onLoginSuccess;
+  const SignInForm({required VoidCallback onLoginSuccess, super.key})
+    : _onLoginSuccess = onLoginSuccess;
 
   final VoidCallback _onLoginSuccess;
 
@@ -55,8 +53,9 @@ final class SignInForm extends HookConsumerWidget {
                       if (value == null || value.isEmpty) {
                         return l10n.authSignInFormEmailEmptyErrorMessage;
                       }
-                      if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
-                          .hasMatch(value)) {
+                      if (!RegExp(
+                        r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$',
+                      ).hasMatch(value)) {
                         return l10n.authSignInFormEmailInvalidErrorMessage;
                       }
                       return null;
@@ -106,12 +105,7 @@ final class SignInForm extends HookConsumerWidget {
                       child: Text(l10n.authSignInFormSubmit),
                     ),
                   ),
-                ].expand(
-                  (widget) => [
-                    widget,
-                    const Gap(24),
-                  ],
-                ),
+                ].expand((widget) => [widget, const Gap(24)]),
               ],
             ),
           ),

@@ -10,9 +10,7 @@ void main() {
     final mockAuthenticator = MockAuthenticator();
 
     final container = ProviderContainer(
-      overrides: [
-        authenticatorProvider.overrideWithValue(mockAuthenticator),
-      ],
+      overrides: [authenticatorProvider.overrideWithValue(mockAuthenticator)],
     );
 
     test('有効な電子メールとパスワードでサインイン', () async {

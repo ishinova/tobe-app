@@ -8,7 +8,5 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
   path: '[Feature]/auth',
 )
 AuthScreen authScreenUseCase(BuildContext context) {
-  return AuthScreen(
-    onLoginSuccess: () {},
-  );
+  return AuthScreen(onLoginSuccess: () {});
 }

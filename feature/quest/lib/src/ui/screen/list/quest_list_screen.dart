@@ -10,8 +10,8 @@ final class QuestListScreen extends StatelessWidget {
     required void Function(Quest) onTapQuestListItem,
     required void Function() onTapQuestAddButton,
     super.key,
-  })  : _onTapQuestListItem = onTapQuestListItem,
-        _onTapQuestAddButton = onTapQuestAddButton;
+  }) : _onTapQuestListItem = onTapQuestListItem,
+       _onTapQuestAddButton = onTapQuestAddButton;
 
   final void Function(Quest quest) _onTapQuestListItem;
   final VoidCallback _onTapQuestAddButton;
@@ -21,12 +21,8 @@ final class QuestListScreen extends StatelessWidget {
     final l10n = L10n.of(context);
 
     return TobeScaffold(
-      appBar: TobeAppBar(
-        title: Text(l10n.questListAppBarTitle),
-      ),
-      body: QuestList(
-        onTapQuestListItem: _onTapQuestListItem,
-      ),
+      appBar: TobeAppBar(title: Text(l10n.questListAppBarTitle)),
+      body: QuestList(onTapQuestListItem: _onTapQuestListItem),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _onTapQuestAddButton,
         label: Text(l10n.questListAddQuest),

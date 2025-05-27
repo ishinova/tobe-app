@@ -12,7 +12,8 @@ part of 'app_version.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$AppVersion {
@@ -30,8 +31,9 @@ mixin _$AppVersion {
 /// @nodoc
 abstract class $AppVersionCopyWith<$Res> {
   factory $AppVersionCopyWith(
-          AppVersion value, $Res Function(AppVersion) then) =
-      _$AppVersionCopyWithImpl<$Res, AppVersion>;
+    AppVersion value,
+    $Res Function(AppVersion) then,
+  ) = _$AppVersionCopyWithImpl<$Res, AppVersion>;
   @useResult
   $Res call({int major, int minor, int patch});
 }
@@ -55,20 +57,23 @@ class _$AppVersionCopyWithImpl<$Res, $Val extends AppVersion>
     Object? minor = null,
     Object? patch = null,
   }) {
-    return _then(_value.copyWith(
-      major: null == major
-          ? _value.major
-          : major // ignore: cast_nullable_to_non_nullable
-              as int,
-      minor: null == minor
-          ? _value.minor
-          : minor // ignore: cast_nullable_to_non_nullable
-              as int,
-      patch: null == patch
-          ? _value.patch
-          : patch // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            major: null == major
+                ? _value.major
+                : major // ignore: cast_nullable_to_non_nullable
+                      as int,
+            minor: null == minor
+                ? _value.minor
+                : minor // ignore: cast_nullable_to_non_nullable
+                      as int,
+            patch: null == patch
+                ? _value.patch
+                : patch // ignore: cast_nullable_to_non_nullable
+                      as int,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -76,8 +81,9 @@ class _$AppVersionCopyWithImpl<$Res, $Val extends AppVersion>
 abstract class _$$AppVersionImplCopyWith<$Res>
     implements $AppVersionCopyWith<$Res> {
   factory _$$AppVersionImplCopyWith(
-          _$AppVersionImpl value, $Res Function(_$AppVersionImpl) then) =
-      __$$AppVersionImplCopyWithImpl<$Res>;
+    _$AppVersionImpl value,
+    $Res Function(_$AppVersionImpl) then,
+  ) = __$$AppVersionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int major, int minor, int patch});
@@ -88,8 +94,9 @@ class __$$AppVersionImplCopyWithImpl<$Res>
     extends _$AppVersionCopyWithImpl<$Res, _$AppVersionImpl>
     implements _$$AppVersionImplCopyWith<$Res> {
   __$$AppVersionImplCopyWithImpl(
-      _$AppVersionImpl _value, $Res Function(_$AppVersionImpl) _then)
-      : super(_value, _then);
+    _$AppVersionImpl _value,
+    $Res Function(_$AppVersionImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of AppVersion
   /// with the given fields replaced by the non-null parameter values.
@@ -100,29 +107,33 @@ class __$$AppVersionImplCopyWithImpl<$Res>
     Object? minor = null,
     Object? patch = null,
   }) {
-    return _then(_$AppVersionImpl(
-      major: null == major
-          ? _value.major
-          : major // ignore: cast_nullable_to_non_nullable
-              as int,
-      minor: null == minor
-          ? _value.minor
-          : minor // ignore: cast_nullable_to_non_nullable
-              as int,
-      patch: null == patch
-          ? _value.patch
-          : patch // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+    return _then(
+      _$AppVersionImpl(
+        major: null == major
+            ? _value.major
+            : major // ignore: cast_nullable_to_non_nullable
+                  as int,
+        minor: null == minor
+            ? _value.minor
+            : minor // ignore: cast_nullable_to_non_nullable
+                  as int,
+        patch: null == patch
+            ? _value.patch
+            : patch // ignore: cast_nullable_to_non_nullable
+                  as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$AppVersionImpl extends _AppVersion {
-  const _$AppVersionImpl(
-      {required this.major, required this.minor, required this.patch})
-      : super._();
+  const _$AppVersionImpl({
+    required this.major,
+    required this.minor,
+    required this.patch,
+  }) : super._();
 
   @override
   final int major;
@@ -159,10 +170,11 @@ class _$AppVersionImpl extends _AppVersion {
 }
 
 abstract class _AppVersion extends AppVersion {
-  const factory _AppVersion(
-      {required final int major,
-      required final int minor,
-      required final int patch}) = _$AppVersionImpl;
+  const factory _AppVersion({
+    required final int major,
+    required final int minor,
+    required final int patch,
+  }) = _$AppVersionImpl;
   const _AppVersion._() : super._();
 
   @override

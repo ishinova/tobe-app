@@ -12,10 +12,7 @@ Isar isar(Ref ref) {
 }
 
 /// Isar Database
-List<Override> isarDatabaseProviders({
-  required Isar isar,
-}) =>
-    <Override>[
-      isarProvider.overrideWithValue(isar),
-      isarQuestDaoProvider,
-    ];
+List<Override> isarDatabaseProviders({required Isar isar}) => <Override>[
+  isarProvider.overrideWithValue(isar),
+  isarQuestDaoProvider,
+];

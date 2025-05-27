@@ -11,10 +11,8 @@ import 'package:lottie/lottie.dart';
 
 /// 同意して始める画面
 final class AgreementScreen extends ConsumerWidget {
-  const AgreementScreen({
-    required VoidCallback onAgreeAndContinue,
-    super.key,
-  }) : _onAgreeAndContinue = onAgreeAndContinue;
+  const AgreementScreen({required VoidCallback onAgreeAndContinue, super.key})
+    : _onAgreeAndContinue = onAgreeAndContinue;
 
   final VoidCallback _onAgreeAndContinue;
 
@@ -36,19 +34,13 @@ final class AgreementScreen extends ConsumerWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Lottie.asset(
-                Assets.lottie.torch,
-                width: 250,
-                height: 250,
-              ),
+              Lottie.asset(Assets.lottie.torch, width: 250, height: 250),
               SizedBox(
                 width: double.infinity,
                 child: FilledButton(
                   onPressed: () async {
                     switch (await ref.read(
-                      agreeUseCaseProvider(
-                        agreeRuleVersion: RuleVersion(1),
-                      ),
+                      agreeUseCaseProvider(agreeRuleVersion: RuleVersion(1)),
                     )) {
                       case Ok():
                         _onAgreeAndContinue();
@@ -60,12 +52,7 @@ final class AgreementScreen extends ConsumerWidget {
                   child: Text(l10n.agreeAndStart),
                 ),
               ),
-            ].expand(
-              (widget) => [
-                widget,
-                const Gap(TobeSpace.m),
-              ],
-            ),
+            ].expand((widget) => [widget, const Gap(TobeSpace.m)]),
           ],
         ),
       ),

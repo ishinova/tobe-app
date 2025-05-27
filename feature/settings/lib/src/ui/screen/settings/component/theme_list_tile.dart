@@ -5,10 +5,8 @@ import 'package:flutter/material.dart' hide Theme;
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final class ThemeListTile extends ConsumerWidget {
-  const ThemeListTile({
-    required void Function() onTap,
-    super.key,
-  }) : _onTap = onTap;
+  const ThemeListTile({required void Function() onTap, super.key})
+    : _onTap = onTap;
 
   final VoidCallback _onTap;
 

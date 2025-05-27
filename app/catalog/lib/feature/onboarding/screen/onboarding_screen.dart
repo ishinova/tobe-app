@@ -8,8 +8,5 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
   path: '[Feature]/onboarding',
 )
 OnboardingScreen onboardingScreenUseCase(BuildContext context) {
-  return OnboardingScreen(
-    onPopInvoked: () {},
-    onAgreeAndContinue: () {},
-  );
+  return OnboardingScreen(onPopInvoked: () {}, onAgreeAndContinue: () {});
 }

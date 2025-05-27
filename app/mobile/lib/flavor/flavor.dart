@@ -6,8 +6,8 @@ import 'package:firebase_core/firebase_core.dart';
 
 extension FlavorX on Flavor {
   FirebaseOptions get firebaseOptions => switch (this) {
-        Flavor.dev => dev.AppFirebaseOptions.currentPlatform,
-        Flavor.stg => stg.AppFirebaseOptions.currentPlatform,
-        Flavor.prod => prod.AppFirebaseOptions.currentPlatform,
-      };
+    Flavor.dev => dev.AppFirebaseOptions.currentPlatform,
+    Flavor.stg => stg.AppFirebaseOptions.currentPlatform,
+    Flavor.prod => prod.AppFirebaseOptions.currentPlatform,
+  };
 }

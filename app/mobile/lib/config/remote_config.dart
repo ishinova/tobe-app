@@ -23,9 +23,9 @@ UpdateVersion _resolveUpdateVersion(FirebaseRemoteConfig firebaseRemoteConfig) {
     _ => throw UnimplementedError(),
   };
 
-  final updateVersions = jsonDecode(
-    firebaseRemoteConfig.getString(appVersionsKey),
-  ) as Map<String, dynamic>;
+  final updateVersions =
+      jsonDecode(firebaseRemoteConfig.getString(appVersionsKey))
+          as Map<String, dynamic>;
 
   return UpdateVersion(
     force: AppVersion.parse(updateVersions['force'] as String),
