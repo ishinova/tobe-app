@@ -12,6 +12,7 @@ final class AppPagePath {
   static const theme = 'theme';
   static const feeds = '/feeds';
   static const debug = '/debug';
+  static const dataStoreSettings = '/dataStoreSettings';
 }
 
 /// 認証済みであることが前提のパス
