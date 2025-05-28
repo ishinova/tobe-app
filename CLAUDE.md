@@ -109,6 +109,20 @@ The backend uses Dart Frog with GraphQL (Ferry):
 2. Run `melos gen:l10n` to generate
 3. Access via `L10n.of(context).keyName`
 
+### iOS Permissions for Packages
+When adding packages that require iOS permissions (like image_picker):
+1. Add permissions to all flavor Info.plist files:
+   - `ios/Runner/Dev/Info.plist`
+   - `ios/Runner/Stg/Info.plist`
+   - `ios/Runner/Prod/Info.plist`
+2. Example for image_picker:
+   ```xml
+   <key>NSPhotoLibraryUsageDescription</key>
+   <string>This app needs access to photo library to select quest cover images.</string>
+   <key>NSCameraUsageDescription</key>
+   <string>This app needs access to camera to take quest cover photos.</string>
+   ```
+
 ## Testing Strategy
 
 - **Unit Tests**: For business logic (use cases, repositories)
@@ -124,3 +138,18 @@ Ensure these are run when needed:
 - After modifying `*.g.dart` files → `melos gen`
 - After modifying `.arb` files → `melos gen:l10n`
 - After modifying GraphQL files → `melos gen`
+
+## Troubleshooting
+
+### Analyze Warnings
+- Many lint warnings are informational (prefer const, etc.)
+- Focus on actual errors that prevent compilation
+- Run `melos format` to auto-fix formatting issues
+
+### Use Case Parameter Changes
+When adding parameters to a use case:
+1. Update the use case definition
+2. Run `melos gen` to regenerate providers
+3. Update ALL call sites (search across the codebase)
+4. Common locations: feature screens, dialogs, quick actions
+EOF < /dev/null
