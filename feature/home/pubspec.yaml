@@ -16,7 +16,7 @@ dependencies:
   core_ui: any
   flutter:
     sdk: flutter
-  flutter_hooks: 0.20.5
+  flutter_hooks: 0.21.2
   flutter_localizations:
     sdk: flutter
   hooks_riverpod: 2.6.1
