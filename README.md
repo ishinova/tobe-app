@@ -8,6 +8,16 @@
 
 Embark on the quest to be your true self.
 
+## Project Overview
+
+TOBE is a Flutter-based mobile application built using a modular monorepo architecture. The project leverages:
+
+- **Flutter** for cross-platform mobile development
+- **Dart Frog** for the GraphQL backend API
+- **Melos** for monorepo package management
+- **Riverpod** for state management
+- **Clean Architecture** principles for maintainable code structure
+
 ## Features
 
 TBD
@@ -16,48 +26,94 @@ TBD
 
 TBD
 
-## Get Started
+## Quick Start
 
-After git clone, run the following command
+After git clone, run the following command:
 
-```shell
-$ make bs
+```bash
+# Initial setup
+make bs
+
+# Run mobile app (development)
+cd app/mobile && flutter run --flavor dev
+
+# Run backend server
+cd app/backend && dart_frog dev
+
+# Run component catalog
+cd app/catalog && flutter run
 ```
+
+## Documentation
+
+- [Architecture Overview](./docs/architecture.md) - Detailed technical architecture and design decisions
+- [Development Guide](./docs/development.md) - Development workflow, setup, and best practices
+- [Module Structure](./docs/modules.md) - Package organization and dependencies
+- [Testing Strategy](./docs/testing.md) - Testing approaches and guidelines
+- [Deployment Process](./docs/deployment.md) - Build, release, and deployment procedures
 
 ## Development Environment
 
-TBD
+Please refer to the [Development Guide](./docs/development.md) for detailed setup instructions.
 
 ## Architecture
 
-- [Flutter](https://flutter.dev/)
-- [Melos](https://melos.invertase.dev)
+The project follows Clean Architecture principles with a modular monorepo structure. For detailed architecture information, see [Architecture Overview](./docs/architecture.md).
 
-## Modularization
+### Key Technologies
+
+- **Frontend**: Flutter, Riverpod, GoRouter
+- **Backend**: Dart Frog, GraphQL (Ferry)
+- **Database**: Drift (SQLite), Firebase
+- **Testing**: Flutter Test, Mocktail
+- **CI/CD**: GitHub Actions, Renovate
+- **Code Generation**: build_runner, Freezed
+- **Tools**: [Melos](https://melos.invertase.dev) for monorepo management
+
+## Repository Structure
 
 ```text
-.
-│   アプリケーションのディレクトリ
-├── app
-│
-│   各機能モジュールで使用する共通のモジュールを集約したディレクトリ
-├── core
-│
-│   各機能モジュールのディレクトリ
-└── feature
+tobe-app/
+├── app/           # Runnable applications
+│   ├── backend/   # Dart Frog GraphQL API server
+│   ├── mobile/    # Flutter mobile application
+│   └── catalog/   # Widgetbook component catalog
+├── core/          # Shared business logic and infrastructure
+│   ├── model/     # Domain models
+│   ├── domain/    # Use cases
+│   ├── data/      # Repository implementations
+│   └── ...        # Other core modules
+├── feature/       # Feature modules
+│   ├── auth/      # Authentication feature
+│   ├── home/      # Home screen feature
+│   └── ...        # Other features
+├── docs/          # Documentation
+└── scripts/       # Build and utility scripts
 ```
 
 ## Build
 
-TBD
+For detailed build instructions, see [Deployment Process](./docs/deployment.md).
 
 ## Testing
 
-TBD
+```bash
+# Run all tests
+melos test
 
-## Performance
+# Run tests with coverage
+melos test -- --coverage
+```
 
-TBD
+For comprehensive testing guidelines, see [Testing Strategy](./docs/testing.md).
+
+## Contributing
+
+Please refer to the [Development Guide](./docs/development.md) for:
+- Setting up your development environment
+- Code style and conventions
+- Creating new features
+- Submitting pull requests
 
 ## Contributors
 
