@@ -81,7 +81,7 @@ final List<RouteBase> _routes = [
       ),
     ),
     GoRoute(
-      path: '/dataStoreSettings',
+      path: AppPagePath.dataStoreSettings,
       name: AppRoutes.dataStoreSettings,
       builder: (context, state) => DataStoreSettingsScreen(
         onTapOpenSourceLicense: () => showLicensePage(context: context),
@@ -101,9 +101,7 @@ final List<RouteBase> _routes = [
             name: AppRoutes.home,
             pageBuilder: (context, state) => NoTransitionPage(
               child: HomeScreen(
-                onTapNotification: () {
-                  // TODO: Implement notification navigation
-                },
+                onTapNotification: () => context.goNamed(AppRoutes.feedList),
                 onQuickAddButtonPressed: () =>
                     context.goNamed(AppRoutes.quickAddQuest),
                 onTapQuestListItem: (quest) => context.goNamed(
