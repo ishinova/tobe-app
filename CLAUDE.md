@@ -2,12 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-# Individual Preferences
+## Individual Preferences
 - @~/.claude/ishinova-tobe-app-instructions.md
 
 ## Project Overview
 
 This is a Flutter monorepo using Melos for package management. The project follows Clean Architecture with modular feature development.
+
+For detailed project information, see:
+- [@README.md](./README.md) - Project overview and quick start
+- [@docs/architecture.md](./docs/architecture.md) - Architecture details
+- [@docs/modules.md](./docs/modules.md) - Module structure and dependencies
+- [@docs/development.md](./docs/development.md) - Development guide
+- [@docs/testing.md](./docs/testing.md) - Testing strategy
 
 ## Essential Commands
 
@@ -41,55 +48,29 @@ cd app/catalog && flutter run              # Run Widgetbook catalog
 bun run plop feature  # Generate new feature module with template
 ```
 
-## Architecture Overview
+## Package-Specific Documentation
 
-### Package Structure
-- **app/** - Runnable applications
-  - `backend/` - Dart Frog GraphQL API server
-  - `mobile/` - Flutter mobile application (multi-flavor)
-  - `catalog/` - Widgetbook component catalog
+Each package has its own README with detailed information:
 
-- **core/** - Shared business logic and infrastructure
-  - `model/` - Domain models (Freezed immutable classes)
-  - `domain/` - Use cases (Riverpod providers)
-  - `data/` - Repository implementations
-  - `network/` - Remote data sources (REST/GraphQL)
-  - `database/` - Local storage (Isar)
-  - `designsystem/` - Shared UI components and theme
+### App Modules
+- [@app/mobile/README.md](./app/mobile/README.md) - Flutter mobile app
+- [@app/backend/README.md](./app/backend/README.md) - Dart Frog API server
+- [@app/catalog/README.md](./app/catalog/README.md) - Component catalog
 
-- **feature/** - Feature modules (auth, feed, quest, etc.)
+### Core Modules
+- [@core/model/README.md](./core/model/README.md) - Domain models
+- [@core/domain/README.md](./core/domain/README.md) - Use cases
+- [@core/data/README.md](./core/data/README.md) - Repository implementations
+- [@core/network/README.md](./core/network/README.md) - API clients
+- [@core/database/README.md](./core/database/README.md) - Local storage
+- [@core/designsystem/README.md](./core/designsystem/README.md) - UI components
 
-### Key Patterns
-
-1. **State Management**: Riverpod with code generation
-   ```dart
-   @riverpod
-   class SomeNotifier extends _$SomeNotifier {
-     @override
-     FutureOr<State> build() async { ... }
-   }
-   ```
-
-2. **Data Flow**: 
-   - UI → UseCase (domain) → Repository (data) → DataSource (network/database)
-   - Models are immutable (Freezed) and separate for each layer
-
-3. **Dependency Injection**: All through Riverpod providers with proper scoping
-
-### Mobile App Flavors
-- **dev** - Development environment
-- **stg** - Staging environment  
-- **prod** - Production environment
-
-Each flavor has its own Firebase configuration in `ios/Runner/{Flavor}/` and `android/app/src/{flavor}/`.
-
-## Backend Development
-
-The backend uses Dart Frog with GraphQL (Ferry):
-
-1. **GraphQL Schema**: Define in `lib/graphql/schema.graphql`
-2. **Code Generation**: Run `melos gen` after schema changes
-3. **Handlers**: Located in `routes/` following file-based routing
+### Feature Modules
+- [@feature/auth/README.md](./feature/auth/README.md) - Authentication
+- [@feature/home/README.md](./feature/home/README.md) - Home dashboard
+- [@feature/quest/README.md](./feature/quest/README.md) - Quest management
+- [@feature/feed/README.md](./feature/feed/README.md) - News feed
+- [@feature/settings/README.md](./feature/settings/README.md) - Settings
 
 ## Common Development Tasks
 
@@ -123,14 +104,6 @@ When adding packages that require iOS permissions (like image_picker):
    <string>This app needs access to camera to take quest cover photos.</string>
    ```
 
-## Testing Strategy
-
-- **Unit Tests**: For business logic (use cases, repositories)
-- **Widget Tests**: For UI components and screens
-- **Integration Tests**: For critical user flows (in `app/mobile/integration_test/`)
-
-Mock dependencies using `mocktail` package and follow the existing test patterns.
-
 ## Code Generation Dependencies
 
 Ensure these are run when needed:
@@ -152,4 +125,3 @@ When adding parameters to a use case:
 2. Run `melos gen` to regenerate providers
 3. Update ALL call sites (search across the codebase)
 4. Common locations: feature screens, dialogs, quick actions
-EOF < /dev/null
