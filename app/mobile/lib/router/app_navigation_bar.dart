@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:app_mobile/gen/l10n/l10n.dart';
-import 'package:app_mobile/router/app_router.dart';
+import 'package:app_mobile/router/app_routes.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -52,7 +52,7 @@ class AppNavigationBar extends HookWidget {
               if (tapCount.value == 5) {
                 tapCount.value = 0;
                 // デバッグ用画面に繊維
-                unawaited(const DebugScreenRoute().push(context));
+                unawaited(context.pushNamed(AppRoutes.debug));
               }
             } else {
               tapCount.value = 0;
