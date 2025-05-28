@@ -14,7 +14,7 @@ dependencies:
   dart_frog: 1.2.0
   dotenv: 4.2.0
   ferry: 0.16.1+2
-  gql_code_builder: 0.14.0
+  gql_code_builder: 0.13.0
   gql_error_link: 1.0.0+1
   gql_exec: 1.0.0+1
   gql_http_link: 1.1.0
