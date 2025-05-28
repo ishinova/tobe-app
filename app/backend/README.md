@@ -255,9 +255,8 @@ dart build/bin/server.dart
 ## API Documentation
 
 GraphQL schema is self-documenting. Access the GraphQL playground in development mode at:
-```
+
 http://localhost:8080/graphql
-```
 
 ## Troubleshooting
 

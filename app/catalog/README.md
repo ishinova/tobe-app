@@ -99,9 +99,9 @@ lib/
    // lib/designsystem/component/button.dart
    import 'package:widgetbook_annotation/widgetbook_annotation.dart';
    
-   @UseCase(name: 'Default', type: MyButton)
+   @UseCase(name: 'Default', type: ExampleButton)
    Widget defaultButton(BuildContext context) {
-     return MyButton(
+     return ExampleButton(
        text: context.knobs.string(
          label: 'Text',
          initialValue: 'Click me',
