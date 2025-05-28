@@ -191,7 +191,8 @@ final List<RouteBase> _routes = [
             name: AppRoutes.settings,
             pageBuilder: (context, state) => NoTransitionPage(
               child: SettingsScreen(
-                onTapThemeSetting: () => context.goNamed(AppRoutes.themeSetting),
+                onTapThemeSetting: () =>
+                    context.goNamed(AppRoutes.themeSetting),
                 onTapOpenSourceLicense: () => showLicensePage(
                   context: context,
                 ),

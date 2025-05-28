@@ -1,7 +1,8 @@
+import 'dart:async';
+
+import 'package:app_mobile/router/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import 'app_routes.dart';
 
 /// Helper class for type-safe navigation
 class AppRouterHelpers {
@@ -33,9 +34,11 @@ class AppRouterHelpers {
   }
 
   static void pushFeedDetail(BuildContext context, String feedId) {
-    context.pushNamed(
-      AppRoutes.feedDetail,
-      pathParameters: {'feedId': feedId},
+    unawaited(
+      context.pushNamed(
+        AppRoutes.feedDetail,
+        pathParameters: {'feedId': feedId},
+      ),
     );
   }
 
@@ -44,7 +47,7 @@ class AppRouterHelpers {
   }
 
   static void pushQuickAddQuest(BuildContext context) {
-    context.pushNamed(AppRoutes.quickAddQuest);
+    unawaited(context.pushNamed(AppRoutes.quickAddQuest));
   }
 
   // Quest routes
@@ -57,7 +60,7 @@ class AppRouterHelpers {
   }
 
   static void pushQuestAdd(BuildContext context) {
-    context.pushNamed(AppRoutes.questAdd);
+    unawaited(context.pushNamed(AppRoutes.questAdd));
   }
 
   static void goToQuestDetail(BuildContext context, String questId) {
@@ -68,9 +71,11 @@ class AppRouterHelpers {
   }
 
   static void pushQuestDetail(BuildContext context, String questId) {
-    context.pushNamed(
-      AppRoutes.questDetail,
-      pathParameters: {'questId': questId},
+    unawaited(
+      context.pushNamed(
+        AppRoutes.questDetail,
+        pathParameters: {'questId': questId},
+      ),
     );
   }
 
@@ -84,7 +89,7 @@ class AppRouterHelpers {
   }
 
   static void pushThemeSetting(BuildContext context) {
-    context.pushNamed(AppRoutes.themeSetting);
+    unawaited(context.pushNamed(AppRoutes.themeSetting));
   }
 
   static void showLicense(BuildContext context) {
@@ -97,7 +102,7 @@ class AppRouterHelpers {
   }
 
   static void pushDebug(BuildContext context) {
-    context.pushNamed(AppRoutes.debug);
+    unawaited(context.pushNamed(AppRoutes.debug));
   }
 
   static void goToDataStoreSettings(BuildContext context) {
@@ -105,6 +110,6 @@ class AppRouterHelpers {
   }
 
   static void pushDataStoreSettings(BuildContext context) {
-    context.pushNamed(AppRoutes.dataStoreSettings);
+    unawaited(context.pushNamed(AppRoutes.dataStoreSettings));
   }
 }
