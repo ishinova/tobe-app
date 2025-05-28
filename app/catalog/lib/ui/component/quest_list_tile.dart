@@ -19,7 +19,7 @@ Widget tobeScaffoldUseCase(BuildContext context) {
       categoryId: null,
       status: QuestStatus.backlog,
       coverImageUrl:
-          'https://raw.githubusercontent.com/tatsutakein-jp/tobe-app/main/.idea/icon.svg',
+          'https://raw.githubusercontent.com/ishinova/tobe-app/main/.idea/icon.svg',
       note: 'note',
     ),
     onTap: (quest) {},

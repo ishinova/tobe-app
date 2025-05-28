@@ -2,7 +2,7 @@
 [![melos](https://img.shields.io/badge/maintained%20with-melos-f700ff.svg?style=flat-square)](https://github.com/invertase/melos)
 [![Powered by Dart Frog](https://img.shields.io/endpoint?url=https://tinyurl.com/dartfrog-badge)](https://dartfrog.vgv.dev)
 [![renovate](https://img.shields.io/badge/maintaied%20with-renovate-blue?logo=renovatebot)](https://app.renovatebot.com/dashboard)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d91f882c23e2b0143794/maintainability)](https://codeclimate.com/github/tatsutakein-jp/tobe-app/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d91f882c23e2b0143794/maintainability)](https://codeclimate.com/github/ishinova/tobe-app/maintainability)
 
 # tobe-app
 
@@ -119,8 +119,8 @@ Please refer to the [Development Guide](./development.md) for:
 
 Thanks to our wonderful contributors!
 
-<a href="https://github.com/tatsutakein-jp/tobe-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tatsutakein-jp/tobe-app"  alt="contributors"/>
+<a href="https://github.com/ishinova/tobe-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ishinova/tobe-app"  alt="contributors"/>
 </a>
 
 ## Repo Activity
