@@ -24,42 +24,62 @@ final class QuestAddScreen extends HookConsumerWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            QuestForm(
-              onSubmit: (title, description, note) async {
-                isSubmitting.value = true;
-
-                final result = await ref.read(
-                  addQuestUseCaseProvider(
-                    title: title,
-                    description: description,
-                    note: note,
-                  ),
-                );
-
-                final toaster = ref.read(toasterProvider.notifier);
-                result.match(
-                  ok: (_) {
-                    toaster.showToast('クエストを追加しました', type: ToastType.success);
-                    _onAddQuestCompleted();
-                  },
-                  err: (error) => toaster.showToast(
-                    'クエストの追加に失敗しました',
-                    type: ToastType.error,
-                  ),
-                );
-
-                isSubmitting.value = false;
-              },
-            ),
-            // プログレスバーを表示
-            Center(
-              child: AnimatedSwitcher(
+            IgnorePointer(
+              ignoring: isSubmitting.value,
+              child: AnimatedOpacity(
+                opacity: isSubmitting.value ? 0.5 : 1.0,
                 duration: const Duration(milliseconds: 300),
-                child: isSubmitting.value
-                    ? const CircularProgressIndicator()
-                    : const SizedBox.shrink(),
+                child: QuestForm(
+                  onSubmit:
+                      ({
+                        required title,
+                        required description,
+                        required note,
+                        required begunAt,
+                        required endedAt,
+                        required categoryId,
+                        required coverImage,
+                      }) async {
+                        isSubmitting.value = true;
+
+                        final result = await ref.read(
+                          addQuestUseCaseProvider(
+                            title: title,
+                            description: description,
+                            note: note,
+                            begunAt: begunAt,
+                            endedAt: endedAt,
+                            categoryId: categoryId,
+                            coverImage: coverImage,
+                          ),
+                        );
+
+                        final toaster = ref.read(toasterProvider.notifier);
+                        result.match(
+                          ok: (_) {
+                            toaster.showToast(
+                              'クエストを追加しました',
+                              type: ToastType.success,
+                            );
+                            _onAddQuestCompleted();
+                          },
+                          err: (error) => toaster.showToast(
+                            'クエストの追加に失敗しました',
+                            type: ToastType.error,
+                          ),
+                        );
+
+                        isSubmitting.value = false;
+                      },
+                ),
               ),
             ),
+            // プログレスオーバーレイ
+            if (isSubmitting.value)
+              Container(
+                color: Colors.black12,
+                child: const Center(child: CircularProgressIndicator()),
+              ),
           ],
         ),
       ),
