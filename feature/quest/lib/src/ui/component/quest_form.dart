@@ -63,7 +63,7 @@ final class QuestForm extends HookConsumerWidget {
     final coverImage = useState<File?>(null);
 
     final formKey = useMemoized(GlobalKey<FormState>.new);
-    final imagePicker = useMemoized(() => ImagePicker());
+    final imagePicker = useMemoized(ImagePicker.new);
 
     return Form(
       key: formKey,
@@ -102,12 +102,12 @@ final class QuestForm extends HookConsumerWidget {
                   // Category Selection
                   DropdownButtonFormField<String>(
                     value: selectedCategory.value,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Category',
                       hintText: 'Select category',
                     ),
-                    items: [
-                      DropdownMenuItem(value: null, child: Text('None')),
+                    items: const [
+                      DropdownMenuItem(child: Text('None')),
                       DropdownMenuItem(value: 'health', child: Text('Health')),
                       DropdownMenuItem(value: 'study', child: Text('Study')),
                       DropdownMenuItem(value: 'work', child: Text('Work')),
@@ -117,7 +117,7 @@ final class QuestForm extends HookConsumerWidget {
                   ),
                   // Begin Date
                   ListTile(
-                    title: Text('Begin Date'),
+                    title: const Text('Begin Date'),
                     subtitle: Text(
                       begunAt.value != null
                           ? '${begunAt.value!.year}/${begunAt.value!.month}/${begunAt.value!.day}'
@@ -137,7 +137,7 @@ final class QuestForm extends HookConsumerWidget {
                                 initialDate: DateTime.now(),
                                 firstDate: DateTime.now(),
                                 lastDate: DateTime.now().add(
-                                  Duration(days: 365 * 2),
+                                  const Duration(days: 365 * 2),
                                 ),
                               );
                               if (date != null) {
@@ -148,7 +148,7 @@ final class QuestForm extends HookConsumerWidget {
                   ),
                   // End Date
                   ListTile(
-                    title: Text('End Date'),
+                    title: const Text('End Date'),
                     subtitle: Text(
                       endedAt.value != null
                           ? '${endedAt.value!.year}/${endedAt.value!.month}/${endedAt.value!.day}'
@@ -168,7 +168,7 @@ final class QuestForm extends HookConsumerWidget {
                                 initialDate: begunAt.value ?? DateTime.now(),
                                 firstDate: begunAt.value ?? DateTime.now(),
                                 lastDate: DateTime.now().add(
-                                  Duration(days: 365 * 2),
+                                  const Duration(days: 365 * 2),
                                 ),
                               );
                               if (date != null) {
@@ -192,7 +192,7 @@ final class QuestForm extends HookConsumerWidget {
                           ),
                         ),
                         IconButton(
-                          icon: Icon(Icons.close, color: Colors.white),
+                          icon: const Icon(Icons.close, color: Colors.white),
                           style: IconButton.styleFrom(
                             backgroundColor: Colors.black54,
                           ),
@@ -202,8 +202,8 @@ final class QuestForm extends HookConsumerWidget {
                     )
                   else
                     OutlinedButton.icon(
-                      icon: Icon(Icons.add_photo_alternate),
-                      label: Text('Add Cover Image'),
+                      icon: const Icon(Icons.add_photo_alternate),
+                      label: const Text('Add Cover Image'),
                       onPressed: () async {
                         final source = await showModalBottomSheet<ImageSource>(
                           context: context,
@@ -211,14 +211,14 @@ final class QuestForm extends HookConsumerWidget {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               ListTile(
-                                leading: Icon(Icons.camera_alt),
-                                title: Text('Take Photo'),
+                                leading: const Icon(Icons.camera_alt),
+                                title: const Text('Take Photo'),
                                 onTap: () =>
                                     Navigator.pop(context, ImageSource.camera),
                               ),
                               ListTile(
-                                leading: Icon(Icons.photo_library),
-                                title: Text('Choose from Gallery'),
+                                leading: const Icon(Icons.photo_library),
+                                title: const Text('Choose from Gallery'),
                                 onTap: () =>
                                     Navigator.pop(context, ImageSource.gallery),
                               ),
@@ -260,7 +260,7 @@ final class QuestForm extends HookConsumerWidget {
                             begunAt.value != null &&
                             endedAt.value!.isBefore(begunAt.value!)) {
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
+                            const SnackBar(
                               content: Text(
                                 'End date must be after begin date',
                               ),

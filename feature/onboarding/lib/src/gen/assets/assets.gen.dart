@@ -22,7 +22,7 @@ class $AssetsLottieGen {
 }
 
 class Assets {
-  Assets._();
+  const Assets._();
 
   static const String package = 'feature_onboarding';
 

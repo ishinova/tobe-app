@@ -7,7 +7,7 @@ part of 'GetQuests.var.gql.dart';
 // **************************************************************************
 
 Serializer<GGetQuestsVars> _$gGetQuestsVarsSerializer =
-    new _$GGetQuestsVarsSerializer();
+    _$GGetQuestsVarsSerializer();
 
 class _$GGetQuestsVarsSerializer
     implements StructuredSerializer<GGetQuestsVars> {
@@ -17,17 +17,12 @@ class _$GGetQuestsVarsSerializer
   final String wireName = 'GGetQuestsVars';
 
   @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GGetQuestsVars object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+  Iterable<Object?> serialize(Serializers serializers, GGetQuestsVars object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'userId',
-      serializers.serialize(
-        object.userId,
-        specifiedType: const FullType(String),
-      ),
+      serializers.serialize(object.userId,
+          specifiedType: const FullType(String)),
     ];
 
     return result;
@@ -35,11 +30,9 @@ class _$GGetQuestsVarsSerializer
 
   @override
   GGetQuestsVars deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = new GGetQuestsVarsBuilder();
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = GGetQuestsVarsBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -48,12 +41,8 @@ class _$GGetQuestsVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'userId':
-          result.userId =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )!
-                  as String;
+          result.userId = serializers.deserialize(value,
+              specifiedType: const FullType(String))! as String;
           break;
       }
     }
@@ -67,19 +56,15 @@ class _$GGetQuestsVars extends GGetQuestsVars {
   final String userId;
 
   factory _$GGetQuestsVars([void Function(GGetQuestsVarsBuilder)? updates]) =>
-      (new GGetQuestsVarsBuilder()..update(updates))._build();
+      (GGetQuestsVarsBuilder()..update(updates))._build();
 
-  _$GGetQuestsVars._({required this.userId}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(userId, r'GGetQuestsVars', 'userId');
-  }
-
+  _$GGetQuestsVars._({required this.userId}) : super._();
   @override
   GGetQuestsVars rebuild(void Function(GGetQuestsVarsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GGetQuestsVarsBuilder toBuilder() =>
-      new GGetQuestsVarsBuilder()..replace(this);
+  GGetQuestsVarsBuilder toBuilder() => GGetQuestsVarsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -97,9 +82,9 @@ class _$GGetQuestsVars extends GGetQuestsVars {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-      r'GGetQuestsVars',
-    )..add('userId', userId)).toString();
+    return (newBuiltValueToStringHelper(r'GGetQuestsVars')
+          ..add('userId', userId))
+        .toString();
   }
 }
 
@@ -124,7 +109,6 @@ class GGetQuestsVarsBuilder
 
   @override
   void replace(GGetQuestsVars other) {
-    ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$GGetQuestsVars;
   }
 
@@ -137,14 +121,10 @@ class GGetQuestsVarsBuilder
   GGetQuestsVars build() => _build();
 
   _$GGetQuestsVars _build() {
-    final _$result =
-        _$v ??
-        new _$GGetQuestsVars._(
+    final _$result = _$v ??
+        _$GGetQuestsVars._(
           userId: BuiltValueNullFieldError.checkNotNull(
-            userId,
-            r'GGetQuestsVars',
-            'userId',
-          ),
+              userId, r'GGetQuestsVars', 'userId'),
         );
     replace(_$result);
     return _$result;

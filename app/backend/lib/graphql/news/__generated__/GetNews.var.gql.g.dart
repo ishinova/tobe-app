@@ -6,8 +6,7 @@ part of 'GetNews.var.gql.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-Serializer<GGetNewsVars> _$gGetNewsVarsSerializer =
-    new _$GGetNewsVarsSerializer();
+Serializer<GGetNewsVars> _$gGetNewsVarsSerializer = _$GGetNewsVarsSerializer();
 
 class _$GGetNewsVarsSerializer implements StructuredSerializer<GGetNewsVars> {
   @override
@@ -16,36 +15,30 @@ class _$GGetNewsVarsSerializer implements StructuredSerializer<GGetNewsVars> {
   final String wireName = 'GGetNewsVars';
 
   @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GGetNewsVars object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+  Iterable<Object?> serialize(Serializers serializers, GGetNewsVars object,
+      {FullType specifiedType = FullType.unspecified}) {
     return <Object?>[];
   }
 
   @override
   GGetNewsVars deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    return new GGetNewsVarsBuilder().build();
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    return GGetNewsVarsBuilder().build();
   }
 }
 
 class _$GGetNewsVars extends GGetNewsVars {
   factory _$GGetNewsVars([void Function(GGetNewsVarsBuilder)? updates]) =>
-      (new GGetNewsVarsBuilder()..update(updates))._build();
+      (GGetNewsVarsBuilder()..update(updates))._build();
 
   _$GGetNewsVars._() : super._();
-
   @override
   GGetNewsVars rebuild(void Function(GGetNewsVarsBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  GGetNewsVarsBuilder toBuilder() => new GGetNewsVarsBuilder()..replace(this);
+  GGetNewsVarsBuilder toBuilder() => GGetNewsVarsBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -72,7 +65,6 @@ class GGetNewsVarsBuilder
 
   @override
   void replace(GGetNewsVars other) {
-    ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$GGetNewsVars;
   }
 
@@ -85,7 +77,7 @@ class GGetNewsVarsBuilder
   GGetNewsVars build() => _build();
 
   _$GGetNewsVars _build() {
-    final _$result = _$v ?? new _$GGetNewsVars._();
+    final _$result = _$v ?? _$GGetNewsVars._();
     replace(_$result);
     return _$result;
   }
