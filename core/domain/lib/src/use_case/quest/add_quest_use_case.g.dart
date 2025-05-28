@@ -6,7 +6,7 @@ part of 'add_quest_use_case.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$addQuestUseCaseHash() => r'00b281604c13559d89c08ee05cb7f4c782daf4d5';
+String _$addQuestUseCaseHash() => r'092a576fdc1a76edaf2eb36ee28d46506db4d718';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -51,11 +51,19 @@ class AddQuestUseCaseFamily extends Family<Raw<FutureResult<void>>> {
     required String title,
     required String description,
     required String note,
+    required DateTime? begunAt,
+    required DateTime? endedAt,
+    required String? categoryId,
+    required File? coverImage,
   }) {
     return AddQuestUseCaseProvider(
       title: title,
       description: description,
       note: note,
+      begunAt: begunAt,
+      endedAt: endedAt,
+      categoryId: categoryId,
+      coverImage: coverImage,
     );
   }
 
@@ -67,6 +75,10 @@ class AddQuestUseCaseFamily extends Family<Raw<FutureResult<void>>> {
       title: provider.title,
       description: provider.description,
       note: provider.note,
+      begunAt: provider.begunAt,
+      endedAt: provider.endedAt,
+      categoryId: provider.categoryId,
+      coverImage: provider.coverImage,
     );
   }
 
@@ -97,12 +109,20 @@ class AddQuestUseCaseProvider
     required String title,
     required String description,
     required String note,
+    required DateTime? begunAt,
+    required DateTime? endedAt,
+    required String? categoryId,
+    required File? coverImage,
   }) : this._internal(
          (ref) => addQuestUseCase(
            ref as AddQuestUseCaseRef,
            title: title,
            description: description,
            note: note,
+           begunAt: begunAt,
+           endedAt: endedAt,
+           categoryId: categoryId,
+           coverImage: coverImage,
          ),
          from: addQuestUseCaseProvider,
          name: r'addQuestUseCaseProvider',
@@ -115,6 +135,10 @@ class AddQuestUseCaseProvider
          title: title,
          description: description,
          note: note,
+         begunAt: begunAt,
+         endedAt: endedAt,
+         categoryId: categoryId,
+         coverImage: coverImage,
        );
 
   AddQuestUseCaseProvider._internal(
@@ -127,11 +151,19 @@ class AddQuestUseCaseProvider
     required this.title,
     required this.description,
     required this.note,
+    required this.begunAt,
+    required this.endedAt,
+    required this.categoryId,
+    required this.coverImage,
   }) : super.internal();
 
   final String title;
   final String description;
   final String note;
+  final DateTime? begunAt;
+  final DateTime? endedAt;
+  final String? categoryId;
+  final File? coverImage;
 
   @override
   Override overrideWith(
@@ -149,6 +181,10 @@ class AddQuestUseCaseProvider
         title: title,
         description: description,
         note: note,
+        begunAt: begunAt,
+        endedAt: endedAt,
+        categoryId: categoryId,
+        coverImage: coverImage,
       ),
     );
   }
@@ -163,7 +199,11 @@ class AddQuestUseCaseProvider
     return other is AddQuestUseCaseProvider &&
         other.title == title &&
         other.description == description &&
-        other.note == note;
+        other.note == note &&
+        other.begunAt == begunAt &&
+        other.endedAt == endedAt &&
+        other.categoryId == categoryId &&
+        other.coverImage == coverImage;
   }
 
   @override
@@ -172,6 +212,10 @@ class AddQuestUseCaseProvider
     hash = _SystemHash.combine(hash, title.hashCode);
     hash = _SystemHash.combine(hash, description.hashCode);
     hash = _SystemHash.combine(hash, note.hashCode);
+    hash = _SystemHash.combine(hash, begunAt.hashCode);
+    hash = _SystemHash.combine(hash, endedAt.hashCode);
+    hash = _SystemHash.combine(hash, categoryId.hashCode);
+    hash = _SystemHash.combine(hash, coverImage.hashCode);
 
     return _SystemHash.finish(hash);
   }
@@ -188,6 +232,18 @@ mixin AddQuestUseCaseRef on AutoDisposeProviderRef<Raw<FutureResult<void>>> {
 
   /// The parameter `note` of this provider.
   String get note;
+
+  /// The parameter `begunAt` of this provider.
+  DateTime? get begunAt;
+
+  /// The parameter `endedAt` of this provider.
+  DateTime? get endedAt;
+
+  /// The parameter `categoryId` of this provider.
+  String? get categoryId;
+
+  /// The parameter `coverImage` of this provider.
+  File? get coverImage;
 }
 
 class _AddQuestUseCaseProviderElement
@@ -201,6 +257,14 @@ class _AddQuestUseCaseProviderElement
   String get description => (origin as AddQuestUseCaseProvider).description;
   @override
   String get note => (origin as AddQuestUseCaseProvider).note;
+  @override
+  DateTime? get begunAt => (origin as AddQuestUseCaseProvider).begunAt;
+  @override
+  DateTime? get endedAt => (origin as AddQuestUseCaseProvider).endedAt;
+  @override
+  String? get categoryId => (origin as AddQuestUseCaseProvider).categoryId;
+  @override
+  File? get coverImage => (origin as AddQuestUseCaseProvider).coverImage;
 }
 
 // ignore_for_file: type=lint

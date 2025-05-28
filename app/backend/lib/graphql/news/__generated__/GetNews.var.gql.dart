@@ -17,10 +17,14 @@ abstract class GGetNewsVars
 
   static Serializer<GGetNewsVars> get serializer => _$gGetNewsVarsSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GGetNewsVars.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GGetNewsVars.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GGetNewsVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GGetNewsVars.serializer, json);
+      _i1.serializers.deserializeWith(
+        GGetNewsVars.serializer,
+        json,
+      );
 }

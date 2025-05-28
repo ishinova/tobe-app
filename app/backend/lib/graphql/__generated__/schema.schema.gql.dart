@@ -13,9 +13,9 @@ abstract class GAchievementsBoolExp
     implements Built<GAchievementsBoolExp, GAchievementsBoolExpBuilder> {
   GAchievementsBoolExp._();
 
-  factory GAchievementsBoolExp([
-    void Function(GAchievementsBoolExpBuilder b) updates,
-  ]) = _$GAchievementsBoolExp;
+  factory GAchievementsBoolExp(
+          [void Function(GAchievementsBoolExpBuilder b) updates]) =
+      _$GAchievementsBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GAchievementsBoolExp>? get G_and;
@@ -31,21 +31,25 @@ abstract class GAchievementsBoolExp
   static Serializer<GAchievementsBoolExp> get serializer =>
       _$gAchievementsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GAchievementsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAchievementsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GAchievementsBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GAchievementsBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAchievementsBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GAchievementsOrderBy
     implements Built<GAchievementsOrderBy, GAchievementsOrderByBuilder> {
   GAchievementsOrderBy._();
 
-  factory GAchievementsOrderBy([
-    void Function(GAchievementsOrderByBuilder b) updates,
-  ]) = _$GAchievementsOrderBy;
+  factory GAchievementsOrderBy(
+          [void Function(GAchievementsOrderByBuilder b) updates]) =
+      _$GAchievementsOrderBy;
 
   GOrderBy? get createdAt;
   GOrderBy? get description;
@@ -55,12 +59,16 @@ abstract class GAchievementsOrderBy
   static Serializer<GAchievementsOrderBy> get serializer =>
       _$gAchievementsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GAchievementsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAchievementsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GAchievementsOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GAchievementsOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAchievementsOrderBy.serializer,
+        json,
+      );
 }
 
 class GAchievementsSelectColumn extends EnumClass {
@@ -93,27 +101,23 @@ class GAchievementsSelectColumn extends EnumClass {
 
 abstract class GAchievementsStreamCursorInput
     implements
-        Built<
-          GAchievementsStreamCursorInput,
-          GAchievementsStreamCursorInputBuilder
-        > {
+        Built<GAchievementsStreamCursorInput,
+            GAchievementsStreamCursorInputBuilder> {
   GAchievementsStreamCursorInput._();
 
-  factory GAchievementsStreamCursorInput([
-    void Function(GAchievementsStreamCursorInputBuilder b) updates,
-  ]) = _$GAchievementsStreamCursorInput;
+  factory GAchievementsStreamCursorInput(
+          [void Function(GAchievementsStreamCursorInputBuilder b) updates]) =
+      _$GAchievementsStreamCursorInput;
 
   GAchievementsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GAchievementsStreamCursorInput> get serializer =>
       _$gAchievementsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GAchievementsStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAchievementsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GAchievementsStreamCursorInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -124,15 +128,13 @@ abstract class GAchievementsStreamCursorInput
 
 abstract class GAchievementsStreamCursorValueInput
     implements
-        Built<
-          GAchievementsStreamCursorValueInput,
-          GAchievementsStreamCursorValueInputBuilder
-        > {
+        Built<GAchievementsStreamCursorValueInput,
+            GAchievementsStreamCursorValueInputBuilder> {
   GAchievementsStreamCursorValueInput._();
 
-  factory GAchievementsStreamCursorValueInput([
-    void Function(GAchievementsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GAchievementsStreamCursorValueInput;
+  factory GAchievementsStreamCursorValueInput(
+      [void Function(GAchievementsStreamCursorValueInputBuilder b)
+          updates]) = _$GAchievementsStreamCursorValueInput;
 
   DateTime? get createdAt;
   String? get description;
@@ -142,19 +144,17 @@ abstract class GAchievementsStreamCursorValueInput
   static Serializer<GAchievementsStreamCursorValueInput> get serializer =>
       _$gAchievementsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GAchievementsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAchievementsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GAchievementsStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GAchievementsStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GAchievementsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 class GCursorOrdering extends EnumClass {
@@ -176,9 +176,9 @@ abstract class GIntComparisonExp
     implements Built<GIntComparisonExp, GIntComparisonExpBuilder> {
   GIntComparisonExp._();
 
-  factory GIntComparisonExp([
-    void Function(GIntComparisonExpBuilder b) updates,
-  ]) = _$GIntComparisonExp;
+  factory GIntComparisonExp(
+          [void Function(GIntComparisonExpBuilder b) updates]) =
+      _$GIntComparisonExp;
 
   @BuiltValueField(wireName: '_eq')
   int? get G_eq;
@@ -201,12 +201,16 @@ abstract class GIntComparisonExp
   static Serializer<GIntComparisonExp> get serializer =>
       _$gIntComparisonExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GIntComparisonExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GIntComparisonExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GIntComparisonExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GIntComparisonExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GIntComparisonExp.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestRelationsBoolExp
@@ -214,9 +218,9 @@ abstract class GMainQuestRelationsBoolExp
         Built<GMainQuestRelationsBoolExp, GMainQuestRelationsBoolExpBuilder> {
   GMainQuestRelationsBoolExp._();
 
-  factory GMainQuestRelationsBoolExp([
-    void Function(GMainQuestRelationsBoolExpBuilder b) updates,
-  ]) = _$GMainQuestRelationsBoolExp;
+  factory GMainQuestRelationsBoolExp(
+          [void Function(GMainQuestRelationsBoolExpBuilder b) updates]) =
+      _$GMainQuestRelationsBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GMainQuestRelationsBoolExp>? get G_and;
@@ -229,16 +233,16 @@ abstract class GMainQuestRelationsBoolExp
   static Serializer<GMainQuestRelationsBoolExp> get serializer =>
       _$gMainQuestRelationsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsBoolExp.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GMainQuestRelationsBoolExp? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GMainQuestRelationsBoolExp.serializer, json);
+  static GMainQuestRelationsBoolExp? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsBoolExp.serializer,
+        json,
+      );
 }
 
 class GMainQuestRelationsConstraint extends EnumClass {
@@ -259,27 +263,23 @@ class GMainQuestRelationsConstraint extends EnumClass {
 
 abstract class GMainQuestRelationsInsertInput
     implements
-        Built<
-          GMainQuestRelationsInsertInput,
-          GMainQuestRelationsInsertInputBuilder
-        > {
+        Built<GMainQuestRelationsInsertInput,
+            GMainQuestRelationsInsertInputBuilder> {
   GMainQuestRelationsInsertInput._();
 
-  factory GMainQuestRelationsInsertInput([
-    void Function(GMainQuestRelationsInsertInputBuilder b) updates,
-  ]) = _$GMainQuestRelationsInsertInput;
+  factory GMainQuestRelationsInsertInput(
+          [void Function(GMainQuestRelationsInsertInputBuilder b) updates]) =
+      _$GMainQuestRelationsInsertInput;
 
   String? get childQuestId;
   String? get parentQuestId;
   static Serializer<GMainQuestRelationsInsertInput> get serializer =>
       _$gMainQuestRelationsInsertInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsInsertInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsInsertInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestRelationsInsertInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -290,15 +290,13 @@ abstract class GMainQuestRelationsInsertInput
 
 abstract class GMainQuestRelationsOnConflict
     implements
-        Built<
-          GMainQuestRelationsOnConflict,
-          GMainQuestRelationsOnConflictBuilder
-        > {
+        Built<GMainQuestRelationsOnConflict,
+            GMainQuestRelationsOnConflictBuilder> {
   GMainQuestRelationsOnConflict._();
 
-  factory GMainQuestRelationsOnConflict([
-    void Function(GMainQuestRelationsOnConflictBuilder b) updates,
-  ]) = _$GMainQuestRelationsOnConflict;
+  factory GMainQuestRelationsOnConflict(
+          [void Function(GMainQuestRelationsOnConflictBuilder b) updates]) =
+      _$GMainQuestRelationsOnConflict;
 
   GMainQuestRelationsConstraint get constraint;
   BuiltList<GMainQuestRelationsUpdateColumn> get updateColumns;
@@ -306,12 +304,10 @@ abstract class GMainQuestRelationsOnConflict
   static Serializer<GMainQuestRelationsOnConflict> get serializer =>
       _$gMainQuestRelationsOnConflictSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsOnConflict.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsOnConflict.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestRelationsOnConflict? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -325,57 +321,53 @@ abstract class GMainQuestRelationsOrderBy
         Built<GMainQuestRelationsOrderBy, GMainQuestRelationsOrderByBuilder> {
   GMainQuestRelationsOrderBy._();
 
-  factory GMainQuestRelationsOrderBy([
-    void Function(GMainQuestRelationsOrderByBuilder b) updates,
-  ]) = _$GMainQuestRelationsOrderBy;
+  factory GMainQuestRelationsOrderBy(
+          [void Function(GMainQuestRelationsOrderByBuilder b) updates]) =
+      _$GMainQuestRelationsOrderBy;
 
   GOrderBy? get childQuestId;
   GOrderBy? get parentQuestId;
   static Serializer<GMainQuestRelationsOrderBy> get serializer =>
       _$gMainQuestRelationsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsOrderBy.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GMainQuestRelationsOrderBy? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GMainQuestRelationsOrderBy.serializer, json);
+  static GMainQuestRelationsOrderBy? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsOrderBy.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestRelationsPkColumnsInput
     implements
-        Built<
-          GMainQuestRelationsPkColumnsInput,
-          GMainQuestRelationsPkColumnsInputBuilder
-        > {
+        Built<GMainQuestRelationsPkColumnsInput,
+            GMainQuestRelationsPkColumnsInputBuilder> {
   GMainQuestRelationsPkColumnsInput._();
 
-  factory GMainQuestRelationsPkColumnsInput([
-    void Function(GMainQuestRelationsPkColumnsInputBuilder b) updates,
-  ]) = _$GMainQuestRelationsPkColumnsInput;
+  factory GMainQuestRelationsPkColumnsInput(
+          [void Function(GMainQuestRelationsPkColumnsInputBuilder b) updates]) =
+      _$GMainQuestRelationsPkColumnsInput;
 
   String get childQuestId;
   String get parentQuestId;
   static Serializer<GMainQuestRelationsPkColumnsInput> get serializer =>
       _$gMainQuestRelationsPkColumnsInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsPkColumnsInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsPkColumnsInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestRelationsPkColumnsInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GMainQuestRelationsPkColumnsInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsPkColumnsInput.serializer,
+        json,
+      );
 }
 
 class GMainQuestRelationsSelectColumn extends EnumClass {
@@ -402,89 +394,81 @@ abstract class GMainQuestRelationsSetInput
         Built<GMainQuestRelationsSetInput, GMainQuestRelationsSetInputBuilder> {
   GMainQuestRelationsSetInput._();
 
-  factory GMainQuestRelationsSetInput([
-    void Function(GMainQuestRelationsSetInputBuilder b) updates,
-  ]) = _$GMainQuestRelationsSetInput;
+  factory GMainQuestRelationsSetInput(
+          [void Function(GMainQuestRelationsSetInputBuilder b) updates]) =
+      _$GMainQuestRelationsSetInput;
 
   String? get childQuestId;
   String? get parentQuestId;
   static Serializer<GMainQuestRelationsSetInput> get serializer =>
       _$gMainQuestRelationsSetInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsSetInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsSetInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GMainQuestRelationsSetInput? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GMainQuestRelationsSetInput.serializer, json);
+  static GMainQuestRelationsSetInput? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsSetInput.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestRelationsStreamCursorInput
     implements
-        Built<
-          GMainQuestRelationsStreamCursorInput,
-          GMainQuestRelationsStreamCursorInputBuilder
-        > {
+        Built<GMainQuestRelationsStreamCursorInput,
+            GMainQuestRelationsStreamCursorInputBuilder> {
   GMainQuestRelationsStreamCursorInput._();
 
-  factory GMainQuestRelationsStreamCursorInput([
-    void Function(GMainQuestRelationsStreamCursorInputBuilder b) updates,
-  ]) = _$GMainQuestRelationsStreamCursorInput;
+  factory GMainQuestRelationsStreamCursorInput(
+      [void Function(GMainQuestRelationsStreamCursorInputBuilder b)
+          updates]) = _$GMainQuestRelationsStreamCursorInput;
 
   GMainQuestRelationsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GMainQuestRelationsStreamCursorInput> get serializer =>
       _$gMainQuestRelationsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestRelationsStreamCursorInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GMainQuestRelationsStreamCursorInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestRelationsStreamCursorValueInput
     implements
-        Built<
-          GMainQuestRelationsStreamCursorValueInput,
-          GMainQuestRelationsStreamCursorValueInputBuilder
-        > {
+        Built<GMainQuestRelationsStreamCursorValueInput,
+            GMainQuestRelationsStreamCursorValueInputBuilder> {
   GMainQuestRelationsStreamCursorValueInput._();
 
-  factory GMainQuestRelationsStreamCursorValueInput([
-    void Function(GMainQuestRelationsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GMainQuestRelationsStreamCursorValueInput;
+  factory GMainQuestRelationsStreamCursorValueInput(
+      [void Function(GMainQuestRelationsStreamCursorValueInputBuilder b)
+          updates]) = _$GMainQuestRelationsStreamCursorValueInput;
 
   String? get childQuestId;
   String? get parentQuestId;
   static Serializer<GMainQuestRelationsStreamCursorValueInput> get serializer =>
       _$gMainQuestRelationsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestRelationsStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GMainQuestRelationsStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 class GMainQuestRelationsUpdateColumn extends EnumClass {
@@ -511,9 +495,9 @@ abstract class GMainQuestRelationsUpdates
         Built<GMainQuestRelationsUpdates, GMainQuestRelationsUpdatesBuilder> {
   GMainQuestRelationsUpdates._();
 
-  factory GMainQuestRelationsUpdates([
-    void Function(GMainQuestRelationsUpdatesBuilder b) updates,
-  ]) = _$GMainQuestRelationsUpdates;
+  factory GMainQuestRelationsUpdates(
+          [void Function(GMainQuestRelationsUpdatesBuilder b) updates]) =
+      _$GMainQuestRelationsUpdates;
 
   @BuiltValueField(wireName: '_set')
   GMainQuestRelationsSetInput? get G_set;
@@ -521,25 +505,25 @@ abstract class GMainQuestRelationsUpdates
   static Serializer<GMainQuestRelationsUpdates> get serializer =>
       _$gMainQuestRelationsUpdatesSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestRelationsUpdates.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestRelationsUpdates.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GMainQuestRelationsUpdates? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GMainQuestRelationsUpdates.serializer, json);
+  static GMainQuestRelationsUpdates? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestRelationsUpdates.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestsBoolExp
     implements Built<GMainQuestsBoolExp, GMainQuestsBoolExpBuilder> {
   GMainQuestsBoolExp._();
 
-  factory GMainQuestsBoolExp([
-    void Function(GMainQuestsBoolExpBuilder b) updates,
-  ]) = _$GMainQuestsBoolExp;
+  factory GMainQuestsBoolExp(
+          [void Function(GMainQuestsBoolExpBuilder b) updates]) =
+      _$GMainQuestsBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GMainQuestsBoolExp>? get G_and;
@@ -563,12 +547,16 @@ abstract class GMainQuestsBoolExp
   static Serializer<GMainQuestsBoolExp> get serializer =>
       _$gMainQuestsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsBoolExp.serializer,
+        json,
+      );
 }
 
 class GMainQuestsConstraint extends EnumClass {
@@ -591,9 +579,9 @@ abstract class GMainQuestsInsertInput
     implements Built<GMainQuestsInsertInput, GMainQuestsInsertInputBuilder> {
   GMainQuestsInsertInput._();
 
-  factory GMainQuestsInsertInput([
-    void Function(GMainQuestsInsertInputBuilder b) updates,
-  ]) = _$GMainQuestsInsertInput;
+  factory GMainQuestsInsertInput(
+          [void Function(GMainQuestsInsertInputBuilder b) updates]) =
+      _$GMainQuestsInsertInput;
 
   DateTime? get begunAt;
   String? get categoryId;
@@ -611,21 +599,25 @@ abstract class GMainQuestsInsertInput
   static Serializer<GMainQuestsInsertInput> get serializer =>
       _$gMainQuestsInsertInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsInsertInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsInsertInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsInsertInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsInsertInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsInsertInput.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestsOnConflict
     implements Built<GMainQuestsOnConflict, GMainQuestsOnConflictBuilder> {
   GMainQuestsOnConflict._();
 
-  factory GMainQuestsOnConflict([
-    void Function(GMainQuestsOnConflictBuilder b) updates,
-  ]) = _$GMainQuestsOnConflict;
+  factory GMainQuestsOnConflict(
+          [void Function(GMainQuestsOnConflictBuilder b) updates]) =
+      _$GMainQuestsOnConflict;
 
   GMainQuestsConstraint get constraint;
   BuiltList<GMainQuestsUpdateColumn> get updateColumns;
@@ -633,21 +625,25 @@ abstract class GMainQuestsOnConflict
   static Serializer<GMainQuestsOnConflict> get serializer =>
       _$gMainQuestsOnConflictSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsOnConflict.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsOnConflict.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsOnConflict? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsOnConflict.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsOnConflict.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestsOrderBy
     implements Built<GMainQuestsOrderBy, GMainQuestsOrderByBuilder> {
   GMainQuestsOrderBy._();
 
-  factory GMainQuestsOrderBy([
-    void Function(GMainQuestsOrderByBuilder b) updates,
-  ]) = _$GMainQuestsOrderBy;
+  factory GMainQuestsOrderBy(
+          [void Function(GMainQuestsOrderByBuilder b) updates]) =
+      _$GMainQuestsOrderBy;
 
   GOrderBy? get begunAt;
   GOrderBy? get categoryId;
@@ -665,12 +661,16 @@ abstract class GMainQuestsOrderBy
   static Serializer<GMainQuestsOrderBy> get serializer =>
       _$gMainQuestsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsOrderBy.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestsPkColumnsInput
@@ -678,21 +678,24 @@ abstract class GMainQuestsPkColumnsInput
         Built<GMainQuestsPkColumnsInput, GMainQuestsPkColumnsInputBuilder> {
   GMainQuestsPkColumnsInput._();
 
-  factory GMainQuestsPkColumnsInput([
-    void Function(GMainQuestsPkColumnsInputBuilder b) updates,
-  ]) = _$GMainQuestsPkColumnsInput;
+  factory GMainQuestsPkColumnsInput(
+          [void Function(GMainQuestsPkColumnsInputBuilder b) updates]) =
+      _$GMainQuestsPkColumnsInput;
 
   String get id;
   static Serializer<GMainQuestsPkColumnsInput> get serializer =>
       _$gMainQuestsPkColumnsInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsPkColumnsInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsPkColumnsInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GMainQuestsPkColumnsInput? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GMainQuestsPkColumnsInput.serializer, json);
+  static GMainQuestsPkColumnsInput? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestsPkColumnsInput.serializer,
+        json,
+      );
 }
 
 class GMainQuestsSelectColumn extends EnumClass {
@@ -746,9 +749,9 @@ abstract class GMainQuestsSetInput
     implements Built<GMainQuestsSetInput, GMainQuestsSetInputBuilder> {
   GMainQuestsSetInput._();
 
-  factory GMainQuestsSetInput([
-    void Function(GMainQuestsSetInputBuilder b) updates,
-  ]) = _$GMainQuestsSetInput;
+  factory GMainQuestsSetInput(
+          [void Function(GMainQuestsSetInputBuilder b) updates]) =
+      _$GMainQuestsSetInput;
 
   DateTime? get begunAt;
   String? get categoryId;
@@ -766,37 +769,37 @@ abstract class GMainQuestsSetInput
   static Serializer<GMainQuestsSetInput> get serializer =>
       _$gMainQuestsSetInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsSetInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsSetInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsSetInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsSetInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsSetInput.serializer,
+        json,
+      );
 }
 
 abstract class GMainQuestsStreamCursorInput
     implements
-        Built<
-          GMainQuestsStreamCursorInput,
-          GMainQuestsStreamCursorInputBuilder
-        > {
+        Built<GMainQuestsStreamCursorInput,
+            GMainQuestsStreamCursorInputBuilder> {
   GMainQuestsStreamCursorInput._();
 
-  factory GMainQuestsStreamCursorInput([
-    void Function(GMainQuestsStreamCursorInputBuilder b) updates,
-  ]) = _$GMainQuestsStreamCursorInput;
+  factory GMainQuestsStreamCursorInput(
+          [void Function(GMainQuestsStreamCursorInputBuilder b) updates]) =
+      _$GMainQuestsStreamCursorInput;
 
   GMainQuestsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GMainQuestsStreamCursorInput> get serializer =>
       _$gMainQuestsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestsStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsStreamCursorInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -807,15 +810,13 @@ abstract class GMainQuestsStreamCursorInput
 
 abstract class GMainQuestsStreamCursorValueInput
     implements
-        Built<
-          GMainQuestsStreamCursorValueInput,
-          GMainQuestsStreamCursorValueInputBuilder
-        > {
+        Built<GMainQuestsStreamCursorValueInput,
+            GMainQuestsStreamCursorValueInputBuilder> {
   GMainQuestsStreamCursorValueInput._();
 
-  factory GMainQuestsStreamCursorValueInput([
-    void Function(GMainQuestsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GMainQuestsStreamCursorValueInput;
+  factory GMainQuestsStreamCursorValueInput(
+          [void Function(GMainQuestsStreamCursorValueInputBuilder b) updates]) =
+      _$GMainQuestsStreamCursorValueInput;
 
   DateTime? get begunAt;
   String? get categoryId;
@@ -833,19 +834,17 @@ abstract class GMainQuestsStreamCursorValueInput
   static Serializer<GMainQuestsStreamCursorValueInput> get serializer =>
       _$gMainQuestsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GMainQuestsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GMainQuestsStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GMainQuestsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 class GMainQuestsUpdateColumn extends EnumClass {
@@ -899,9 +898,9 @@ abstract class GMainQuestsUpdates
     implements Built<GMainQuestsUpdates, GMainQuestsUpdatesBuilder> {
   GMainQuestsUpdates._();
 
-  factory GMainQuestsUpdates([
-    void Function(GMainQuestsUpdatesBuilder b) updates,
-  ]) = _$GMainQuestsUpdates;
+  factory GMainQuestsUpdates(
+          [void Function(GMainQuestsUpdatesBuilder b) updates]) =
+      _$GMainQuestsUpdates;
 
   @BuiltValueField(wireName: '_set')
   GMainQuestsSetInput? get G_set;
@@ -909,12 +908,16 @@ abstract class GMainQuestsUpdates
   static Serializer<GMainQuestsUpdates> get serializer =>
       _$gMainQuestsUpdatesSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GMainQuestsUpdates.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GMainQuestsUpdates.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GMainQuestsUpdates? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GMainQuestsUpdates.serializer, json);
+      _i1.serializers.deserializeWith(
+        GMainQuestsUpdates.serializer,
+        json,
+      );
 }
 
 abstract class GNewsBoolExp
@@ -943,12 +946,16 @@ abstract class GNewsBoolExp
   GTimestamptzComparisonExp? get updatedAt;
   static Serializer<GNewsBoolExp> get serializer => _$gNewsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GNewsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNewsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNewsBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GNewsBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GNewsBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GNewsOrderBy
@@ -971,12 +978,16 @@ abstract class GNewsOrderBy
   GOrderBy? get updatedAt;
   static Serializer<GNewsOrderBy> get serializer => _$gNewsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GNewsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNewsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNewsOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GNewsOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GNewsOrderBy.serializer,
+        json,
+      );
 }
 
 class GNewsSelectColumn extends EnumClass {
@@ -1016,21 +1027,25 @@ abstract class GNewsStreamCursorInput
     implements Built<GNewsStreamCursorInput, GNewsStreamCursorInputBuilder> {
   GNewsStreamCursorInput._();
 
-  factory GNewsStreamCursorInput([
-    void Function(GNewsStreamCursorInputBuilder b) updates,
-  ]) = _$GNewsStreamCursorInput;
+  factory GNewsStreamCursorInput(
+          [void Function(GNewsStreamCursorInputBuilder b) updates]) =
+      _$GNewsStreamCursorInput;
 
   GNewsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GNewsStreamCursorInput> get serializer =>
       _$gNewsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GNewsStreamCursorInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNewsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNewsStreamCursorInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GNewsStreamCursorInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GNewsStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GNewsStreamCursorValueInput
@@ -1038,9 +1053,9 @@ abstract class GNewsStreamCursorValueInput
         Built<GNewsStreamCursorValueInput, GNewsStreamCursorValueInputBuilder> {
   GNewsStreamCursorValueInput._();
 
-  factory GNewsStreamCursorValueInput([
-    void Function(GNewsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GNewsStreamCursorValueInput;
+  factory GNewsStreamCursorValueInput(
+          [void Function(GNewsStreamCursorValueInputBuilder b) updates]) =
+      _$GNewsStreamCursorValueInput;
 
   String? get content;
   String? get coverImageUrl;
@@ -1055,25 +1070,25 @@ abstract class GNewsStreamCursorValueInput
   static Serializer<GNewsStreamCursorValueInput> get serializer =>
       _$gNewsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GNewsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNewsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GNewsStreamCursorValueInput? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GNewsStreamCursorValueInput.serializer, json);
+  static GNewsStreamCursorValueInput? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GNewsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GNotificationsBoolExp
     implements Built<GNotificationsBoolExp, GNotificationsBoolExpBuilder> {
   GNotificationsBoolExp._();
 
-  factory GNotificationsBoolExp([
-    void Function(GNotificationsBoolExpBuilder b) updates,
-  ]) = _$GNotificationsBoolExp;
+  factory GNotificationsBoolExp(
+          [void Function(GNotificationsBoolExpBuilder b) updates]) =
+      _$GNotificationsBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GNotificationsBoolExp>? get G_and;
@@ -1094,21 +1109,25 @@ abstract class GNotificationsBoolExp
   static Serializer<GNotificationsBoolExp> get serializer =>
       _$gNotificationsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GNotificationsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNotificationsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNotificationsBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GNotificationsBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GNotificationsBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GNotificationsOrderBy
     implements Built<GNotificationsOrderBy, GNotificationsOrderByBuilder> {
   GNotificationsOrderBy._();
 
-  factory GNotificationsOrderBy([
-    void Function(GNotificationsOrderByBuilder b) updates,
-  ]) = _$GNotificationsOrderBy;
+  factory GNotificationsOrderBy(
+          [void Function(GNotificationsOrderByBuilder b) updates]) =
+      _$GNotificationsOrderBy;
 
   GOrderBy? get content;
   GOrderBy? get coverImageUrl;
@@ -1123,12 +1142,16 @@ abstract class GNotificationsOrderBy
   static Serializer<GNotificationsOrderBy> get serializer =>
       _$gNotificationsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GNotificationsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNotificationsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNotificationsOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GNotificationsOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GNotificationsOrderBy.serializer,
+        json,
+      );
 }
 
 class GNotificationsSelectColumn extends EnumClass {
@@ -1175,27 +1198,23 @@ class GNotificationsSelectColumn extends EnumClass {
 
 abstract class GNotificationsStreamCursorInput
     implements
-        Built<
-          GNotificationsStreamCursorInput,
-          GNotificationsStreamCursorInputBuilder
-        > {
+        Built<GNotificationsStreamCursorInput,
+            GNotificationsStreamCursorInputBuilder> {
   GNotificationsStreamCursorInput._();
 
-  factory GNotificationsStreamCursorInput([
-    void Function(GNotificationsStreamCursorInputBuilder b) updates,
-  ]) = _$GNotificationsStreamCursorInput;
+  factory GNotificationsStreamCursorInput(
+          [void Function(GNotificationsStreamCursorInputBuilder b) updates]) =
+      _$GNotificationsStreamCursorInput;
 
   GNotificationsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GNotificationsStreamCursorInput> get serializer =>
       _$gNotificationsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GNotificationsStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNotificationsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNotificationsStreamCursorInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -1206,15 +1225,13 @@ abstract class GNotificationsStreamCursorInput
 
 abstract class GNotificationsStreamCursorValueInput
     implements
-        Built<
-          GNotificationsStreamCursorValueInput,
-          GNotificationsStreamCursorValueInputBuilder
-        > {
+        Built<GNotificationsStreamCursorValueInput,
+            GNotificationsStreamCursorValueInputBuilder> {
   GNotificationsStreamCursorValueInput._();
 
-  factory GNotificationsStreamCursorValueInput([
-    void Function(GNotificationsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GNotificationsStreamCursorValueInput;
+  factory GNotificationsStreamCursorValueInput(
+      [void Function(GNotificationsStreamCursorValueInputBuilder b)
+          updates]) = _$GNotificationsStreamCursorValueInput;
 
   String? get content;
   String? get coverImageUrl;
@@ -1229,19 +1246,17 @@ abstract class GNotificationsStreamCursorValueInput
   static Serializer<GNotificationsStreamCursorValueInput> get serializer =>
       _$gNotificationsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GNotificationsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GNotificationsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GNotificationsStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GNotificationsStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GNotificationsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 class GOrderBy extends EnumClass {
@@ -1270,9 +1285,9 @@ abstract class GQuestCategoriesBoolExp
     implements Built<GQuestCategoriesBoolExp, GQuestCategoriesBoolExpBuilder> {
   GQuestCategoriesBoolExp._();
 
-  factory GQuestCategoriesBoolExp([
-    void Function(GQuestCategoriesBoolExpBuilder b) updates,
-  ]) = _$GQuestCategoriesBoolExp;
+  factory GQuestCategoriesBoolExp(
+          [void Function(GQuestCategoriesBoolExpBuilder b) updates]) =
+      _$GQuestCategoriesBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GQuestCategoriesBoolExp>? get G_and;
@@ -1289,21 +1304,25 @@ abstract class GQuestCategoriesBoolExp
   static Serializer<GQuestCategoriesBoolExp> get serializer =>
       _$gQuestCategoriesBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GQuestCategoriesBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestCategoriesBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestCategoriesBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GQuestCategoriesBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GQuestCategoriesBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GQuestCategoriesOrderBy
     implements Built<GQuestCategoriesOrderBy, GQuestCategoriesOrderByBuilder> {
   GQuestCategoriesOrderBy._();
 
-  factory GQuestCategoriesOrderBy([
-    void Function(GQuestCategoriesOrderByBuilder b) updates,
-  ]) = _$GQuestCategoriesOrderBy;
+  factory GQuestCategoriesOrderBy(
+          [void Function(GQuestCategoriesOrderByBuilder b) updates]) =
+      _$GQuestCategoriesOrderBy;
 
   GOrderBy? get createdAt;
   GOrderBy? get description;
@@ -1314,12 +1333,16 @@ abstract class GQuestCategoriesOrderBy
   static Serializer<GQuestCategoriesOrderBy> get serializer =>
       _$gQuestCategoriesOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GQuestCategoriesOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestCategoriesOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestCategoriesOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GQuestCategoriesOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GQuestCategoriesOrderBy.serializer,
+        json,
+      );
 }
 
 class GQuestCategoriesSelectColumn extends EnumClass {
@@ -1356,47 +1379,41 @@ class GQuestCategoriesSelectColumn extends EnumClass {
 
 abstract class GQuestCategoriesStreamCursorInput
     implements
-        Built<
-          GQuestCategoriesStreamCursorInput,
-          GQuestCategoriesStreamCursorInputBuilder
-        > {
+        Built<GQuestCategoriesStreamCursorInput,
+            GQuestCategoriesStreamCursorInputBuilder> {
   GQuestCategoriesStreamCursorInput._();
 
-  factory GQuestCategoriesStreamCursorInput([
-    void Function(GQuestCategoriesStreamCursorInputBuilder b) updates,
-  ]) = _$GQuestCategoriesStreamCursorInput;
+  factory GQuestCategoriesStreamCursorInput(
+          [void Function(GQuestCategoriesStreamCursorInputBuilder b) updates]) =
+      _$GQuestCategoriesStreamCursorInput;
 
   GQuestCategoriesStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GQuestCategoriesStreamCursorInput> get serializer =>
       _$gQuestCategoriesStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GQuestCategoriesStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestCategoriesStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestCategoriesStreamCursorInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GQuestCategoriesStreamCursorInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GQuestCategoriesStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GQuestCategoriesStreamCursorValueInput
     implements
-        Built<
-          GQuestCategoriesStreamCursorValueInput,
-          GQuestCategoriesStreamCursorValueInputBuilder
-        > {
+        Built<GQuestCategoriesStreamCursorValueInput,
+            GQuestCategoriesStreamCursorValueInputBuilder> {
   GQuestCategoriesStreamCursorValueInput._();
 
-  factory GQuestCategoriesStreamCursorValueInput([
-    void Function(GQuestCategoriesStreamCursorValueInputBuilder b) updates,
-  ]) = _$GQuestCategoriesStreamCursorValueInput;
+  factory GQuestCategoriesStreamCursorValueInput(
+      [void Function(GQuestCategoriesStreamCursorValueInputBuilder b)
+          updates]) = _$GQuestCategoriesStreamCursorValueInput;
 
   DateTime? get createdAt;
   String? get description;
@@ -1407,28 +1424,26 @@ abstract class GQuestCategoriesStreamCursorValueInput
   static Serializer<GQuestCategoriesStreamCursorValueInput> get serializer =>
       _$gQuestCategoriesStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GQuestCategoriesStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestCategoriesStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestCategoriesStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GQuestCategoriesStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GQuestCategoriesStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GQuestStatusBoolExp
     implements Built<GQuestStatusBoolExp, GQuestStatusBoolExpBuilder> {
   GQuestStatusBoolExp._();
 
-  factory GQuestStatusBoolExp([
-    void Function(GQuestStatusBoolExpBuilder b) updates,
-  ]) = _$GQuestStatusBoolExp;
+  factory GQuestStatusBoolExp(
+          [void Function(GQuestStatusBoolExpBuilder b) updates]) =
+      _$GQuestStatusBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GQuestStatusBoolExp>? get G_and;
@@ -1440,12 +1455,16 @@ abstract class GQuestStatusBoolExp
   static Serializer<GQuestStatusBoolExp> get serializer =>
       _$gQuestStatusBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GQuestStatusBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestStatusBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestStatusBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GQuestStatusBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GQuestStatusBoolExp.serializer,
+        json,
+      );
 }
 
 class GQuestStatusEnum extends EnumClass {
@@ -1474,15 +1493,13 @@ class GQuestStatusEnum extends EnumClass {
 
 abstract class GQuestStatusEnumComparisonExp
     implements
-        Built<
-          GQuestStatusEnumComparisonExp,
-          GQuestStatusEnumComparisonExpBuilder
-        > {
+        Built<GQuestStatusEnumComparisonExp,
+            GQuestStatusEnumComparisonExpBuilder> {
   GQuestStatusEnumComparisonExp._();
 
-  factory GQuestStatusEnumComparisonExp([
-    void Function(GQuestStatusEnumComparisonExpBuilder b) updates,
-  ]) = _$GQuestStatusEnumComparisonExp;
+  factory GQuestStatusEnumComparisonExp(
+          [void Function(GQuestStatusEnumComparisonExpBuilder b) updates]) =
+      _$GQuestStatusEnumComparisonExp;
 
   @BuiltValueField(wireName: '_eq')
   GQuestStatusEnum? get G_eq;
@@ -1497,12 +1514,10 @@ abstract class GQuestStatusEnumComparisonExp
   static Serializer<GQuestStatusEnumComparisonExp> get serializer =>
       _$gQuestStatusEnumComparisonExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GQuestStatusEnumComparisonExp.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestStatusEnumComparisonExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestStatusEnumComparisonExp? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -1515,20 +1530,24 @@ abstract class GQuestStatusOrderBy
     implements Built<GQuestStatusOrderBy, GQuestStatusOrderByBuilder> {
   GQuestStatusOrderBy._();
 
-  factory GQuestStatusOrderBy([
-    void Function(GQuestStatusOrderByBuilder b) updates,
-  ]) = _$GQuestStatusOrderBy;
+  factory GQuestStatusOrderBy(
+          [void Function(GQuestStatusOrderByBuilder b) updates]) =
+      _$GQuestStatusOrderBy;
 
   GOrderBy? get value;
   static Serializer<GQuestStatusOrderBy> get serializer =>
       _$gQuestStatusOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GQuestStatusOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestStatusOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestStatusOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GQuestStatusOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GQuestStatusOrderBy.serializer,
+        json,
+      );
 }
 
 class GQuestStatusSelectColumn extends EnumClass {
@@ -1548,27 +1567,23 @@ class GQuestStatusSelectColumn extends EnumClass {
 
 abstract class GQuestStatusStreamCursorInput
     implements
-        Built<
-          GQuestStatusStreamCursorInput,
-          GQuestStatusStreamCursorInputBuilder
-        > {
+        Built<GQuestStatusStreamCursorInput,
+            GQuestStatusStreamCursorInputBuilder> {
   GQuestStatusStreamCursorInput._();
 
-  factory GQuestStatusStreamCursorInput([
-    void Function(GQuestStatusStreamCursorInputBuilder b) updates,
-  ]) = _$GQuestStatusStreamCursorInput;
+  factory GQuestStatusStreamCursorInput(
+          [void Function(GQuestStatusStreamCursorInputBuilder b) updates]) =
+      _$GQuestStatusStreamCursorInput;
 
   GQuestStatusStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GQuestStatusStreamCursorInput> get serializer =>
       _$gQuestStatusStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GQuestStatusStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestStatusStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestStatusStreamCursorInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -1579,33 +1594,29 @@ abstract class GQuestStatusStreamCursorInput
 
 abstract class GQuestStatusStreamCursorValueInput
     implements
-        Built<
-          GQuestStatusStreamCursorValueInput,
-          GQuestStatusStreamCursorValueInputBuilder
-        > {
+        Built<GQuestStatusStreamCursorValueInput,
+            GQuestStatusStreamCursorValueInputBuilder> {
   GQuestStatusStreamCursorValueInput._();
 
-  factory GQuestStatusStreamCursorValueInput([
-    void Function(GQuestStatusStreamCursorValueInputBuilder b) updates,
-  ]) = _$GQuestStatusStreamCursorValueInput;
+  factory GQuestStatusStreamCursorValueInput(
+      [void Function(GQuestStatusStreamCursorValueInputBuilder b)
+          updates]) = _$GQuestStatusStreamCursorValueInput;
 
   String? get value;
   static Serializer<GQuestStatusStreamCursorValueInput> get serializer =>
       _$gQuestStatusStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GQuestStatusStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GQuestStatusStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GQuestStatusStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GQuestStatusStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GQuestStatusStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GSeosBoolExp
@@ -1629,12 +1640,16 @@ abstract class GSeosBoolExp
   GTimestamptzComparisonExp? get updatedAt;
   static Serializer<GSeosBoolExp> get serializer => _$gSeosBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GSeosBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GSeosBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GSeosBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GSeosBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GSeosBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GSeosOrderBy
@@ -1652,12 +1667,16 @@ abstract class GSeosOrderBy
   GOrderBy? get updatedAt;
   static Serializer<GSeosOrderBy> get serializer => _$gSeosOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GSeosOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GSeosOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GSeosOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GSeosOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GSeosOrderBy.serializer,
+        json,
+      );
 }
 
 class GSeosSelectColumn extends EnumClass {
@@ -1688,21 +1707,25 @@ abstract class GSeosStreamCursorInput
     implements Built<GSeosStreamCursorInput, GSeosStreamCursorInputBuilder> {
   GSeosStreamCursorInput._();
 
-  factory GSeosStreamCursorInput([
-    void Function(GSeosStreamCursorInputBuilder b) updates,
-  ]) = _$GSeosStreamCursorInput;
+  factory GSeosStreamCursorInput(
+          [void Function(GSeosStreamCursorInputBuilder b) updates]) =
+      _$GSeosStreamCursorInput;
 
   GSeosStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GSeosStreamCursorInput> get serializer =>
       _$gSeosStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GSeosStreamCursorInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GSeosStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GSeosStreamCursorInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GSeosStreamCursorInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GSeosStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GSeosStreamCursorValueInput
@@ -1710,9 +1733,9 @@ abstract class GSeosStreamCursorValueInput
         Built<GSeosStreamCursorValueInput, GSeosStreamCursorValueInputBuilder> {
   GSeosStreamCursorValueInput._();
 
-  factory GSeosStreamCursorValueInput([
-    void Function(GSeosStreamCursorValueInputBuilder b) updates,
-  ]) = _$GSeosStreamCursorValueInput;
+  factory GSeosStreamCursorValueInput(
+          [void Function(GSeosStreamCursorValueInputBuilder b) updates]) =
+      _$GSeosStreamCursorValueInput;
 
   DateTime? get createdAt;
   String? get description;
@@ -1723,25 +1746,25 @@ abstract class GSeosStreamCursorValueInput
   static Serializer<GSeosStreamCursorValueInput> get serializer =>
       _$gSeosStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GSeosStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GSeosStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GSeosStreamCursorValueInput? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GSeosStreamCursorValueInput.serializer, json);
+  static GSeosStreamCursorValueInput? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GSeosStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GStringComparisonExp
     implements Built<GStringComparisonExp, GStringComparisonExpBuilder> {
   GStringComparisonExp._();
 
-  factory GStringComparisonExp([
-    void Function(GStringComparisonExpBuilder b) updates,
-  ]) = _$GStringComparisonExp;
+  factory GStringComparisonExp(
+          [void Function(GStringComparisonExpBuilder b) updates]) =
+      _$GStringComparisonExp;
 
   @BuiltValueField(wireName: '_eq')
   String? get G_eq;
@@ -1784,12 +1807,16 @@ abstract class GStringComparisonExp
   static Serializer<GStringComparisonExp> get serializer =>
       _$gStringComparisonExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GStringComparisonExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GStringComparisonExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GStringComparisonExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GStringComparisonExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GStringComparisonExp.serializer,
+        json,
+      );
 }
 
 abstract class GTagsBoolExp
@@ -1812,12 +1839,16 @@ abstract class GTagsBoolExp
   GTimestamptzComparisonExp? get updatedAt;
   static Serializer<GTagsBoolExp> get serializer => _$gTagsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GTagsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GTagsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GTagsBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GTagsBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GTagsBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GTagsOrderBy
@@ -1834,12 +1865,16 @@ abstract class GTagsOrderBy
   GOrderBy? get updatedAt;
   static Serializer<GTagsOrderBy> get serializer => _$gTagsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GTagsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GTagsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GTagsOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GTagsOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GTagsOrderBy.serializer,
+        json,
+      );
 }
 
 class GTagsSelectColumn extends EnumClass {
@@ -1868,21 +1903,25 @@ abstract class GTagsStreamCursorInput
     implements Built<GTagsStreamCursorInput, GTagsStreamCursorInputBuilder> {
   GTagsStreamCursorInput._();
 
-  factory GTagsStreamCursorInput([
-    void Function(GTagsStreamCursorInputBuilder b) updates,
-  ]) = _$GTagsStreamCursorInput;
+  factory GTagsStreamCursorInput(
+          [void Function(GTagsStreamCursorInputBuilder b) updates]) =
+      _$GTagsStreamCursorInput;
 
   GTagsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GTagsStreamCursorInput> get serializer =>
       _$gTagsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GTagsStreamCursorInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GTagsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GTagsStreamCursorInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GTagsStreamCursorInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GTagsStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GTagsStreamCursorValueInput
@@ -1890,9 +1929,9 @@ abstract class GTagsStreamCursorValueInput
         Built<GTagsStreamCursorValueInput, GTagsStreamCursorValueInputBuilder> {
   GTagsStreamCursorValueInput._();
 
-  factory GTagsStreamCursorValueInput([
-    void Function(GTagsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GTagsStreamCursorValueInput;
+  factory GTagsStreamCursorValueInput(
+          [void Function(GTagsStreamCursorValueInputBuilder b) updates]) =
+      _$GTagsStreamCursorValueInput;
 
   DateTime? get createdAt;
   String? get description;
@@ -1902,16 +1941,16 @@ abstract class GTagsStreamCursorValueInput
   static Serializer<GTagsStreamCursorValueInput> get serializer =>
       _$gTagsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GTagsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GTagsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GTagsStreamCursorValueInput? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GTagsStreamCursorValueInput.serializer, json);
+  static GTagsStreamCursorValueInput? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GTagsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GTimestamptzComparisonExp
@@ -1919,9 +1958,9 @@ abstract class GTimestamptzComparisonExp
         Built<GTimestamptzComparisonExp, GTimestamptzComparisonExpBuilder> {
   GTimestamptzComparisonExp._();
 
-  factory GTimestamptzComparisonExp([
-    void Function(GTimestamptzComparisonExpBuilder b) updates,
-  ]) = _$GTimestamptzComparisonExp;
+  factory GTimestamptzComparisonExp(
+          [void Function(GTimestamptzComparisonExpBuilder b) updates]) =
+      _$GTimestamptzComparisonExp;
 
   @BuiltValueField(wireName: '_eq')
   DateTime? get G_eq;
@@ -1944,13 +1983,16 @@ abstract class GTimestamptzComparisonExp
   static Serializer<GTimestamptzComparisonExp> get serializer =>
       _$gTimestamptzComparisonExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GTimestamptzComparisonExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GTimestamptzComparisonExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GTimestamptzComparisonExp? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GTimestamptzComparisonExp.serializer, json);
+  static GTimestamptzComparisonExp? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GTimestamptzComparisonExp.serializer,
+        json,
+      );
 }
 
 abstract class GUserAchievementsBoolExp
@@ -1958,9 +2000,9 @@ abstract class GUserAchievementsBoolExp
         Built<GUserAchievementsBoolExp, GUserAchievementsBoolExpBuilder> {
   GUserAchievementsBoolExp._();
 
-  factory GUserAchievementsBoolExp([
-    void Function(GUserAchievementsBoolExpBuilder b) updates,
-  ]) = _$GUserAchievementsBoolExp;
+  factory GUserAchievementsBoolExp(
+          [void Function(GUserAchievementsBoolExpBuilder b) updates]) =
+      _$GUserAchievementsBoolExp;
 
   @BuiltValueField(wireName: '_and')
   BuiltList<GUserAchievementsBoolExp>? get G_and;
@@ -1973,13 +2015,16 @@ abstract class GUserAchievementsBoolExp
   static Serializer<GUserAchievementsBoolExp> get serializer =>
       _$gUserAchievementsBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUserAchievementsBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUserAchievementsBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GUserAchievementsBoolExp? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GUserAchievementsBoolExp.serializer, json);
+  static GUserAchievementsBoolExp? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GUserAchievementsBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GUserAchievementsOrderBy
@@ -1987,22 +2032,25 @@ abstract class GUserAchievementsOrderBy
         Built<GUserAchievementsOrderBy, GUserAchievementsOrderByBuilder> {
   GUserAchievementsOrderBy._();
 
-  factory GUserAchievementsOrderBy([
-    void Function(GUserAchievementsOrderByBuilder b) updates,
-  ]) = _$GUserAchievementsOrderBy;
+  factory GUserAchievementsOrderBy(
+          [void Function(GUserAchievementsOrderByBuilder b) updates]) =
+      _$GUserAchievementsOrderBy;
 
   GOrderBy? get achievementId;
   GOrderBy? get userId;
   static Serializer<GUserAchievementsOrderBy> get serializer =>
       _$gUserAchievementsOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUserAchievementsOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUserAchievementsOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
-  static GUserAchievementsOrderBy? fromJson(Map<String, dynamic> json) => _i1
-      .serializers
-      .deserializeWith(GUserAchievementsOrderBy.serializer, json);
+  static GUserAchievementsOrderBy? fromJson(Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GUserAchievementsOrderBy.serializer,
+        json,
+      );
 }
 
 class GUserAchievementsSelectColumn extends EnumClass {
@@ -2026,66 +2074,58 @@ class GUserAchievementsSelectColumn extends EnumClass {
 
 abstract class GUserAchievementsStreamCursorInput
     implements
-        Built<
-          GUserAchievementsStreamCursorInput,
-          GUserAchievementsStreamCursorInputBuilder
-        > {
+        Built<GUserAchievementsStreamCursorInput,
+            GUserAchievementsStreamCursorInputBuilder> {
   GUserAchievementsStreamCursorInput._();
 
-  factory GUserAchievementsStreamCursorInput([
-    void Function(GUserAchievementsStreamCursorInputBuilder b) updates,
-  ]) = _$GUserAchievementsStreamCursorInput;
+  factory GUserAchievementsStreamCursorInput(
+      [void Function(GUserAchievementsStreamCursorInputBuilder b)
+          updates]) = _$GUserAchievementsStreamCursorInput;
 
   GUserAchievementsStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GUserAchievementsStreamCursorInput> get serializer =>
       _$gUserAchievementsStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GUserAchievementsStreamCursorInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUserAchievementsStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUserAchievementsStreamCursorInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GUserAchievementsStreamCursorInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GUserAchievementsStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GUserAchievementsStreamCursorValueInput
     implements
-        Built<
-          GUserAchievementsStreamCursorValueInput,
-          GUserAchievementsStreamCursorValueInputBuilder
-        > {
+        Built<GUserAchievementsStreamCursorValueInput,
+            GUserAchievementsStreamCursorValueInputBuilder> {
   GUserAchievementsStreamCursorValueInput._();
 
-  factory GUserAchievementsStreamCursorValueInput([
-    void Function(GUserAchievementsStreamCursorValueInputBuilder b) updates,
-  ]) = _$GUserAchievementsStreamCursorValueInput;
+  factory GUserAchievementsStreamCursorValueInput(
+      [void Function(GUserAchievementsStreamCursorValueInputBuilder b)
+          updates]) = _$GUserAchievementsStreamCursorValueInput;
 
   String? get achievementId;
   String? get userId;
   static Serializer<GUserAchievementsStreamCursorValueInput> get serializer =>
       _$gUserAchievementsStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GUserAchievementsStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUserAchievementsStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUserAchievementsStreamCursorValueInput? fromJson(
-    Map<String, dynamic> json,
-  ) => _i1.serializers.deserializeWith(
-    GUserAchievementsStreamCursorValueInput.serializer,
-    json,
-  );
+          Map<String, dynamic> json) =>
+      _i1.serializers.deserializeWith(
+        GUserAchievementsStreamCursorValueInput.serializer,
+        json,
+      );
 }
 
 abstract class GUsersBoolExp
@@ -2112,12 +2152,16 @@ abstract class GUsersBoolExp
   GStringComparisonExp? get website;
   static Serializer<GUsersBoolExp> get serializer => _$gUsersBoolExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUsersBoolExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUsersBoolExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUsersBoolExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GUsersBoolExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GUsersBoolExp.serializer,
+        json,
+      );
 }
 
 abstract class GUsersOrderBy
@@ -2138,12 +2182,16 @@ abstract class GUsersOrderBy
   GOrderBy? get website;
   static Serializer<GUsersOrderBy> get serializer => _$gUsersOrderBySerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUsersOrderBy.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUsersOrderBy.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUsersOrderBy? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GUsersOrderBy.serializer, json);
+      _i1.serializers.deserializeWith(
+        GUsersOrderBy.serializer,
+        json,
+      );
 }
 
 class GUsersSelectColumn extends EnumClass {
@@ -2180,34 +2228,36 @@ abstract class GUsersStreamCursorInput
     implements Built<GUsersStreamCursorInput, GUsersStreamCursorInputBuilder> {
   GUsersStreamCursorInput._();
 
-  factory GUsersStreamCursorInput([
-    void Function(GUsersStreamCursorInputBuilder b) updates,
-  ]) = _$GUsersStreamCursorInput;
+  factory GUsersStreamCursorInput(
+          [void Function(GUsersStreamCursorInputBuilder b) updates]) =
+      _$GUsersStreamCursorInput;
 
   GUsersStreamCursorValueInput get initialValue;
   GCursorOrdering? get ordering;
   static Serializer<GUsersStreamCursorInput> get serializer =>
       _$gUsersStreamCursorInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUsersStreamCursorInput.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUsersStreamCursorInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUsersStreamCursorInput? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GUsersStreamCursorInput.serializer, json);
+      _i1.serializers.deserializeWith(
+        GUsersStreamCursorInput.serializer,
+        json,
+      );
 }
 
 abstract class GUsersStreamCursorValueInput
     implements
-        Built<
-          GUsersStreamCursorValueInput,
-          GUsersStreamCursorValueInputBuilder
-        > {
+        Built<GUsersStreamCursorValueInput,
+            GUsersStreamCursorValueInputBuilder> {
   GUsersStreamCursorValueInput._();
 
-  factory GUsersStreamCursorValueInput([
-    void Function(GUsersStreamCursorValueInputBuilder b) updates,
-  ]) = _$GUsersStreamCursorValueInput;
+  factory GUsersStreamCursorValueInput(
+          [void Function(GUsersStreamCursorValueInputBuilder b) updates]) =
+      _$GUsersStreamCursorValueInput;
 
   DateTime? get createdAt;
   String? get email;
@@ -2221,12 +2271,10 @@ abstract class GUsersStreamCursorValueInput
   static Serializer<GUsersStreamCursorValueInput> get serializer =>
       _$gUsersStreamCursorValueInputSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(
-            GUsersStreamCursorValueInput.serializer,
-            this,
-          )
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUsersStreamCursorValueInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUsersStreamCursorValueInput? fromJson(Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
@@ -2239,9 +2287,9 @@ abstract class GUuidComparisonExp
     implements Built<GUuidComparisonExp, GUuidComparisonExpBuilder> {
   GUuidComparisonExp._();
 
-  factory GUuidComparisonExp([
-    void Function(GUuidComparisonExpBuilder b) updates,
-  ]) = _$GUuidComparisonExp;
+  factory GUuidComparisonExp(
+          [void Function(GUuidComparisonExpBuilder b) updates]) =
+      _$GUuidComparisonExp;
 
   @BuiltValueField(wireName: '_eq')
   String? get G_eq;
@@ -2264,12 +2312,16 @@ abstract class GUuidComparisonExp
   static Serializer<GUuidComparisonExp> get serializer =>
       _$gUuidComparisonExpSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GUuidComparisonExp.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GUuidComparisonExp.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GUuidComparisonExp? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GUuidComparisonExp.serializer, json);
+      _i1.serializers.deserializeWith(
+        GUuidComparisonExp.serializer,
+        json,
+      );
 }
 
 const Map<String, Set<String>> possibleTypesMap = {};

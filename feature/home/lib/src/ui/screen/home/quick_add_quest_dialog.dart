@@ -95,6 +95,10 @@ final class QuickAddQuestDialog extends HookConsumerWidget {
                 title: titleValue.text,
                 description: descriptionValue.text,
                 note: noteValue.text,
+                begunAt: null,
+                endedAt: null,
+                categoryId: null,
+                coverImage: null,
               ),
             );
 

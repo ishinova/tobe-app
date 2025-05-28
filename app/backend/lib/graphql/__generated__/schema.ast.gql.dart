@@ -539,7 +539,7 @@ const MainQuestRelationsConstraint = _i1.EnumTypeDefinitionNode(
     _i1.EnumValueDefinitionNode(
       name: _i1.NameNode(value: 'main_quest_relations_pkey'),
       directives: [],
-    ),
+    )
   ],
 );
 const MainQuestRelationsInsertInput = _i1.InputObjectTypeDefinitionNode(
@@ -742,29 +742,29 @@ const MainQuestRelationsStreamCursorInput = _i1.InputObjectTypeDefinitionNode(
 );
 const MainQuestRelationsStreamCursorValueInput =
     _i1.InputObjectTypeDefinitionNode(
-      name: _i1.NameNode(value: 'MainQuestRelationsStreamCursorValueInput'),
+  name: _i1.NameNode(value: 'MainQuestRelationsStreamCursorValueInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'childQuestId'),
       directives: [],
-      fields: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'childQuestId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'uuid'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'parentQuestId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'uuid'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-    );
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'uuid'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'parentQuestId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'uuid'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
 const MainQuestRelationsUpdateColumn = _i1.EnumTypeDefinitionNode(
   name: _i1.NameNode(value: 'MainQuestRelationsUpdateColumn'),
   directives: [],
@@ -1090,7 +1090,7 @@ const MainQuestsConstraint = _i1.EnumTypeDefinitionNode(
     _i1.EnumValueDefinitionNode(
       name: _i1.NameNode(value: 'main_quests_pkey'),
       directives: [],
-    ),
+    )
   ],
 );
 const MainQuestsInsertInput = _i1.InputObjectTypeDefinitionNode(
@@ -1415,7 +1415,7 @@ const MainQuestsPkColumnsInput = _i1.InputObjectTypeDefinitionNode(
         isNonNull: true,
       ),
       defaultValue: null,
-    ),
+    )
   ],
 );
 const MainQuestsSelectColumn = _i1.EnumTypeDefinitionNode(
@@ -3202,7 +3202,7 @@ const QuestStatus = _i1.ObjectTypeDefinitionNode(
         name: _i1.NameNode(value: 'String'),
         isNonNull: true,
       ),
-    ),
+    )
   ],
 );
 const QuestStatusBoolExp = _i1.InputObjectTypeDefinitionNode(
@@ -3352,7 +3352,7 @@ const QuestStatusOrderBy = _i1.InputObjectTypeDefinitionNode(
         isNonNull: false,
       ),
       defaultValue: null,
-    ),
+    )
   ],
 );
 const QuestStatusSelectColumn = _i1.EnumTypeDefinitionNode(
@@ -3362,7 +3362,7 @@ const QuestStatusSelectColumn = _i1.EnumTypeDefinitionNode(
     _i1.EnumValueDefinitionNode(
       name: _i1.NameNode(value: 'value'),
       directives: [],
-    ),
+    )
   ],
 );
 const QuestStatusStreamCursorInput = _i1.InputObjectTypeDefinitionNode(
@@ -3401,7 +3401,7 @@ const QuestStatusStreamCursorValueInput = _i1.InputObjectTypeDefinitionNode(
         isNonNull: false,
       ),
       defaultValue: null,
-    ),
+    )
   ],
 );
 const Seos = _i1.ObjectTypeDefinitionNode(
@@ -4442,29 +4442,29 @@ const UserAchievementsStreamCursorInput = _i1.InputObjectTypeDefinitionNode(
 );
 const UserAchievementsStreamCursorValueInput =
     _i1.InputObjectTypeDefinitionNode(
-      name: _i1.NameNode(value: 'UserAchievementsStreamCursorValueInput'),
+  name: _i1.NameNode(value: 'UserAchievementsStreamCursorValueInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'achievementId'),
       directives: [],
-      fields: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'achievementId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'uuid'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'userId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-    );
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'uuid'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'userId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
 const Users = _i1.ObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'Users'),
   directives: [],
@@ -5023,7 +5023,7 @@ const mutation_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'MainQuestRelationsMutationResponse'),
@@ -5070,7 +5070,7 @@ const mutation_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'MainQuestsMutationResponse'),
@@ -5089,7 +5089,7 @@ const mutation_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'MainQuests'),
@@ -5285,7 +5285,7 @@ const mutation_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.ListTypeNode(
         type: _i1.NamedTypeNode(
@@ -5366,7 +5366,7 @@ const mutation_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.ListTypeNode(
         type: _i1.NamedTypeNode(
@@ -5459,7 +5459,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Achievements'),
@@ -5634,7 +5634,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'MainQuests'),
@@ -5717,7 +5717,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'News'),
@@ -5800,7 +5800,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Notifications'),
@@ -5883,7 +5883,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'QuestCategories'),
@@ -5966,7 +5966,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'QuestStatus'),
@@ -6049,7 +6049,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Seos'),
@@ -6132,7 +6132,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Tags'),
@@ -6307,7 +6307,7 @@ const query_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Users'),
@@ -6397,7 +6397,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Achievements'),
@@ -6658,7 +6658,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'MainQuests'),
@@ -6784,7 +6784,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'News'),
@@ -6910,7 +6910,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Notifications'),
@@ -7036,7 +7036,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'QuestCategories'),
@@ -7162,7 +7162,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'QuestStatus'),
@@ -7288,7 +7288,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Seos'),
@@ -7414,7 +7414,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Tags'),
@@ -7675,7 +7675,7 @@ const subscription_root = _i1.ObjectTypeDefinitionNode(
             isNonNull: true,
           ),
           defaultValue: null,
-        ),
+        )
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Users'),
@@ -7735,104 +7735,102 @@ const uuid = _i1.ScalarTypeDefinitionNode(
   name: _i1.NameNode(value: 'uuid'),
   directives: [],
 );
-const document = _i1.DocumentNode(
-  definitions: [
-    schema,
-    cached,
-    Achievements,
-    AchievementsBoolExp,
-    AchievementsOrderBy,
-    AchievementsSelectColumn,
-    AchievementsStreamCursorInput,
-    AchievementsStreamCursorValueInput,
-    CursorOrdering,
-    IntComparisonExp,
-    MainQuestRelations,
-    MainQuestRelationsBoolExp,
-    MainQuestRelationsConstraint,
-    MainQuestRelationsInsertInput,
-    MainQuestRelationsMutationResponse,
-    MainQuestRelationsOnConflict,
-    MainQuestRelationsOrderBy,
-    MainQuestRelationsPkColumnsInput,
-    MainQuestRelationsSelectColumn,
-    MainQuestRelationsSetInput,
-    MainQuestRelationsStreamCursorInput,
-    MainQuestRelationsStreamCursorValueInput,
-    MainQuestRelationsUpdateColumn,
-    MainQuestRelationsUpdates,
-    MainQuests,
-    MainQuestsBoolExp,
-    MainQuestsConstraint,
-    MainQuestsInsertInput,
-    MainQuestsMutationResponse,
-    MainQuestsOnConflict,
-    MainQuestsOrderBy,
-    MainQuestsPkColumnsInput,
-    MainQuestsSelectColumn,
-    MainQuestsSetInput,
-    MainQuestsStreamCursorInput,
-    MainQuestsStreamCursorValueInput,
-    MainQuestsUpdateColumn,
-    MainQuestsUpdates,
-    News,
-    NewsBoolExp,
-    NewsOrderBy,
-    NewsSelectColumn,
-    NewsStreamCursorInput,
-    NewsStreamCursorValueInput,
-    Notifications,
-    NotificationsBoolExp,
-    NotificationsOrderBy,
-    NotificationsSelectColumn,
-    NotificationsStreamCursorInput,
-    NotificationsStreamCursorValueInput,
-    OrderBy,
-    QuestCategories,
-    QuestCategoriesBoolExp,
-    QuestCategoriesOrderBy,
-    QuestCategoriesSelectColumn,
-    QuestCategoriesStreamCursorInput,
-    QuestCategoriesStreamCursorValueInput,
-    QuestStatus,
-    QuestStatusBoolExp,
-    QuestStatusEnum,
-    QuestStatusEnumComparisonExp,
-    QuestStatusOrderBy,
-    QuestStatusSelectColumn,
-    QuestStatusStreamCursorInput,
-    QuestStatusStreamCursorValueInput,
-    Seos,
-    SeosBoolExp,
-    SeosOrderBy,
-    SeosSelectColumn,
-    SeosStreamCursorInput,
-    SeosStreamCursorValueInput,
-    StringComparisonExp,
-    Tags,
-    TagsBoolExp,
-    TagsOrderBy,
-    TagsSelectColumn,
-    TagsStreamCursorInput,
-    TagsStreamCursorValueInput,
-    TimestamptzComparisonExp,
-    UserAchievements,
-    UserAchievementsBoolExp,
-    UserAchievementsOrderBy,
-    UserAchievementsSelectColumn,
-    UserAchievementsStreamCursorInput,
-    UserAchievementsStreamCursorValueInput,
-    Users,
-    UsersBoolExp,
-    UsersOrderBy,
-    UsersSelectColumn,
-    UsersStreamCursorInput,
-    UsersStreamCursorValueInput,
-    UuidComparisonExp,
-    mutation_root,
-    query_root,
-    subscription_root,
-    timestamptz,
-    uuid,
-  ],
-);
+const document = _i1.DocumentNode(definitions: [
+  schema,
+  cached,
+  Achievements,
+  AchievementsBoolExp,
+  AchievementsOrderBy,
+  AchievementsSelectColumn,
+  AchievementsStreamCursorInput,
+  AchievementsStreamCursorValueInput,
+  CursorOrdering,
+  IntComparisonExp,
+  MainQuestRelations,
+  MainQuestRelationsBoolExp,
+  MainQuestRelationsConstraint,
+  MainQuestRelationsInsertInput,
+  MainQuestRelationsMutationResponse,
+  MainQuestRelationsOnConflict,
+  MainQuestRelationsOrderBy,
+  MainQuestRelationsPkColumnsInput,
+  MainQuestRelationsSelectColumn,
+  MainQuestRelationsSetInput,
+  MainQuestRelationsStreamCursorInput,
+  MainQuestRelationsStreamCursorValueInput,
+  MainQuestRelationsUpdateColumn,
+  MainQuestRelationsUpdates,
+  MainQuests,
+  MainQuestsBoolExp,
+  MainQuestsConstraint,
+  MainQuestsInsertInput,
+  MainQuestsMutationResponse,
+  MainQuestsOnConflict,
+  MainQuestsOrderBy,
+  MainQuestsPkColumnsInput,
+  MainQuestsSelectColumn,
+  MainQuestsSetInput,
+  MainQuestsStreamCursorInput,
+  MainQuestsStreamCursorValueInput,
+  MainQuestsUpdateColumn,
+  MainQuestsUpdates,
+  News,
+  NewsBoolExp,
+  NewsOrderBy,
+  NewsSelectColumn,
+  NewsStreamCursorInput,
+  NewsStreamCursorValueInput,
+  Notifications,
+  NotificationsBoolExp,
+  NotificationsOrderBy,
+  NotificationsSelectColumn,
+  NotificationsStreamCursorInput,
+  NotificationsStreamCursorValueInput,
+  OrderBy,
+  QuestCategories,
+  QuestCategoriesBoolExp,
+  QuestCategoriesOrderBy,
+  QuestCategoriesSelectColumn,
+  QuestCategoriesStreamCursorInput,
+  QuestCategoriesStreamCursorValueInput,
+  QuestStatus,
+  QuestStatusBoolExp,
+  QuestStatusEnum,
+  QuestStatusEnumComparisonExp,
+  QuestStatusOrderBy,
+  QuestStatusSelectColumn,
+  QuestStatusStreamCursorInput,
+  QuestStatusStreamCursorValueInput,
+  Seos,
+  SeosBoolExp,
+  SeosOrderBy,
+  SeosSelectColumn,
+  SeosStreamCursorInput,
+  SeosStreamCursorValueInput,
+  StringComparisonExp,
+  Tags,
+  TagsBoolExp,
+  TagsOrderBy,
+  TagsSelectColumn,
+  TagsStreamCursorInput,
+  TagsStreamCursorValueInput,
+  TimestamptzComparisonExp,
+  UserAchievements,
+  UserAchievementsBoolExp,
+  UserAchievementsOrderBy,
+  UserAchievementsSelectColumn,
+  UserAchievementsStreamCursorInput,
+  UserAchievementsStreamCursorValueInput,
+  Users,
+  UsersBoolExp,
+  UsersOrderBy,
+  UsersSelectColumn,
+  UsersStreamCursorInput,
+  UsersStreamCursorValueInput,
+  UuidComparisonExp,
+  mutation_root,
+  query_root,
+  subscription_root,
+  timestamptz,
+  uuid,
+]);

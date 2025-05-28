@@ -7,104 +7,78 @@ part of 'InsertMainQuest.req.gql.dart';
 // **************************************************************************
 
 Serializer<GInsertMainQuestReq> _$gInsertMainQuestReqSerializer =
-    new _$GInsertMainQuestReqSerializer();
+    _$GInsertMainQuestReqSerializer();
 
 class _$GInsertMainQuestReqSerializer
     implements StructuredSerializer<GInsertMainQuestReq> {
   @override
   final Iterable<Type> types = const [
     GInsertMainQuestReq,
-    _$GInsertMainQuestReq,
+    _$GInsertMainQuestReq
   ];
   @override
   final String wireName = 'GInsertMainQuestReq';
 
   @override
   Iterable<Object?> serialize(
-    Serializers serializers,
-    GInsertMainQuestReq object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
+      Serializers serializers, GInsertMainQuestReq object,
+      {FullType specifiedType = FullType.unspecified}) {
     final result = <Object?>[
       'vars',
-      serializers.serialize(
-        object.vars,
-        specifiedType: const FullType(_i3.GInsertMainQuestVars),
-      ),
+      serializers.serialize(object.vars,
+          specifiedType: const FullType(_i3.GInsertMainQuestVars)),
       'operation',
-      serializers.serialize(
-        object.operation,
-        specifiedType: const FullType(_i4.Operation),
-      ),
+      serializers.serialize(object.operation,
+          specifiedType: const FullType(_i4.Operation)),
       'executeOnListen',
-      serializers.serialize(
-        object.executeOnListen,
-        specifiedType: const FullType(bool),
-      ),
+      serializers.serialize(object.executeOnListen,
+          specifiedType: const FullType(bool)),
     ];
     Object? value;
     value = object.requestId;
     if (value != null) {
       result
         ..add('requestId')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     value = object.optimisticResponse;
     if (value != null) {
       result
         ..add('optimisticResponse')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(_i2.GInsertMainQuestData),
-          ),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i2.GInsertMainQuestData)));
     }
     value = object.updateCacheHandlerKey;
     if (value != null) {
       result
         ..add('updateCacheHandlerKey')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
     }
     value = object.updateCacheHandlerContext;
     if (value != null) {
       result
         ..add('updateCacheHandlerContext')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(Map, const [
-              const FullType(String),
-              const FullType(dynamic),
-            ]),
-          ),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(
+                Map, const [const FullType(String), const FullType(dynamic)])));
     }
     value = object.fetchPolicy;
     if (value != null) {
       result
         ..add('fetchPolicy')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(_i1.FetchPolicy),
-          ),
-        );
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(_i1.FetchPolicy)));
     }
     return result;
   }
 
   @override
   GInsertMainQuestReq deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = new GInsertMainQuestReqBuilder();
+      Serializers serializers, Iterable<Object?> serialized,
+      {FullType specifiedType = FullType.unspecified}) {
+    final result = GInsertMainQuestReqBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -113,73 +87,42 @@ class _$GInsertMainQuestReqSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'vars':
-          result.vars.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(_i3.GInsertMainQuestVars),
-                )!
-                as _i3.GInsertMainQuestVars,
-          );
+          result.vars.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(_i3.GInsertMainQuestVars))!
+              as _i3.GInsertMainQuestVars);
           break;
         case 'operation':
-          result.operation =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(_i4.Operation),
-                  )!
-                  as _i4.Operation;
+          result.operation = serializers.deserialize(value,
+              specifiedType: const FullType(_i4.Operation))! as _i4.Operation;
           break;
         case 'requestId':
-          result.requestId =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.requestId = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'optimisticResponse':
-          result.optimisticResponse.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(_i2.GInsertMainQuestData),
-                )!
-                as _i2.GInsertMainQuestData,
-          );
+          result.optimisticResponse.replace(serializers.deserialize(value,
+                  specifiedType: const FullType(_i2.GInsertMainQuestData))!
+              as _i2.GInsertMainQuestData);
           break;
         case 'updateCacheHandlerKey':
-          result.updateCacheHandlerKey =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
+          result.updateCacheHandlerKey = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
           break;
         case 'updateCacheHandlerContext':
-          result.updateCacheHandlerContext =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(Map, const [
-                      const FullType(String),
-                      const FullType(dynamic),
-                    ]),
-                  )
-                  as Map<String, dynamic>?;
+          result.updateCacheHandlerContext = serializers.deserialize(value,
+              specifiedType: const FullType(Map, const [
+                const FullType(String),
+                const FullType(dynamic)
+              ])) as Map<String, dynamic>?;
           break;
         case 'fetchPolicy':
-          result.fetchPolicy =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(_i1.FetchPolicy),
-                  )
-                  as _i1.FetchPolicy?;
+          result.fetchPolicy = serializers.deserialize(value,
+                  specifiedType: const FullType(_i1.FetchPolicy))
+              as _i1.FetchPolicy?;
           break;
         case 'executeOnListen':
-          result.executeOnListen =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(bool),
-                  )!
-                  as bool;
+          result.executeOnListen = serializers.deserialize(value,
+              specifiedType: const FullType(bool))! as bool;
           break;
       }
     }
@@ -197,10 +140,7 @@ class _$GInsertMainQuestReq extends GInsertMainQuestReq {
   final String? requestId;
   @override
   final _i2.GInsertMainQuestData? Function(
-    _i2.GInsertMainQuestData?,
-    _i2.GInsertMainQuestData?,
-  )?
-  updateResult;
+      _i2.GInsertMainQuestData?, _i2.GInsertMainQuestData?)? updateResult;
   @override
   final _i2.GInsertMainQuestData? optimisticResponse;
   @override
@@ -214,43 +154,30 @@ class _$GInsertMainQuestReq extends GInsertMainQuestReq {
   @override
   final _i4.Context? context;
 
-  factory _$GInsertMainQuestReq([
-    void Function(GInsertMainQuestReqBuilder)? updates,
-  ]) => (new GInsertMainQuestReqBuilder()..update(updates))._build();
+  factory _$GInsertMainQuestReq(
+          [void Function(GInsertMainQuestReqBuilder)? updates]) =>
+      (GInsertMainQuestReqBuilder()..update(updates))._build();
 
-  _$GInsertMainQuestReq._({
-    required this.vars,
-    required this.operation,
-    this.requestId,
-    this.updateResult,
-    this.optimisticResponse,
-    this.updateCacheHandlerKey,
-    this.updateCacheHandlerContext,
-    this.fetchPolicy,
-    required this.executeOnListen,
-    this.context,
-  }) : super._() {
-    BuiltValueNullFieldError.checkNotNull(vars, r'GInsertMainQuestReq', 'vars');
-    BuiltValueNullFieldError.checkNotNull(
-      operation,
-      r'GInsertMainQuestReq',
-      'operation',
-    );
-    BuiltValueNullFieldError.checkNotNull(
-      executeOnListen,
-      r'GInsertMainQuestReq',
-      'executeOnListen',
-    );
-  }
-
+  _$GInsertMainQuestReq._(
+      {required this.vars,
+      required this.operation,
+      this.requestId,
+      this.updateResult,
+      this.optimisticResponse,
+      this.updateCacheHandlerKey,
+      this.updateCacheHandlerContext,
+      this.fetchPolicy,
+      required this.executeOnListen,
+      this.context})
+      : super._();
   @override
   GInsertMainQuestReq rebuild(
-    void Function(GInsertMainQuestReqBuilder) updates,
-  ) => (toBuilder()..update(updates)).build();
+          void Function(GInsertMainQuestReqBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   GInsertMainQuestReqBuilder toBuilder() =>
-      new GInsertMainQuestReqBuilder()..replace(this);
+      GInsertMainQuestReqBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -309,7 +236,7 @@ class GInsertMainQuestReqBuilder
 
   _i3.GInsertMainQuestVarsBuilder? _vars;
   _i3.GInsertMainQuestVarsBuilder get vars =>
-      _$this._vars ??= new _i3.GInsertMainQuestVarsBuilder();
+      _$this._vars ??= _i3.GInsertMainQuestVarsBuilder();
   set vars(_i3.GInsertMainQuestVarsBuilder? vars) => _$this._vars = vars;
 
   _i4.Operation? _operation;
@@ -321,26 +248,19 @@ class GInsertMainQuestReqBuilder
   set requestId(String? requestId) => _$this._requestId = requestId;
 
   _i2.GInsertMainQuestData? Function(
-    _i2.GInsertMainQuestData?,
-    _i2.GInsertMainQuestData?,
-  )?
-  _updateResult;
+      _i2.GInsertMainQuestData?, _i2.GInsertMainQuestData?)? _updateResult;
   _i2.GInsertMainQuestData? Function(
-    _i2.GInsertMainQuestData?,
-    _i2.GInsertMainQuestData?,
-  )?
-  get updateResult => _$this._updateResult;
+          _i2.GInsertMainQuestData?, _i2.GInsertMainQuestData?)?
+      get updateResult => _$this._updateResult;
   set updateResult(
-    _i2.GInsertMainQuestData? Function(
-      _i2.GInsertMainQuestData?,
-      _i2.GInsertMainQuestData?,
-    )?
-    updateResult,
-  ) => _$this._updateResult = updateResult;
+          _i2.GInsertMainQuestData? Function(
+                  _i2.GInsertMainQuestData?, _i2.GInsertMainQuestData?)?
+              updateResult) =>
+      _$this._updateResult = updateResult;
 
   _i2.GInsertMainQuestDataBuilder? _optimisticResponse;
   _i2.GInsertMainQuestDataBuilder get optimisticResponse =>
-      _$this._optimisticResponse ??= new _i2.GInsertMainQuestDataBuilder();
+      _$this._optimisticResponse ??= _i2.GInsertMainQuestDataBuilder();
   set optimisticResponse(_i2.GInsertMainQuestDataBuilder? optimisticResponse) =>
       _$this._optimisticResponse = optimisticResponse;
 
@@ -353,8 +273,8 @@ class GInsertMainQuestReqBuilder
   Map<String, dynamic>? get updateCacheHandlerContext =>
       _$this._updateCacheHandlerContext;
   set updateCacheHandlerContext(
-    Map<String, dynamic>? updateCacheHandlerContext,
-  ) => _$this._updateCacheHandlerContext = updateCacheHandlerContext;
+          Map<String, dynamic>? updateCacheHandlerContext) =>
+      _$this._updateCacheHandlerContext = updateCacheHandlerContext;
 
   _i1.FetchPolicy? _fetchPolicy;
   _i1.FetchPolicy? get fetchPolicy => _$this._fetchPolicy;
@@ -394,7 +314,6 @@ class GInsertMainQuestReqBuilder
 
   @override
   void replace(GInsertMainQuestReq other) {
-    ArgumentError.checkNotNull(other, 'other');
     _$v = other as _$GInsertMainQuestReq;
   }
 
@@ -409,15 +328,11 @@ class GInsertMainQuestReqBuilder
   _$GInsertMainQuestReq _build() {
     _$GInsertMainQuestReq _$result;
     try {
-      _$result =
-          _$v ??
-          new _$GInsertMainQuestReq._(
+      _$result = _$v ??
+          _$GInsertMainQuestReq._(
             vars: vars.build(),
             operation: BuiltValueNullFieldError.checkNotNull(
-              operation,
-              r'GInsertMainQuestReq',
-              'operation',
-            ),
+                operation, r'GInsertMainQuestReq', 'operation'),
             requestId: requestId,
             updateResult: updateResult,
             optimisticResponse: _optimisticResponse?.build(),
@@ -425,10 +340,7 @@ class GInsertMainQuestReqBuilder
             updateCacheHandlerContext: updateCacheHandlerContext,
             fetchPolicy: fetchPolicy,
             executeOnListen: BuiltValueNullFieldError.checkNotNull(
-              executeOnListen,
-              r'GInsertMainQuestReq',
-              'executeOnListen',
-            ),
+                executeOnListen, r'GInsertMainQuestReq', 'executeOnListen'),
             context: context,
           );
     } catch (_) {
@@ -440,11 +352,8 @@ class GInsertMainQuestReqBuilder
         _$failedField = 'optimisticResponse';
         _optimisticResponse?.build();
       } catch (e) {
-        throw new BuiltValueNestedFieldError(
-          r'GInsertMainQuestReq',
-          _$failedField,
-          e.toString(),
-        );
+        throw BuiltValueNestedFieldError(
+            r'GInsertMainQuestReq', _$failedField, e.toString());
       }
       rethrow;
     }

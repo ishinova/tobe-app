@@ -38,17 +38,19 @@ abstract class GGetQuestsReq
   _i4.Operation get operation;
   @override
   _i4.Request get execRequest => _i4.Request(
-    operation: operation,
-    variables: vars.toJson(),
-    context: context ?? const _i4.Context(),
-  );
+        operation: operation,
+        variables: vars.toJson(),
+        context: context ?? const _i4.Context(),
+      );
 
   @override
   String? get requestId;
   @override
   @BuiltValueField(serialize: false)
-  _i2.GGetQuestsData? Function(_i2.GGetQuestsData?, _i2.GGetQuestsData?)?
-  get updateResult;
+  _i2.GGetQuestsData? Function(
+    _i2.GGetQuestsData?,
+    _i2.GGetQuestsData?,
+  )? get updateResult;
   @override
   _i2.GGetQuestsData? get optimisticResponse;
   @override
@@ -74,15 +76,19 @@ abstract class GGetQuestsReq
 
   @override
   _i1.OperationRequest<_i2.GGetQuestsData, _i3.GGetQuestsVars>
-  transformOperation(_i4.Operation Function(_i4.Operation) transform) =>
-      this.rebuild((b) => b..operation = transform(operation));
+      transformOperation(_i4.Operation Function(_i4.Operation) transform) =>
+          this.rebuild((b) => b..operation = transform(operation));
 
   static Serializer<GGetQuestsReq> get serializer => _$gGetQuestsReqSerializer;
 
-  Map<String, dynamic> toJson() =>
-      (_i6.serializers.serializeWith(GGetQuestsReq.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
+        GGetQuestsReq.serializer,
+        this,
+      ) as Map<String, dynamic>);
 
   static GGetQuestsReq? fromJson(Map<String, dynamic> json) =>
-      _i6.serializers.deserializeWith(GGetQuestsReq.serializer, json);
+      _i6.serializers.deserializeWith(
+        GGetQuestsReq.serializer,
+        json,
+      );
 }
