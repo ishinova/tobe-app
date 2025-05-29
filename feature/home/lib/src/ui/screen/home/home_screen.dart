@@ -1,4 +1,5 @@
 import 'package:core_designsystem/component.dart';
+import 'package:core_designsystem/space.dart';
 import 'package:core_domain/sync_use_case.dart';
 import 'package:core_model/quest.dart';
 import 'package:feature_home/src/gen/l10n/l10n.dart';
@@ -45,16 +46,16 @@ final class HomeScreen extends ConsumerWidget {
         },
         child: ListView(
           primary: true,
+          padding: const EdgeInsets.all(TobeSpace.m),
           children: [
-            ...[
-              QuestOverviewSection(
-                onQuickAddButtonPressed: _onQuickAddButtonPressed,
-              ),
-              RecentQuestListSection(
-                onTapQuestListItem: _onTapQuestListItem,
-                onMoreButtonPressed: _onMoreButtonPressed,
-              ),
-            ].expand((widget) => [widget, const SizedBox(height: 16)]),
+            QuestOverviewSection(
+              onQuickAddButtonPressed: _onQuickAddButtonPressed,
+            ),
+            const Gap(TobeSpace.l),
+            RecentQuestListSection(
+              onTapQuestListItem: _onTapQuestListItem,
+              onMoreButtonPressed: _onMoreButtonPressed,
+            ),
           ],
         ),
       ),

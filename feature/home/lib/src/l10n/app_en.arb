@@ -13,5 +13,21 @@
   "homeQuickAddQuestDialogPositive": "Add Quest",
   "homeQuickAddQuestDialogNegative": "Cancel",
   "homeRecentQuestListSectionYourQuestList": "Your Quest List",
-  "homeRecentQuestListSectionMore": "More"
+  "homeRecentQuestListSectionMore": "More",
+  "homeErrorMessage": "An error occurred",
+  "homeNoQuestsMessage": "No quests available",
+  "homeQuestStatusBacklog": "Backlog",
+  "homeQuestStatusReady": "Ready",
+  "homeQuestStatusInProgress": "In Progress",
+  "homeQuestStatusSuspend": "Suspended",
+  "homeQuestStatusCompleted": "Completed",
+  "homeQuestStatusAbort": "Aborted",
+  "homeDateToday": "Today",
+  "homeDateYesterday": "Yesterday",
+  "homeDateDaysAgo": "{days} days ago",
+  "@homeDateDaysAgo": {
+    "placeholders": {
+      "days": {}
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import 'package:core_designsystem/component.dart';
+import 'package:core_designsystem/space.dart';
 import 'package:core_domain/quest_use_case.dart';
 import 'package:feature_home/src/gen/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -18,25 +19,21 @@ final class QuestOverviewSection extends HookConsumerWidget {
     final l10n = L10n.of(context);
     final countStream = ref.watch(questCountStreamUseCaseProvider);
 
-    return Container(
-      width: double.infinity,
-      child: Column(
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           countStream.when(
             data: (data) {
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(
-                    width: double.infinity,
-                    child: Text(
-                      l10n.homeQuestOverviewSectionTitle,
-                      style: const TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
+                  Text(
+                    l10n.homeQuestOverviewSectionTitle,
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const Gap(16),
+                  const Gap(TobeSpace.m),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -46,7 +43,7 @@ final class QuestOverviewSection extends HookConsumerWidget {
                           count: '${data.total}',
                         ),
                       ),
-                      const Gap(16),
+                      const Gap(TobeSpace.m),
                       Expanded(
                         child: _StatCard(
                           title: l10n.homeQuestOverviewSectionQuestsCompleted,
@@ -55,7 +52,7 @@ final class QuestOverviewSection extends HookConsumerWidget {
                       ),
                     ],
                   ),
-                  const Gap(16),
+                  const Gap(TobeSpace.m),
                   SizedBox(
                     width: double.infinity,
                     child: _StatCard(
@@ -66,22 +63,39 @@ final class QuestOverviewSection extends HookConsumerWidget {
                 ],
               );
             },
-            error: (error, stackTrace) => Center(child: Text(error.toString())),
-            loading: () => const Center(child: CircularProgressIndicator()),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            child: SizedBox(
-              width: double.infinity,
-              child: FilledButton(
-                onPressed: _onQuickAddButtonPressed,
-                child: Text(l10n.homeQuestOverviewSectionQuickAddQuest),
+            error: (error, stackTrace) => Card(
+              child: Padding(
+                padding: const EdgeInsets.all(TobeSpace.l),
+                child: Center(
+                  child: Text(
+                    l10n.homeErrorMessage,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: Theme.of(context).colorScheme.error,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            loading: () => const Card(
+              child: Padding(
+                padding: EdgeInsets.all(TobeSpace.l),
+                child: Center(
+                  child: CircularProgressIndicator(),
+                ),
               ),
             ),
           ),
+          const Gap(TobeSpace.m),
+          Hero(
+            tag: 'quick-add-quest-button',
+            child: FilledButton.icon(
+              onPressed: _onQuickAddButtonPressed,
+              icon: const Icon(Icons.add),
+              label: Text(l10n.homeQuestOverviewSectionQuickAddQuest),
+            ),
+          ),
         ],
-      ),
-    );
+      );
   }
 }
 
@@ -93,22 +107,61 @@ final class _StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade200),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            count,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    
+    return Material(
+      child: InkWell(
+        onTap: () {}, // Makes the card feel interactive
+        borderRadius: BorderRadius.circular(12),
+        child: Card(
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: BorderSide(
+              color: colorScheme.outlineVariant,
+            ),
           ),
-          const SizedBox(height: 8),
-          Text(title, style: const TextStyle(fontSize: 16, color: Colors.grey)),
-        ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: TobeSpace.l,
+              horizontal: TobeSpace.m,
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 600),
+                  transitionBuilder: (child, animation) {
+                    return ScaleTransition(
+                      scale: animation,
+                      child: FadeTransition(
+                        opacity: animation,
+                        child: child,
+                      ),
+                    );
+                  },
+                  child: Text(
+                    count,
+                    key: ValueKey(count),
+                    style: theme.textTheme.headlineMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: colorScheme.primary,
+                    ),
+                  ),
+                ),
+                const Gap(TobeSpace.s),
+                Text(
+                  title,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: colorScheme.onSurfaceVariant,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

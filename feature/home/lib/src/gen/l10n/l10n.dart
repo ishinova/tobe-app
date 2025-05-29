@@ -186,6 +186,72 @@ abstract class L10n {
   /// In ja, this message translates to:
   /// **'さらに表示'**
   String get homeRecentQuestListSectionMore;
+
+  /// No description provided for @homeErrorMessage.
+  ///
+  /// In ja, this message translates to:
+  /// **'エラーが発生しました'**
+  String get homeErrorMessage;
+
+  /// No description provided for @homeNoQuestsMessage.
+  ///
+  /// In ja, this message translates to:
+  /// **'クエストがありません'**
+  String get homeNoQuestsMessage;
+
+  /// No description provided for @homeQuestStatusBacklog.
+  ///
+  /// In ja, this message translates to:
+  /// **'バックログ'**
+  String get homeQuestStatusBacklog;
+
+  /// No description provided for @homeQuestStatusReady.
+  ///
+  /// In ja, this message translates to:
+  /// **'準備完了'**
+  String get homeQuestStatusReady;
+
+  /// No description provided for @homeQuestStatusInProgress.
+  ///
+  /// In ja, this message translates to:
+  /// **'進行中'**
+  String get homeQuestStatusInProgress;
+
+  /// No description provided for @homeQuestStatusSuspend.
+  ///
+  /// In ja, this message translates to:
+  /// **'中断'**
+  String get homeQuestStatusSuspend;
+
+  /// No description provided for @homeQuestStatusCompleted.
+  ///
+  /// In ja, this message translates to:
+  /// **'完了'**
+  String get homeQuestStatusCompleted;
+
+  /// No description provided for @homeQuestStatusAbort.
+  ///
+  /// In ja, this message translates to:
+  /// **'中止'**
+  String get homeQuestStatusAbort;
+
+  /// No description provided for @homeDateToday.
+  ///
+  /// In ja, this message translates to:
+  /// **'今日'**
+  String get homeDateToday;
+
+  /// No description provided for @homeDateYesterday.
+  ///
+  /// In ja, this message translates to:
+  /// **'昨日'**
+  String get homeDateYesterday;
+
+  /// No description provided for @homeDateDaysAgo.
+  ///
+  /// In ja, this message translates to:
+  /// **'{days}日前'**
+  String homeDateDaysAgo(Object days);
 }
 
 class _L10nDelegate extends LocalizationsDelegate<L10n> {
