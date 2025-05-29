@@ -27,6 +27,7 @@ workspace:
   - feature/debug
   - feature/feed
   - feature/home
+  - feature/my
   - feature/onboarding
   - feature/quest
   - feature/settings

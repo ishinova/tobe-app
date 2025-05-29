@@ -32,7 +32,7 @@ class AppNavigationBar extends HookWidget {
             label: l10n.bottomNavigationBarQuest,
           ),
           NavigationDestination(
-            icon: const Icon(Icons.account_circle_outlined),
+            icon: const Icon(Icons.person_outline),
             label: l10n.bottomNavigationBarAccount,
           ),
         ],

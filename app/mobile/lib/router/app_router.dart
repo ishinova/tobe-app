@@ -9,6 +9,7 @@ import 'package:feature_auth/feature_auth.dart';
 import 'package:feature_debug/feature_debug.dart';
 import 'package:feature_feed/feature_feed.dart';
 import 'package:feature_home/feature_home.dart';
+import 'package:feature_my/feature_my.dart';
 import 'package:feature_onboarding/feature_onboarding.dart';
 import 'package:feature_quest/feature_quest.dart';
 import 'package:feature_settings/feature_settings.dart';
@@ -60,9 +61,8 @@ final List<RouteBase> _routes = [
   GoRoute(
     path: AppPagePath.auth,
     name: AppRoutes.auth,
-    builder: (context, state) => AuthScreen(
-      onLoginSuccess: () => context.goNamed(AppRoutes.home),
-    ),
+    builder: (context, state) =>
+        AuthScreen(onLoginSuccess: () => context.goNamed(AppRoutes.home)),
   ),
   GoRoute(
     path: AppPagePath.onboarding,
@@ -137,9 +137,7 @@ final List<RouteBase> _routes = [
                 name: AppRoutes.quickAddQuest,
                 pageBuilder: (context, state) => MaterialPage(
                   fullscreenDialog: true,
-                  child: QuickAddQuestDialog(
-                    onClose: () => context.pop(),
-                  ),
+                  child: QuickAddQuestDialog(onClose: () => context.pop()),
                 ),
               ),
             ],
@@ -166,9 +164,8 @@ final List<RouteBase> _routes = [
               GoRoute(
                 path: 'add',
                 name: AppRoutes.questAdd,
-                builder: (context, state) => QuestAddScreen(
-                  onAddQuestCompleted: () => context.pop(),
-                ),
+                builder: (context, state) =>
+                    QuestAddScreen(onAddQuestCompleted: () => context.pop()),
               ),
               GoRoute(
                 path: ':questId',
@@ -182,36 +179,40 @@ final List<RouteBase> _routes = [
           ),
         ],
       ),
-      // Settings branch
+      // My page branch
       StatefulShellBranch(
-        navigatorKey: settingsNavigatorKey,
+        navigatorKey: myNavigatorKey,
         routes: [
           GoRoute(
-            path: AppPagePath.settings,
-            name: AppRoutes.settings,
-            pageBuilder: (context, state) => NoTransitionPage(
-              child: SettingsScreen(
-                onTapThemeSetting: () =>
-                    context.goNamed(AppRoutes.themeSetting),
-                onTapOpenSourceLicense: () => showLicensePage(
-                  context: context,
-                ),
-                onSignOutSuccess: () => context.goNamed(AppRoutes.auth),
-              ),
-            ),
+            path: AppPagePath.my,
+            name: AppRoutes.my,
+            pageBuilder: (context, state) =>
+                const NoTransitionPage(child: MyScreen()),
             routes: [
               GoRoute(
-                path: 'theme',
-                name: AppRoutes.themeSetting,
-                pageBuilder: (context, state) => MaterialPage(
-                  fullscreenDialog: true,
-                  child: ThemeSettingDialogScreen(
-                    onTapPositive: () => context.pop(),
-                    onTapNegative: () => context.pop(),
-                  ),
+                path: 'settings',
+                name: AppRoutes.settings,
+                builder: (context, state) => SettingsScreen(
+                  onTapThemeSetting: () =>
+                      context.goNamed(AppRoutes.themeSetting),
+                  onTapOpenSourceLicense: () =>
+                      showLicensePage(context: context),
+                  onSignOutSuccess: () => context.goNamed(AppRoutes.auth),
                 ),
+                routes: [
+                  GoRoute(
+                    path: 'theme',
+                    name: AppRoutes.themeSetting,
+                    pageBuilder: (context, state) => MaterialPage(
+                      fullscreenDialog: true,
+                      child: ThemeSettingDialogScreen(
+                        onTapPositive: () => context.pop(),
+                        onTapNegative: () => context.pop(),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              // License route removed - using showLicensePage instead
             ],
           ),
         ],

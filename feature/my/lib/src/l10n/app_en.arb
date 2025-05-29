@@ -1,0 +1,55 @@
+{
+  "@@locale": "en",
+  "myPageTitle": "My Page",
+  "@myPageTitle": {
+    "description": "Title for the my page screen"
+  },
+  "myPageProfile": "Profile",
+  "@myPageProfile": {
+    "description": "Profile section title"
+  },
+  "myPageEditProfile": "Edit Profile",
+  "@myPageEditProfile": {
+    "description": "Edit profile button text"
+  },
+  "myPageSettings": "Settings",
+  "@myPageSettings": {
+    "description": "Settings menu item"
+  },
+  "myPageHelp": "Help & Support",
+  "@myPageHelp": {
+    "description": "Help and support menu item"
+  },
+  "myPageLogout": "Log Out",
+  "@myPageLogout": {
+    "description": "Logout button text"
+  },
+  "myPageQuestStatistics": "Quest Statistics",
+  "@myPageQuestStatistics": {
+    "description": "Quest statistics section title"
+  },
+  "myPageCompletedQuests": "Completed",
+  "@myPageCompletedQuests": {
+    "description": "Completed quests label"
+  },
+  "myPageActiveQuests": "Active",
+  "@myPageActiveQuests": {
+    "description": "Active quests label"
+  },
+  "myPageTotalQuests": "Total",
+  "@myPageTotalQuests": {
+    "description": "Total quests label"
+  },
+  "myPageLogoutConfirmationMessage": "Are you sure you want to log out?",
+  "@myPageLogoutConfirmationMessage": {
+    "description": "Logout confirmation dialog message"
+  },
+  "myPageCancel": "Cancel",
+  "@myPageCancel": {
+    "description": "Cancel button text"
+  },
+  "myPageLogoutButton": "Log Out",
+  "@myPageLogoutButton": {
+    "description": "Logout button text in dialog"
+  }
+}

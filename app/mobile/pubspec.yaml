@@ -27,6 +27,7 @@ dependencies:
   feature_debug: any
   feature_feed: any
   feature_home: any
+  feature_my: any
   feature_onboarding: any
   feature_quest: any
   feature_settings: any
