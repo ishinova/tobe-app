@@ -20,6 +20,10 @@
   "@myPageHelp": {
     "description": "ヘルプとサポートメニューアイテム"
   },
+  "myPageAnnouncements": "お知らせ",
+  "@myPageAnnouncements": {
+    "description": "お知らせメニューアイテム"
+  },
   "myPageLogout": "ログアウト",
   "@myPageLogout": {
     "description": "ログアウトボタンのテキスト"
