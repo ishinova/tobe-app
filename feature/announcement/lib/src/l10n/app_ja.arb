@@ -1,0 +1,27 @@
+{
+  "@@locale": "ja",
+  "announcementListTitle": "お知らせ",
+  "@announcementListTitle": {
+    "description": "お知らせ一覧画面のタイトル"
+  },
+  "announcementEmptyMessage": "現在お知らせはありません",
+  "@announcementEmptyMessage": {
+    "description": "お知らせがない時に表示されるメッセージ"
+  },
+  "announcementTypeInfo": "お知らせ",
+  "@announcementTypeInfo": {
+    "description": "情報タイプのお知らせラベル"
+  },
+  "announcementTypeWarning": "重要",
+  "@announcementTypeWarning": {
+    "description": "警告/重要タイプのお知らせラベル"
+  },
+  "announcementTypeUpdate": "アップデート",
+  "@announcementTypeUpdate": {
+    "description": "アップデートタイプのお知らせラベル"
+  },
+  "announcementNewBadge": "NEW",
+  "@announcementNewBadge": {
+    "description": "新しいお知らせのバッジテキスト"
+  }
+}

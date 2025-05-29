@@ -1,0 +1,27 @@
+{
+  "@@locale": "en",
+  "announcementListTitle": "Announcements",
+  "@announcementListTitle": {
+    "description": "Title for the announcements list screen"
+  },
+  "announcementEmptyMessage": "No announcements at this time",
+  "@announcementEmptyMessage": {
+    "description": "Message shown when there are no announcements"
+  },
+  "announcementTypeInfo": "Information",
+  "@announcementTypeInfo": {
+    "description": "Information type announcement label"
+  },
+  "announcementTypeWarning": "Important",
+  "@announcementTypeWarning": {
+    "description": "Warning/Important type announcement label"
+  },
+  "announcementTypeUpdate": "Update",
+  "@announcementTypeUpdate": {
+    "description": "Update type announcement label"
+  },
+  "announcementNewBadge": "NEW",
+  "@announcementNewBadge": {
+    "description": "Badge text for new announcements"
+  }
+}
