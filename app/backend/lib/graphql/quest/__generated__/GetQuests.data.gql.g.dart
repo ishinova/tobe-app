@@ -19,16 +19,24 @@ class _$GGetQuestsDataSerializer
   final String wireName = 'GGetQuestsData';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GGetQuestsData object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GGetQuestsData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'mainQuests',
-      serializers.serialize(object.mainQuests,
-          specifiedType: const FullType(
-              BuiltList, const [const FullType(GGetQuestsData_mainQuests)])),
+      serializers.serialize(
+        object.mainQuests,
+        specifiedType: const FullType(BuiltList, const [
+          const FullType(GGetQuestsData_mainQuests),
+        ]),
+      ),
     ];
 
     return result;
@@ -36,8 +44,10 @@ class _$GGetQuestsDataSerializer
 
   @override
   GGetQuestsData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GGetQuestsDataBuilder();
 
     final iterator = serialized.iterator;
@@ -47,14 +57,23 @@ class _$GGetQuestsDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'mainQuests':
-          result.mainQuests.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType(GGetQuestsData_mainQuests)
-              ]))! as BuiltList<Object?>);
+          result.mainQuests.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType(GGetQuestsData_mainQuests),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -68,30 +87,40 @@ class _$GGetQuestsData_mainQuestsSerializer
   @override
   final Iterable<Type> types = const [
     GGetQuestsData_mainQuests,
-    _$GGetQuestsData_mainQuests
+    _$GGetQuestsData_mainQuests,
   ];
   @override
   final String wireName = 'GGetQuestsData_mainQuests';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GGetQuestsData_mainQuests object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GGetQuestsData_mainQuests object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'id',
       serializers.serialize(object.id, specifiedType: const FullType(String)),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.title,
+        specifiedType: const FullType(String),
+      ),
       'description',
-      serializers.serialize(object.description,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.description,
+        specifiedType: const FullType(String),
+      ),
       'status',
-      serializers.serialize(object.status,
-          specifiedType: const FullType(_i2.GQuestStatusEnum)),
+      serializers.serialize(
+        object.status,
+        specifiedType: const FullType(_i2.GQuestStatusEnum),
+      ),
       'note',
       serializers.serialize(object.note, specifiedType: const FullType(String)),
     ];
@@ -100,37 +129,43 @@ class _$GGetQuestsData_mainQuestsSerializer
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GGetQuestsData_mainQuests deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GGetQuestsData_mainQuestsBuilder();
 
     final iterator = serialized.iterator;
@@ -140,45 +175,84 @@ class _$GGetQuestsData_mainQuestsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GQuestStatusEnum))!
-              as _i2.GQuestStatusEnum;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i2.GQuestStatusEnum),
+                  )!
+                  as _i2.GQuestStatusEnum;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -197,7 +271,7 @@ class _$GGetQuestsData extends GGetQuestsData {
       (GGetQuestsDataBuilder()..update(updates))._build();
 
   _$GGetQuestsData._({required this.G__typename, required this.mainQuests})
-      : super._();
+    : super._();
   @override
   GGetQuestsData rebuild(void Function(GGetQuestsDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -275,10 +349,14 @@ class GGetQuestsDataBuilder
   _$GGetQuestsData _build() {
     _$GGetQuestsData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GGetQuestsData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GGetQuestsData', 'G__typename'),
+              G__typename,
+              r'GGetQuestsData',
+              'G__typename',
+            ),
             mainQuests: mainQuests.build(),
           );
     } catch (_) {
@@ -288,7 +366,10 @@ class GGetQuestsDataBuilder
         mainQuests.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GGetQuestsData', _$failedField, e.toString());
+          r'GGetQuestsData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -319,26 +400,26 @@ class _$GGetQuestsData_mainQuests extends GGetQuestsData_mainQuests {
   @override
   final String note;
 
-  factory _$GGetQuestsData_mainQuests(
-          [void Function(GGetQuestsData_mainQuestsBuilder)? updates]) =>
-      (GGetQuestsData_mainQuestsBuilder()..update(updates))._build();
+  factory _$GGetQuestsData_mainQuests([
+    void Function(GGetQuestsData_mainQuestsBuilder)? updates,
+  ]) => (GGetQuestsData_mainQuestsBuilder()..update(updates))._build();
 
-  _$GGetQuestsData_mainQuests._(
-      {required this.G__typename,
-      required this.id,
-      required this.title,
-      required this.description,
-      this.begunAt,
-      this.endedAt,
-      this.categoryId,
-      required this.status,
-      this.coverImageUrl,
-      required this.note})
-      : super._();
+  _$GGetQuestsData_mainQuests._({
+    required this.G__typename,
+    required this.id,
+    required this.title,
+    required this.description,
+    this.begunAt,
+    this.endedAt,
+    this.categoryId,
+    required this.status,
+    this.coverImageUrl,
+    required this.note,
+  }) : super._();
   @override
   GGetQuestsData_mainQuests rebuild(
-          void Function(GGetQuestsData_mainQuestsBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GGetQuestsData_mainQuestsBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GGetQuestsData_mainQuestsBuilder toBuilder() =>
@@ -476,24 +557,43 @@ class GGetQuestsData_mainQuestsBuilder
   GGetQuestsData_mainQuests build() => _build();
 
   _$GGetQuestsData_mainQuests _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GGetQuestsData_mainQuests._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename, r'GGetQuestsData_mainQuests', 'G__typename'),
+            G__typename,
+            r'GGetQuestsData_mainQuests',
+            'G__typename',
+          ),
           id: BuiltValueNullFieldError.checkNotNull(
-              id, r'GGetQuestsData_mainQuests', 'id'),
+            id,
+            r'GGetQuestsData_mainQuests',
+            'id',
+          ),
           title: BuiltValueNullFieldError.checkNotNull(
-              title, r'GGetQuestsData_mainQuests', 'title'),
+            title,
+            r'GGetQuestsData_mainQuests',
+            'title',
+          ),
           description: BuiltValueNullFieldError.checkNotNull(
-              description, r'GGetQuestsData_mainQuests', 'description'),
+            description,
+            r'GGetQuestsData_mainQuests',
+            'description',
+          ),
           begunAt: begunAt,
           endedAt: endedAt,
           categoryId: categoryId,
           status: BuiltValueNullFieldError.checkNotNull(
-              status, r'GGetQuestsData_mainQuests', 'status'),
+            status,
+            r'GGetQuestsData_mainQuests',
+            'status',
+          ),
           coverImageUrl: coverImageUrl,
           note: BuiltValueNullFieldError.checkNotNull(
-              note, r'GGetQuestsData_mainQuests', 'note'),
+            note,
+            r'GGetQuestsData_mainQuests',
+            'note',
+          ),
         );
     replace(_$result);
     return _$result;

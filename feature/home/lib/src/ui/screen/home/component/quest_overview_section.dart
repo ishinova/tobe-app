@@ -20,82 +20,80 @@ final class QuestOverviewSection extends HookConsumerWidget {
     final countStream = ref.watch(questCountStreamUseCaseProvider);
 
     return Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          countStream.when(
-            data: (data) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    l10n.homeQuestOverviewSectionTitle,
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        countStream.when(
+          data: (data) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  l10n.homeQuestOverviewSectionTitle,
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
                   ),
-                  const Gap(TobeSpace.m),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                        child: _StatCard(
-                          title: l10n.homeQuestOverviewSectionTotalQuests,
-                          count: '${data.total}',
-                        ),
+                ),
+                const Gap(TobeSpace.m),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: _StatCard(
+                        title: l10n.homeQuestOverviewSectionTotalQuests,
+                        count: '${data.total}',
                       ),
-                      const Gap(TobeSpace.m),
-                      Expanded(
-                        child: _StatCard(
-                          title: l10n.homeQuestOverviewSectionQuestsCompleted,
-                          count: '${data.completed}',
-                        ),
+                    ),
+                    const Gap(TobeSpace.m),
+                    Expanded(
+                      child: _StatCard(
+                        title: l10n.homeQuestOverviewSectionQuestsCompleted,
+                        count: '${data.completed}',
                       ),
-                    ],
-                  ),
-                  const Gap(TobeSpace.m),
-                  SizedBox(
-                    width: double.infinity,
-                    child: _StatCard(
-                      title: l10n.homeQuestOverviewSectionPendingQuests,
-                      count: '${data.pending}',
                     ),
+                  ],
+                ),
+                const Gap(TobeSpace.m),
+                SizedBox(
+                  width: double.infinity,
+                  child: _StatCard(
+                    title: l10n.homeQuestOverviewSectionPendingQuests,
+                    count: '${data.pending}',
                   ),
-                ],
-              );
-            },
-            error: (error, stackTrace) => Card(
-              child: Padding(
-                padding: const EdgeInsets.all(TobeSpace.l),
-                child: Center(
-                  child: Text(
-                    l10n.homeErrorMessage,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.error,
-                    ),
+                ),
+              ],
+            );
+          },
+          error: (error, stackTrace) => Card(
+            child: Padding(
+              padding: const EdgeInsets.all(TobeSpace.l),
+              child: Center(
+                child: Text(
+                  l10n.homeErrorMessage,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.error,
                   ),
                 ),
               ),
             ),
-            loading: () => const Card(
-              child: Padding(
-                padding: EdgeInsets.all(TobeSpace.l),
-                child: Center(
-                  child: CircularProgressIndicator(),
-                ),
-              ),
+          ),
+          loading: () => const Card(
+            child: Padding(
+              padding: EdgeInsets.all(TobeSpace.l),
+              child: Center(child: CircularProgressIndicator()),
             ),
           ),
-          const Gap(TobeSpace.m),
-          Hero(
-            tag: 'quick-add-quest-button',
-            child: FilledButton.icon(
-              onPressed: _onQuickAddButtonPressed,
-              icon: const Icon(Icons.add),
-              label: Text(l10n.homeQuestOverviewSectionQuickAddQuest),
-            ),
+        ),
+        const Gap(TobeSpace.m),
+        Hero(
+          tag: 'quick-add-quest-button',
+          child: FilledButton.icon(
+            onPressed: _onQuickAddButtonPressed,
+            icon: const Icon(Icons.add),
+            label: Text(l10n.homeQuestOverviewSectionQuickAddQuest),
           ),
-        ],
-      );
+        ),
+      ],
+    );
   }
 }
 
@@ -109,7 +107,7 @@ final class _StatCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
-    
+
     return Material(
       child: InkWell(
         onTap: () {}, // Makes the card feel interactive
@@ -118,9 +116,7 @@ final class _StatCard extends StatelessWidget {
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
-            side: BorderSide(
-              color: colorScheme.outlineVariant,
-            ),
+            side: BorderSide(color: colorScheme.outlineVariant),
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(
@@ -135,10 +131,7 @@ final class _StatCard extends StatelessWidget {
                   transitionBuilder: (child, animation) {
                     return ScaleTransition(
                       scale: animation,
-                      child: FadeTransition(
-                        opacity: animation,
-                        child: child,
-                      ),
+                      child: FadeTransition(opacity: animation, child: child),
                     );
                   },
                   child: Text(
