@@ -3,7 +3,7 @@ description: This package provides functions for analysis.
 publish_to: "none"
 
 environment:
-  sdk: 3.8.0
+  sdk: 3.8.1
 
 resolution: workspace
 
