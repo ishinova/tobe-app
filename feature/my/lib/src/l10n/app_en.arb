@@ -39,5 +39,17 @@
   "myPageTotalQuests": "Total",
   "@myPageTotalQuests": {
     "description": "Total quests label"
+  },
+  "myPageLogoutConfirmationMessage": "Are you sure you want to log out?",
+  "@myPageLogoutConfirmationMessage": {
+    "description": "Logout confirmation dialog message"
+  },
+  "myPageCancel": "Cancel",
+  "@myPageCancel": {
+    "description": "Cancel button text"
+  },
+  "myPageLogoutButton": "Log Out",
+  "@myPageLogoutButton": {
+    "description": "Logout button text in dialog"
   }
 }

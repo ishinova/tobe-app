@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:core_authenticator/authenticator.dart';
 import 'package:core_designsystem/component.dart';
 import 'package:core_designsystem/space.dart';
@@ -98,7 +100,7 @@ class MyScreen extends ConsumerWidget {
             title: Text(l10n?.myPageSettings ?? 'Settings'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () {
-              context.pushNamed('settings');
+              unawaited(context.pushNamed('settings'));
             },
           ),
           const Divider(height: 1),
@@ -127,23 +129,28 @@ class MyScreen extends ConsumerWidget {
   }
 
   Future<void> _showLogoutDialog(BuildContext context, WidgetRef ref) async {
-    final l10n = FeatureMyL10n.of(context);
     final confirmed = await showDialog<bool>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(l10n?.myPageLogout ?? 'Log Out'),
-        content: const Text('Are you sure you want to log out?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Cancel'),
+      builder: (context) {
+        final dialogL10n = FeatureMyL10n.of(context);
+        return AlertDialog(
+          title: Text(dialogL10n?.myPageLogout ?? 'Log Out'),
+          content: Text(
+            dialogL10n?.myPageLogoutConfirmationMessage ??
+                'Are you sure you want to log out?',
           ),
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Log Out'),
-          ),
-        ],
-      ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: Text(dialogL10n?.myPageCancel ?? 'Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              child: Text(dialogL10n?.myPageLogoutButton ?? 'Log Out'),
+            ),
+          ],
+        );
+      },
     );
 
     if (confirmed ?? false) {

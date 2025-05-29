@@ -157,6 +157,24 @@ abstract class FeatureMyL10n {
   /// In en, this message translates to:
   /// **'Total'**
   String get myPageTotalQuests;
+
+  /// Logout confirmation dialog message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to log out?'**
+  String get myPageLogoutConfirmationMessage;
+
+  /// Cancel button text
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get myPageCancel;
+
+  /// Logout button text in dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get myPageLogoutButton;
 }
 
 class _FeatureMyL10nDelegate extends LocalizationsDelegate<FeatureMyL10n> {

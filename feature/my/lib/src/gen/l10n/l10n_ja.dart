@@ -37,4 +37,13 @@ class FeatureMyL10nJa extends FeatureMyL10n {
 
   @override
   String get myPageTotalQuests => '合計';
+
+  @override
+  String get myPageLogoutConfirmationMessage => 'ログアウトしてもよろしいですか？';
+
+  @override
+  String get myPageCancel => 'キャンセル';
+
+  @override
+  String get myPageLogoutButton => 'ログアウト';
 }

@@ -39,5 +39,17 @@
   "myPageTotalQuests": "合計",
   "@myPageTotalQuests": {
     "description": "合計クエストのラベル"
+  },
+  "myPageLogoutConfirmationMessage": "ログアウトしてもよろしいですか？",
+  "@myPageLogoutConfirmationMessage": {
+    "description": "ログアウト確認ダイアログのメッセージ"
+  },
+  "myPageCancel": "キャンセル",
+  "@myPageCancel": {
+    "description": "キャンセルボタンのテキスト"
+  },
+  "myPageLogoutButton": "ログアウト",
+  "@myPageLogoutButton": {
+    "description": "ダイアログのログアウトボタンのテキスト"
   }
 }
