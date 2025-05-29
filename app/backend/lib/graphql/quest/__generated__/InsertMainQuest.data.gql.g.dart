@@ -9,7 +9,7 @@ part of 'InsertMainQuest.data.gql.dart';
 Serializer<GInsertMainQuestData> _$gInsertMainQuestDataSerializer =
     _$GInsertMainQuestDataSerializer();
 Serializer<GInsertMainQuestData_insertMainQuestsOne>
-    _$gInsertMainQuestDataInsertMainQuestsOneSerializer =
+_$gInsertMainQuestDataInsertMainQuestsOneSerializer =
     _$GInsertMainQuestData_insertMainQuestsOneSerializer();
 
 class _$GInsertMainQuestDataSerializer
@@ -17,36 +17,47 @@ class _$GInsertMainQuestDataSerializer
   @override
   final Iterable<Type> types = const [
     GInsertMainQuestData,
-    _$GInsertMainQuestData
+    _$GInsertMainQuestData,
   ];
   @override
   final String wireName = 'GInsertMainQuestData';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GInsertMainQuestData object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GInsertMainQuestData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.insertMainQuestsOne;
     if (value != null) {
       result
         ..add('insertMainQuestsOne')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(GInsertMainQuestData_insertMainQuestsOne)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(
+              GInsertMainQuestData_insertMainQuestsOne,
+            ),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GInsertMainQuestData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GInsertMainQuestDataBuilder();
 
     final iterator = serialized.iterator;
@@ -56,14 +67,23 @@ class _$GInsertMainQuestDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'insertMainQuestsOne':
-          result.insertMainQuestsOne.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GInsertMainQuestData_insertMainQuestsOne))!
-              as GInsertMainQuestData_insertMainQuestsOne);
+          result.insertMainQuestsOne.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GInsertMainQuestData_insertMainQuestsOne,
+                  ),
+                )!
+                as GInsertMainQuestData_insertMainQuestsOne,
+          );
           break;
       }
     }
@@ -77,30 +97,40 @@ class _$GInsertMainQuestData_insertMainQuestsOneSerializer
   @override
   final Iterable<Type> types = const [
     GInsertMainQuestData_insertMainQuestsOne,
-    _$GInsertMainQuestData_insertMainQuestsOne
+    _$GInsertMainQuestData_insertMainQuestsOne,
   ];
   @override
   final String wireName = 'GInsertMainQuestData_insertMainQuestsOne';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GInsertMainQuestData_insertMainQuestsOne object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GInsertMainQuestData_insertMainQuestsOne object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'id',
       serializers.serialize(object.id, specifiedType: const FullType(String)),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.title,
+        specifiedType: const FullType(String),
+      ),
       'description',
-      serializers.serialize(object.description,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.description,
+        specifiedType: const FullType(String),
+      ),
       'status',
-      serializers.serialize(object.status,
-          specifiedType: const FullType(_i2.GQuestStatusEnum)),
+      serializers.serialize(
+        object.status,
+        specifiedType: const FullType(_i2.GQuestStatusEnum),
+      ),
       'note',
       serializers.serialize(object.note, specifiedType: const FullType(String)),
     ];
@@ -109,37 +139,43 @@ class _$GInsertMainQuestData_insertMainQuestsOneSerializer
     if (value != null) {
       result
         ..add('begunAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.endedAt;
     if (value != null) {
       result
         ..add('endedAt')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(DateTime)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(DateTime)),
+        );
     }
     value = object.categoryId;
     if (value != null) {
       result
         ..add('categoryId')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.coverImageUrl;
     if (value != null) {
       result
         ..add('coverImageUrl')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GInsertMainQuestData_insertMainQuestsOne deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GInsertMainQuestData_insertMainQuestsOneBuilder();
 
     final iterator = serialized.iterator;
@@ -149,45 +185,84 @@ class _$GInsertMainQuestData_insertMainQuestsOneSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'id':
-          result.id = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.id =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'begunAt':
-          result.begunAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.begunAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'endedAt':
-          result.endedAt = serializers.deserialize(value,
-              specifiedType: const FullType(DateTime)) as DateTime?;
+          result.endedAt =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(DateTime),
+                  )
+                  as DateTime?;
           break;
         case 'categoryId':
-          result.categoryId = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.categoryId =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'status':
-          result.status = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GQuestStatusEnum))!
-              as _i2.GQuestStatusEnum;
+          result.status =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i2.GQuestStatusEnum),
+                  )!
+                  as _i2.GQuestStatusEnum;
           break;
         case 'coverImageUrl':
-          result.coverImageUrl = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.coverImageUrl =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'note':
-          result.note = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.note =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -202,17 +277,18 @@ class _$GInsertMainQuestData extends GInsertMainQuestData {
   @override
   final GInsertMainQuestData_insertMainQuestsOne? insertMainQuestsOne;
 
-  factory _$GInsertMainQuestData(
-          [void Function(GInsertMainQuestDataBuilder)? updates]) =>
-      (GInsertMainQuestDataBuilder()..update(updates))._build();
+  factory _$GInsertMainQuestData([
+    void Function(GInsertMainQuestDataBuilder)? updates,
+  ]) => (GInsertMainQuestDataBuilder()..update(updates))._build();
 
-  _$GInsertMainQuestData._(
-      {required this.G__typename, this.insertMainQuestsOne})
-      : super._();
+  _$GInsertMainQuestData._({
+    required this.G__typename,
+    this.insertMainQuestsOne,
+  }) : super._();
   @override
   GInsertMainQuestData rebuild(
-          void Function(GInsertMainQuestDataBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GInsertMainQuestDataBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GInsertMainQuestDataBuilder toBuilder() =>
@@ -257,9 +333,8 @@ class GInsertMainQuestDataBuilder
       _$this._insertMainQuestsOne ??=
           GInsertMainQuestData_insertMainQuestsOneBuilder();
   set insertMainQuestsOne(
-          GInsertMainQuestData_insertMainQuestsOneBuilder?
-              insertMainQuestsOne) =>
-      _$this._insertMainQuestsOne = insertMainQuestsOne;
+    GInsertMainQuestData_insertMainQuestsOneBuilder? insertMainQuestsOne,
+  ) => _$this._insertMainQuestsOne = insertMainQuestsOne;
 
   GInsertMainQuestDataBuilder() {
     GInsertMainQuestData._initializeBuilder(this);
@@ -291,10 +366,14 @@ class GInsertMainQuestDataBuilder
   _$GInsertMainQuestData _build() {
     _$GInsertMainQuestData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GInsertMainQuestData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GInsertMainQuestData', 'G__typename'),
+              G__typename,
+              r'GInsertMainQuestData',
+              'G__typename',
+            ),
             insertMainQuestsOne: _insertMainQuestsOne?.build(),
           );
     } catch (_) {
@@ -304,7 +383,10 @@ class GInsertMainQuestDataBuilder
         _insertMainQuestsOne?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GInsertMainQuestData', _$failedField, e.toString());
+          r'GInsertMainQuestData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -336,29 +418,27 @@ class _$GInsertMainQuestData_insertMainQuestsOne
   @override
   final String note;
 
-  factory _$GInsertMainQuestData_insertMainQuestsOne(
-          [void Function(GInsertMainQuestData_insertMainQuestsOneBuilder)?
-              updates]) =>
-      (GInsertMainQuestData_insertMainQuestsOneBuilder()..update(updates))
-          ._build();
+  factory _$GInsertMainQuestData_insertMainQuestsOne([
+    void Function(GInsertMainQuestData_insertMainQuestsOneBuilder)? updates,
+  ]) => (GInsertMainQuestData_insertMainQuestsOneBuilder()..update(updates))
+      ._build();
 
-  _$GInsertMainQuestData_insertMainQuestsOne._(
-      {required this.G__typename,
-      required this.id,
-      required this.title,
-      required this.description,
-      this.begunAt,
-      this.endedAt,
-      this.categoryId,
-      required this.status,
-      this.coverImageUrl,
-      required this.note})
-      : super._();
+  _$GInsertMainQuestData_insertMainQuestsOne._({
+    required this.G__typename,
+    required this.id,
+    required this.title,
+    required this.description,
+    this.begunAt,
+    this.endedAt,
+    this.categoryId,
+    required this.status,
+    this.coverImageUrl,
+    required this.note,
+  }) : super._();
   @override
   GInsertMainQuestData_insertMainQuestsOne rebuild(
-          void Function(GInsertMainQuestData_insertMainQuestsOneBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GInsertMainQuestData_insertMainQuestsOneBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GInsertMainQuestData_insertMainQuestsOneBuilder toBuilder() =>
@@ -400,7 +480,8 @@ class _$GInsertMainQuestData_insertMainQuestsOne
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GInsertMainQuestData_insertMainQuestsOne')
+            r'GInsertMainQuestData_insertMainQuestsOne',
+          )
           ..add('G__typename', G__typename)
           ..add('id', id)
           ..add('title', title)
@@ -417,8 +498,10 @@ class _$GInsertMainQuestData_insertMainQuestsOne
 
 class GInsertMainQuestData_insertMainQuestsOneBuilder
     implements
-        Builder<GInsertMainQuestData_insertMainQuestsOne,
-            GInsertMainQuestData_insertMainQuestsOneBuilder> {
+        Builder<
+          GInsertMainQuestData_insertMainQuestsOne,
+          GInsertMainQuestData_insertMainQuestsOneBuilder
+        > {
   _$GInsertMainQuestData_insertMainQuestsOne? _$v;
 
   String? _G__typename;
@@ -491,7 +574,8 @@ class GInsertMainQuestData_insertMainQuestsOneBuilder
 
   @override
   void update(
-      void Function(GInsertMainQuestData_insertMainQuestsOneBuilder)? updates) {
+    void Function(GInsertMainQuestData_insertMainQuestsOneBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -499,24 +583,43 @@ class GInsertMainQuestData_insertMainQuestsOneBuilder
   GInsertMainQuestData_insertMainQuestsOne build() => _build();
 
   _$GInsertMainQuestData_insertMainQuestsOne _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GInsertMainQuestData_insertMainQuestsOne._(
-          G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-              r'GInsertMainQuestData_insertMainQuestsOne', 'G__typename'),
+          G__typename: BuiltValueNullFieldError.checkNotNull(
+            G__typename,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'G__typename',
+          ),
           id: BuiltValueNullFieldError.checkNotNull(
-              id, r'GInsertMainQuestData_insertMainQuestsOne', 'id'),
+            id,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'id',
+          ),
           title: BuiltValueNullFieldError.checkNotNull(
-              title, r'GInsertMainQuestData_insertMainQuestsOne', 'title'),
-          description: BuiltValueNullFieldError.checkNotNull(description,
-              r'GInsertMainQuestData_insertMainQuestsOne', 'description'),
+            title,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'title',
+          ),
+          description: BuiltValueNullFieldError.checkNotNull(
+            description,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'description',
+          ),
           begunAt: begunAt,
           endedAt: endedAt,
           categoryId: categoryId,
           status: BuiltValueNullFieldError.checkNotNull(
-              status, r'GInsertMainQuestData_insertMainQuestsOne', 'status'),
+            status,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'status',
+          ),
           coverImageUrl: coverImageUrl,
           note: BuiltValueNullFieldError.checkNotNull(
-              note, r'GInsertMainQuestData_insertMainQuestsOne', 'note'),
+            note,
+            r'GInsertMainQuestData_insertMainQuestsOne',
+            'note',
+          ),
         );
     replace(_$result);
     return _$result;

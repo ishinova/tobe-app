@@ -38,19 +38,17 @@ abstract class GGetNewsReq
   _i4.Operation get operation;
   @override
   _i4.Request get execRequest => _i4.Request(
-        operation: operation,
-        variables: vars.toJson(),
-        context: context ?? const _i4.Context(),
-      );
+    operation: operation,
+    variables: vars.toJson(),
+    context: context ?? const _i4.Context(),
+  );
 
   @override
   String? get requestId;
   @override
   @BuiltValueField(serialize: false)
-  _i2.GGetNewsData? Function(
-    _i2.GGetNewsData?,
-    _i2.GGetNewsData?,
-  )? get updateResult;
+  _i2.GGetNewsData? Function(_i2.GGetNewsData?, _i2.GGetNewsData?)?
+  get updateResult;
   @override
   _i2.GGetNewsData? get optimisticResponse;
   @override
@@ -76,19 +74,15 @@ abstract class GGetNewsReq
 
   @override
   _i1.OperationRequest<_i2.GGetNewsData, _i3.GGetNewsVars> transformOperation(
-          _i4.Operation Function(_i4.Operation) transform) =>
-      this.rebuild((b) => b..operation = transform(operation));
+    _i4.Operation Function(_i4.Operation) transform,
+  ) => this.rebuild((b) => b..operation = transform(operation));
 
   static Serializer<GGetNewsReq> get serializer => _$gGetNewsReqSerializer;
 
-  Map<String, dynamic> toJson() => (_i6.serializers.serializeWith(
-        GGetNewsReq.serializer,
-        this,
-      ) as Map<String, dynamic>);
+  Map<String, dynamic> toJson() =>
+      (_i6.serializers.serializeWith(GGetNewsReq.serializer, this)
+          as Map<String, dynamic>);
 
   static GGetNewsReq? fromJson(Map<String, dynamic> json) =>
-      _i6.serializers.deserializeWith(
-        GGetNewsReq.serializer,
-        json,
-      );
+      _i6.serializers.deserializeWith(GGetNewsReq.serializer, json);
 }
