@@ -128,6 +128,12 @@ abstract class FeatureMyL10n {
   /// **'Help & Support'**
   String get myPageHelp;
 
+  /// Announcements menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Announcements'**
+  String get myPageAnnouncements;
+
   /// Logout button text
   ///
   /// In en, this message translates to:
