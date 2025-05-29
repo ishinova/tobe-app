@@ -24,6 +24,9 @@ class FeatureMyL10nJa extends FeatureMyL10n {
   String get myPageHelp => 'ヘルプ＆サポート';
 
   @override
+  String get myPageAnnouncements => 'お知らせ';
+
+  @override
   String get myPageLogout => 'ログアウト';
 
   @override
