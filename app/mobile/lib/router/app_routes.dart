@@ -21,6 +21,7 @@ class AppRoutes {
 
   // My page routes
   static const my = 'my';
+  static const announcements = 'announcements';
 
   // Settings routes
   static const settings = 'settings';
