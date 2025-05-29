@@ -23,6 +23,7 @@ workspace:
   - core/network_model
   - core/testing
   - core/ui
+  - feature/announcement
   - feature/auth
   - feature/debug
   - feature/feed
