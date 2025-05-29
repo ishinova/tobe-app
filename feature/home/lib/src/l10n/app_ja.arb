@@ -13,5 +13,21 @@
   "homeQuickAddQuestDialogPositive": "クエストを追加する",
   "homeQuickAddQuestDialogNegative": "キャンセル",
   "homeRecentQuestListSectionYourQuestList": "クエスト一覧",
-  "homeRecentQuestListSectionMore": "さらに表示"
+  "homeRecentQuestListSectionMore": "さらに表示",
+  "homeErrorMessage": "エラーが発生しました",
+  "homeNoQuestsMessage": "クエストがありません",
+  "homeQuestStatusBacklog": "バックログ",
+  "homeQuestStatusReady": "準備完了",
+  "homeQuestStatusInProgress": "進行中",
+  "homeQuestStatusSuspend": "中断",
+  "homeQuestStatusCompleted": "完了",
+  "homeQuestStatusAbort": "中止",
+  "homeDateToday": "今日",
+  "homeDateYesterday": "昨日",
+  "homeDateDaysAgo": "{days}日前",
+  "@homeDateDaysAgo": {
+    "placeholders": {
+      "days": {}
+    }
+  }
 }

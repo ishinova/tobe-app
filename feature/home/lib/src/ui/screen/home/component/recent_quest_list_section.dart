@@ -54,13 +54,20 @@ final class RecentQuestListSection extends HookConsumerWidget {
                           Icon(
                             Icons.assignment_outlined,
                             size: 48,
-                            color: Theme.of(context).colorScheme.onSurfaceVariant,
+                            color: Theme.of(context)
+                                .colorScheme
+                                .onSurfaceVariant,
                           ),
                           const Gap(TobeSpace.m),
                           Text(
-                            'クエストがありません',
-                            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                              color: Theme.of(context).colorScheme.onSurfaceVariant,
+                            l10n.homeNoQuestsMessage,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge
+                                ?.copyWith(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .onSurfaceVariant,
                             ),
                           ),
                         ],
@@ -90,7 +97,7 @@ final class RecentQuestListSection extends HookConsumerWidget {
                 padding: const EdgeInsets.all(TobeSpace.l),
                 child: Center(
                   child: Text(
-                    'エラーが発生しました',
+                    l10n.homeErrorMessage,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.error,
                     ),
@@ -123,6 +130,7 @@ final class _QuestCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
+    final l10n = L10n.of(context);
 
     return SizedBox(
       width: 200,
@@ -150,7 +158,7 @@ final class _QuestCard extends StatelessWidget {
                   ),
                   const Gap(TobeSpace.s),
                   Text(
-                    _getStatusText(quest.status),
+                    _getStatusText(quest.status, l10n),
                     style: theme.textTheme.labelSmall?.copyWith(
                       color: colorScheme.onSurfaceVariant,
                     ),
@@ -183,7 +191,7 @@ final class _QuestCard extends StatelessWidget {
               if (quest.begunAt != null) ...[
                 const Gap(TobeSpace.s),
                 Text(
-                  _formatDate(quest.begunAt!),
+                  _formatDate(quest.begunAt!, l10n),
                   style: theme.textTheme.labelSmall?.copyWith(
                     color: colorScheme.outline,
                   ),
@@ -196,33 +204,33 @@ final class _QuestCard extends StatelessWidget {
     );
   }
 
-  String _getStatusText(QuestStatus status) {
+  String _getStatusText(QuestStatus status, L10n l10n) {
     switch (status) {
       case QuestStatus.backlog:
-        return '\u30d0\u30c3\u30af\u30ed\u30b0';
+        return l10n.homeQuestStatusBacklog;
       case QuestStatus.ready:
-        return '\u6e96\u5099\u5b8c\u4e86';
+        return l10n.homeQuestStatusReady;
       case QuestStatus.inProgress:
-        return '\u9032\u884c\u4e2d';
+        return l10n.homeQuestStatusInProgress;
       case QuestStatus.suspend:
-        return '\u4e2d\u65ad';
+        return l10n.homeQuestStatusSuspend;
       case QuestStatus.completed:
-        return '\u5b8c\u4e86';
+        return l10n.homeQuestStatusCompleted;
       case QuestStatus.abort:
-        return '\u4e2d\u6b62';
+        return l10n.homeQuestStatusAbort;
     }
   }
 
-  String _formatDate(DateTime date) {
+  String _formatDate(DateTime date, L10n l10n) {
     final now = DateTime.now();
     final difference = now.difference(date);
 
     if (difference.inDays == 0) {
-      return '\u4eca\u65e5';
+      return l10n.homeDateToday;
     } else if (difference.inDays == 1) {
-      return '\u6628\u65e5';
+      return l10n.homeDateYesterday;
     } else if (difference.inDays < 7) {
-      return '${difference.inDays}\u65e5\u524d';
+      return l10n.homeDateDaysAgo(difference.inDays);
     } else {
       return '${date.month}/${date.day}';
     }

@@ -68,7 +68,7 @@ final class QuestOverviewSection extends HookConsumerWidget {
                 padding: const EdgeInsets.all(TobeSpace.l),
                 child: Center(
                   child: Text(
-                    'エラーが発生しました',
+                    l10n.homeErrorMessage,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.error,
                     ),
@@ -120,7 +120,6 @@ final class _StatCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             side: BorderSide(
               color: colorScheme.outlineVariant,
-              width: 1,
             ),
           ),
           child: Padding(
@@ -133,7 +132,7 @@ final class _StatCard extends StatelessWidget {
               children: <Widget>[
                 AnimatedSwitcher(
                   duration: const Duration(milliseconds: 600),
-                  transitionBuilder: (Widget child, Animation<double> animation) {
+                  transitionBuilder: (child, animation) {
                     return ScaleTransition(
                       scale: animation,
                       child: FadeTransition(

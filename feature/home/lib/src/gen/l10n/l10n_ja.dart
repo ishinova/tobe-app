@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'l10n.dart';
 
 // ignore_for_file: type=lint
@@ -50,4 +52,39 @@ class L10nJa extends L10n {
 
   @override
   String get homeRecentQuestListSectionMore => 'さらに表示';
+
+  @override
+  String get homeErrorMessage => 'エラーが発生しました';
+
+  @override
+  String get homeNoQuestsMessage => 'クエストがありません';
+
+  @override
+  String get homeQuestStatusBacklog => 'バックログ';
+
+  @override
+  String get homeQuestStatusReady => '準備完了';
+
+  @override
+  String get homeQuestStatusInProgress => '進行中';
+
+  @override
+  String get homeQuestStatusSuspend => '中断';
+
+  @override
+  String get homeQuestStatusCompleted => '完了';
+
+  @override
+  String get homeQuestStatusAbort => '中止';
+
+  @override
+  String get homeDateToday => '今日';
+
+  @override
+  String get homeDateYesterday => '昨日';
+
+  @override
+  String homeDateDaysAgo(Object days) {
+    return '$days日前';
+  }
 }
