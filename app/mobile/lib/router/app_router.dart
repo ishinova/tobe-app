@@ -5,6 +5,7 @@ import 'package:app_mobile/router/app_routes.dart';
 import 'package:core_authenticator/authenticator.dart';
 import 'package:core_domain/legal.dart';
 import 'package:core_model/auth.dart';
+import 'package:feature_announcement/feature_announcement.dart';
 import 'package:feature_auth/feature_auth.dart';
 import 'package:feature_debug/feature_debug.dart';
 import 'package:feature_feed/feature_feed.dart';
@@ -189,6 +190,11 @@ final List<RouteBase> _routes = [
             pageBuilder: (context, state) =>
                 const NoTransitionPage(child: MyScreen()),
             routes: [
+              GoRoute(
+                path: 'announcements',
+                name: AppRoutes.announcements,
+                builder: (context, state) => const AnnouncementListScreen(),
+              ),
               GoRoute(
                 path: 'settings',
                 name: AppRoutes.settings,
