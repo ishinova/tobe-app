@@ -10,10 +10,10 @@ import 'l10n_ja.dart';
 
 // ignore_for_file: type=lint
 
-/// Callers can lookup localized strings with an instance of FeatureMyL10n
-/// returned by `FeatureMyL10n.of(context)`.
+/// Callers can lookup localized strings with an instance of FeatureAnnouncementL10n
+/// returned by `FeatureAnnouncementL10n.of(context)`.
 ///
-/// Applications need to include `FeatureMyL10n.delegate()` in their app's
+/// Applications need to include `FeatureAnnouncementL10n.delegate()` in their app's
 /// `localizationDelegates` list, and the locales they support in the app's
 /// `supportedLocales` list. For example:
 ///
@@ -21,8 +21,8 @@ import 'l10n_ja.dart';
 /// import 'l10n/l10n.dart';
 ///
 /// return MaterialApp(
-///   localizationsDelegates: FeatureMyL10n.localizationsDelegates,
-///   supportedLocales: FeatureMyL10n.supportedLocales,
+///   localizationsDelegates: FeatureAnnouncementL10n.localizationsDelegates,
+///   supportedLocales: FeatureAnnouncementL10n.supportedLocales,
 ///   home: MyApplicationHome(),
 /// );
 /// ```
@@ -59,20 +59,23 @@ import 'l10n_ja.dart';
 /// Select and expand the newly-created Localizations item then, for each
 /// locale your application supports, add a new item and select the locale
 /// you wish to add from the pop-up menu in the Value field. This list should
-/// be consistent with the languages listed in the FeatureMyL10n.supportedLocales
+/// be consistent with the languages listed in the FeatureAnnouncementL10n.supportedLocales
 /// property.
-abstract class FeatureMyL10n {
-  FeatureMyL10n(String locale)
+abstract class FeatureAnnouncementL10n {
+  FeatureAnnouncementL10n(String locale)
     : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
-  static FeatureMyL10n? of(BuildContext context) {
-    return Localizations.of<FeatureMyL10n>(context, FeatureMyL10n);
+  static FeatureAnnouncementL10n? of(BuildContext context) {
+    return Localizations.of<FeatureAnnouncementL10n>(
+      context,
+      FeatureAnnouncementL10n,
+    );
   }
 
-  static const LocalizationsDelegate<FeatureMyL10n> delegate =
-      _FeatureMyL10nDelegate();
+  static const LocalizationsDelegate<FeatureAnnouncementL10n> delegate =
+      _FeatureAnnouncementL10nDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -98,97 +101,52 @@ abstract class FeatureMyL10n {
     Locale('ja'),
   ];
 
-  /// Title for the my page screen
-  ///
-  /// In en, this message translates to:
-  /// **'My Page'**
-  String get myPageTitle;
-
-  /// Profile section title
-  ///
-  /// In en, this message translates to:
-  /// **'Profile'**
-  String get myPageProfile;
-
-  /// Edit profile button text
-  ///
-  /// In en, this message translates to:
-  /// **'Edit Profile'**
-  String get myPageEditProfile;
-
-  /// Settings menu item
-  ///
-  /// In en, this message translates to:
-  /// **'Settings'**
-  String get myPageSettings;
-
-  /// Help and support menu item
-  ///
-  /// In en, this message translates to:
-  /// **'Help & Support'**
-  String get myPageHelp;
-
-  /// Announcements menu item
+  /// Title for the announcements list screen
   ///
   /// In en, this message translates to:
   /// **'Announcements'**
-  String get myPageAnnouncements;
+  String get announcementListTitle;
 
-  /// Logout button text
+  /// Message shown when there are no announcements
   ///
   /// In en, this message translates to:
-  /// **'Log Out'**
-  String get myPageLogout;
+  /// **'No announcements at this time'**
+  String get announcementEmptyMessage;
 
-  /// Quest statistics section title
+  /// Information type announcement label
   ///
   /// In en, this message translates to:
-  /// **'Quest Statistics'**
-  String get myPageQuestStatistics;
+  /// **'Information'**
+  String get announcementTypeInfo;
 
-  /// Completed quests label
+  /// Warning/Important type announcement label
   ///
   /// In en, this message translates to:
-  /// **'Completed'**
-  String get myPageCompletedQuests;
+  /// **'Important'**
+  String get announcementTypeWarning;
 
-  /// Active quests label
+  /// Update type announcement label
   ///
   /// In en, this message translates to:
-  /// **'Active'**
-  String get myPageActiveQuests;
+  /// **'Update'**
+  String get announcementTypeUpdate;
 
-  /// Total quests label
+  /// Badge text for new announcements
   ///
   /// In en, this message translates to:
-  /// **'Total'**
-  String get myPageTotalQuests;
-
-  /// Logout confirmation dialog message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to log out?'**
-  String get myPageLogoutConfirmationMessage;
-
-  /// Cancel button text
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get myPageCancel;
-
-  /// Logout button text in dialog
-  ///
-  /// In en, this message translates to:
-  /// **'Log Out'**
-  String get myPageLogoutButton;
+  /// **'NEW'**
+  String get announcementNewBadge;
 }
 
-class _FeatureMyL10nDelegate extends LocalizationsDelegate<FeatureMyL10n> {
-  const _FeatureMyL10nDelegate();
+class _FeatureAnnouncementL10nDelegate
+    extends LocalizationsDelegate<FeatureAnnouncementL10n> {
+  const _FeatureAnnouncementL10nDelegate();
 
   @override
-  Future<FeatureMyL10n> load(Locale locale) {
-    return SynchronousFuture<FeatureMyL10n>(lookupFeatureMyL10n(locale));
+  Future<FeatureAnnouncementL10n> load(Locale locale) {
+    return SynchronousFuture<FeatureAnnouncementL10n>(
+      lookupFeatureAnnouncementL10n(locale),
+    );
   }
 
   @override
@@ -196,20 +154,20 @@ class _FeatureMyL10nDelegate extends LocalizationsDelegate<FeatureMyL10n> {
       <String>['en', 'ja'].contains(locale.languageCode);
 
   @override
-  bool shouldReload(_FeatureMyL10nDelegate old) => false;
+  bool shouldReload(_FeatureAnnouncementL10nDelegate old) => false;
 }
 
-FeatureMyL10n lookupFeatureMyL10n(Locale locale) {
+FeatureAnnouncementL10n lookupFeatureAnnouncementL10n(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'en':
-      return FeatureMyL10nEn();
+      return FeatureAnnouncementL10nEn();
     case 'ja':
-      return FeatureMyL10nJa();
+      return FeatureAnnouncementL10nJa();
   }
 
   throw FlutterError(
-    'FeatureMyL10n.delegate failed to load unsupported locale "$locale". This is likely '
+    'FeatureAnnouncementL10n.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
     'that was used.',
