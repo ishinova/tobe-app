@@ -1,0 +1,43 @@
+{
+  "@@locale": "ja",
+  "myPageTitle": "マイページ",
+  "@myPageTitle": {
+    "description": "マイページ画面のタイトル"
+  },
+  "myPageProfile": "プロフィール",
+  "@myPageProfile": {
+    "description": "プロフィールセクションのタイトル"
+  },
+  "myPageEditProfile": "プロフィールを編集",
+  "@myPageEditProfile": {
+    "description": "プロフィール編集ボタンのテキスト"
+  },
+  "myPageSettings": "設定",
+  "@myPageSettings": {
+    "description": "設定メニューアイテム"
+  },
+  "myPageHelp": "ヘルプ＆サポート",
+  "@myPageHelp": {
+    "description": "ヘルプとサポートメニューアイテム"
+  },
+  "myPageLogout": "ログアウト",
+  "@myPageLogout": {
+    "description": "ログアウトボタンのテキスト"
+  },
+  "myPageQuestStatistics": "クエスト統計",
+  "@myPageQuestStatistics": {
+    "description": "クエスト統計セクションのタイトル"
+  },
+  "myPageCompletedQuests": "完了",
+  "@myPageCompletedQuests": {
+    "description": "完了したクエストのラベル"
+  },
+  "myPageActiveQuests": "進行中",
+  "@myPageActiveQuests": {
+    "description": "進行中のクエストのラベル"
+  },
+  "myPageTotalQuests": "合計",
+  "@myPageTotalQuests": {
+    "description": "合計クエストのラベル"
+  }
+}

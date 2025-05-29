@@ -27,10 +27,7 @@ class AppRouterHelpers {
   }
 
   static void goToFeedDetail(BuildContext context, String feedId) {
-    context.goNamed(
-      AppRoutes.feedDetail,
-      pathParameters: {'feedId': feedId},
-    );
+    context.goNamed(AppRoutes.feedDetail, pathParameters: {'feedId': feedId});
   }
 
   static void pushFeedDetail(BuildContext context, String feedId) {

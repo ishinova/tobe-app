@@ -19,6 +19,9 @@ class AppRoutes {
   static const questAdd = 'questAdd';
   static const questDetail = 'questDetail';
 
+  // My page routes
+  static const my = 'my';
+
   // Settings routes
   static const settings = 'settings';
   static const themeSetting = 'themeSetting';

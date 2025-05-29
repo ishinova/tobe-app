@@ -7,6 +7,7 @@ final class AppPagePath {
   static const questDetail = ':questId';
   static const questAdd = 'add';
   static const root = '/';
+  static const my = '/my';
   static const settings = '/settings';
   static const license = 'license';
   static const theme = 'theme';
@@ -21,5 +22,6 @@ const authorizedPaths = [
   AppPagePath.quests,
   AppPagePath.questDetail,
   AppPagePath.questAdd,
+  AppPagePath.my,
   AppPagePath.settings,
 ];
