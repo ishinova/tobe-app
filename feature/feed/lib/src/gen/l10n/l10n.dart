@@ -108,6 +108,42 @@ abstract class L10n {
   /// In ja, this message translates to:
   /// **'フィード'**
   String get feedDetailAppBarTitle;
+
+  /// お知らせ一覧画面のタイトル
+  ///
+  /// In ja, this message translates to:
+  /// **'お知らせ'**
+  String get announcementListTitle;
+
+  /// お知らせがない時に表示されるメッセージ
+  ///
+  /// In ja, this message translates to:
+  /// **'現在お知らせはありません'**
+  String get announcementEmptyMessage;
+
+  /// 情報タイプのお知らせラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'お知らせ'**
+  String get announcementTypeInfo;
+
+  /// 警告/重要タイプのお知らせラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'重要'**
+  String get announcementTypeWarning;
+
+  /// アップデートタイプのお知らせラベル
+  ///
+  /// In ja, this message translates to:
+  /// **'アップデート'**
+  String get announcementTypeUpdate;
+
+  /// 新しいお知らせのバッジテキスト
+  ///
+  /// In ja, this message translates to:
+  /// **'NEW'**
+  String get announcementNewBadge;
 }
 
 class _L10nDelegate extends LocalizationsDelegate<L10n> {

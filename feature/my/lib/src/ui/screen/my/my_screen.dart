@@ -105,6 +105,15 @@ class MyScreen extends ConsumerWidget {
           ),
           const Divider(height: 1),
           ListTile(
+            leading: const Icon(Icons.notifications_outlined),
+            title: Text(l10n?.myPageAnnouncements ?? 'Announcements'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () {
+              unawaited(context.pushNamed('announcements'));
+            },
+          ),
+          const Divider(height: 1),
+          ListTile(
             leading: const Icon(Icons.help_outline),
             title: Text(l10n?.myPageHelp ?? 'Help'),
             trailing: const Icon(Icons.chevron_right),

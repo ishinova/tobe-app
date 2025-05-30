@@ -190,6 +190,11 @@ final List<RouteBase> _routes = [
                 const NoTransitionPage(child: MyScreen()),
             routes: [
               GoRoute(
+                path: 'announcements',
+                name: AppRoutes.announcements,
+                builder: (context, state) => const AnnouncementListScreen(),
+              ),
+              GoRoute(
                 path: 'settings',
                 name: AppRoutes.settings,
                 builder: (context, state) => SettingsScreen(
