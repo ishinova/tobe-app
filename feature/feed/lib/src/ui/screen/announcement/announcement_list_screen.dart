@@ -14,7 +14,7 @@ class AnnouncementListScreen extends ConsumerWidget {
 
     return TobeScaffold(
       appBar: TobeAppBar(
-        title: Text(l10n?.announcementListTitle ?? 'Announcements'),
+        title: Text(l10n.announcementListTitle),
       ),
       body: _buildBody(context, ref),
     );
@@ -29,7 +29,7 @@ class AnnouncementListScreen extends ConsumerWidget {
     if (announcements.isEmpty) {
       return Center(
         child: Text(
-          l10n?.announcementEmptyMessage ?? 'No announcements at this time',
+          l10n.announcementEmptyMessage,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
       );
@@ -71,7 +71,8 @@ class AnnouncementListScreen extends ConsumerWidget {
       {
         'title': 'Scheduled Maintenance',
         'description':
-            'The app will be under maintenance on June 1st from 2:00 AM to 4:00 AM JST.',
+            'The app will be under maintenance on June 1st from 2:00 AM to '
+                '4:00 AM JST.',
         'type': 'warning',
         'date': '2024-05-25',
         'isNew': 'false',

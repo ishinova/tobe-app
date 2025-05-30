@@ -109,7 +109,7 @@ class AnnouncementCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(TobeSpace.xs),
       ),
       child: Text(
-        l10n?.announcementNewBadge ?? 'NEW',
+        l10n.announcementNewBadge,
         style: theme.textTheme.labelSmall?.copyWith(
           color: theme.colorScheme.onPrimary,
           fontWeight: FontWeight.bold,
@@ -126,28 +126,28 @@ class AnnouncementCard extends StatelessWidget {
       case 'info':
         return {
           'icon': Icons.info_outline,
-          'label': l10n?.announcementTypeInfo ?? 'Information',
+          'label': l10n.announcementTypeInfo,
           'color': theme.colorScheme.primaryContainer,
           'textColor': theme.colorScheme.onPrimaryContainer,
         };
       case 'warning':
         return {
           'icon': Icons.warning_amber_outlined,
-          'label': l10n?.announcementTypeWarning ?? 'Important',
+          'label': l10n.announcementTypeWarning,
           'color': theme.colorScheme.errorContainer,
           'textColor': theme.colorScheme.onErrorContainer,
         };
       case 'update':
         return {
           'icon': Icons.system_update_outlined,
-          'label': l10n?.announcementTypeUpdate ?? 'Update',
+          'label': l10n.announcementTypeUpdate,
           'color': theme.colorScheme.tertiaryContainer,
           'textColor': theme.colorScheme.onTertiaryContainer,
         };
       default:
         return {
           'icon': Icons.info_outline,
-          'label': l10n?.announcementTypeInfo ?? 'Information',
+          'label': l10n.announcementTypeInfo,
           'color': theme.colorScheme.surfaceContainerHighest,
           'textColor': theme.colorScheme.onSurfaceVariant,
         };
