@@ -1,23 +1,17 @@
 import 'package:core_designsystem/component.dart';
 import 'package:core_designsystem/space.dart';
 import 'package:feature_feed/src/gen/l10n/l10n.dart';
+import 'package:feature_feed/src/model/announcement.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class AnnouncementCard extends StatelessWidget {
   const AnnouncementCard({
-    required this.title,
-    required this.description,
-    required this.type,
-    required this.date,
+    required this.announcement,
     super.key,
-    this.isNew = false,
   });
 
-  final String title;
-  final String description;
-  final String type;
-  final String date;
-  final bool isNew;
+  final Announcement announcement;
 
   @override
   Widget build(BuildContext context) {
@@ -36,21 +30,21 @@ class AnnouncementCard extends StatelessWidget {
               children: [
                 _buildTypeChip(context),
                 const Spacer(),
-                if (isNew) _buildNewBadge(context),
+                if (announcement.isNew) _buildNewBadge(context),
               ],
             ),
             const Gap(TobeSpace.xs),
-            Text(title, style: theme.textTheme.titleMedium),
+            Text(announcement.title, style: theme.textTheme.titleMedium),
             const Gap(TobeSpace.xs),
             Text(
-              description,
+              announcement.description,
               style: theme.textTheme.bodyMedium,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
             const Gap(TobeSpace.s),
             Text(
-              date,
+              DateFormat.yMMMd().format(announcement.date),
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),
@@ -122,34 +116,27 @@ class AnnouncementCard extends StatelessWidget {
     final theme = Theme.of(context);
     final l10n = L10n.of(context);
 
-    switch (type) {
-      case 'info':
+    switch (announcement.type) {
+      case AnnouncementType.info:
         return {
           'icon': Icons.info_outline,
           'label': l10n.announcementTypeInfo,
           'color': theme.colorScheme.primaryContainer,
           'textColor': theme.colorScheme.onPrimaryContainer,
         };
-      case 'warning':
+      case AnnouncementType.warning:
         return {
           'icon': Icons.warning_amber_outlined,
           'label': l10n.announcementTypeWarning,
           'color': theme.colorScheme.errorContainer,
           'textColor': theme.colorScheme.onErrorContainer,
         };
-      case 'update':
+      case AnnouncementType.update:
         return {
           'icon': Icons.system_update_outlined,
           'label': l10n.announcementTypeUpdate,
           'color': theme.colorScheme.tertiaryContainer,
           'textColor': theme.colorScheme.onTertiaryContainer,
-        };
-      default:
-        return {
-          'icon': Icons.info_outline,
-          'label': l10n.announcementTypeInfo,
-          'color': theme.colorScheme.surfaceContainerHighest,
-          'textColor': theme.colorScheme.onSurfaceVariant,
         };
     }
   }
