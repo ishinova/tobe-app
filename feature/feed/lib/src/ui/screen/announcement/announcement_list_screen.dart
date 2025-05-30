@@ -1,7 +1,7 @@
 import 'package:core_designsystem/component.dart';
 import 'package:core_designsystem/space.dart';
+import 'package:core_model/feed.dart';
 import 'package:feature_feed/src/gen/l10n/l10n.dart';
-import 'package:feature_feed/src/model/announcement.dart';
 import 'package:feature_feed/src/ui/component/announcement_card.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
