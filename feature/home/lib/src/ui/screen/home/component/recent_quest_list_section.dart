@@ -24,104 +24,95 @@ final class RecentQuestListSection extends HookConsumerWidget {
     final questList = ref.watch(recentQuestListStreamUseCaseProvider);
 
     return Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                l10n.homeRecentQuestListSectionYourQuestList,
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              TextButton(
-                onPressed: _onMoreButtonPressed,
-                child: Text(l10n.homeRecentQuestListSectionMore),
-              ),
-            ],
-          ),
-          const Gap(TobeSpace.m),
-          questList.when(
-            data: (data) {
-              if (data.isEmpty) {
-                return Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(TobeSpace.xl),
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Icon(
-                            Icons.assignment_outlined,
-                            size: 48,
-                            color: Theme.of(context)
-                                .colorScheme
-                                .onSurfaceVariant,
-                          ),
-                          const Gap(TobeSpace.m),
-                          Text(
-                            l10n.homeNoQuestsMessage,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge
-                                ?.copyWith(
-                              color: Theme.of(context)
-                                  .colorScheme
-                                  .onSurfaceVariant,
-                            ),
-                          ),
-                        ],
-                      ),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              l10n.homeRecentQuestListSectionYourQuestList,
+              style: Theme.of(
+                context,
+              ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+            ),
+            TextButton(
+              onPressed: _onMoreButtonPressed,
+              child: Text(l10n.homeRecentQuestListSectionMore),
+            ),
+          ],
+        ),
+        const Gap(TobeSpace.m),
+        questList.when(
+          data: (data) {
+            if (data.isEmpty) {
+              return Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(TobeSpace.xl),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.assignment_outlined,
+                          size: 48,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                        const Gap(TobeSpace.m),
+                        Text(
+                          l10n.homeNoQuestsMessage,
+                          style: Theme.of(context).textTheme.bodyLarge
+                              ?.copyWith(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onSurfaceVariant,
+                              ),
+                        ),
+                      ],
                     ),
                   ),
-                );
-              }
-              return SizedBox(
-                height: 180,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: data.length,
-                  separatorBuilder: (context, index) => const Gap(TobeSpace.m),
-                  itemBuilder: (context, index) {
-                    final quest = data[index];
-                    return _QuestCard(
-                      quest: quest,
-                      onTap: () => _onTapQuestListItem(quest),
-                    );
-                  },
                 ),
               );
-            },
-            error: (error, stackTrace) => Card(
-              child: Padding(
-                padding: const EdgeInsets.all(TobeSpace.l),
-                child: Center(
-                  child: Text(
-                    l10n.homeErrorMessage,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.error,
-                    ),
+            }
+            return SizedBox(
+              height: 180,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemCount: data.length,
+                separatorBuilder: (context, index) => const Gap(TobeSpace.m),
+                itemBuilder: (context, index) {
+                  final quest = data[index];
+                  return _QuestCard(
+                    quest: quest,
+                    onTap: () => _onTapQuestListItem(quest),
+                  );
+                },
+              ),
+            );
+          },
+          error: (error, stackTrace) => Card(
+            child: Padding(
+              padding: const EdgeInsets.all(TobeSpace.l),
+              child: Center(
+                child: Text(
+                  l10n.homeErrorMessage,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.error,
                   ),
                 ),
               ),
             ),
-            loading: () => const SizedBox(
-              height: 180,
-              child: Center(
-                child: CircularProgressIndicator(),
-              ),
-            ),
           ),
-        ],
-      );
+          loading: () => const SizedBox(
+            height: 180,
+            child: Center(child: CircularProgressIndicator()),
+          ),
+        ),
+      ],
+    );
   }
 }
 
 final class _QuestCard extends StatelessWidget {
-  const _QuestCard({
-    required this.quest,
-    required this.onTap,
-  });
+  const _QuestCard({required this.quest, required this.onTap});
 
   final Quest quest;
   final VoidCallback onTap;
@@ -152,8 +143,8 @@ final class _QuestCard extends StatelessWidget {
                       color: quest.status == QuestStatus.completed
                           ? colorScheme.primary
                           : quest.status == QuestStatus.inProgress
-                              ? colorScheme.secondary
-                              : colorScheme.outline,
+                          ? colorScheme.secondary
+                          : colorScheme.outline,
                     ),
                   ),
                   const Gap(TobeSpace.s),

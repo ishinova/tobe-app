@@ -7,12 +7,12 @@ part of 'network_news.dart';
 // **************************************************************************
 
 _NetworkNews _$NetworkNewsFromJson(Map<String, dynamic> json) => _NetworkNews(
-      title: json['title'] as String,
-      slug: json['slug'] as String,
-      publishedAt: DateTime.parse(json['publishedAt'] as String),
-      excerpt: json['excerpt'] as String,
-      coverImageUrl: json['coverImageUrl'] as String?,
-    );
+  title: json['title'] as String,
+  slug: json['slug'] as String,
+  publishedAt: DateTime.parse(json['publishedAt'] as String),
+  excerpt: json['excerpt'] as String,
+  coverImageUrl: json['coverImageUrl'] as String?,
+);
 
 Map<String, dynamic> _$NetworkNewsToJson(_NetworkNews instance) =>
     <String, dynamic>{
