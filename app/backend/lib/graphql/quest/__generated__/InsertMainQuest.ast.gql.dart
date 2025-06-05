@@ -42,108 +42,114 @@ const InsertMainQuest = _i1.OperationDefinitionNode(
         isNonNull: false,
       ),
       defaultValue: _i1.DefaultValueNode(
-          value: _i1.StringValueNode(
-        value: '',
-        isBlock: false,
-      )),
+        value: _i1.StringValueNode(value: '', isBlock: false),
+      ),
       directives: [],
     ),
   ],
   directives: [],
-  selectionSet: _i1.SelectionSetNode(selections: [
-    _i1.FieldNode(
-      name: _i1.NameNode(value: 'insertMainQuestsOne'),
-      alias: null,
-      arguments: [
-        _i1.ArgumentNode(
-          name: _i1.NameNode(value: 'object'),
-          value: _i1.ObjectValueNode(fields: [
-            _i1.ObjectFieldNode(
-              name: _i1.NameNode(value: 'userId'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'userId')),
+  selectionSet: _i1.SelectionSetNode(
+    selections: [
+      _i1.FieldNode(
+        name: _i1.NameNode(value: 'insertMainQuestsOne'),
+        alias: null,
+        arguments: [
+          _i1.ArgumentNode(
+            name: _i1.NameNode(value: 'object'),
+            value: _i1.ObjectValueNode(
+              fields: [
+                _i1.ObjectFieldNode(
+                  name: _i1.NameNode(value: 'userId'),
+                  value: _i1.VariableNode(name: _i1.NameNode(value: 'userId')),
+                ),
+                _i1.ObjectFieldNode(
+                  name: _i1.NameNode(value: 'title'),
+                  value: _i1.VariableNode(name: _i1.NameNode(value: 'title')),
+                ),
+                _i1.ObjectFieldNode(
+                  name: _i1.NameNode(value: 'description'),
+                  value: _i1.VariableNode(
+                    name: _i1.NameNode(value: 'description'),
+                  ),
+                ),
+                _i1.ObjectFieldNode(
+                  name: _i1.NameNode(value: 'note'),
+                  value: _i1.VariableNode(name: _i1.NameNode(value: 'note')),
+                ),
+              ],
             ),
-            _i1.ObjectFieldNode(
+          ),
+        ],
+        directives: [],
+        selectionSet: _i1.SelectionSetNode(
+          selections: [
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'id'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
               name: _i1.NameNode(value: 'title'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'title')),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
             ),
-            _i1.ObjectFieldNode(
+            _i1.FieldNode(
               name: _i1.NameNode(value: 'description'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'description')),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
             ),
-            _i1.ObjectFieldNode(
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'begunAt'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'endedAt'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'categoryId'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'status'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
+              name: _i1.NameNode(value: 'coverImageUrl'),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
+            ),
+            _i1.FieldNode(
               name: _i1.NameNode(value: 'note'),
-              value: _i1.VariableNode(name: _i1.NameNode(value: 'note')),
+              alias: null,
+              arguments: [],
+              directives: [],
+              selectionSet: null,
             ),
-          ]),
-        )
-      ],
-      directives: [],
-      selectionSet: _i1.SelectionSetNode(selections: [
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'id'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
+          ],
         ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'title'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'description'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'begunAt'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'endedAt'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'categoryId'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'status'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'coverImageUrl'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-        _i1.FieldNode(
-          name: _i1.NameNode(value: 'note'),
-          alias: null,
-          arguments: [],
-          directives: [],
-          selectionSet: null,
-        ),
-      ]),
-    )
-  ]),
+      ),
+    ],
+  ),
 );
 const document = _i1.DocumentNode(definitions: [InsertMainQuest]);
