@@ -34,7 +34,7 @@ workspace:
 
 dev_dependencies:
   melos: 7.0.0-dev.9
-  yumemi_lints: 4.0.0
+  yumemi_lints: 4.1.1
 
 dependency_overrides:
   analyzer: 6.10.0

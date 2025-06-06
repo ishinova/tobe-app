@@ -21,4 +21,4 @@ dev_dependencies:
   core_testing: any
   riverpod_generator: 2.6.5
   test: 1.26.2
-  yumemi_lints: 4.0.0
+  yumemi_lints: 4.1.1
