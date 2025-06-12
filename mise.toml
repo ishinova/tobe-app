@@ -1,5 +1,5 @@
 [tools]
-bun = "1.2.14"
+bun = "1.2.16"
 flutter = "3.32.0-stable"
 java = "17.0.2"
 node = "22.16.0"
