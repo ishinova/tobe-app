@@ -3,8 +3,8 @@ description: "This package provides home features."
 publish_to: "none"
 
 environment:
-  sdk: 3.8.0
-  flutter: 3.32.0
+  sdk: 3.8.1
+  flutter: 3.32.4
 
 resolution: workspace
 
