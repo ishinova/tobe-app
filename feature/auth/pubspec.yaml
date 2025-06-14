@@ -21,13 +21,13 @@ dependencies:
     sdk: flutter
   hooks_riverpod: 2.6.1
   intl: 0.20.2
-  video_player: 2.9.5
+  video_player: 2.10.0
 
 dev_dependencies:
   core_testing: any
   flutter_test:
     sdk: flutter
-  yumemi_lints: 4.0.0
+  yumemi_lints: 4.1.1
 
 flutter:
   assets:
